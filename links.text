@@ -4,14 +4,22 @@ Title 2: Links to Notenik Resources
 
 Seq:    6
 
+Date Added: 2019-05-18 02:43:01 +0000
+
 Body: 
 
-Following are complete links to all assets related to The Notenik Project. 
+Following are complete links to all assets related to the Notenik Project. 
 
-1. Project Overview (this site)
+1. Project Overview
 	* [Intentions](index.html)
 	* [Basic Terms and Concepts](basics.html)
 	* [Common Fields](fields.html)
 	* [Status Value Defaults](status.html)
 	* [Files and Folders](files.html)
 	* [Links to Notenik Resources](links.html) (this page)
+2. Specs
+	* [Notenik Architecture - OmniOutliner doc](specs/notenik-architecture.ooutline)
+	* [Notenik Architecture - Dynamic HTML](specs/notenik-architecture-html/index.html)
+3. GitHub Repositories
+	* [Project Docs](https://github.com/hbowie/notenik-project) (this site)
+
