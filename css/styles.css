@@ -1,0 +1,512 @@
+body
+{
+	font-family: 'equity-text', Georgia, 'Times New Roman', Times, serif;
+	font-size: 20px;
+	line-height: 1.428571429;
+	color: #000000;
+	background-color: #ffffff;
+	margin: 2em;
+}
+
+div.container {
+	max-width: 30em;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #687C99;
+}
+
+h1 {
+	margin-bottom: 3pt;
+}
+
+h2 { margin-bottom: 3pt; }
+
+h3
+{
+	margin-bottom: 3pt;
+	font-style: italic;
+}
+
+h4
+{
+	margin-bottom: 3pt;
+	font-style: italic;
+	font-size: 1em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#header { text-align: center; }
+
+#site-title { 
+  font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #687C99;
+  font-size: 3em;
+}
+
+#site-slogan {
+  font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #687C99;
+  font-size: 1.5em;
+}
+
+.sand { color: #F8BA51; }
+
+
+/*
+hr
+{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 0;
+	border-top: 1px #98A6C2 dotted;
+	border-right: 0;
+	border-bottom: 0;
+	border-left: 0;
+} */
+
+hr { 
+  border: 0; 
+  height: 1px; 
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+hr:after {
+    content: "•";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.0em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+hr.bottom {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 0;
+	border-top: 1px #98A6C2 solid;
+	border-right: 0;
+	border-bottom: 0;
+	border-left: 0;
+}
+hr.bottom:after {
+	content: none;
+	background: none;
+}
+
+a:link 		{ color: #687C99; text-decoration: none; }
+a:visited { color: #687C99; text-decoration: none; }
+a:hover   { color: #576880; text-decoration: none; }
+a:active 	{ color: #687C99; text-decoration: none; }
+
+a.reflink:link
+{
+	color: #B78A3F;
+	text-decoration: none;
+}
+a.reflink:visited { color: #B78A3F; text-decoration: none; }
+a.reflink:hover
+{
+	color: #946F34;
+	text-decoration: none;
+}
+a.reflink:active 	{ color: #B78A3F; text-decoration: none; }
+
+.centered {
+	text-align: center;
+}
+
+blockquote {
+  font-size: 0.9em;
+  border-left: 5px solid #98A6C2;
+  padding-left: 33px;
+}
+
+blockquote footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 90%;
+  line-height: 1.42857143;
+  color: #777;
+}
+/** blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #98A6C2;
+} */
+
+/* Lists */
+
+ul.tagslist
+{
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+ul.tagslist li
+
+dd { margin-left: 2em; }
+
+/* Tables */
+table.table-dense {
+  font-family: 'concourse_t3regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.85em;
+}
+
+table.table-dense th {
+	font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+table.shaded { background-color: #687C99; margin-top: 1em; }
+
+th.shaded
+{
+	background-color: #D0DFF5;
+	text-align: left;
+	vertical-align: bottom;
+	padding: 4px;
+}
+
+th.shadedCentered
+{
+	background-color: #D0DFF5;
+	text-align: center;
+	vertical-align: bottom;
+	padding: 4px;
+}
+
+td.shaded
+{
+	background-color: #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	padding: 4px;
+}
+
+td.shadedCentered
+{
+	background-color: #FFFFFF;
+	text-align: center;
+	vertical-align: top;
+	padding: 4px;
+}
+
+/* Table Defaults */
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em;
+  font-family: 'concourse-text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+}
+
+caption {
+	border: 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 0.4em;
+	margin-bottom: 0.2em;
+}
+
+th {
+	border: 1px #AABFCE solid;
+	text-align: left;
+	padding: 5px;
+}
+
+td {
+	border: 1px #AABFCE solid;
+	text-align: left;
+	vertical-align: top;
+	padding: 5px;
+}
+
+/* Colors */
+
+.infrared
+{
+	color: #FFF;
+	font-weight: 500;
+	background-color: #EA60B5;
+}
+.magenta
+{
+	color: #FFF;
+	font-weight: 500;
+	background-color: #D5007D;
+}
+.red
+{
+	color: #FFF;
+	font-weight: 500;
+	background-color: #CA0018;
+}
+.amber
+{
+	color: #FFF;
+	font-weight: 500;
+	background-color: #D45507;
+}
+.orange
+{
+	color: #FFF;
+	font-weight: 500;
+	background-color: #FF8E01;
+}
+.green
+{
+	color: #FFF;
+	font-weight: 500;
+	background-color: #019B2D;
+}
+.teal
+{
+	color: #FFF;
+	font-weight: 500;
+	background-color: #00C89A;
+}
+.turqoise
+{
+	color: #FFF;
+	font-weight: 500;
+	background-color: #006BD8;
+}
+.indigo
+{
+	color: #FFF;
+	font-weight: 500;
+	background-color: #013388;
+}
+.beige
+{
+	color: #630;
+	font-weight: 500;
+	background-color: #F5F5DC;
+}
+.purple
+{
+	color: #FFF;
+	font-weight: 500;
+	background-color: #8B00FF;
+}
+.blue
+{
+	color: #FFF;
+	font-weight: 500;
+	background-color: blue;
+}
+.yellow
+{
+	color: #000;
+	font-weight: 500;
+	background-color: yellow;
+}
+.turquoise
+{
+	color: #000;
+	font-weight: 500;
+	background-color: #40E0D0;
+}
+.coral
+{
+	color: #000;
+	font-weight: 500;
+	background-color: #FF7F50;
+}
+
+.btn-plus
+{
+	font-family: 'concourse_t6regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.0em;
+	font-weight: bold;
+	font-style: default;
+	font-variant: default;
+	vertical-align: 0%;
+}
+
+.accent { color: #992528; }
+
+.author { margin-left: 6em; margin-right: 2em; margin-bottom: 2em; text-align: right; }
+
+.biblio { }
+
+.breadcrumb {
+	font-family: 'concourse_t4regular', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+	font-family: 'concourse_t4regular', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.links h4 {  
+	font-size: 1em; 
+	font-family: 'equity-text', Georgia, 'Times New Roman', Times, serif; 
+}
+
+.footer {
+	text-align: center;
+	font-family: 'concourse_t3regular', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+}
+#content-footer { 
+	margin-top: 3em;
+	font-family: 'concourse_t4regular', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.content-footer-left {
+  float: left;
+  width:30%;
+  text-align:left;
+}
+
+.nextnav {
+  float: left;
+  width:40%;
+  text-align:center;
+}
+
+.content-footer-right {
+ float: left;
+ width:30%;
+ text-align:right;
+}
+
+.pic-right {
+  float: right;
+  padding: 4px;
+}
+
+.img-top-right {
+  float: right;
+  padding: 4px;
+}
+
+.pub-date {
+	color: #8E9CB4;
+	text-align: right;
+}
+
+.blog-by-and-date
+{
+	margin-top: 0;
+	margin-left: 1em;
+	font-style: italic;
+	font-size: 0.9em;
+	color: #808090;
+	line-height: 1em;
+}
+
+.shopItem {
+	margin-bottom: 3em;
+}
+
+blockquote.pull a:link {
+	text-decoration: none;
+}
+
+.tags {
+  font-style: italic;
+  color: #8E9CB4;
+}
+
+a.thumbnail:link {
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.index { font-size: 0.9em; }
+.index dt { font-weight: normal; }
+.index dd { 
+	font-family: 'concourse_t4regular', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;  
+}
+
+#toc {
+	font-family: 'concourse_t4regular', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+table#toc {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+#toc tr {
+	margin-top: 2.0em;
+	margin-bottom: 2.0em;
+}
+#toc tr td {
+	vertical-align: text-top;
+}
+
+.toc {
+	font-family: 'concourse_t4regular', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+table.toc {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+.toc tr {
+	margin-top: 2.0em;
+	margin-bottom: 2.0em;
+}
+.toc tr td {
+	vertical-align: text-top;
+}
+
+.right {
+	text-align: right;
+}
+
+.years
+{
+	text-align: center;
+	font-size: 2em;
+	letter-spacing: 0.2em;
+	line-height: 1.1em;
+	font-family: 'concourse_t2italic', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	color: #333;
+}
+
+@media (min-width: 768px) {
+	.navbar .navbar-nav {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+
+	.navbar .navbar-collapse {
+		text-align: center;
+	}
+}

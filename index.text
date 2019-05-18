@@ -1,0 +1,38 @@
+Title:  index
+
+Title 2: Intentions
+
+Seq:    1
+
+Body: 
+
+The intent of the Notenik project is to develop concepts, specifications and software to explore the possibilities around a few simple notions:
+
+1. Despite the proliferation of images, videos and audio in our world today, text is by far the most practical way to communicate and record useful ideas and information. 
+
+2. Brevity has value, especially in our age of information overload.
+
+3. A chunk of text can be easily thought of as a Note. 
+
+4. A group of related Notes can be easily thought of as a Collection. 
+
+5. The usefulness of a Note can be readily extended by making a few common sorts of fields available as options that can be easily added to the basic text.
+
+6. A Note should be stored in such a way that it can be readily used and reused in as many different ways as possible. 
+
+7. In particular, it should be easy to convert a Note into HTML, and to convert a Collection of Notes into a website. 
+
+8. A Note is personal: a Note can be shared, but its primary purpose is to embed some meaning for its author.
+
+9. Note-making should not be overly constrained by the ideas of an information architect or a software developer about what makes for a good or complete Note.  
+
+10. A Note is too important and useful a thing to be trapped within a single platform, device, operating system, application, database or online service. For maximum utility and durability, Notes should be able to travel easily between different environments.  
+
+Continue on with the Notenik overview.
+
+- [Notenik Basics](basics.html)
+- [Common Fields](fields.html)
+- [Status Values](status.html)
+- [Files and Folders](files.html)
+- [Links to Notenik Resources](links.html)
+

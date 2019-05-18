@@ -1,0 +1,31 @@
+Title:   basics
+
+Title 2: Notenik Basics
+
+Seq:     2
+
+Tags: 
+
+Link: 
+
+Body: 
+
+Here are the basic Notenik terms and concepts. 
+
+1. Each Note consists of two or more Fields. 
+
+2. The most basic Fields are a Title and a Body. 
+
+3. Notes are typically grouped into Collections.
+
+4. All of the Notes within a Collection should typically have the same or similar sets of Fields. 
+
+5. Each Note in a Collection must have a unique ID (typically a Title). 
+
+6. Each Field consists of a Label (such as 'Title') and a value (such as the actual title of a particular Note).
+
+7. When comparing Field Labels and IDs, case, spacing and punctuation are ignored. As examples, 'Title', 'TITLE' and 'title' will all serve equally well to identify the Title of a Note. As another example, 'Due Date', 'due-date' and 'DUEDATE' would all be considered equivalent. 
+
+8. Although any Field Labels may be used within a Note, certain Field Labels are expected to be commonly used, and so will typically carry with them some special meaning and associated functionality. 
+
+Next: [Common Fields](fields.html)
