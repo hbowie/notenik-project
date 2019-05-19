@@ -1,0 +1,11 @@
+module	action	modifier	object	value
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-general		#PATH#../
+sort	add	Ascending	Seq	
+sort	add	Ascending	Title	
+sort	set		params	
+filter	add	greater than or equal to	Seq	1
+filter	set		params	
+template	open	text		#PATH#notenik-intro-template.md
+template	generate			
