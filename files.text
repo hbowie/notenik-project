@@ -1,11 +1,13 @@
 Title:  files
 
-Title 2: Files and Folders
-
 Seq:    5
 
-Body: 
+Date Added: 2019-05-17 19:07:28
 
+Title 2: Files and Folders
+
+Body:   
+ 
 When Notes are stored locally, each Note is stored as its own text file in the UTF-8 format, and a Collection of Notes is stored as a folder full of text files. 
 
 Any of the following file extensions may be used for the Note files.
@@ -60,7 +62,8 @@ As an example, see the following general template for a Note file.
 
 	The substance of the note
 
-As another example, see the [Note file](files.text) used to generate this web page. In fact, you can see the Note file used to generate each page on this site by removing the '.html' extension and replacing it with '.text'. 
+As another example, see the [Note file](files.text) used to generate this web page.
 
-Next: [Links to Notenik Resources](links.html)
+Next: [Software](software.html)
+
 

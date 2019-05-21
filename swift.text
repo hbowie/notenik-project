@@ -1,21 +1,19 @@
-Title:  java
+Title:  swift
 
-Seq:    9
+Title 2: Notenik Software Written in Swift
 
-Date Added: 2019-05-20 17:35:27
+Seq:    10
 
-Title 2: Notenik Software Written in Java
+Date Added: 2019-05-21 05:09:25 +0000
 
-Body:   
- 
+Body: 
+
 <h2 id="introduction-to-notenik">Introduction to Notenik</h2>
 
 
-Let me introduce you to the Java version of [Notenik](https://notenik.net), a simple but powerful system for taking, collecting and referencing notes.
+Let me introduce you to the macOS version of [Notenik](http://notenik.net) written in Swift. Notenik is a simple but powerful system for taking, collecting and referencing notes.
 
-This introduction describes Notenik for Java [Version 4.80](http://www.powersurgepub.com/products/notenik/versions.html). 
-
-When you're ready, go ahead and download [Notenik macOS application version 4.80](http://www.notenik.net/downloads/Notenik-4.80.dmg).
+This version of Notenik is still in development, and not yet released. 
 
 <h2 id="table-of-contents">Table of Contents</h2>
 
@@ -182,7 +180,7 @@ The Notenik App looks something like this.
 
 ![Notenik Screenshot](http://www.powersurgepub.com/screenshots/notenik.png "Notenik Screenshot")
 
-Notenik software is written in [Java](http://www.java.net) using the [IntelliJ IDEA IDE](https://www.jetbrains.com/idea/). Source can be found on [GitHub](https://github.com/hbowie/notenik2). Executables can be downloaded in either of two forms. The first is packaged as a typical Mac Application, and can only be run on macOS (formerly known as OS X). The second contains a folder full of jar files, and can be run on Windows and on Linux, as well as on macOS. Double-click on the 'notenik2.jar' file to launch the application when using this second form.
+This version of Notenik is written in [Swift](https://swift.org) using the [Xcode IDE](https://developer.apple.com/xcode/. Source can be found on [GitHub](https://github.com/hbowie/notenik-swift). Executables can be downloaded in either of two forms. The first is packaged as a typical Mac Application, and can only be run on macOS (formerly known as OS X). The second contains a folder full of jar files, and can be run on Windows and on Linux, as well as on macOS. Double-click on the 'notenik2.jar' file to launch the application when using this second form.
 
 Although the Notenik application can be run on other platforms, my preference is for the Mac, and so the instructions that follow will primarily focus on the Mac user interface. Users on other platforms should be able to easily adjust, where necessary, for their systems. 
 
@@ -242,7 +240,7 @@ Any of the following file extensions may be used:
 
 The two preferred extensions are '.txt' (short for text) and '.md' (short for markdown -- more on this later). 
 
-Use the Text Edit Note command on the Note menu to open the currently displayed Note in your default text editor. 
+Use the Text Edit Note command under the Note menu to open the currently displayed Note in your default text editor. 
 
 <h2 id="notes-are-collected-into-folders">Notes are Collected into Folders</h2>
 
@@ -251,20 +249,18 @@ Each Note is part of a Collection, and each Collection is stored in its own fold
 
 You can organize your Notes into as many Collections as you would like, and store each Collection wherever you would like. 
 
-The Notenik application can only open one Collection at a time, but you can easily switch from one to another using the Open Recent command on the File menu. If you want to quickly go back and forth between two Collections, use the Jump to Last Collection command, or its keyboard shortcut. 
+The Notenik application can open multiple Collections at a time, each in its own window. The Open Recent command under the File menu provides easy access to recently opened Collections. 
 
-If you decide to move a Collection to a different location on disk, there's a command for that under the File menu as well. 
+You may use a command under the File menu to designate the current Collection as your Essential Collection. Once identified, this will be the first Collection opened each time the application launches. 
 
-You can adjust the number of Recent Files to retain using the File Tab in the Notenik preferences. This is also the place where you can specify whether you would like Notenik to open the most recently used Collection used when it starts up, or always open one specific Collection. All of Notenik's application preferences are available from the Options menu. 
-
-You can also use the File Tab in the Notenik preferences to select a Collection you'd like to identify as your Essential Collection -- whichever Collection you wish to designate as primary, or most frequently used. You can then use a special command on the File menu -- or its keyboard shortcut -- to quickly open that Essential Collection. 
+The Save As command under the File menu allows you to save an entire Collection in a new location, with the option to either keep the current location (effectively making a copy) or to delete it (effectively moving the Collection to a new location). 
 
 You might want to use the New command on the File menu to create your first Collection now, if you don't already have one created. 
 
 <h2 id="add-delete-and-update-your-notes">Add, Delete and Update Your Notes</h2>
 
 
-The Display tab shows you what your Note looks like. Your note is formatted as a web page, and displayed within Notenik using a built-in web browser. If you click on a hyperlink within the display, then the linked page will replace your Note. If you wish to get back to your Note, then click on the Reload button beneath the display. If your Note has a Link value, then click on the Launch Link button to see the linked page within your default web browser, instead of Notenik's internal browser. 
+The Display tab shows you what your Note looks like. Your note is formatted as a web page, and displayed within Notenik using a built-in web browser. If you click on a hyperlink within the display, then the linked page will replace your Note. If you wish to get back to your Note, then click on the Refresh button in the Toolbar. If your Note has a Link value, then click on the Open Link button in the Toolbar to see the linked page within your default web browser, instead of Notenik's internal browser. 
 
 The Edit tab lets you make changes to the Field Values of a Note. 
 
@@ -274,7 +270,7 @@ Use the '-' (minus) sign on the Toolbar to delete the currently selected Note.
 
 Click on the OK button on the Toolbar, or click on the Display tab, to complete and save your latest entries on the Edit tab. 
 
-The Note Menu also has equivalent commands, with keyboard shortcuts, to add a New Note, Delete a Note, or to Undo Edits. Use the Undo Edits item before saving your entries, to undo any changes you've made on the Edit tab. 
+The Note Menu also has equivalent commands, with keyboard shortcuts, to add a New Note or Delete a Note. 
 
 <h2 id="view-your-notes-as-a-list">View Your Notes as a List</h2>
 
@@ -284,20 +280,17 @@ The first half of the Notenik display shows all the Notes in your current Collec
 You can navigate through this list using some of the buttons on the Toolbar:
 
 <ul>
-<li>&lt;&lt; Takes you to the first Note.</li>
-<li>&gt;&gt; Takes you to the last note. </li>
+<li>The Home button takes you to the first Note.</li>
 <li>&lt;&nbsp; Takes you to the prior note.</li>
 <li>&gt;&nbsp; Takes you to the next note. </li>
 </ul>
 
 Some of the same navigational commands are available under the Note menu, with handy keyboard shortcuts noted on the right. There you will also find a command to scroll the list so as to bring the currently selected Note into view at the top of the displayed Notes. 
 
-Feel free to use the Notenik General Preferences to change the Notenik display from a horizontal split to a vertical split, or vice-versa. Sometimes it's more useful to have the list of Notes on the left, while at other times it may be more useful to have it appear at the top of the window. 
-
 <h2 id="sync-your-notes">Sync Your Notes</h2>
 
 
-Since a Collection of Notes lives on your local storage as a folder full of text files, it can be easily synced to the cloud and/or to other devices via a service such as [Dropbox](http://www.dropbox.com) or [iCloud](http://www.apple.com/icloud/icloud-drive/). 
+Since a Collection of Notes lives on your local storage as a folder full of text files, it can be easily synced to the cloud and/or to other devices via a service such as [Dropbox](http://www.dropbox.com) or [iCloud](http://www.apple.com/icloud/icloud-drive/). Simply store your Collection somewhere in your Dropbox folder, or in your iCloud Drive folder. 
 
 <h2 id="format-the-body-of-a-note-using-markdown">Format the Body of a Note using Markdown</h2>
 
@@ -306,9 +299,7 @@ Since a Collection of Notes lives on your local storage as a folder full of text
 
 When you view a Note on the Display tab, you will see the Body Field Value converted to HTML using a Markdown parser. If you haven't used any special Markdown formatting, then the text will simply appear as you entered it. 
 
-In fact, there is an option under the Note menu to generate HTML from the Body of a Note, and to either copy it to your system clipboard, in preparation for pasting the HTML somewhere else, or to store it in a file. You can even specify a preferred HTML folder for each of your Collections, in your Collection Preferences.
-
-Notenik uses the [Flexmark](https://github.com/vsch/flexmark-java) parser to convert from Markdown to HTML, and includes the Typographic, Tables and Definitions extensions. 
+Notenik uses the [Down](https://github.com/iwasrobbed/Down) parser to convert from Markdown to HTML. 
 
 <h2 id="add-other-fields-to-your-notes">Add Other Fields to Your Notes</h2>
 
@@ -361,11 +352,7 @@ There's also an option under the File menu to Reload the current Collection with
 
 A Link Field within Notenik is intended to hold a URL: a hyperlink to a location on the Web (or to a local file, if you'd prefer to use it that way).
 
-You can easily Launch a link from within Notenik, either by using the dropdown to the left of the Link value, or by clicking on the Launch button in the Toolbar. 
-
-The Link Label dropdown also provides a couple of other options. Use the Tweak option to "tweak" your URL in some potentially useful ways; use the Disk File option to select a local file on your computer, to build a Link pointing to that file; use the Folder option to select a local folder. 
-
-The Tweak option may also be invoked from the Tools menu. 
+You can easily Launch a link from within Notenik by clicking on the Open Link button in the Toolbar. 
 
 Adding a Link to a Note doesn't necessarily reduce the Note to a simple Bookmark, but this is certainly one way to use a Collection of Notes. 
 
@@ -756,7 +743,7 @@ Following are the supported formats.
 		Minimum System Version:
 
 		Body:   
- 
+
 		The body of the note
 
 	After the import, you can use the Tags field to organize the applications in any way you like, and clicking on the Link field will launch the selected application. 
@@ -909,5 +896,4 @@ Notenik also incorporates the following open-source libraries.
 
 
 If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at [support@powersurgepub.com](mailto:support@powersurgepub.com) and I'll try to get back to you as quickly as I can. 
-
 

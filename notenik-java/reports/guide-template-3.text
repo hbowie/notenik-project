@@ -1,0 +1,17 @@
+<?nextrec?>
+<?output "../../java.text"?>
+Title:   java
+
+Title 2: Notenik Software Written in Java
+
+Seq:     8
+
+Tags: 
+
+Link: 
+
+Body: 
+
+<?include "guides/=$filename$=" ?>
+
+<?loop?>

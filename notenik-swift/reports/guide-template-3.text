@@ -1,0 +1,17 @@
+<?nextrec?>
+<?output "../../swift.text"?>
+Title:   swift
+
+Title 2: Notenik Software Written in Swift
+
+Seq:     10
+
+Tags: 
+
+Link: 
+
+Body: 
+
+<?include "guides/=$filename$=" ?>
+
+<?loop?>

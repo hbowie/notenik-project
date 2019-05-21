@@ -1,0 +1,4 @@
+<?nextrec?>
+<?output "guides/=$filenamewoext$=.mdtoc"?>
+<?include "guides/=$filename$=" 2-3 ?>
+<?loop?>

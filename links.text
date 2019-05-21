@@ -1,6 +1,6 @@
 Title:  links
 
-Seq:    6
+Seq:    8
 
 Date Added: 2019-05-18 02:43:01 +0000
 
@@ -16,13 +16,16 @@ Following are complete links to all assets related to the Notenik Project.
 	* [Common Fields](fields.html)
 	* [Status Value Defaults](status.html)
 	* [Files and Folders](files.html)
+	* [Software](software.html)
+	* [Rights](rights.html)
 	* [Links to Notenik Resources](links.html) (this page)
 2. Specs
 	* [Notenik Architecture - OmniOutliner doc](specs/notenik-architecture.ooutline)
 	* [Notenik Architecture - Dynamic HTML](specs/notenik-architecture-html/index.html)
 3. [User Guide for Java Implementation](java.html)
+4. [User Guide for Swift macOS Implementation](swift.html)
 4. GitHub Repositories
 	* [Project Docs](https://github.com/hbowie/notenik-project) (this site)
 	* [JavaFX Implementation](https://github.com/hbowie/notenik2)
-
+	* [Swift Implementation](https://github.com/hbowie/notenik-swift)
 
