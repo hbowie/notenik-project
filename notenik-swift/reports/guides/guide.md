@@ -100,6 +100,10 @@ Click on the OK button on the Toolbar, or click on the Display tab, to complete 
 
 The Note Menu also has equivalent commands, with keyboard shortcuts, to add a New Note or Delete a Note. 
 
+You can alter the typeface and font size used on the Display tab by selecting the Display Appearance item under the Format menu, or by clicking on the Display Fonts button on the toolbar. You may then pick a typeface and font from the displayed dropdown menus or, if you'd like, enter the CSS you'd like to be used directly, bypassing the limits of these menus. 
+
+You may also alter the font size used on the Edit tab through use of the commands available to you under the View menu. 
+
 ## View Your Notes as a List
 
 The first half of the Notenik display shows all the Notes in your current Collection as a simple list, initially sorted by Title.

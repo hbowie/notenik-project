@@ -1,19 +1,16 @@
 Title:  software
 
+Title 2: Notenik Software
+
 Seq:    6
 
 Date Added: 2019-05-19 09:47:26
 
-Title 2: Notenik Software
+Body:   Notenik was originally written in Java, using Swing for the User Interface. 
 
-Body:   
- 
-Notenik was originally written in Java, using Swing. 
+It was later rewritten using JavaFX for the UI. This is the current Java version of Notenik. It's very full-featured, but a bit clunky on macOS, due to Apple's decision to provide very minimal support for Java on their platforms. This version is currently available in executable form as a signed macOS application. 
 
-It was later rewritten using JavaFX. This is the current Java version of Notenik. It's very full-featured, but a bit clunky on macOS, due to Apple's decision to provide very minimal support for Java on their platforms. This version is currently available in executable form as a signed macOS application. 
-
-A rewrite in Swift is currently in progress. 
+A rewrite in Swift is currently in progress, and Version 1 of this new Notenik application will be available in the Mac App Store very shortly. 
 
 Next: [Rights](rights.html)
-
 

@@ -1,14 +1,12 @@
 Title:  index
 
+Title 2: Intentions
+
 Seq:    1
 
 Date Added: 2019-05-17 19:06:55
 
-Title 2: Intentions
-
-Body:   
- 
-The intent of the Notenik project is to develop concepts, specifications and software to explore the possibilities around a few simple notions:
+Body:   The intent of the Notenik project is to develop concepts, specifications and software to explore the possibilities around a few simple notions:
 
 1. Despite the proliferation of images, videos and audio in our world today, text is by far the most practical way to communicate and record useful ideas and information. 
 
@@ -38,6 +36,6 @@ If you find that these intentions resonate with you, then continue on to learn m
 - [Files and Folders](files.html)
 - [Software](software.html)
 - [Rights](rights.html)
+- [Privacy Policy](privacy.html)
 - [Links](links.html)
-
 
