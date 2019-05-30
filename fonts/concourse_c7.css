@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'concourse_caps';
+    src: url('concourse_c7_regular-webfont.eot');
+    src: url('concourse_c7_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('concourse_c7_regular-webfont.woff') format('woff'),
+         url('concourse_c7_regular-webfont.ttf') format('truetype'),
+         url('concourse_c7_regular-webfont.svg#concourse_c7regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

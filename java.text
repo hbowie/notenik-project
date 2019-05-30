@@ -1,14 +1,12 @@
 Title:  java
 
-Seq:    9
+Title 2: Notenik Software Written in Java
+
+Seq:    10
 
 Date Added: 2019-05-20 17:35:27
 
-Title 2: Notenik Software Written in Java
-
-Body:   
- 
-<h2 id="introduction-to-notenik">Introduction to Notenik</h2>
+Body:   <h2 id="introduction-to-notenik">Introduction to Notenik</h2>
 
 
 Let me introduce you to the Java version of [Notenik](https://notenik.net), a simple but powerful system for taking, collecting and referencing notes.
@@ -756,7 +754,7 @@ Following are the supported formats.
 		Minimum System Version:
 
 		Body:   
- 
+
 		The body of the note
 
 	After the import, you can use the Tags field to organize the applications in any way you like, and clicking on the Link field will launch the selected application. 
@@ -909,5 +907,4 @@ Notenik also incorporates the following open-source libraries.
 
 
 If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at [support@powersurgepub.com](mailto:support@powersurgepub.com) and I'll try to get back to you as quickly as I can. 
-
 

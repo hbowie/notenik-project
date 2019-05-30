@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'concourse-text';
+    src: url('concourse_t8_italic-webfont.eot');
+    src: url('concourse_t8_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('concourse_t8_italic-webfont.woff') format('woff'),
+         url('concourse_t8_italic-webfont.ttf') format('truetype'),
+         url('concourse_t8_italic-webfont.svg#concourse_t8italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'concourse-text';
+    src: url('concourse_t8_regular-webfont.eot');
+    src: url('concourse_t8_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('concourse_t8_regular-webfont.woff') format('woff'),
+         url('concourse_t8_regular-webfont.ttf') format('truetype'),
+         url('concourse_t8_regular-webfont.svg#concourse_t8regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

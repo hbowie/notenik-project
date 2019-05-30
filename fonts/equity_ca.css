@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'equity-caps';
+    src: url('equity_caps_a_bold-webfont.eot');
+    src: url('equity_caps_a_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('equity_caps_a_bold-webfont.woff') format('woff'),
+         url('equity_caps_a_bold-webfont.ttf') format('truetype'),
+         url('equity_caps_a_bold-webfont.svg#equity_caps_abold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'equity-caps';
+    src: url('equity_caps_a_regular-webfont.eot');
+    src: url('equity_caps_a_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('equity_caps_a_regular-webfont.woff') format('woff'),
+         url('equity_caps_a_regular-webfont.ttf') format('truetype'),
+         url('equity_caps_a_regular-webfont.svg#equity_caps_aregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

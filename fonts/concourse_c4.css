@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'concourse-caps';
+    src: url('concourse_c4_bold-webfont.eot');
+    src: url('concourse_c4_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('concourse_c4_bold-webfont.woff') format('woff'),
+         url('concourse_c4_bold-webfont.ttf') format('truetype'),
+         url('concourse_c4_bold-webfont.svg#concourse_c4bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'concourse-caps';
+    src: url('concourse_c4_regular-webfont.eot');
+    src: url('concourse_c4_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('concourse_c4_regular-webfont.woff') format('woff'),
+         url('concourse_c4_regular-webfont.ttf') format('truetype'),
+         url('concourse_c4_regular-webfont.svg#concourse_c4regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
