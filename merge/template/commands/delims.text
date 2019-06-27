@@ -1,0 +1,13 @@
+Title:  delims
+
+Seq:    1
+
+Body:   If used at all, this command should be the first command in the template file. This command overrides the standard delimiters used to recognize the beginnings and ends of commands and variables, for the remainder of the current template file. The command can have one to five operands. Each operand will become a new delimiter. They should be specified in the following order.
+
+* beginning of a command (normally paired less than signs)
+* the end of a command (normally paired greater than signs)
+* the beginning of a variable (normally paired less than signs)
+* the end of a variable (normally paired greater than signs)
+* the beginning of variable modifiers (normally a single ampersand)
+
+Note that, in addition to specification of the delims command, the first characters found on the first line of the template file can trigger the Notenik template processor to use an alternate set of delimiters. 

@@ -1,0 +1,17 @@
+<?output "../../Variable Modifiers Detail.text"?>
+Title:  Variable Modifiers Detail
+
+Seq:    9
+
+Type:   md
+
+Code:
+
+Body:
+
+<?nextrec?>
+#### =$title$= "=$seq$="
+
+=$body$=
+
+<?loop?>

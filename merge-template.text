@@ -1,0 +1,95 @@
+Title:  merge-template
+
+Seq:    99
+
+Date Added: 2019-05-13 07:03:03
+
+Title 2: Merge Template File Spec
+
+Body:
+
+This specification describes the contents of a template file, used for producing formatted output from a Collection of Notes.
+
+Notenik will look for two sorts of special strings embedded within a template file: variables and commands. These are identified by special delimiters.
+
+## Delimiters
+
+Notenik will recognize either of two sets of command and variable delimiters automatically. The choice of delimiters will be triggered by the first command-beginning delimiters encountered. The new delimiters are generally recommended, since they are more likely to be treated kindly by various HTML editors when creating your template files.
+
+<table>
+<tr><th>Meaning</th><th>Original Delimiters</th><th>New Delimiters</th></tr>
+<tr><td>Start of Command</td><td>&lt;&lt;</td><td>&lt;?</td></tr>
+<tr><td>End of Command</td><td>&gt;&gt;</td><td>?&gt;</td></tr>
+<tr><td>Start of Variable</td><td>&lt;&lt;</td><td>
+<tr><td>End of Variable</td><td>&gt;&gt;</td><td>$=</td></tr>
+<tr><td>Start of Variable Modifiers</td><td>&amp;</td><td>&amp;</td></tr>
+</table>
+
+## Variables
+
+Variables will be replaced by values taken from the corresponding fields of the current Note, or from an internal table of global variables. Variables must be enclosed in the chosen delimiters. Each variable name must match a field label from the data source, or a global name specified in a SET command. The comparison ignores case (upper or lower), embedded spaces and embedded punctuation when looking for a matching field label. So a field label of "First Name" will match with a variable of "firstname", for example.
+
+A variable, unlike a command, can appear anywhere within the template file, and need not be isolated on a line by itself. More than one variable can appear on the same line. Variables can be used within template commands, as well as other places within the template file.
+
+The following special variables are predefined and available for substitution, no matter what data source is being used.
+
+<dl>
+<dt>datafilename</dt>
+<dd>The name of the data source being used.</dd>
+<dt>dataparent</dt>
+<dd>The path to the enclosing folder for the current data file. This can be used as part of an output command to specify an output file in the same folder as the data file.</dd>
+<dt>nobr</dt>
+<dd>Placing the variable 'nobr' anywhere on a line will cause that line to be written out without a trailing line break. The nobr variable itself will be removed from the line, without being replaced.</dd>
+<dt>parentfolder</dt>
+<dd>The lowest-level folder immediately enclosing the data file.</dd>
+<dt>relative</dt>
+<dd>If a Web Root directory has been specified, then this variable will be replaced by the relative path from the output file being created back to the root directory.</dd>
+<dt>templatefilename</dt>
+<dd>The name of the template file (not including the path to the template file).</dd>
+<dt>templateparent</dt>
+<dd>The entire parent path to the template file, excluding the file name itself.</dd>
+<dt>today</dt>
+<dd>The current date, at the time that template output is being generated.</dd>
+</dl>
+
+## Variable Modifiers
+
+A variable can be optionally followed (before the ending variable delimiters) by a modifier indicator and one or more modifiers. The default modifier character is the ampersand (&amp;).
+
+The following list summarizes the primary use of various letters and characters as variable modifiers.
+
+<table>
+<tr><td>'</td><td>>Email Apostrophes</td></tr>
+<tr><td>,</td><td>>List Punctuation</td></tr>
+<tr><td>1</td><td>>Length Modifier</td></tr>
+<tr><td>B</td><td>>Base File Name</td></tr>
+<tr><td>C</td><td>>Word Demarcation</td></tr>
+<tr><td>F</td><td>>File Name</td></tr>
+<tr><td>G</td><td>>Linked Tags</td></tr>
+<tr><td>H</td><td>>HTML</td></tr>
+<tr><td>I</td><td>>Initial Case</td></tr>
+<tr><td>J</td><td>>Link</td></tr>
+<tr><td>K</td><td>>Hour of Day</td></tr>
+<tr><td>L</td><td>>Lowercase Modifier</td></tr>
+<tr><td>M</td><td>>Month or Minutes</td></tr>
+<tr><td>N</td><td>>No Breaks</td></tr>
+<tr><td>O</td><td>>Markdown to HTML</td></tr>
+<tr><td>P</td><td>>Punctuation Purification</td></tr>
+<tr><td>R</td><td>>Keep characters on the right</td></tr>
+<tr><td>S</td><td>>Summarize</td></tr>
+<tr><td>U</td><td>>Uppercase Modifier</td></tr>
+<tr><td>V</td><td>>Variance</td></tr>
+<tr><td>X</td><td>>XML</td></tr>
+<tr><td>_</td><td>>Underscore</td></tr>
+<tr><td>a</td><td>>AM/PM</td></tr>
+<tr><td>y</td><td>>Year</td></tr>
+<tr><td>dd</td><td>>Day of Month</td></tr>
+<tr><td>EEE</td><td>>Day of Week, Abbreviated</td></tr>
+<tr><td>EEEE</td><td>>Day of Week</td></tr>
+</table>
+
+
+
+
+
+

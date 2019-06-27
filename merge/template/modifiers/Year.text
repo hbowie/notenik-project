@@ -1,0 +1,8 @@
+Title:  Year
+
+Seq:    y
+
+Body:   Used within a formatting string, with the following effects:
+
+- yy - Two-digit year
+- yyyy - Four-digit year

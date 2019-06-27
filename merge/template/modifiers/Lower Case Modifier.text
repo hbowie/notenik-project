@@ -1,0 +1,5 @@
+Title:  Lowercase Modifier
+
+Seq:    L
+
+Body:   Converts the letters of the variable to lowercase. If immediately followed by 'I', then only the initial letter of the variable will be changed to lowercase. 

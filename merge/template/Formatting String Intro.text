@@ -1,0 +1,15 @@
+Title:  Formatting String Intro
+
+Seq:    10
+
+Type:   md
+
+Body: 
+
+### Formatting String
+
+A string of characters indicating how the variable is to be formatted. The formatting string, if specified, should follow any other variable modifiers. Any character other than the modifiers listed above will cause the remainder of the variable modifiers to be treated as a formatting string. Currently, a formatting string is valid only for dates -- either for the special variable **today**, or for any variable date in "mm/dd/yy" format.
+
+A date formatting string follows the normal rules for Java date formatting. One or more occurrences of an upper-case "M" indicates a month, a lower-case "y" is used for a year, and a lower-case "d" is used for the day of the month. An upper-case "E" can be used for the day of the week. Generally, the number of occurrences of each letter you specify will be used to indicate the width of the field you want ("yyyy" for a 4-digit year, for example). Specifying more than two occurrences of "M" indicates you want the month represented by letters rather than numbers, with 4 or more occurrences indicating you want the month spelled out, and 3 occurrences indicating you want a three-letter abbreviation.
+
+See below for full definition of allowable characters and their meanings.

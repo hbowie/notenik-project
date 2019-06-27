@@ -1,0 +1,17 @@
+Title:  Delims Table
+
+Seq:    3
+
+Type:   html
+
+Code: 
+
+<table>
+<tr><th>Meaning</th><th>Original Delimiters</th><th>New Delimiters</th></tr>
+<tr><td>Start of Command</td><td>&lt;&lt;</td><td>&lt;?</td></tr>
+<tr><td>End of Command</td><td>&gt;&gt;</td><td>?&gt;</td></tr>
+<tr><td>Start of Variable</td><td>&lt;&lt;</td><td>=$</td></tr>
+<tr><td>End of Variable</td><td>&gt;&gt;</td><td>$=</td></tr>
+<tr><td>Start of Variable Modifiers</td><td>&amp;</td><td>&amp;</td></tr>
+</table>
+

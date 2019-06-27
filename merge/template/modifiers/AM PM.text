@@ -1,0 +1,5 @@
+Title:  AM/PM
+
+Seq:    a
+
+Body:   Represents an AM/PM indicator within a date formatting string. 

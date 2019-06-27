@@ -1,0 +1,150 @@
+Title:  Variable Modifiers Detail
+
+Seq:    9
+
+Type:   md
+
+Code:
+
+Body:
+
+#### Email Apostrophes "'"
+
+Placing a single apostrophe as part of the variable modifiers string will cause any HTML entities representing an apostrophe to be converted back to a normal ASCII/UTF apostrophe character: '. This can be useful for generating HTML to use as e-mail content, since e-mail parsers seem to sometimes drop the HTML entities commonly used for apostrophes.
+
+#### List Punctuation ","
+
+Any punctuation character, other than ones specificaly called out in this list for other purposes, will be interpreted as a separator that will be placed before the current variable, if the variable is non-blank, and if the preceding variable was also non-blank and also marked by the same variable modifier. A space will be added after the separator, and before the current variable, if the punctuation is not a forwards or backwards slash ("/" or "\\"). This is an easy way to list several variables on a single line, separating non-blank ones from others with commas (or other punctuation).
+
+#### Length Modifier "1"
+
+One or more consecutive digits within the modifiers will be interpreted as the length to which the variable should be truncated or padded. If the length modifier is shorter than the variable length, then by default characters will be truncated on the right (and preserved on the left) of the variable to bring it to the specified length. If it is desired to keep characters on the right, then also use the "R" modifier and place it before the length modifier digits. If the length modifier is longer than the initial variable length, then the variable will be padded with zeroes on the left to bring it to the specified length.
+
+#### Base File Name "B"
+
+The letter "B" will cause the file extension, including the period, to be removed from a file name. This can be used, for example, to generate an output file name with the same name as the input data file (using the variable name "datafilename"), but with a different extension.
+
+#### Word Demarcation "C"
+
+The letter "C" indicates that the variable consists of a series of words, and you wish to change or standardize the way in which the words are distinguished from one another.
+When parsing the variable, the beginning of a new word will be indicated by either whitespace or punctuation between words, or by a transition from lowercase to uppercase (as in CamelCase usage). In other words, "two words", "TWO_WORDS" or "twoWords" would all be parsed into two separate words. 
+
+What you want done with the word demarcation is defined by the characters following the "C" in the modifiers string. The letter "u" indicates a conversion to uppercase, the letter "l" indicates a conversion to lowercase, and the letter "a" indicates that the character should be left as-is. Anything other than these three characters (including a space) will be interpreted as a separator to be placed between the words. 
+
+Note that the u/l/a indicator can be specified three different times. 
+
+1. The first appearance will control the case of the first letter in the entire variable; 
+2. The second appearance will control the case of the first letter of each word;
+3. The third appearance will control the appearance of all other letters. 
+
+For example, if the template file contained the following:
+
+	=$name&cuul$=
+
+And the name variable was equal to:
+
+	HERB BOWIE
+
+Then the resulting name in the output text file would be:
+
+	Herb Bowie
+
+
+#### File Name "F"
+
+Converts a string to a conventional, universal file name, changing spaces to dashes, removing any odd characters, making all letters lower-case, and converting white space to hyphens.
+
+#### Linked Tags "G"
+
+Each tag found in the variable will be made into a link, linking to '=$relative$=yypathyy/xxtagxx.html', where 'xxtagxx' is the tag, and 'yypathyy' is the string of characters following the 'g'.
+
+#### HTML "H"
+
+The letter "H" will cause selected special characters to be translated to their equivalent HTML entities.
+
+#### Initial Case "I"
+
+When the letter 'I' immediately follows an 'L' or a 'U', then the case transformation (lower or upper) will only be applied to the initial letter of the variable.
+
+#### Link "J"
+
+Convert a URL to an HTML anchor tag with that URL as the href value.
+
+#### Hour of Day "K"
+
+Two lowercase 'k's will represent a 2-digit hour of the day on a 12-hour clock, within a date formatting string.
+Two uppercase 'K's will represente a 2-digit hour on a 24-hour clock. 
+
+
+#### Lowercase Modifier "L"
+
+Converts the letters of the variable to lowercase. If immediately followed by 'I', then only the initial letter of the variable will be changed to lowercase.
+
+#### Month or Minutes "M"
+
+Used in a date formatting string, with the following effects:
+- MM - Two-digit month
+- MMM - Three-letter month abbreviation
+- MMMM - Full month name
+- mm - Two-digit minute within the hour
+
+
+#### No Breaks "N"
+
+Remove HTML break (br) tags from the string.
+
+#### Markdown to HTML "O"
+
+The letter "O" will cause the field to be treated as Markdown, and converted to HTML.
+
+#### Punctuation Purification "P"
+
+Remove awkward punctuation characters.
+
+#### Keep characters on the right "R"
+
+The letter "R", in combination with a length modifier, will cause the variable to be truncated to the given length, truncating characters on the left and keeping characters on the right.
+
+#### Summarize "S"
+
+The letter "S" will pull the first few sentences from the field, within the first 250 characters.
+
+#### Uppercase Modifier "U"
+
+Converts the letters of the variable to uppercase (capital letters). If immediately followed by 'I', then only the initial letter of the variable will be changed to uppercase.
+
+#### Variance "V"
+
+The first character following the 'v' will be used as a delimiter. Everything between the delimiters will be used as a from field. Everything following the second delimiter will be used as a to field. All output lines will be scanned for occurrences of the from field, and will be replaced with the to field.
+
+#### XML "X"
+
+The letter "X" will cause selected special characters to be translated to their equivalent XML entities. This is recommended, for example, when publishing an RSS (Really Simple Syndication) feed.
+
+#### Underscore "_"
+
+An underscore character ("_") will cause all spaces in the variable to be replaced by underscores. This can be useful when creating a file name, for example. Leading and trailing spaces will be trimmed without replacement.
+
+#### AM/PM "a"
+
+Represents an AM/PM indicator within a date formatting string.
+
+#### Year "y"
+
+Used within a formatting string, with the following effects:
+- yy - Two-digit year
+- yyyy - Four-digit year
+
+
+#### Day of Month "dd"
+
+Represents a two-digit day of month within a date formatting string.
+
+#### Day of Week, Abbreviated "EEE"
+
+Represents an abbreviated, 3-character, day of week within a date formatting string.
+
+#### Day of Week "EEEE"
+
+Represents a full day of week within a date formatting string.
+

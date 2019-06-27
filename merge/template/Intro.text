@@ -1,0 +1,11 @@
+Title:  Intro
+
+Seq:    1
+
+Type:   md
+
+Body: 
+
+This specification describes the contents of a template file, used for producing formatted output from a Collection of Notes.
+
+Notenik will look for two sorts of special strings embedded within a template file: variables and commands. These are identified by special delimiters.

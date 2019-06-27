@@ -1,0 +1,25 @@
+Title:  Commands in Brief
+
+Seq:    14
+
+Type:   html
+
+Code: 
+
+<div class="pnobr">
+<p>&lt;?delims new delimiters?&gt;</p>
+<p>&lt;?output "filename.ext"?&gt;</p>
+<p>&lt;?set global = 0?&gt;</p>
+<p>&lt;?nextrec?&gt;</p>
+<p>&lt;?include "filename.ext" ?&gt;</p>
+<p>&lt;?ifchange ?&gt;</p>
+<p>&lt;?if ?&gt;</p>
+<p>&lt;?definegroup group-number ?&gt;</p>
+<p>&lt;?ifendgroup group-number?&gt;</p>
+<p>&lt;?ifendlist group-number?&gt;</p>
+<p>&lt;?ifnewlist group-number?&gt;</p>
+<p>&lt;?ifnewgroup group-number?&gt;</p>
+<p>&lt;?else?&gt;</p>
+<p>&lt;?endif?&gt;</p>
+<p>&lt;?loop?&gt;</p>
+</div>

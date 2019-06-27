@@ -1,0 +1,3 @@
+Title:  nobr
+
+Body:   Placing the variable 'nobr' anywhere on a line will cause that line to be written out without a trailing line break. The nobr variable itself will be removed from the line, without being replaced. 

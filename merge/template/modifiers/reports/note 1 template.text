@@ -1,0 +1,17 @@
+<?output "../../Variable Modifiers Summary Table.text"?>
+Title:  Variable Modifiers Summary Table
+
+Seq:    7
+
+Type:   html
+
+Code:
+
+<table>
+<?nextrec?>
+<tr><td>=$seq$=</td><td>=$title$=</td></tr>
+<?loop?>
+</table>
+
+Body:
+

@@ -1,0 +1,5 @@
+Title:  Day of Week, Abbreviated
+
+Seq:    EEE
+
+Body:   Represents an abbreviated, 3-character, day of week within a date formatting string. 

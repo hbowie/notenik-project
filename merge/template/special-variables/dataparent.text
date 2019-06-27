@@ -1,0 +1,3 @@
+Title:  dataparent
+
+Body:   The path to the enclosing folder for the current data file. This can be used as part of an output command to specify an output file in the same folder as the data file.

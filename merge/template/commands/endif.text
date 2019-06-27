@@ -1,0 +1,7 @@
+Title:  endif
+
+Seq:    7
+
+Body: 
+
+The endif command terminates the scope of its corresponding if, ifchange, ifendgroup or ifnewgroup command.

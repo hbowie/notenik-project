@@ -1,0 +1,5 @@
+Title:  Day of Month
+
+Seq:    dd
+
+Body:   Represents a two-digit day of month within a date formatting string. 

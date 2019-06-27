@@ -1,0 +1,5 @@
+Title:  Keep characters on the right
+
+Seq:    R
+
+Body:   The letter "R", in combination with a length modifier, will cause the variable to be truncated to the given length, truncating characters on the left and keeping characters on the right.

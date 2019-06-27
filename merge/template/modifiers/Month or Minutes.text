@@ -1,0 +1,10 @@
+Title:  Month or Minutes
+
+Seq:    M
+
+Body:   Used in a date formatting string, with the following effects:
+
+- MM - Two-digit month
+- MMM - Three-letter month abbreviation
+- MMMM - Full month name
+- mm - Two-digit minute within the hour

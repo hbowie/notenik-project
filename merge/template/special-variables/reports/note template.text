@@ -1,0 +1,19 @@
+<?output "../../Special Variables.text"?>
+Title:  Special Variables
+
+Seq:    5
+
+Type:   html
+
+Code:
+
+<dl>
+<?nextrec?>
+<dt>=$title$=</dt>
+<dd>=$body$=</dd>
+<?loop?>
+</dl>
+
+Body:
+
+

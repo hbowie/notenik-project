@@ -1,0 +1,23 @@
+Title:  Formatting String Outro
+
+Seq:    12
+
+Type:   md
+
+Body: 
+
+The count of pattern letters determine the format.
+
+<strong>(Text)</strong>: 4 or more pattern letters--use full form,
+&lt; 4--use short or abbreviated form if one exists.
+
+<strong>(Number)</strong>: the minimum number of digits. Shorter
+numbers are zero-padded to this amount. Year is handled specially;
+that is, if the count of 'y' is 2, the Year will be truncated to 2 digits.
+
+<strong>(Text &amp; Number)</strong>: 3 or over, use text, otherwise use number.
+
+Any characters in the pattern that are not in the ranges of ['a'..'z']
+and ['A'..'Z'] will be treated as quoted text. For instance, characters
+like ':', '.', ' ', '#' and '@' will appear in the resulting time text
+even they are not embraced within single quotes.

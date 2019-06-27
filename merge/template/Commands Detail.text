@@ -1,0 +1,97 @@
+Title:  Commands Detail
+
+Seq:    15
+
+Type:   md
+
+Code:
+
+Body:
+
+### delims Command
+
+If used at all, this command should be the first command in the template file. This command overrides the standard delimiters used to recognize the beginnings and ends of commands and variables, for the remainder of the current template file. The command can have one to five operands. Each operand will become a new delimiter. They should be specified in the following order.
+* beginning of a command (normally paired less than signs)
+* the end of a command (normally paired greater than signs)
+* the beginning of a variable (normally paired less than signs)
+* the end of a variable (normally paired greater than signs)
+* the beginning of variable modifiers (normally a single ampersand)
+
+Note that, in addition to specification of the delims command, the first characters found on the first line of the template file can trigger the Notenik template processor to use an alternate set of delimiters. 
+
+
+### set Command
+
+This command can define a global variable and set its value. This command would normally have three operands: the name of the global variable, an operator, and a value.
+- Global variable name. This should not be the same as the name of any variable name specified by the input data file. The global variable name, when used as the object of a set command, should not be enclosed within the normal variable delimiters, since this would cause the variable name to be replaced by its current value.
+
+- Operator. Any of the following operators can be used.
+
+	+ =  — This will cause the global variable to be set equal to the following value.
+
+	+ += or simply + — This will cause the value to be added to the current value of the global variable.
+
+	+ ++ — This can be used to add a value of 1 to the current value of the global variable, without having to specify the following value of 1. (In this case, the set command only takes two operands.)
+
+	+ -= or simply - — This will cause the value to be subtracted from the current value of the global variable.
+
+	+ — Two minus signs in a row can be used to subtract a value of 1 from the current value of the global variable, without having to specify the following value of 1. (In this case, the set command only requires two operands.)
+
+- Value. This can be a literal or a variable (in which case it should be surrounded by the normal variable delimiters). The value can be a text string or an integer.
+
+One intended use for the set command is to support a line counter. By initializing the value to 0, and then adding to it whenever an output line is generated, the IF command can be used to check for page overflow (in a table column, for example), and then start a new page or column, resetting the counter to 0 again.
+
+Another common use for the set command is to preserve record variables in global variables so that they will be available within an ifendgroup block.
+
+
+### output Command
+
+This command names and opens the output file, where the results of the template merge will be stored. The single operand is the name of the output file. This command would normally be the first line in your template file. Subsequent template records will be written to the output file.
+Note, however, that the filename can contain a variable name. In this case, the output command would follow the nextrec command, and a new output file would be opened for each row input.
+
+
+### nextrec Command
+
+This command indicates the beginning of the code that will be processed/written out once per data row. Lines prior to the nextrec command will only be processed/written out once.
+
+### if Command
+
+The if command can be used to test a variable to see if it is non-blank. If the variable is non-blank, then the following lines up to the closing endif command will be subject to normal output processing. If the variable is blank, then following lines will be skipped until the closing endif command is encountered. In this case, the first and only operand would be the variable to be tested.
+
+The if command can also be used to test a variable to compare it to a constant (or other variable). In this case, the command would have three or more operands: the name of the variable, a logical operator, and one or more values.
+
+In this second scenario, three operands are provided: the first value (variable or constant), a comparison operator, and the second value (variable or constant). 
+
+Any of the following comparisons may be performed, and each may be invoked with the appropriate symbols, abbreviation or words. Note that slashes are used in the following list to separate alternative representations for each operator. 
+
+1. = / == / eq / equals 
+2. &gt; / gt / greater than 
+3. &gt;= / !< | / ge / greater than or equal to
+4. < / lt / less than
+5. <= / !> / le / less than or equal to
+6. <&gt; / != / ne / not equal to
+7. () / [] / co / contains
+8. !() / ![] / nc / does not contain
+9. (<) / [<] / st / starts with 
+10. !(<) / ![<] / ns / does not start with
+11. (&gt;) / [&gt;] / fi / ends with
+12. !(&gt;) / ![&gt;] / ng / does not end with
+
+Note that, if both values appear to be integers, then a numeric comparison will be performed for operands 1 - 6. In all other cases, strings will be compared. 
+
+
+### else Command
+
+The else command terminates the scope of its preceding if, ifchange, ifendgroup or ifnewgroup command, and applies the opposite logical condition to the following template lines.
+
+
+### endif Command
+
+The endif command terminates the scope of its corresponding if, ifchange, ifendgroup or ifnewgroup command.
+
+
+### loop Command
+
+This command indicates the end of the code that will be processed/written out once per data row. Lines after the loop command will be processed/written out once per execution.
+
+

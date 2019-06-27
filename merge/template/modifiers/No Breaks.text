@@ -1,0 +1,5 @@
+Title:  No Breaks
+
+Seq:    N
+
+Body:   Remove HTML break (br) tags from the string.

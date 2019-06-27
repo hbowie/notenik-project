@@ -1,0 +1,5 @@
+Title:  Day of Week
+
+Seq:    EEEE
+
+Body:   Represents a full day of week within a date formatting string. 

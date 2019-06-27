@@ -1,0 +1,3 @@
+Title:  relative
+
+Body:   If a Web Root directory has been specified, then this variable will be replaced by the relative path from the output file being created back to the root directory.

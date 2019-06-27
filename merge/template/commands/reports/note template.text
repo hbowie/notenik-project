@@ -1,0 +1,17 @@
+<?output "../../Commands Detail.text"?>
+Title:  Commands Detail
+
+Seq:    15
+
+Type:   md
+
+Code:
+
+Body:
+
+<?nextrec?>
+### =$title$= Command
+
+=$body$=
+
+<?loop?>

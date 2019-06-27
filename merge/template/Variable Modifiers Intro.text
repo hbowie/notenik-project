@@ -1,0 +1,14 @@
+Title:  Variable Modifiers Intro
+
+Seq:    6
+
+Heading: Variable Modifiers
+
+Type:   md
+
+Body: 
+
+A variable can be optionally followed (before the ending variable delimiters) by a modifier indicator and one or more modifiers. The default modifier character is the ampersand (&amp;).
+
+The following list summarizes the primary use of various letters and characters as variable modifiers.
+
