@@ -1,0 +1,14 @@
+Title:  ifnewlist
+
+Seq:    8
+
+Body: 
+
+This is the fourth of the five group commands. 
+
+Lines following this command and preceding the next group or endif command will be written to the output file at the beginning of a new list of records at this group level. 
+
+Ifnewlist commands should follow definegroup, ifendgroup and ifendlist commands, should precede ifnewgroup commands, and should generally be specified in *ascending* order by group number. The ifnewlist command has one operand.
+
++ Group Number. The group number whose list-beginning output lines follow.
+

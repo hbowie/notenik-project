@@ -17,7 +17,7 @@
 		<div id="header">
 			<div id="logo">
 				<a href="index.html">
-					<img class-"centered" alt="Notenik Logo" src="images/notenik.png" />
+					<img class="centered" alt="Notenik Logo" src="images/notenik.png" />
 				</a>
 			</div>
 			<div id="title-and-slogan">
@@ -112,7 +112,13 @@
 <a href="#use-other-special-fields">Use Other Special Fields</a>
 </li>
 <li>
+<a href="#run-reports">Run Reports</a>
+</li>
+<li>
 <a href="#import-and-export-your-notes">Import and Export Your Notes</a>
+</li>
+<li>
+<a href="#favorites-to-html">Favorites to HTML</a>
 </li>
 <li>
 <a href="#keeping-track-of-your-collections">Keeping Track of Your Collections</a>
@@ -349,6 +355,13 @@ The Search function will search each Note&rsquo;s Title, Link, Tags and Body fie
 <p>Teaser &ndash; An excerpt from the note used as a teaser in a list of notes. The teaser may be formatted using Markdown.</p>
 </li>
 </ul>
+<h2 id="run-reports">Run Reports</h2>
+<p>Notenik provides a function for merging data from Notes into a template file in order to create one or more output text files.</p>
+<p>The text files created may be of any type, but certainly one of the most useful formats is html, allowing users to generate one or more Web pages from their notes.</p>
+<p>See the <a href="merge-template.html">Merge Template File Spec</a> for complete information on the expected format of a Merge Template file.</p>
+<p>Template files should be placed in a folder named &lsquo;reports&rsquo; within the Collection folder where the reports are to be used. Each template file should include the word &lsquo;template&rsquo; somewhere within its file name.</p>
+<p>Once a template file is created, suitably named and placed, it will become available as a report that can be selected from a drop-down (identified with a gear icon) on the Collection&rsquo;s toolbar.</p>
+<p>Selecting a report will then cause the Collection&rsquo;s notes to be merged into the corresponding template file, creating whatever ouput is identified in the template file.</p>
 <h2 id="import-and-export-your-notes">Import and Export Your Notes</h2>
 <p>You can import and export a Collection in a variety of formats, using commands found under the File menu.
 Following are the supported formats.</p>
@@ -366,6 +379,8 @@ Following are the supported formats.</p>
 <p>Each Note will be represented as one row/line, and each field will be represented in a separate column. Commas are used to separate columns. This format is suitable for import into MS Excel, for example.</p>
 </li>
 </ul>
+<h2 id="favorites-to-html">Favorites to HTML</h2>
+<p>If you have a Collection of Notes representing Web Bookmarks, then you may wish to use the &lsquo;Favorites&rsquo; tag to identify the bookmarks you reference most often. You may then use a sub-tag within the &lsquo;Favorites&rsquo; tag to organize your favorite bookmarks into categories. Once you&rsquo;ve identified your Favorites, then you may use the Favorites to HTML command under the File menu to create a Web page containing all your favorite bookmarks, organized under headings representing the categories you have chosen. Notenik will display your favorites in four columns, with a maximum of 32 lines per column. Assuming a reasonable number of favorite bookmarks, these will typically display all of your favorites within a single Web page on your Mac. You may then wish to identify the resuling page as the homepage within all of your Web browsers (Safari, Chrome, etc.).</p>
 <h2 id="keeping-track-of-your-collections">Keeping Track of Your Collections</h2>
 <p>If you keep all your Notes in a single Collection, then you will never need to worry about which notes are where.
 If you have multiple Collections of Notes, though, then you will probably want some way of keeping track of them.</p>
@@ -491,5 +506,3 @@ The Notenik application is published as  <a href="http://opensource.org/osd">ope
 	</div>
 </body>
 </html>
-
-

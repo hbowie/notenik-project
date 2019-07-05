@@ -296,6 +296,20 @@ You can use whatever Field Labels you want within a Collection, but there are a 
 
 * Teaser -- An excerpt from the note used as a teaser in a list of notes. The teaser may be formatted using Markdown.
 
+## Run Reports
+
+Notenik provides a function for merging data from Notes into a template file in order to create one or more output text files. 
+
+The text files created may be of any type, but certainly one of the most useful formats is html, allowing users to generate one or more Web pages from their notes. 
+
+See the [Merge Template File Spec](merge-template.html) for complete information on the expected format of a Merge Template file. 
+
+Template files should be placed in a folder named 'reports' within the Collection folder where the reports are to be used. Each template file should include the word 'template' somewhere within its file name. 
+
+Once a template file is created, suitably named and placed, it will become available as a report that can be selected from a drop-down (identified with a gear icon) on the Collection's toolbar. 
+
+Selecting a report will then cause the Collection's notes to be merged into the corresponding template file, creating whatever ouput is identified in the template file. 
+
 ## Import and Export Your Notes
 
 You can import and export a Collection in a variety of formats, using commands found under the File menu.
@@ -312,6 +326,10 @@ Following are the supported formats.
 * Import/Export in CSV Format
 
 	Each Note will be represented as one row/line, and each field will be represented in a separate column. Commas are used to separate columns. This format is suitable for import into MS Excel, for example.
+
+## Favorites to HTML
+
+If you have a Collection of Notes representing Web Bookmarks, then you may wish to use the 'Favorites' tag to identify the bookmarks you reference most often. You may then use a sub-tag within the 'Favorites' tag to organize your favorite bookmarks into categories. Once you've identified your Favorites, then you may use the Favorites to HTML command under the File menu to create a Web page containing all your favorite bookmarks, organized under headings representing the categories you have chosen. Notenik will display your favorites in four columns, with a maximum of 32 lines per column. Assuming a reasonable number of favorite bookmarks, these will typically display all of your favorites within a single Web page on your Mac. You may then wish to identify the resuling page as the homepage within all of your Web browsers (Safari, Chrome, etc.). 
 
 ## Keeping Track of Your Collections
 

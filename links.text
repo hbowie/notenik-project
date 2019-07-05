@@ -1,13 +1,13 @@
 Title:  links
 
+Title 2: Links to Notenik Resources
+
 Seq:    9
 
 Date Added: 2019-05-18 02:43:01 +0000
 
-Title 2: Links to Notenik Resources
+Body: 
 
-Body:   
- 
 Following are complete links to all assets related to the Notenik Project.
 
 1. Project Overview
@@ -20,15 +20,15 @@ Following are complete links to all assets related to the Notenik Project.
 	* [Rights](rights.html)
 	* [Privacy Policy](privacy.html)
 	* [Links to Notenik Resources](links.html) (this page)
-2. Specs
+2. Architecture
 	* [Notenik Architecture - OmniOutliner doc](specs/notenik-architecture.ooutline)
 	* [Notenik Architecture - Dynamic HTML](specs/notenik-architecture-html/index.html)
 3. App User Guides
 	* [User Guide for Java Implementation](java.html)
 	* [User Guide for Swift macOS Implementation](swift.html)
+	* [Merge Template File Spec](merge-template.html)
 4. GitHub Repositories
 	* [Project Docs](https://github.com/hbowie/notenik-project) (this site)
 	* [JavaFX Implementation](https://github.com/hbowie/notenik2)
 	* [Swift Implementation](https://github.com/hbowie/notenik-swift)
-
 

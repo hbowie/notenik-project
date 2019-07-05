@@ -1,0 +1,19 @@
+Title:  ifendlist
+
+Seq:    7
+
+Body: 
+
+This is the third of the five group commands. 
+
+Lines following this command and preceding the next group or endif command will be written to the output file at the end of a list of records containing this key field. 
+
+The end of a list will be triggered by a change in key values at the next higher level, or by a record containing blanks at the current group level. 
+
+Ifendlist commands should follow ifendgroup commands and precede ifnewlist commands, and should generally be specified in *descending* order by group number. 
+
+The ifendlist command has one operand. Note that the ifendlist and ifnewlist commands can generally be used to insert HTML tags to end a list and begin a list.
+
+* Group Number. The group number whose list-ending output lines follow.
+
+Note that references to record variables within an ifendlist block will retrieve the data from the record causing the break (i.e., the first record in the new group), not the last record in the group just ended. Use the set command to save data in global variables if you need to later access it when a list break has been detected. 

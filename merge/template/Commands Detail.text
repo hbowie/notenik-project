@@ -54,6 +54,80 @@ Note, however, that the filename can contain a variable name. In this case, the 
 
 This command indicates the beginning of the code that will be processed/written out once per data row. Lines prior to the nextrec command will only be processed/written out once.
 
+### definegroup Command
+
+This is the first of five commands that define key fields and then conditionally write output when there is a break on any of those fields. 
+
+Up to ten group break fields can be defined. Each must be assigned a number from 1 to 10. Numbers should be assigned sequentially beginning with 1. 
+
+Input data should normally be sorted by the same fields used in any definegroup commands. 
+
+A definegroup command should normally follow a nextrec command. Each time that a definegroup command is encountered, Notenik stores the value of the variable, and checks for a change in the value for the specified group number. 
+
+Definegroup commands should precede ifendgroup and ifnewgroup commands, and should generally be specified in ascending order by group number. 
+
+The definegroup command has two operands.
+
+* Group Number. This must be a number from 1 to 10. Numbers should be assigned sequentially beginning with 1. Lower-numbered groups are considered more major than higher-numbered groups, in the sense that lower-numbered group breaks will automatically trigger higher-numbered group breaks.
+
+* Variable Name. This is the name of the key field variable. The variable should be surrounded by the normal variable delimiters, so that Notenik will see, not the name of the variable, but its current value. 
+
+
+### ifendgroup Command
+
+This is the second of the five group commands. 
+
+Lines following this command and preceding the next group or endif command will be written to the output file at the end of a group of records sharing a common value for this key field. 
+
+Ifendgroup commands should follow definegroup commands and precede ifnewgroup commands, and should generally be specified in *descending* order by group number. 
+
+The ifendgroup command has one operand.
+
+- Group Number. The group number whose group-ending output lines follow.
+
+
+### ifendlist Command
+
+This is the third of the five group commands. 
+
+Lines following this command and preceding the next group or endif command will be written to the output file at the end of a list of records containing this key field. 
+
+The end of a list will be triggered by a change in key values at the next higher level, or by a record containing blanks at the current group level. 
+
+Ifendlist commands should follow ifendgroup commands and precede ifnewlist commands, and should generally be specified in *descending* order by group number. 
+
+The ifendlist command has one operand. Note that the ifendlist and ifnewlist commands can generally be used to insert HTML tags to end a list and begin a list.
+
+* Group Number. The group number whose list-ending output lines follow.
+
+Note that references to record variables within an ifendlist block will retrieve the data from the record causing the break (i.e., the first record in the new group), not the last record in the group just ended. Use the set command to save data in global variables if you need to later access it when a list break has been detected. 
+
+
+### ifnewlist Command
+
+This is the fourth of the five group commands. 
+
+Lines following this command and preceding the next group or endif command will be written to the output file at the beginning of a new list of records at this group level. 
+
+Ifnewlist commands should follow definegroup, ifendgroup and ifendlist commands, should precede ifnewgroup commands, and should generally be specified in *ascending* order by group number. The ifnewlist command has one operand.
+
++ Group Number. The group number whose list-beginning output lines follow.
+
+
+### ifnewgroup Command
+
+This is the fifth of the five group commands. 
+
+Lines following this command and preceding the next group or endif command will be written to the output file at the beginning of a group of records sharing a common value for this key field. 
+
+Ifnewgroup commands should follow all other group commands, and should generally be specified in *ascending* order by group number. 
+
+The ifnewgroup command has one operand.
+
+
++ Group Number. The group number whose group-beginning output lines follow.
+
+
 ### if Command
 
 The if command can be used to test a variable to see if it is non-blank. If the variable is non-blank, then the following lines up to the closing endif command will be subject to normal output processing. If the variable is blank, then following lines will be skipped until the closing endif command is encountered. In this case, the first and only operand would be the variable to be tested.
@@ -88,6 +162,23 @@ The else command terminates the scope of its preceding if, ifchange, ifendgroup 
 ### endif Command
 
 The endif command terminates the scope of its corresponding if, ifchange, ifendgroup or ifnewgroup command.
+
+
+### include Command
+
+This command allows you to include text from another file into the output stream being generated by the template.
+
+An optional operand of "copy" will ensure that the include file is included without conversion; otherwise, if the input and output file extensions are different, and are capable of conversion, the input file will be converted to the output file's format (for example, [Markdown][] or Textile can be converted to html).
+
+Markdown conversion will be done using the [flexmark](https://github.com/vsch/flexmark-java) processor, using the options for typographic conversions (as with SmartyPants), table generation and definition lists.
+
+If converting from Markdown, then an optional operand of "nometa" will cause metadata lines to be skipped when generating the HTML output; otherwise, they will be included.
+
+The filename may include variables, allowing you to tailor the included content based on one or more fields from your input data source. This is especially useful when you would like to include output from another template in the output generated by this template (effectively combining outputs from two separate templates into a single output). If an include file is not found, then it will simply be skipped and processing will continue, with a log message to note the event.
+
+For any conversion resulting in HTML, a pseudo-tag of &lt;toc&gt; can be used to generate a table of contents based on following heading tags. An optional attribute of "from" can be used to specify the beginning of a range of heading levels to be included; an optional attribute of "through" or "thru" can be used to specify the end of a range of heading levels to be included. See the following example.
+
+		<toc from="h2" thru="h4" />
 
 
 ### loop Command

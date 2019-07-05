@@ -1,6 +1,6 @@
 Title:  if
 
-Seq:    5
+Seq:    10
 
 Body: 
 
@@ -26,3 +26,4 @@ Any of the following comparisons may be performed, and each may be invoked with 
 12. !(&gt;) / ![&gt;] / ng / does not end with
 
 Note that, if both values appear to be integers, then a numeric comparison will be performed for operands 1 - 6. In all other cases, strings will be compared. 
+

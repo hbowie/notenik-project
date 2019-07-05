@@ -1,7 +1,8 @@
 Title:  else
 
-Seq:    6
+Seq:    11
 
 Body: 
 
 The else command terminates the scope of its preceding if, ifchange, ifendgroup or ifnewgroup command, and applies the opposite logical condition to the following template lines.
+
