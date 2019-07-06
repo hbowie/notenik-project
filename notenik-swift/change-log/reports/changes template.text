@@ -1,0 +1,24 @@
+<?output "../../Version History.text"?>
+Title:  Version History
+
+Seq:    44
+
+Tags:   changes, history, log
+
+Body:   
+ 
+<?nextrec?>
+<?definegroup 1 "=$seq$=" ?>
+<?ifendgroup 1 ?>
+<?endif?>
+<?ifnewgroup 1 ?>
+### Version =$seq$= | =$date&dd MMM yyyy$=
+
+<?set count = 0 ?>
+<?endif?>
+<?set count += 1 ?>
+#### =$count$=. =$title$=
+
+=$body$=
+
+<?loop?>

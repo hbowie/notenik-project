@@ -1,0 +1,13 @@
+Title:  Merge Template Special Variables
+
+Tags:   docs
+
+Seq:    6.1.2
+
+Link:   file:///Users/hbowie/Sites/notenik/merge/template/special-variables/
+
+Body: 
+
+The documentation for the merge template special variables is stored in its own Collection, as a sub-folder within the overall Notenik documentation.
+
+After making any appropriate updates, run the reports available within the Collection. This will create/replace the 'Special Variables.text" file within the 'template' folder.

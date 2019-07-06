@@ -1,0 +1,20 @@
+Title:  Notenik Swift Help Notes
+
+Tags:   docs, swift
+
+Seq:    6.5
+
+Link:   file:///Users/hbowie/Projects/Mac%20Info/ChronoSync%20Scripts/notenik-swift-intro%20refresh.sync
+
+Body: 
+
+Notenik has the ability to open a Collection of Help Notes from within the application. These notes are stored locally at the following location:
+
+* /Users/hbowie/Xcode/notenik-swift-intro
+
+The Help Notes can be refreshed by running the following ChronoSync script:
+
+* /Users/hbowie/Projects/Mac Info/ChronoSync Scripts/notenik-swift-intro refresh.sync
+
+The refreshed folder will then be incorporated into Notenik on the next build. 
+
