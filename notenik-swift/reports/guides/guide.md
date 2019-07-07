@@ -29,7 +29,8 @@ I'm sharing these motivations upfront because, if these same ideas appeal to you
 
 ## The Notenik Application
 
-This version of Notenik is written in [Swift](https://swift.org) using the [Xcode IDE](https://developer.apple.com/xcode/). Source can be found on [GitHub](https://github.com/hbowie/notenik-swift). The executable application can be found on the Mac App Store.
+This version of Notenik is written in [Swift](https://swift.org) using the [Xcode IDE](https://developer.apple.com/xcode/). Source can be found on [GitHub](https://github.com/hbowie/notenik-swift). The executable application can be found on the [Mac App Store](https://apps.apple.com/us/app/notenik/id1465997984?mt=12).
+
 From this point on, I'll introduce one concept at a time. 
 
 ## Help Using Notenik

@@ -1,13 +1,13 @@
 Title:  files
 
-Seq:    5
+Title 2: Files and Folders
+
+Seq:    6
 
 Date Added: 2019-05-17 19:07:28
 
-Title 2: Files and Folders
+Body: 
 
-Body:   
- 
 When Notes are stored locally, each Note is stored as its own text file in the UTF-8 format, and a Collection of Notes is stored as a folder full of text files. 
 
 Any of the following file extensions may be used for the Note files.
@@ -65,5 +65,4 @@ As an example, see the following general template for a Note file.
 As another example, see the [Note file](files.text) used to generate this web page.
 
 Next: [Software](software.html)
-
 

@@ -2,7 +2,7 @@ Title:  Notenik Swift Version History
 
 Tags:   docs, swift
 
-Seq:    6.2.1
+Seq:    7.2.1
 
 Link:   file:///Users/hbowie/Sites/notenik/notenik-swift/change-log/
 
@@ -11,3 +11,4 @@ Body:
 The Change Log is stored as another Notenik Collection. 
 
 Run the reports to generate a new Version History page to be included in the Notenik Swift User Guide. 
+

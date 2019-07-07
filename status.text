@@ -1,13 +1,13 @@
 Title:  status
 
-Seq:    4
+Title 2: Status Value Defaults
+
+Seq:    5
 
 Date Added: 2019-05-17 17:18:22
 
-Title 2: Status Value Defaults
+Body: 
 
-Body:   
- 
 The Status Field identifies a degree of readiness/completion for a Note. 
 
 Status values are usually selected from a standard list. Note that each status may be represented by a single digit and/or an associated label. The digits serve to place the values into an approximate life cycle sequence.
@@ -28,5 +28,4 @@ The Status field normally has the following values. These can be interpreted in 
 Note that a status value of 6 or higher will often be marked with an ‘X’ in a list, and will appear lower in the list than items with status values in the range of 0 - 5.
 
 Next:  [Files and Folders](files.html)
-
 

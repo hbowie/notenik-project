@@ -43,6 +43,8 @@ p {
   margin-bottom: 1em;
 }
 
+ul { margin-bottom: 1em; }
+
 img.centered {
   display: block;
   margin-left: auto;

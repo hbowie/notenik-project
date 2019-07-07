@@ -1,0 +1,10 @@
+Title:  Update Logging
+
+Seq:    9
+
+Body: 
+
+For production release, the AppDelegate should be updated with the following options:
+
+	logger.logDestPrint = false
+	logger.logDestUnified = true

@@ -1,6 +1,6 @@
 Title:  index
 
-Title 2: Intentions
+Title 2: Welcome
 
 Seq:    1
 
@@ -8,35 +8,50 @@ Date Added: 2019-05-17 19:06:55
 
 Body: 
 
-The intent of the Notenik project is to develop concepts, specifications and software to explore the possibilities around a few simple notions:
-1. Despite the proliferation of images, videos and audio in our world today, text is by far the most practical way to communicate and record useful ideas and information. 
+Hi, I'm [Herb Bowie](https://herbbowie.com), and I'm responsible for the concepts and code behind Notenik, a simple but powerful system for taking, collecting and referencing notes.
 
-2. Brevity has value, especially in our age of information overload.
+Depending on your interests, you may wish to explore any or all of the following topics. Use the back button in your browser or click on the Notenik icon at the top of a page to return to this Welcome page. 
 
-3. A chunk of text can be easily thought of as a Note. 
+1. Introduction
+	- [Intentions](intentions.html)
+	- [Basic Terms and Concepts](basics.html)
+	- [Common Fields](fields.html)
+	- [Status Value Defaults](status.html)
+	- [Files and Folders](files.html)
+	- [Software](software.html)
+	- [Rights](rights.html)
+	- [Privacy Policy](privacy.html)
 
-4. A group of related Notes can be easily thought of as a Collection. 
+2. Notenik Application written in Swift for macOS
+	- [Download from the Mac App Store][appstore]
+	- [Read the User Guide][swiftug]
+	- [View the Source on GitHub][swiftgit]
 
-5. The usefulness of a Note can be readily extended by making a few common sorts of fields available as options that can be easily added to the basic text.
+3. Notenik Desktop Application written in Java
+	- [Download the Mac App][javamac]
+	- [Download the Jar files][javajar]
+	- [Read the User Guide][javaug]
+	- [View the Source on GitHub][javagit]
 
-6. A Note should be stored in such a way that it can be readily used and reused in as many different ways as possible. 
+4. File Specs
+	- [Merge Template File Spec][template]
 
-7. In particular, it should be easy to convert a Note into HTML, and to convert a Collection of Notes into a website. 
+5. Architecture
+	- [Notenik Architecture - OmniOutliner doc][arch-omni]
+	- [Notenik Architecture - Dynamic HTML][arch-html]
 
-8. A Note is personal: a Note can be shared, but its primary purpose is to embed some meaning for its author.
+6. All Project Documentation
+	- [View the Source on GitHub][docsgit]
 
-9. Note-making should not be overly constrained by the ideas of an information architect or a software developer about what makes for a good or complete Note.  
-
-10. A Note is too important and useful a thing to be trapped within a single platform, device, operating system, application, database or online service. For maximum utility and durability, Notes should be able to travel easily between different platforms and environments.  
-
-If you find that these intentions resonate with you, then continue on to learn more about the Notenik project. 
-
-- [Notenik Basics](basics.html)
-- [Common Fields](fields.html)
-- [Status Values](status.html)
-- [Files and Folders](files.html)
-- [Software](software.html)
-- [Rights](rights.html)
-- [Privacy Policy](privacy.html)
-- [Links](links.html)
+[appstore]: https://apps.apple.com/us/app/notenik/id1465997984?mt=12
+[arch-html]: specs/notenik-architecture-html/index.html
+[arch-omni]: specs/notenik-architecture.ooutline
+[docsgit]:  https://github.com/hbowie/notenik-project
+[javagit]:  https://github.com/hbowie/notenik2
+[javajar]:  downloads/pspub-omni-pack.zip
+[javamac]:  downloads/Notenik-4.80.dmg
+[javaug]:   java.html
+[swiftug]:  swift.html
+[swiftgit]: https://github.com/hbowie/notenik-swift
+[template]: merge-template.html
 

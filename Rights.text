@@ -2,12 +2,13 @@ Title:  rights
 
 Title 2: Rights
 
-Seq:    7
+Seq:    8
 
 Date Added: 2019-05-20 17:48:12
 
-Body:   The Notenik Project is the creation of [Herb Bowie](https://herbbowie.com), and is Copyright 2009 - 2019 by Herb Bowie. 
+Body: 
 
+The Notenik Project is the creation of [Herb Bowie](https://herbbowie.com), and is Copyright 2009 - 2019 by Herb Bowie.
 The entire project is published on GitHub as open-source software. 
 
 The new [Swift code](https://github.com/hbowie/notenik-swift) is being published under the terms of the [MIT License](https://opensource.org/licenses/MIT).

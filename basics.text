@@ -1,13 +1,13 @@
 Title:  basics
 
-Seq:    2
+Title 2: Notenik Basics
+
+Seq:    3
 
 Date Added: 2019-05-13 07:03:03
 
-Title 2: Notenik Basics
+Body: 
 
-Body:   
- 
 The basic concepts behind Notenik are pretty simple. 
 
 1. Each Note consists of two or more Fields. 
@@ -27,5 +27,4 @@ The basic concepts behind Notenik are pretty simple.
 8. Although any Field Labels may be used within a Note, certain Field Labels are expected to be commonly used, and so will typically carry with them some special meaning and associated functionality. 
 
 Next: [Common Fields](fields.html)
-
 
