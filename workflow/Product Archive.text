@@ -1,0 +1,12 @@
+Title:  Product Archive
+
+Seq:    11
+
+Link:   https://codewithchris.com/submit-your-app-to-the-app-store/
+
+Body: 
+
+In Xcode, go to Product >> Archive and let it bundle your app.
+
+And then distribute the archive.  
+

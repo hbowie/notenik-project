@@ -29,7 +29,9 @@ I'm sharing these motivations upfront because, if these same ideas appeal to you
 
 ## The Notenik Application
 
-This version of Notenik is written in [Swift](https://swift.org) using the [Xcode IDE](https://developer.apple.com/xcode/). Source can be found on [GitHub](https://github.com/hbowie/notenik-swift). The executable application can be found on the [Mac App Store](https://apps.apple.com/us/app/notenik/id1465997984?mt=12).
+This version of Notenik is written in [Swift](https://swift.org) and is available from the [Mac App Store](https://apps.apple.com/us/app/notenik/id1465997984?mt=12).
+
+This version was written using the [Xcode IDE](https://developer.apple.com/xcode/). Source can be found on [GitHub](https://github.com/hbowie/notenik-swift). 
 
 From this point on, I'll introduce one concept at a time. 
 
@@ -38,7 +40,7 @@ From this point on, I'll introduce one concept at a time.
 You're already reading this intro, so obviously I don't need to tell you how to find this.
 But here's a few other help items that are available, including some that may not be so obvious. 
 
-This User Guide is available as a web page from the [Notenik](http://www.notenik.net) site, from the [PowerSurge Publishing](http://www.powersurgepub.com) site, and from the Notenik Help Menu. 
+This User Guide is available as a web page from the [Notenik](http://www.notenik.net) site and from the Notenik Help Menu. 
 
 But the same content is also available as a Collection of Help Notes, by selecting the corresponding Open Command from Notenik's Help menu. You may find it a little easier to read and navigate in this form, plus you can practice using Notenik as you read the Intro!
 
@@ -255,6 +257,8 @@ Add a Date field to a Collection in order to track the date each note was offici
 
 Note that the Date field has several helpful editing tools. You can enter a free-form date yourself, or you can use a Calendar widget to pick dates from a Calendar. You can use the Today button to set the date to Today's date, and you can use the Recurs button to apply the Recurs rule, if one has been supplied. 
 
+If you need to export a Collection in a format suitable for sorting by Date, then you may wish to use the Standardize Dates to YMD command under the Collection menu to make sure that all dates are stored in a yyyy-mm-dd format suitable for sorting. 
+
 ## Specify Date Recurs Rules
 
 Add a Recurs field to a Collection to cause a Date for a Note to recur on a regular basis. 
@@ -328,6 +332,8 @@ Following are the supported formats.
 
 	Each Note will be represented as one row/line, and each field will be represented in a separate column. Commas are used to separate columns. This format is suitable for import into MS Excel, for example.
 
+Note that the File menu also contains a command to Split Tags. This will result in a special export in which each Note may be written multiple times, once for each Tag in the Note's Tags field. Notes without any Tags will be written only once, with a blank Tag field. In other cases, the Tag field will contain a single Tag, even if the Tags field contains multiple Tags. 
+
 ## Favorites to HTML
 
 If you have a Collection of Notes representing Web Bookmarks, then you may wish to use the 'Favorites' tag to identify the bookmarks you reference most often. You may then use a sub-tag within the 'Favorites' tag to organize your favorite bookmarks into categories. Once you've identified your Favorites, then you may use the Favorites to HTML command under the File menu to create a Web page containing all your favorite bookmarks, organized under headings representing the categories you have chosen. Notenik will display your favorites in four columns, with a maximum of 32 lines per column. Assuming a reasonable number of favorite bookmarks, these will typically display all of your favorites within a single Web page on your Mac. You may then wish to identify the resuling page as the homepage within all of your Web browsers (Safari, Chrome, etc.). 
@@ -342,6 +348,29 @@ Notenik automatically keeps track of Collections you have recently opened, and y
 Note that this list is presented with the most recently opened Collections at the top, and then proceeding downwards to those accessed less recently. 
 
 Another option is to use the Open Parent Realm command under the File menu. You will then be asked to choose a folder. Once you've made that choice, Notenik will scan all likely folders within the parent folder, looking for Notenik Collections. You will then be presented with a window showing a virtual 'Collection of Collections'. Clicking the Launch Link Toolbar button for one of these Collections will then cause Notenik to open that Collection in another new window. 
+
+## Disk Access Permissions
+
+Notenik is a modern, well-mannered Mac application, which means that it does not presume to have free run of your hard drive, roaming wantonly wherever it will. 
+
+In other words, to use Apple's terminology, Notenik is sandboxed. 
+
+At the same time, Notenik does not take all the data you have given it and stash it away in some secret location that only Notenik can access because — well, it's your data. You can store it wherever you like. It's stored in plain sight. You can see it whenever you want. And if you want to open that data using your favorite text editor, then more power to you. Have at it. Knock yourself out. 
+
+These two Notenik traits can sometimes come into conflict, however. If you store your Notenik data in lots of different Collections, and store those Collections in different places, then Notenik may sometimes have trouble getting access to them. 
+
+Here's how this works. 
+
+1. Any Collection folder that you explicitly select through the Open command under the File menu will always be available to you, because you have explicitly selected it for use by Notenik. 
+
+2. Any Collection folder that you select using the Open Recent command under the File menu will be available to you, because macOS remembers that you previously gave Notenik permission to access that Collection. 
+
+3. If you use the Open Parent Realm command under the File menu to have Notenik search for its Collections within a parent folder, then those collections will be available to be opened, because you have explicitly given Notenik permission to access everything within that parent folder. 
+
+In general, the rules above will be enough to cover most situations. If they prove too restrictive, though, you can always grant Notenik full disk access in the Security & Privacy pane of System Preferences. 
+
+
+ 
 
 ## View the Log
 
@@ -433,4 +462,28 @@ Merge Templates may now be created, stored in a reports folder, and then run fro
 #### 3. Various Bug Fixes and Improvements
 
 Miscellaneous bug fixes and improvements. 
+
+
+### Version 1.2.0 | 10 Jul 2019
+
+#### 1. Added Split Tags Export to the File Menu
+
+The Split Tags command under the File menu will split the tags for each Note, and write one output row for each Tag for each Note. Notes without tags will be written out only once; Notes with multiple tags will be written out once for each Tag. In addition to the Tags column, a Tag (singular) column will be added to the front of each row, containing one particular Tag for the Note. This export file can be used, for example, to create an index page for each Tag. 
+
+
+#### 2. Added Standardize Dates to YMD to the Collection Menu
+
+Execution of this command will change all the dates in all the Notes for the current Collection so that they are stored in yyyy-mm-dd format, which can be useful to ensure than an export file sorts correctly on date. 
+
+
+#### 3. Bug Fixes and Improvements
+
+Markdown conversion now renders embedded HTML and does a smart typographic conversion.
+
+Occasional problem with erroneous blanks in the ‘X’ column (indicating done or not) is now fixed.
+
+
+#### 4. Tokenized the Tags Field on the Edit Screen
+
+Users can now pick from previously identified tags when entering a new one. 
 
