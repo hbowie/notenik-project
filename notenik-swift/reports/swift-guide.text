@@ -1,0 +1,19 @@
+<?output "../../swift.text"?>
+Title:   swift
+
+Title 2: Notenik Software Written in Swift
+
+Seq:     11
+
+Tags:
+
+Link:
+
+Body:
+
+<?nextrec?>
+
+<a name="=$title&f$="><h2>=$title$=</h2></a>
+
+=$body$=
+<?loop?>

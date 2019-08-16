@@ -1,6 +1,6 @@
 Title:  Notenik Swift Help Book
 
-Tags:   docs, docs, swift, swift
+Tags:   docs, swift
 
 Seq:    7.6
 
@@ -16,7 +16,7 @@ The notes folder here can be refreshed by running the following ChronoSync scrip
 
 * /Users/hbowie/Projects/Mac Info/ChronoSync Scripts/Notenik Help notes refresh.sync
 
-You can then rebuild the Notenik.help help book by using PSTextMerge to run the following script:
+You can then rebuild the Notenik.help help book by using Notenik to run the following script:
 
 * /Users/hbowie/Xcode/Notenik/Notenik Help/scripts/helpgen.tcz 
 

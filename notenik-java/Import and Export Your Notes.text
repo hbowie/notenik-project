@@ -2,12 +2,12 @@ Title:  Import and Export Your Notes
 
 Seq:    35
 
-Tags:   export, import, mac apps, opml, tab-delimited, tags, xml
-
 Date Added: 2017-10-27 12:55:15
 
-Body:   
- 
+Tags:   export, import, mac apps, opml, tab-delimited, tags, xml
+
+Body: 
+
 You can import and export a Collection in a variety of formats, using commands found under the File menu. 
 
 You may filter the notes to be exported, for any of these formats, by adjusting the entries in the Tags Export preferences. You may specify one or more Tags to be selected, so that only notes containing those Tags will be exported. You may also suppress one or more Tags, meaning that exported notes will have those Tags removed from the resulting output.
@@ -59,9 +59,8 @@ Following are the supported formats.
 		Minimum System Version:
 
 		Body:   
- 
+
 		The body of the note
 
 	After the import, you can use the Tags field to organize the applications in any way you like, and clicking on the Link field will launch the selected application. 
-
 

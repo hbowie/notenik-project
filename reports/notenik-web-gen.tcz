@@ -1,0 +1,115 @@
+module	action	modifier	object	value
+<!--
+<!-- Generate the Script Columns page
+<!--
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-defined		#PATH#../merge/script/columns/
+sort	add	Ascending	Seq
+sort	set		params
+template	open	text		#PATH#../merge/script/columns/reports/note template.text
+template	generate
+<!--
+<!-- Generate the Script Modules page
+<!--
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-defined		#PATH#../merge/script/modules/
+sort	add	Ascending	Seq
+sort	set		params
+template	open	text		#PATH#../merge/script/modules/reports/note template.text
+template	generate
+<!--
+<!-- Generate the Template Commands page
+<!--
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-defined		#PATH#../merge/template/commands/
+sort	add	Ascending	Seq
+sort	set		params
+template	open	text		#PATH#../merge/template/commands/reports/note template.text
+template	generate
+<!--
+<!-- Generate the Template Variable Modifiers page
+<!--
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-defined		#PATH#../merge/template/modifiers/
+sort	add	Ascending	Seq
+sort	add	Ascending	Title
+sort	set		params
+template	open	text		#PATH#../merge/template/modifiers/reports/note 1 template.text
+template	generate
+template	open	text		#PATH#../merge/template/modifiers/reports/note 2 template.text
+template	generate
+<!--
+<!-- Generate the Template Special Variables page
+<!--
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-defined		#PATH#../merge/template/special-variables/
+sort	add	Ascending	Title
+sort	set		params
+template	open	text		#PATH#../merge/template/special-variables/reports/note template.text
+template	generate
+<!--
+<!-- Generate the Merge Script File Spec
+<!--
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-defined		#PATH#../merge/script/
+sort	add	Ascending	Seq
+sort	set		params
+template	open	text		#PATH#../merge/script/reports/merge-script template.html
+template	generate
+<!--
+<!-- Generate the Merge Template File Spec
+<!--
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-defined		#PATH#../merge/template/
+sort	add	Ascending	Seq
+sort	set		params
+template	open	text		#PATH#../merge/template/reports/merge-template template.html
+template	generate
+<!--
+<!-- Generate the Notenik for Swift Change Log
+<!--
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-defined		#PATH#../notenik-swift/change-log/
+sort	add	Descending	Seq
+sort	add	Descending	Date
+sort	set		params
+template	open	text		#PATH#../notenik-swift/change-log/reports/changes template.text
+template	generate
+<!--
+<!-- Generate the Notenik for Swift User Guide, with Table of Contents
+<!--
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-defined		#PATH#../notenik-swift/
+sort	add	Ascending	Seq
+sort	set		params
+filter	add	greater than	Seq	2
+filter	set		params
+template	open	text		#PATH#../notenik-swift/reports/swift-toc.text
+template	generate
+filter	clear
+filter	set		params
+template	open	text		#PATH#../notenik-swift/reports/swift-guide.text
+template	generate
+<!--
+<!-- Generate the HTML pages for the Notenik Web Site
+<!--
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik+		#PATH#../
+filter	add	not equal to	Title	README
+filter	add	greater than or equal to	Seq	1
+filter	set		params
+sort	add	Ascending	Seq
+sort	set		params
+template	webroot	text		#PATH#../
+template	open	text		#PATH#page-template.html
+template	generate

@@ -1,0 +1,15 @@
+Title:  Intro
+
+Seq:    1
+
+Type:   md
+
+Body: 
+
+This specification describes the contents of a script file, used for executing a series of commands to transform input data sources and templates into appropriate output. 
+
+The file extension for a script file should be '.tcz', short for 'TDF Czar', which was a predecessor to PSTextMerge, which was in turn a prececessor to Notenik. 
+
+A script file is a text file formatted into five columns, using either tabs or commas as delimiters to separate the columns. 
+
+Blank lines, as well as lines beginning with '<!— ', will be ignored. 

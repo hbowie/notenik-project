@@ -1,0 +1,10 @@
+Title:  output module
+
+Seq:    5
+
+Param:  output
+
+Body: 
+
+Write the filtered, sorted data to an output file in tab-delimited format. 
+

@@ -1,0 +1,10 @@
+Title:  input module
+
+Seq:    1
+
+Param:  input
+
+Body: 
+
+Read input rows and columns from a Note Collection or another data source. 
+

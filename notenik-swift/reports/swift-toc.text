@@ -1,0 +1,14 @@
+<?output "../Table of Contents.text" ?>
+Title:  Table of Contents
+
+Seq:    2
+
+Tags:   ToC
+
+Body:
+
+<?set count = 1 ?>
+<?nextrec?>
+=$count$=. [=$title$=](#=$title&f$=)
+<?set count += 1 ?>
+<?loop?>

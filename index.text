@@ -35,6 +35,7 @@ Depending on your interests, you may wish to explore any or all of the following
 
 4. File Specs
 	- [Merge Template File Spec][template]
+	- [Merge Script File Spec][script]
 
 5. Architecture
 	- [Notenik Architecture - OmniOutliner doc][arch-omni]
@@ -51,7 +52,8 @@ Depending on your interests, you may wish to explore any or all of the following
 [javajar]:  downloads/pspub-omni-pack.zip
 [javamac]:  downloads/Notenik-4.80.dmg
 [javaug]:   java.html
+[script]:   https://www.notenik.net/merge-script.html
 [swiftug]:  swift.html
 [swiftgit]: https://github.com/hbowie/notenik-swift
-[template]: merge-template.html
+[template]: https://www.notenik.net/merge-template.html
 

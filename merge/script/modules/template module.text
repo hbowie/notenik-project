@@ -1,0 +1,10 @@
+Title:  template module
+
+Seq:    4
+
+Param:  template
+
+Body: 
+
+Specify the location of a [template file](https://www.notenik.net/merge-template.html) to be processed using the data source. 
+

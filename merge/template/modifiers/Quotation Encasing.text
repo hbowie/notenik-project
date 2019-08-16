@@ -1,0 +1,7 @@
+Title:  Quotation Encasing
+
+Seq:    Q
+
+Body: 
+
+This letter will cause the value to be enclosed in quotation marks, if the value contains quotation marks, or tabs, or newline characters. 

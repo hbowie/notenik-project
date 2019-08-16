@@ -10,139 +10,52 @@ Link:
 
 Body:
 
-<h2 id="introduction-to-notenik">Introduction to Notenik</h2>
 
+<a name="introduction-to-notenik"><h2>Introduction to Notenik</h2></a>
 
 Hi, I'm [Herb Bowie](https://herbbowie.com), and I'm responsible for the concepts and code behind [Notenik](https://notenik.net), a simple but powerful system for taking, collecting and referencing notes. On the following pages I'll provide a gradual introduction to the version of [Notenik](http://notenik.net) written in [Swift](https://developer.apple.com/swift/) specifically for [macOS](https://www.apple.com/macos/).
-<h2 id="table-of-contents">Table of Contents</h2>
 
-<div id="toc">
-<ul>
-<li>
-<a href="#introduction-to-notenik">Introduction to Notenik</a>
-</li>
-<li>
-<a href="#motivations">Motivations</a>
-</li>
-<li>
-<a href="#the-notenik-application">The Notenik Application</a>
-</li>
-<li>
-<a href="#help-using-notenik">Help Using Notenik</a>
-</li>
-<li>
-<a href="#each-note-has-a-title-and-a-body">Each Note has a Title and a Body</a>
-</li>
-<li>
-<a href="#each-note-is-its-own-text-file">Each Note is its own Text File</a>
-</li>
-<li>
-<a href="#notes-are-collected-into-folders">Notes are Collected into Folders</a>
-</li>
-<li>
-<a href="#add-delete-and-update-your-notes">Add, Delete and Update Your Notes</a>
-</li>
-<li>
-<a href="#view-your-notes-as-a-list">View Your Notes as a List</a>
-</li>
-<li>
-<a href="#sync-your-notes">Sync Your Notes</a>
-</li>
-<li>
-<a href="#format-the-body-of-a-note-using-markdown">Format the Body of a Note using Markdown</a>
-</li>
-<li>
-<a href="#add-other-fields-to-your-notes">Add Other Fields to Your Notes</a>
-</li>
-<li>
-<a href="#organize-your-notes-with-tags">Organize Your Notes with Tags</a>
-</li>
-<li>
-<a href="#add-a-link-field-to-make-a-bookmark">Add a Link Field to Make a Bookmark</a>
-</li>
-<li>
-<a href="#override-default-fields-with-a-template-file">Override Default Fields with a Template file</a>
-</li>
-<li>
-<a href="#a-note-file-template">A Note File Template</a>
-</li>
-<li>
-<a href="#sequence-your-notes">Sequence Your Notes</a>
-</li>
-<li>
-<a href="#track-the-status-of-your-notes">Track the Status of Your Notes</a>
-</li>
-<li>
-<a href="#date-your-notes">Date Your Notes</a>
-</li>
-<li>
-<a href="#specify-date-recurs-rules">Specify Date Recurs Rules</a>
-</li>
-<li>
-<a href="#track-your-tasks">Track Your Tasks</a>
-</li>
-<li>
-<a href="#add-code-snippets-to-your-notes">Add Code Snippets to Your Notes</a>
-</li>
-<li>
-<a href="#search-for-one-or-more-notes-containing-specified-text">Search for One or More Notes Containing Specified Text</a>
-</li>
-<li>
-<a href="#use-other-special-fields">Use Other Special Fields</a>
-</li>
-<li>
-<a href="#run-reports">Run Reports</a>
-</li>
-<li>
-<a href="#import-and-export-your-notes">Import and Export Your Notes</a>
-</li>
-<li>
-<a href="#favorites-to-html">Favorites to HTML</a>
-</li>
-<li>
-<a href="#keeping-track-of-your-collections">Keeping Track of Your Collections</a>
-</li>
-<li>
-<a href="#disk-access-permissions">Disk Access Permissions</a>
-</li>
-<li>
-<a href="#view-the-log">View the Log</a>
-</li>
-<li>
-<a href="#keyboard-shortcuts">Keyboard Shortcuts</a>
-</li>
-<li>
-<a href="#files-and-folders">Files and Folders</a>
-</li>
-<li>
-<a href="#rights">Rights</a>
-</li>
-<li>
-<a href="#support">Support</a>
-</li>
-<li>
-<a href="#version-history">Version History</a>
-<ul>
-<li>
-<a href="#version-100--03-jun-2019">Version 1.0.0 | 03 Jun 2019</a>
-</li>
-<li>
-<a href="#version-110--05-jul-2019">Version 1.1.0 | 05 Jul 2019</a>
-</li>
-<li>
-<a href="#version-120--10-jul-2019">Version 1.2.0 | 10 Jul 2019</a>
-</li>
-</ul>
+<a name="table-of-contents"><h2>Table of Contents</h2></a>
 
-</li>
-</ul>
-
-</div>
+1. [Motivations](#motivations)
+2. [The Notenik Application](#the-notenik-application)
+3. [Help Using Notenik](#help-using-notenik)
+4. [Each Note has a Title and a Body](#each-note-has-a-title-and-a-body)
+5. [Each Note is its own Text File](#each-note-is-its-own-text-file)
+6. [Notes are Collected into Folders](#notes-are-collected-into-folders)
+7. [Add, Delete and Update Your Notes](#add-delete-and-update-your-notes)
+8. [View Your Notes as a List](#view-your-notes-as-a-list)
+9. [Sync Your Notes](#sync-your-notes)
+10. [Format the Body of a Note using Markdown](#format-the-body-of-a-note-using-markdown)
+11. [Add Other Fields to Your Notes](#add-other-fields-to-your-notes)
+12. [Organize Your Notes with Tags](#organize-your-notes-with-tags)
+13. [Add a Link Field to Make a Bookmark](#add-a-link-field-to-make-a-bookmark)
+14. [Override Default Fields with a Template file](#override-default-fields-with-a-template-file)
+15. [A Note File Template](#a-note-file-template)
+16. [Sequence Your Notes](#sequence-your-notes)
+17. [Track the Status of Your Notes](#track-the-status-of-your-notes)
+18. [Date Your Notes](#date-your-notes)
+19. [Specify Date Recurs Rules](#specify-date-recurs-rules)
+20. [Track Your Tasks](#track-your-tasks)
+21. [Add Code Snippets to Your Notes](#add-code-snippets-to-your-notes)
+22. [Search for One or More Notes Containing Specified Text](#search-for-one-or-more-notes-containing-specified-text)
+23. [Use Other Special Fields](#use-other-special-fields)
+24. [Attach Files to Your Notes](#attach-files-to-your-notes)
+25. [Use Report Templates](#use-report-templates)
+26. [Play Scripts](#play-scripts)
+27. [Import and Export Your Notes](#import-and-export-your-notes)
+28. [Favorites to HTML](#favorites-to-html)
+29. [Open Parent Realm](#open-parent-realm)
+30. [Disk Access Permissions](#disk-access-permissions)
+31. [View the Log](#view-the-log)
+32. [Keyboard Shortcuts](#keyboard-shortcuts)
+33. [Files and Folders](#files-and-folders)
+34. [Rights](#rights)
+35. [Support](#support)
+36. [Version History](#version-history)
 
 
-
-<h2 id="motivations">Motivations</h2>
-
+<a name="motivations"><h2>Motivations</h2></a>
 
 I'll start off by explaining my primary motivations behind the creation of Notenik.
 1. I love notes. I like being able to write down some words -- a few or a bunch -- about something that interests me and then refer back to them later. 
@@ -165,8 +78,8 @@ I'll start off by explaining my primary motivations behind the creation of Noten
 
 I'm sharing these motivations upfront because, if these same ideas appeal to you, then there's a good chance it will be worth your while to read a bit further. On the other hand, if you have different sorts of interests, then it's probably best to just stop now and go about your business. 
 
-<h2 id="the-notenik-application">The Notenik Application</h2>
 
+<a name="the-notenik-application"><h2>The Notenik Application</h2></a>
 
 This version of Notenik is written in [Swift](https://swift.org) and is available from the [Mac App Store](https://apps.apple.com/us/app/notenik/id1465997984?mt=12).
 
@@ -174,8 +87,8 @@ This version was written using the [Xcode IDE](https://developer.apple.com/xcode
 
 From this point on, I'll introduce one concept at a time. 
 
-<h2 id="help-using-notenik">Help Using Notenik</h2>
 
+<a name="help-using-notenik"><h2>Help Using Notenik</h2></a>
 
 You're already reading this intro, so obviously I don't need to tell you how to find this.
 But here's a few other help items that are available, including some that may not be so obvious. 
@@ -184,8 +97,8 @@ This User Guide is available as a web page from the [Notenik](http://www.notenik
 
 But the same content is also available as a Collection of Help Notes, by selecting the corresponding Open Command from Notenik's Help menu. You may find it a little easier to read and navigate in this form, plus you can practice using Notenik as you read the Intro!
 
-<h2 id="each-note-has-a-title-and-a-body">Each Note has a Title and a Body</h2>
 
+<a name="each-note-has-a-title-and-a-body"><h2>Each Note has a Title and a Body</h2></a>
 
 In its most basic form, a Note consists of a Title and a Body. 
 
@@ -195,8 +108,8 @@ The Body consists of the text of the Note, containing as many words as you like.
 
 If no Title is specified within a Note file, then the file name (without the extension) will be used as the Title of the Note. 
 
-<h2 id="each-note-is-its-own-text-file">Each Note is its own Text File</h2>
 
+<a name="each-note-is-its-own-text-file"><h2>Each Note is its own Text File</h2></a>
 
 Each Note is stored as a separate text file, in the [UTF-8](https://en.wikipedia.org/wiki/UTF-8) format, capable of being read and modified by any text editor, on almost any computer system in the world.
 
@@ -218,8 +131,8 @@ The two preferred extensions are '.txt' (short for text) and '.md' (short for ma
 
 Use the Text Edit Note command under the Note menu to open the currently displayed Note in your default text editor. 
 
-<h2 id="notes-are-collected-into-folders">Notes are Collected into Folders</h2>
 
+<a name="notes-are-collected-into-folders"><h2>Notes are Collected into Folders</h2></a>
 
 Each Note is part of a Collection, and each Collection is stored in its own folder (aka directory). Each Note within a Collection must have its own unique Title. 
 
@@ -233,8 +146,8 @@ The Save As command under the File menu allows you to save an entire Collection 
 
 You might want to use the New command on the File menu to create your first Collection now, if you don't already have one created. 
 
-<h2 id="add-delete-and-update-your-notes">Add, Delete and Update Your Notes</h2>
 
+<a name="add-delete-and-update-your-notes"><h2>Add, Delete and Update Your Notes</h2></a>
 
 The Display tab shows you what your Note looks like. Your note is formatted as a web page, and displayed within Notenik using a built-in web browser. If you click on a hyperlink within the display, then the linked page will replace your Note. If you wish to get back to your Note, then click on the Refresh button in the Toolbar. If your Note has a Link value, then click on the Launch Link button in the Toolbar to see the linked page within your default web browser, instead of Notenik's internal browser.
 The Edit tab lets you make changes to the Field Values of a Note. 
@@ -251,8 +164,8 @@ You can alter the typeface and font size used on the Display tab by selecting th
 
 You may also alter the font size used on the Edit tab through use of the commands available to you under the View menu. 
 
-<h2 id="view-your-notes-as-a-list">View Your Notes as a List</h2>
 
+<a name="view-your-notes-as-a-list"><h2>View Your Notes as a List</h2></a>
 
 The first half of the Notenik display shows all the Notes in your current Collection as a simple list, initially sorted by Title.
 You can navigate through this list using some of the buttons on the Toolbar:
@@ -263,13 +176,13 @@ You can navigate through this list using some of the buttons on the Toolbar:
 
 Some of the same navigational commands are available under the Note menu, with handy keyboard shortcuts noted on the right. There you will also find a command to scroll the list so as to bring the currently selected Note into view at the top of the displayed Notes. 
 
-<h2 id="sync-your-notes">Sync Your Notes</h2>
 
+<a name="sync-your-notes"><h2>Sync Your Notes</h2></a>
 
 Since a Collection of Notes lives on your local storage as a folder full of text files, it can be easily synced to the cloud and/or to other devices via a service such as [Dropbox](http://www.dropbox.com) or [iCloud](http://www.apple.com/icloud/icloud-drive/). Simply store your Collection somewhere in your Dropbox folder, or in your iCloud Drive folder. 
 
-<h2 id="format-the-body-of-a-note-using-markdown">Format the Body of a Note using Markdown</h2>
 
+<a name="format-the-body-of-a-note-using-markdown"><h2>Format the Body of a Note using Markdown</h2></a>
 
 [Markdown](http://daringfireball.net/projects/markdown/) is a simple syntax for formatting plain text files so that they can be easily read and written by humans, but also can easily be converted into HTML for use on the Web. If you'd like, you can use the Markdown syntax for formatting the body of each note. But it's not required. 
 
@@ -277,8 +190,8 @@ When you view a Note on the Display tab, you will see the Body Field Value conve
 
 Notenik uses the [Down](https://github.com/iwasrobbed/Down) parser to convert from Markdown to HTML. 
 
-<h2 id="add-other-fields-to-your-notes">Add Other Fields to Your Notes</h2>
 
+<a name="add-other-fields-to-your-notes"><h2>Add Other Fields to Your Notes</h2></a>
 
 I've said that, at their most basic, each Note consists of a Title Field and a Body Field. But each Note can actually contain any number of fields.
 
@@ -298,16 +211,16 @@ Each Field Label may be considered to have a *proper form* (including capitaliza
 
 The Notenik approach to identifying fields within a Note is very similar to the [Multimarkdown metadata syntax](http://fletcher.github.io/MultiMarkdown-4/metadata.html), and also similar to [YAML](https://en.wikipedia.org/wiki/YAML). 
 
-<h2 id="organize-your-notes-with-tags">Organize Your Notes with Tags</h2>
 
+<a name="organize-your-notes-with-tags"><h2>Organize Your Notes with Tags</h2></a>
 
 The Tags Field offers another way to organize the Notes within a Collection.
 Tags may be used to group related notes into categories. One or more tags may be associated with each note, and each tag may contain one or more sub-tags. A period or a slash may be used to separate one level of a tag from the next level, with the period being preferred. A comma or a semi-colon may be used to separate one tag from another, with the comma being preferred.
 
 Click on the Tags tab to see your Notes organized by tags, instead of appearing in a straight List. If a Note has multiple Tags assigned, then it will appear multiple times on the Tags tab, once for each Tag. By adding multiple levels to your Tags, you can effectively organize your Notes into an outline.
 
-<h2 id="add-a-link-field-to-make-a-bookmark">Add a Link Field to Make a Bookmark</h2>
 
+<a name="add-a-link-field-to-make-a-bookmark"><h2>Add a Link Field to Make a Bookmark</h2></a>
 
 A Link Field within Notenik is intended to hold a URL: a hyperlink to a location on the Web (or to a local file, if you'd prefer to use it that way).
 You can easily Launch a link from within Notenik by clicking on the Launch Link button in the Toolbar. 
@@ -318,8 +231,8 @@ Note that if you use a Link to point to a local folder containing another Noteni
 
 You may use the Set Local Link command under the Note menu to choose a file or folder to be linked; the resulting 'file:///' style of URL will then replace any value previously stored in the Link field for the current Note. 
 
-<h2 id="override-default-fields-with-a-template-file">Override Default Fields with a Template file</h2>
 
+<a name="override-default-fields-with-a-template-file"><h2>Override Default Fields with a Template file</h2></a>
 
 By default, Notenik shows only four Fields for a Note: Title, Link, Tags and Body. However, this default may be altered by placing a file named 'template.txt' or 'template.md' within a Collection's folder. Such a file should be in the normal Notenik format, although the Field Labels specified need not have any accompanying values. When such a template file is found, the field names found in this file will be used as the fields to be displayed and maintained for that Collection, overriding the default four.
 You may use the Preferences command under the Collection menu to modify the template for the current Collection. Just put a check mark next to whichever fields you'd like to use for that particular Collection. Then click on the OK button to save your template with the indicated fields. 
@@ -330,8 +243,8 @@ When creating a new Collection, you will be presented with the Collection Prefer
 
 The file extension used for the template file will be used as the file extension for Notes subsequently created within the Collection. 
 
-<h2 id="a-note-file-template">A Note File Template</h2>
 
+<a name="a-note-file-template"><h2>A Note File Template</h2></a>
 
 Following is a sample Note file, showing all of the Fields that Notenik treats as special in some way. Feel free to copy and paste to create a template file, as described in the previous section. 
 
@@ -367,8 +280,8 @@ Following is a sample Note file, showing all of the Fields that Notenik treats a
 
     The substance of the note
 
-<h2 id="sequence-your-notes">Sequence Your Notes</h2>
 
+<a name="sequence-your-notes"><h2>Sequence Your Notes</h2></a>
 
 Add a Seq Field to a Collection (using a template file) in order to specify a sequence number, revision letter, version number or priority to be associated with each Note.
 A Seq field may contain letters, digits and one or more periods (aka decimal points) or hyphens or a dollar sign ('$'). 
@@ -381,8 +294,8 @@ If you want to insert a new note with a Seq Value already assigned to another No
 
 To add a new Note with the next available Seq value, first select the last note in the list (the one with the highest seq field) and then add a New Note in the normal manner. 
 
-<h2 id="track-the-status-of-your-notes">Track the Status of Your Notes</h2>
 
+<a name="track-the-status-of-your-notes"><h2>Track the Status of Your Notes</h2></a>
 
 Add an optional Status Field to your Collection, indicating each Note's degree of completion, and you have a basic To Do List. 
 
@@ -405,8 +318,8 @@ The labels may be modified by placing a series of integer + label pairs in the V
 
 Look under the File menu for an option to Purge Notes that have been Canceled or Completed. You'll be given the option of discarding the purged Notes, or of copying them to another location.
 
-<h2 id="date-your-notes">Date Your Notes</h2>
 
+<a name="date-your-notes"><h2>Date Your Notes</h2></a>
 
 Add a Date field to a Collection in order to track the date each note was officially published, or a due date for each note. A date may be expressed in any of a number of common formats. It may also be a partial date, such as a year, or a year and a month. It may or may not contain a specific time of day.
 
@@ -414,8 +327,8 @@ Note that the Date field has several helpful editing tools. You can enter a free
 
 If you need to export a Collection in a format suitable for sorting by Date, then you may wish to use the Standardize Dates to YMD command under the Collection menu to make sure that all dates are stored in a yyyy-mm-dd format suitable for sorting. 
 
-<h2 id="specify-date-recurs-rules">Specify Date Recurs Rules</h2>
 
+<a name="specify-date-recurs-rules"><h2>Specify Date Recurs Rules</h2></a>
 
 Add a Recurs field to a Collection to cause a Date for a Note to recur on a regular basis. 
 
@@ -423,8 +336,8 @@ Specify a recurs rule using normal English, such as "Every 3 months," "Every Tue
 
 Use the Recurs button on the Date editing row to apply the rule to the current Date associated with the selected Note. 
 
-<h2 id="track-your-tasks">Track Your Tasks</h2>
 
+<a name="track-your-tasks"><h2>Track Your Tasks</h2></a>
 
 Add a Status field, a Seq field, a Date field and a Recurs field to a Collection, and you have all the elements of a personal task management system. 
 
@@ -436,20 +349,20 @@ The Sort menu contains two options specific to task tracking. The first option s
 
 And don't forget the Purge Option under the File menu, which will allow you to purge Cancelled and Completed Notes from a Collection. 
 
-<h2 id="add-code-snippets-to-your-notes">Add Code Snippets to Your Notes</h2>
 
+<a name="add-code-snippets-to-your-notes"><h2>Add Code Snippets to Your Notes</h2></a>
 
 Add a Code field to a Collection in order to store a code snippet as part of each Note in that Collection.
 The code block you enter in a Code field will be formatted on the Display tab enclosed in pre and code tags, so that line breaks will be honored, and the code will be displayed using a monospaced font. 
 
-<h2 id="search-for-one-or-more-notes-containing-specified-text">Search for One or More Notes Containing Specified Text</h2>
 
+<a name="search-for-one-or-more-notes-containing-specified-text"><h2>Search for One or More Notes Containing Specified Text</h2></a>
 
 The Search field on the Toolbar allows you to search for the entered text, and display the first Note containing this text in any field being searched. After finding the first occurrence, you may use the Find Again command under the Note menu to search for the next Note containing the specified text.
 The Search function will search each Note's Title, Link, Tags and Body fields for matching text. Case (upper- or lower-) will be ignored for the purposes of the Search. 
 
-<h2 id="use-other-special-fields">Use Other Special Fields</h2>
 
+<a name="use-other-special-fields"><h2>Use Other Special Fields</h2></a>
 
 You can use whatever Field Labels you want within a Collection, but there are a few other Field Labels that have some special Notenik logic associated with them. 
 
@@ -461,14 +374,33 @@ You can use whatever Field Labels you want within a Collection, but there are a 
 
 * Teaser -- An excerpt from the note used as a teaser in a list of notes. The teaser may be formatted using Markdown.
 
-<h2 id="run-reports">Run Reports</h2>
 
+<a name="attach-files-to-your-notes"><h2>Attach Files to Your Notes</h2></a>
+
+You may also attach any number of files to your Notes. Here's the way this feature works. 
+
+Start by selecting the Note that is to receive the attachments. 
+
+Use the Add Attachment item under the Attachments menu in the Toolbar to add an Attachment to your Note. You will then be prompted to select the file to be attached, and then to specify an optional suffix that can be used to distinguish this attachment from other files attached to the same note. After you supply the requested information, Notenik will copy the indicated file to the "files" folder within your Collection. The file will be given a name that starts with the same name as the Note, followed by the specified suffix, and then followed by the original file extension. The original file will remain as-is. 
+
+Once a Note has attachments, you may open one of them by selecting it from the same Attachments menu in the Toolbar. The request will then be passed on to the operating system, and the attachment will be opened in whatever application is assigned to files of that type. 
+
+If you'd like to delete an Attachment, select the Delete Attachment item under the Note menu. If more than one attachment for that Note exists, then you will be prompted to specify the one you wish to delete. Be aware, though, that when you delete an Attachment, the underlying file in the files folder will be deleted. 
+
+If you change the Title of a Note, then any files attached to the Note will be automaticallly renamed to match the new Title for the Note. 
+
+If you delete a Note, then its attachments (if any) will be deleted as well. 
+
+In case you're wondering, the association between a Note and its Attachments is based solely on matching file names. In other words, if you wish to delete an attachment by using your operating system to delete the file from the files folder, then that's perfectly ok with Notenik: the next time you open that Collection, Notenik will have no "memory" of that attachment. By the same token, if you wish to use your OS to place a new attachment in the files folder, with a name matching that of a Note, then Notenik will recognize that new file as an attachment for the Note the next time you open that Collection. 
+
+
+<a name="use-report-templates"><h2>Use Report Templates</h2></a>
 
 Notenik provides a function for merging data from Notes into a template file in order to create one or more output text files. 
 
 The text files created may be of any type, but certainly one of the most useful formats is html, allowing users to generate one or more Web pages from their notes. 
 
-See the [Merge Template File Spec](merge-template.html) for complete information on the expected format of a Merge Template file. 
+See the [Merge Template File Spec](https://www.notenik.net/merge-template.html) for complete information on the expected format of a Merge Template file. 
 
 Template files should be placed in a folder named 'reports' within the Collection folder where the reports are to be used. Each template file should include the word 'template' somewhere within its file name. 
 
@@ -476,8 +408,21 @@ Once a template file is created, suitably named and placed, it will become avail
 
 Selecting a report will then cause the Collection's notes to be merged into the corresponding template file, creating whatever ouput is identified in the template file. 
 
-<h2 id="import-and-export-your-notes">Import and Export Your Notes</h2>
 
+<a name="play-scripts"><h2>Play Scripts</h2></a>
+
+Notenik can play a script file that will execute a series of data transformations. Data can be input from one or more Notenik Collections and/or from tab-delimited or comma-separated files. The input data can be sorted and filtered using any of the fields contained within the data. The data can then be used as input to a Template file, or output to a new tab-delimited or comma-separated file. 
+
+See the [Merge Script File Spec][script] for a complete description of a Script file. 
+
+Place one or more script files within the reports folder for a Collection, and these files will then become available as Reports. 
+
+Scripts will be executed within a separate Scripter window. 
+
+[script]: https://www.notenik.net/merge-script.html
+
+
+<a name="import-and-export-your-notes"><h2>Import and Export Your Notes</h2></a>
 
 You can import and export a Collection in a variety of formats, using commands found under the File menu.
 Following are the supported formats.
@@ -494,27 +439,40 @@ Following are the supported formats.
 
 	Each Note will be represented as one row/line, and each field will be represented in a separate column. Commas are used to separate columns. This format is suitable for import into MS Excel, for example.
 
-Note that the File menu also contains a command to Split Tags. This will result in a special export in which each Note may be written multiple times, once for each Tag in the Note's Tags field. Notes without any Tags will be written only once, with a blank Tag field. In other cases, the Tag field will contain a single Tag, even if the Tags field contains multiple Tags. 
+When exporting the Notes in a Collection, you will be presented with a few options for the export. 
 
-<h2 id="favorites-to-html">Favorites to HTML</h2>
+* Output Format: Described above. 
+
+* File extension: Pick from the list or type in a custom extension. 
+
+* Use Tags Export Prefs? Select 'Yes'' if you wish the current Tags Export Prefs to be applied. You may filter the notes to be exported, for any of the output formats (other than the Notenik format), by adjusting the entries in the Tags Export preferences. You may specify one or more Tags to be selected, so that only notes containing those Tags will be exported. You may also suppress one or more Tags, meaning that exported notes will have those Tags removed from the resulting output.
+
+	For example, if you have a collection of blog entries stored as a Collection of Notes, and you have multiple blogs to which they are published, you can specify Tags for the relevant blogs for each note, and then select only those Notes when publishing a particular blog (and suppress the Tags for the other blogs).
+
+	If you leave the Tags to Select field blank, then all Notes will be exported.
+
+	Note that the Tags Export Preferences are global across all Collections. 
+
+* Split Tags? Select 'Yes' if you wish one row to be written for each Tag on each Note. This will result in a special export in which each Note may be written multiple times, once for each Tag in the Note's Tags field. Notes without any Tags will be written only once, with a blank Tag field. In other cases, the Tag field will contain a single Tag, even if the Tags field contains multiple Tags. 
+
+* Add Web Extensions? Select 'Yes' to add a number of fields that can be useful for generating Web pages. 
 
 
-If you have a Collection of Notes representing Web Bookmarks, then you may wish to use the 'Favorites' tag to identify the bookmarks you reference most often. You may then use a sub-tag within the 'Favorites' tag to organize your favorite bookmarks into categories. Once you've identified your Favorites, then you may use the Favorites to HTML command under the File menu to create a Web page containing all your favorite bookmarks, organized under headings representing the categories you have chosen. Notenik will display your favorites in four columns, with a maximum of 32 lines per column. Assuming a reasonable number of favorite bookmarks, these will typically display all of your favorites within a single Web page on your Mac. You may then wish to identify the resuling page as the homepage within all of your Web browsers (Safari, Chrome, etc.). 
+<a name="favorites-to-html"><h2>Favorites to HTML</h2></a>
 
-<h2 id="keeping-track-of-your-collections">Keeping Track of Your Collections</h2>
+If you have a Collection of Notes representing Web Bookmarks, then you may wish to use the 'Favorites' tag to identify the bookmarks you reference most often. You may then use a sub-tag within the 'Favorites' tag to organize your favorite bookmarks into categories. Once you've identified your Favorites, then you may use the Favorites to HTML command under the File menu to create a Web page containing all your favorite bookmarks, organized under headings representing the categories you have chosen. Notenik will display your favorites in four columns, with a maximum of 32 lines per column. Assuming a reasonable number of favorite bookmarks, these will typically display all of your favorites within a single Web page on your Mac. You may then wish to identify the resulting page as the homepage within all of your Web browsers (Safari, Chrome, etc.). 
 
 
-If you keep all your Notes in a single Collection, then you will never need to worry about which notes are where.
-If you have multiple Collections of Notes, though, then you will probably want some way of keeping track of them. 
+<a name="open-parent-realm"><h2>Open Parent Realm</h2></a>
 
-Notenik automatically keeps track of Collections you have recently opened, and you can always see this list, and select a Collection to open, by using the Open Recent command under the File menu. 
+In addition to the normal Open and Open Recent commands under the File menu, Notenik also has an Open Parent Realm command. 
 
-Note that this list is presented with the most recently opened Collections at the top, and then proceeding downwards to those accessed less recently. 
+You may invoke this command to specify a folder containing one or more Collections, and/or one or more Script files. Notenik will scan all likely folders within the parent folder, looking for Notenik Collections and Scripts. Notenik will then display these Collections and Script files within a new window, as if they were Notes within a Collection. You may then click on the Launch Link command in the Toolbar to perform the appropriate action: either opening a Collection within Notenik, or preparing a Script file for execution within the Scripter window. 
 
-Another option is to use the Open Parent Realm command under the File menu. You will then be asked to choose a folder. Once you've made that choice, Notenik will scan all likely folders within the parent folder, looking for Notenik Collections. You will then be presented with a window showing a virtual 'Collection of Collections'. Clicking the Launch Link Toolbar button for one of these Collections will then cause Notenik to open that Collection in another new window. 
+Note that the Tags tab will organize these Collections and Scripts by folder, and also by type of link. 
 
-<h2 id="disk-access-permissions">Disk Access Permissions</h2>
 
+<a name="disk-access-permissions"><h2>Disk Access Permissions</h2></a>
 
 Notenik is a modern, well-mannered Mac application, which means that it does not presume to have free run of your hard drive, roaming wantonly wherever it will. 
 
@@ -526,7 +484,7 @@ These two Notenik traits can sometimes come into conflict, however. If you store
 
 Here's how this works. 
 
-1. Any Collection folder that you explicitly select through the Open command under the File menu will always be available to you, because you have explicitly selected it for use by Notenik. 
+1. Any Collection folder that you select through the Open command under the File menu will be available to you, because you have explicitly selected it for use by Notenik. 
 
 2. Any Collection folder that you select using the Open Recent command under the File menu will be available to you, because macOS remembers that you previously gave Notenik permission to access that Collection. 
 
@@ -535,16 +493,13 @@ Here's how this works.
 In general, the rules above will be enough to cover most situations. If they prove too restrictive, though, you can always grant Notenik full disk access in the Security & Privacy pane of System Preferences. 
 
 
- 
-
-<h2 id="view-the-log">View the Log</h2>
-
+<a name="view-the-log"><h2>View the Log</h2></a>
 
 Under the Window Menu, you'll find an entry for the Log window.
 You can usually ignore the Log, but if Notenik is not behaving as you think it should, a look at the Log window can sometimes help determine what is going on. 
 
-<h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
 
+<a name="keyboard-shortcuts"><h2>Keyboard Shortcuts</h2></a>
 
 Following are the keyboard shortcuts available within the app. When combined with the CMD key, these keys can be used as handy shortcuts.
 * A - Select All
@@ -579,8 +534,8 @@ Following are the keyboard shortcuts available within the app. When combined wit
 * '=' - Increase Edit Font Size
 * '-' - Decrease Edit Font Size
 
-<h2 id="files-and-folders">Files and Folders</h2>
 
+<a name="files-and-folders"><h2>Files and Folders</h2></a>
 
 Each Collection is stored within its own folder. You may store each Collection wherever you like. You may wish to store one or more of your Collections in a special folder used by a syncing service such as iCloud or Dropbox, in which case your Collection will be synced just like any other files and folders managed by that service.
 Within each Collection folder you will find one file for each Note in the Collection, with the file name based closely on the Note's title. 
@@ -593,8 +548,12 @@ In addition to the Note files, the following special files and folders may be fo
 
 * Each Collection folder will normally also contain a 'template.txt' or 'template.md' file identifying the fields used within the Collection. 
 
-<h2 id="rights">Rights</h2>
+* A 'files' folder will contain any Attachments for the Collection. 
 
+* A 'reports' sub-folder may contain a number of Template files and/or Script files. 
+
+
+<a name="rights"><h2>Rights</h2></a>
 
 Copyright © 2009 - 2019  by [Herb Bowie](http:/www.herbbowie.com/) doing business as [PowerSurge Publishing](https://www.powersurgepub.com).
 The Notenik application is published as  [open source](http://opensource.org/osd) software under the terms of the [MIT License](https://opensource.org/licenses/MIT).
@@ -603,71 +562,81 @@ Notenik source code is available on [GitHub](https://github.com/hbowie/notenik-s
 
 Notenik makes use of [Down](https://github.com/iwasrobbed/Down) and [cmark](https://github.com/commonmark/cmark), both of which are separately licensed. 
 
-<h2 id="support">Support</h2>
+Notenik also makes use of [CoreXLSX](https://github.com/MaxDesiatov/CoreXLSX) to read XLSX files. CoreXLSX is also separately licensed. 
 
+
+<a name="support"><h2>Support</h2></a>
 
 If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at [support@powersurgepub.com](mailto:support@powersurgepub.com) and I'll try to get back to you as quickly as I can. 
 
-<h2 id="version-history">Version History</h2>
+
+<a name="version-history"><h2>Version History</h2></a>
+
+### Version 1.3.0 | 13 Aug 2019
+
+#### 1. Added Script File Playback
+
+Users can now play a Script file that will run a series of data transformations. 
 
 
-<h3 id="version-100--03-jun-2019">Version 1.0.0 | 03 Jun 2019</h3>
+#### 2. Added Attachments Function
+
+Each Note can have one or more Attachments. 
 
 
-<h4 id="1-initial-release">1. Initial Release</h4>
+#### 3. Added Tags Export Preferences
+
+This new Notenik Preferences tab allows the user to specify tags to select and tags to suppress. 
 
 
-This is the initial release of Notenik written in Swift.
+#### 4. Bug Fixes and Minor Improvements
 
 
-<h3 id="version-110--05-jul-2019">Version 1.1.0 | 05 Jul 2019</h3>
+
+### Version 1.2.0 | 11 Jul 2019
+
+#### 1. Tokenized the Tags Field on the Edit Screen
+
+Users can now pick from previously identified tags when entering a new one. 
 
 
-<h4 id="1-added-favorites-to-html-function">1. Added Favorites to HTML Function</h4>
-
-
-The File Menu now has a new command to export Favorites to HTML. This allows the user to identify favorite bookmarks using the 'Favorites' tag and then export those favorites to a four-column Web page. 
-
-
-<h4 id="2-added-reports-function">2. Added Reports Function</h4>
-
-
-Merge Templates may now be created, stored in a reports folder, and then run from a Collection's Toolbar. 
-
-
-<h4 id="3-various-bug-fixes-and-improvements">3. Various Bug Fixes and Improvements</h4>
-
-
-Miscellaneous bug fixes and improvements. 
-
-
-<h3 id="version-120--10-jul-2019">Version 1.2.0 | 10 Jul 2019</h3>
-
-
-<h4 id="1-added-split-tags-export-to-the-file-menu">1. Added Split Tags Export to the File Menu</h4>
-
+#### 2. Added Split Tags Export to the File Menu
 
 The Split Tags command under the File menu will split the tags for each Note, and write one output row for each Tag for each Note. Notes without tags will be written out only once; Notes with multiple tags will be written out once for each Tag. In addition to the Tags column, a Tag (singular) column will be added to the front of each row, containing one particular Tag for the Note. This export file can be used, for example, to create an index page for each Tag. 
 
 
-<h4 id="2-added-standardize-dates-to-ymd-to-the-collection-menu">2. Added Standardize Dates to YMD to the Collection Menu</h4>
-
+#### 3. Added Standardize Dates to YMD to the Collection Menu
 
 Execution of this command will change all the dates in all the Notes for the current Collection so that they are stored in yyyy-mm-dd format, which can be useful to ensure than an export file sorts correctly on date. 
 
 
-<h4 id="3-bug-fixes-and-improvements">3. Bug Fixes and Improvements</h4>
-
+#### 4. Bug Fixes and Improvements
 
 Markdown conversion now renders embedded HTML and does a smart typographic conversion.
 
 Occasional problem with erroneous blanks in the ‘X’ column (indicating done or not) is now fixed.
 
 
-<h4 id="4-tokenized-the-tags-field-on-the-edit-screen">4. Tokenized the Tags Field on the Edit Screen</h4>
+### Version 1.1.0 | 05 Jul 2019
+
+#### 1. Added Favorites to HTML Function
+
+The File Menu now has a new command to export Favorites to HTML. This allows the user to identify favorite bookmarks using the 'Favorites' tag and then export those favorites to a four-column Web page. 
 
 
-Users can now pick from previously identified tags when entering a new one. 
+#### 2. Added Reports Function
+
+Merge Templates may now be created, stored in a reports folder, and then run from a Collection's Toolbar. 
 
 
+#### 3. Various Bug Fixes and Improvements
+
+Miscellaneous bug fixes and improvements. 
+
+
+### Version 1.0.0 | 03 Jun 2019
+
+#### 1. Initial Release
+
+This is the initial release of Notenik written in Swift.
 

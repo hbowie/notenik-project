@@ -1,0 +1,7 @@
+Title:  Readable File Name
+
+Seq:    R
+
+Body: 
+
+The letter "R", following the letter "F", will cause the variable to be converted to a safe file name, but preserving as much human readability as possible. 

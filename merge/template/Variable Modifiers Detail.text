@@ -101,13 +101,24 @@ The letter "O" will cause the field to be treated as Markdown, and converted to 
 
 Remove awkward punctuation characters.
 
+#### Quotation Encasing "Q"
+
+This letter will cause the value to be enclosed in quotation marks, if the value contains quotation marks, or tabs, or newline characters. 
+
+
 #### Keep characters on the right "R"
 
 The letter "R", in combination with a length modifier, will cause the variable to be truncated to the given length, truncating characters on the left and keeping characters on the right.
 
+#### Readable File Name "R"
+
+The letter "R", following the letter "F", will cause the variable to be converted to a safe file name, but preserving as much human readability as possible. 
+
+
 #### Summarize "S"
 
-The letter "S" will pull the first few sentences from the field, within the first 250 characters.
+The letter "S" will pull the first few sentences from the field, within the first 250 characters. Specifying a number immediately following the "S" will override the default of 250 with the specified number. 
+
 
 #### Uppercase Modifier "U"
 

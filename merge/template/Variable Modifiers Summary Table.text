@@ -23,7 +23,9 @@ Code:
 <tr><td>N</td><td>No Breaks</td></tr>
 <tr><td>O</td><td>Markdown to HTML</td></tr>
 <tr><td>P</td><td>Punctuation Purification</td></tr>
+<tr><td>Q</td><td>Quotation Encasing</td></tr>
 <tr><td>R</td><td>Keep characters on the right</td></tr>
+<tr><td>R</td><td>Readable File Name</td></tr>
 <tr><td>S</td><td>Summarize</td></tr>
 <tr><td>U</td><td>Uppercase Modifier</td></tr>
 <tr><td>V</td><td>Variance</td></tr>

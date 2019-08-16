@@ -22,7 +22,7 @@ The Body consists of the text of the Note, containing as many words as you like,
 
 The Code Field is intended to contain a code snippet associated with the Note, using a relevant coding language (HTML, Java, etc.). 
 
-A Code Field would typically consist of multiple lines, and would be displayed in a monospaced font, and without any interpretation of the code found within.
+A Code Field would typically consist of multiple lines, and would be displayed in a monospaced font, and without any interpretation or execution of the code found within.
 
 ### Date
 

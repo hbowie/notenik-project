@@ -1,0 +1,10 @@
+Title:  filter module
+
+Seq:    2
+
+Param:  filter
+
+Body: 
+
+Specify one or more filter criteria that will be used to filter the data source to a subset of its original set of rows. 
+

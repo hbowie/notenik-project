@@ -1,0 +1,10 @@
+Title:  sort module
+
+Seq:    3
+
+Param:  sort
+
+Body: 
+
+Specify one or more sort fields (major to minor) to be used to sort the data source. 
+

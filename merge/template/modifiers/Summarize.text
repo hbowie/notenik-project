@@ -2,4 +2,6 @@ Title:  Summarize
 
 Seq:    S
 
-Body:   The letter "S" will pull the first few sentences from the field, within the first 250 characters.
+Body: 
+
+The letter "S" will pull the first few sentences from the field, within the first 250 characters. Specifying a number immediately following the "S" will override the default of 250 with the specified number. 

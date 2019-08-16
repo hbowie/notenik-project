@@ -1,0 +1,20 @@
+<?output "../../Columns.text"?>
+Title:  Columns
+
+Seq:    2
+
+Type:   html
+
+Heading: Columns
+
+Code:
+
+<table>
+<tr><th>#</th><th>Heading</th><th>Contents</th></tr>
+<?nextrec?>
+<tr><td>=$seq$=</td><td>=$title$=</td><td>=$body$=</td></tr>
+<?loop?>
+</table>
+
+Body:
+

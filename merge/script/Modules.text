@@ -1,0 +1,22 @@
+Title:  Modules
+
+Seq:    4
+
+Heading:
+
+Type:   md
+
+Code:
+
+Body:
+
+* input - Read input rows and columns from a Note Collection or another data source. 
+
+* filter - Specify one or more filter criteria that will be used to filter the data source to a subset of its original set of rows. 
+
+* sort - Specify one or more sort fields (major to minor) to be used to sort the data source. 
+
+* template - Specify the location of a [template file](https://www.notenik.net/merge-template.html) to be processed using the data source. 
+
+* output - Write the filtered, sorted data to an output file in tab-delimited format. 
+
