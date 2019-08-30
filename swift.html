@@ -106,7 +106,7 @@ The Notenik Project
 <p>I want a simple, sturdy user interface that I can apply to as much stuff as possible.</p>
 </li>
 </ol>
-<p>I’m sharing these motivations upfront because, if these same ideas appeal to you, then there’s a good chance it will be worth your while to read a bit further. On the other hand, if you have different sorts of interests, then it’s probably best to just stop now and go about your business.</p>
+<p>I’m sharing these motivations upfront because, if these same ideas appeal to you, then there’s a good chance it will be worth your while to read a bit further. On the other hand, if you have different sorts of interests, then it’s probably best to just stop now and find another piece of software to explore.</p>
 <p><a name="the-notenik-application"><h2>The Notenik Application</h2></a></p>
 <p>This version of Notenik is written in <a href="https://swift.org">Swift</a> and is available from the <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Mac App Store</a>.</p>
 <p>This version was written using the <a href="https://developer.apple.com/xcode/">Xcode IDE</a>. Source can be found on <a href="https://github.com/hbowie/notenik-swift">GitHub</a>.</p>
@@ -272,7 +272,7 @@ A Seq field may contain letters, digits and one or more periods (aka decimal poi
 <p>And don’t forget the Purge Option under the File menu, which will allow you to purge Cancelled and Completed Notes from a Collection.</p>
 <p><a name="add-code-snippets-to-your-notes"><h2>Add Code Snippets to Your Notes</h2></a></p>
 <p>Add a Code field to a Collection in order to store a code snippet as part of each Note in that Collection.
-The code block you enter in a Code field will be formatted on the Display tab enclosed in pre and code tags, so that line breaks will be honored, and the code will be displayed using a monospaced font.</p>
+The code block you enter in a Code field will be formatted on the Display tab enclosed in HTML pre and code tags, so that line breaks will be honored, and the code will be displayed using a monospaced font.</p>
 <p><a name="search-for-one-or-more-notes-containing-specified-text"><h2>Search for One or More Notes Containing Specified Text</h2></a></p>
 <p>The Search field on the Toolbar allows you to search for the entered text, and display the first Note containing this text in any field being searched. After finding the first occurrence, you may use the Find Again command under the Note menu to search for the next Note containing the specified text.
 The Search function will search each Note’s Title, Link, Tags and Body fields for matching text. Case (upper- or lower-) will be ignored for the purposes of the Search.</p>
@@ -302,17 +302,48 @@ The Search function will search each Note’s Title, Link, Tags and Body fields 
 <p>If you delete a Note, then its attachments (if any) will be deleted as well.</p>
 <p>In case you’re wondering, the association between a Note and its Attachments is based solely on matching file names. In other words, if you wish to delete an attachment by using your operating system to delete the file from the files folder, then that’s perfectly ok with Notenik: the next time you open that Collection, Notenik will have no “memory” of that attachment. By the same token, if you wish to use your OS to place a new attachment in the files folder, with a name matching that of a Note, then Notenik will recognize that new file as an attachment for the Note the next time you open that Collection.</p>
 <p><a name="use-report-templates"><h2>Use Report Templates</h2></a></p>
-<p>Notenik provides a function for merging data from Notes into a template file in order to create one or more output text files.</p>
+<p>Notenik provides a function for merging data from Notes (or other data sources) into a template file in order to create one or more output text files.</p>
 <p>The text files created may be of any type, but certainly one of the most useful formats is html, allowing users to generate one or more Web pages from their notes.</p>
 <p>See the <a href="https://www.notenik.net/merge-template.html">Merge Template File Spec</a> for complete information on the expected format of a Merge Template file.</p>
-<p>Template files should be placed in a folder named ‘reports’ within the Collection folder where the reports are to be used. Each template file should include the word ‘template’ somewhere within its file name.</p>
+<p>Template files can be placed in a folder named ‘reports’ within the Collection folder where the reports are to be used. Each template file should include the word ‘template’ somewhere within its file name.</p>
 <p>Once a template file is created, suitably named and placed, it will become available as a report that can be selected from a drop-down (identified with a gear icon) on the Collection’s toolbar.</p>
 <p>Selecting a report will then cause the Collection’s notes to be merged into the corresponding template file, creating whatever ouput is identified in the template file.</p>
-<p><a name="play-scripts"><h2>Play Scripts</h2></a></p>
-<p>Notenik can play a script file that will execute a series of data transformations. Data can be input from one or more Notenik Collections and/or from tab-delimited or comma-separated files. The input data can be sorted and filtered using any of the fields contained within the data. The data can then be used as input to a Template file, or output to a new tab-delimited or comma-separated file.</p>
+<p><a name="record-and-play-scripts"><h2>Record and Play Scripts</h2></a></p>
+<p>Notenik can record and play a script file that will execute a series of data transformations. Data can be input from one or more Notenik Collections and/or from tab-delimited or comma-separated files. The input data can be sorted and filtered using any of the fields contained within the data. The data can then be used as input to a Template file, or output to a new tab-delimited or comma-separated file.</p>
 <p>See the <a href="https://www.notenik.net/merge-script.html">Merge Script File Spec</a> for a complete description of a Script file.</p>
 <p>Place one or more script files within the reports folder for a Collection, and these files will then become available as Reports.</p>
-<p>Scripts will be executed within a separate Scripter window.</p>
+<p>Scripts will be executed within a separate Scripter window. You can open this window directly by selecting it from the Window menu.</p>
+<p>The Scripter window can be used for a number of different functions.</p>
+<ol>
+<li>
+<p>Play a script file that already exists.</p>
+</li>
+<li>
+<p>Start and stop recording of a new script file.</p>
+</li>
+<li>
+<p>Direct execution of actions to be recorded within a new script file.</p>
+</li>
+</ol>
+<p>In all of these cases, the scripting actions and results will be displayed within the lower portion of the window.</p>
+<p>The first five fields at the top of the Scripter window — Module, Action, Modifier, Object and Value — correspond directly to the columns in a <a href="https://www.notenik.net/merge-script.html">Script</a> file. These fields should generally be entered from left to right, since earlier selections will modify the options available in later fields.</p>
+<p>The next column, identified with the ‘@’ symbol, allows you to select a local file whose path is to be entered in the Value field.</p>
+<p>The final column, labeled “Go” will cause Notenik to try to execute the command that has been entered into the first five fields, and will record the command, if you are currently recording a Script.</p>
+<p>Note that there are Script commands that can be entered here that will not be found within the Script file spec, since these commands are provided to allow the recording and playing of Script files, but cannot be recursively executed from within a Script file. For these commands, the Module field is ‘script’. The available Actions are as follows.</p>
+<ul>
+<li>
+<p>open — Use the Modifier field to specify either an input or an output file, and use the Value field to specify the location of the script file to be read or written.</p>
+</li>
+<li>
+<p>play — After opening an input file, you can execute the play command to play the Script file previously specified.</p>
+</li>
+<li>
+<p>record — Use this command to begin recording a new Script file after previously opening that file as output.</p>
+</li>
+<li>
+<p>stop — Use this command to stop recording a script. It is at this point that the executed and recorded commands will be written to disk.</p>
+</li>
+</ul>
 <p><a name="import-and-export-your-notes"><h2>Import and Export Your Notes</h2></a></p>
 <p>You can import and export a Collection in a variety of formats, using commands found under the File menu.
 Following are the supported formats.</p>
@@ -371,10 +402,14 @@ Following are the supported formats.</p>
 <p>Any Collection folder that you select using the Open Recent command under the File menu will be available to you, because macOS remembers that you previously gave Notenik permission to access that Collection.</p>
 </li>
 <li>
-<p>If you use the Open Parent Realm command under the File menu to have Notenik search for its Collections within a parent folder, then those collections will be available to be opened, because you have explicitly given Notenik permission to access everything within that parent folder.</p>
+<p>If you use the Open Parent Realm command under the File menu to have Notenik search for its Collections and Scripts within a parent folder, then those Collections and Scripts will be available to be opened, because you have explicitly given Notenik permission to access everything within that parent folder.</p>
 </li>
 </ol>
 <p>In general, the rules above will be enough to cover most situations. If they prove too restrictive, though, you can always grant Notenik full disk access in the Security &amp; Privacy pane of System Preferences.</p>
+<p><a name="website-building"><h2>Website Building</h2></a></p>
+<p>Note that many of the individual Notenik functions described above can be combined in order to build websites. Create a Collection, add appropriate fields, create template files, record a script, and you can easily generate a set of HTML files that will work together to present a unified website.</p>
+<p>What’s more, whenever you add or change or delete any content, you can rerun your script file(s) to regenerate your new website, with everything updated to reflect the latest content.</p>
+<p>As an example, the site at <a href="https://notenik.net">Notenik.net</a>, including this <a href="https://notenik.net/swift.html">User Guide</a>, was generated entirely using Notenik.</p>
 <p><a name="view-the-log"><h2>View the Log</h2></a></p>
 <p>Under the Window Menu, you’ll find an entry for the Log window.
 You can usually ignore the Log, but if Notenik is not behaving as you think it should, a look at the Log window can sometimes help determine what is going on.</p>
@@ -416,6 +451,9 @@ You can usually ignore the Log, but if Notenik is not behaving as you think it s
 </li>
 <li>
 <p>Q - Quit Notenik</p>
+</li>
+<li>
+<p>R - View Scripter Window</p>
 </li>
 <li>
 <p>S - Save Note</p>
@@ -496,6 +534,11 @@ The Notenik application is published as  <a href="http://opensource.org/osd">ope
 <p><a name="support"><h2>Support</h2></a></p>
 <p>If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at <a href="mailto:support@powersurgepub.com">support@powersurgepub.com</a> and I’ll try to get back to you as quickly as I can.</p>
 <p><a name="version-history"><h2>Version History</h2></a></p>
+<h3>Version 1.4.0 | 30 Aug 2019</h3>
+<h4>1. Added Script File Recording</h4>
+<p>Notenik can now be used to record script files, as well as play them back.</p>
+<h4>2. Miscellaneous Improvements</h4>
+<p>A few minor bug fixes and minor improvements.</p>
 <h3>Version 1.3.0 | 13 Aug 2019</h3>
 <h4>1. Added Script File Playback</h4>
 <p>Users can now play a Script file that will run a series of data transformations.</p>
