@@ -42,17 +42,18 @@ Hi, I'm [Herb Bowie](https://herbbowie.com), and I'm responsible for the concept
 23. [Use Other Special Fields](#use-other-special-fields)
 24. [Attach Files to Your Notes](#attach-files-to-your-notes)
 25. [Use Report Templates](#use-report-templates)
-26. [Play Scripts](#play-scripts)
+26. [Record and Play Scripts](#record-and-play-scripts)
 27. [Import and Export Your Notes](#import-and-export-your-notes)
 28. [Favorites to HTML](#favorites-to-html)
 29. [Open Parent Realm](#open-parent-realm)
 30. [Disk Access Permissions](#disk-access-permissions)
-31. [View the Log](#view-the-log)
-32. [Keyboard Shortcuts](#keyboard-shortcuts)
-33. [Files and Folders](#files-and-folders)
-34. [Rights](#rights)
-35. [Support](#support)
-36. [Version History](#version-history)
+31. [Website Building](#website-building)
+32. [View the Log](#view-the-log)
+33. [Keyboard Shortcuts](#keyboard-shortcuts)
+34. [Files and Folders](#files-and-folders)
+35. [Rights](#rights)
+36. [Support](#support)
+37. [Version History](#version-history)
 
 
 <a name="motivations"><h2>Motivations</h2></a>
@@ -608,14 +609,24 @@ If you have questions about Notenik, bug reports, or requests for enhancements, 
 
 <a name="version-history"><h2>Version History</h2></a>
 
-### Version 1.4.0 | 30 Aug 2019
+### Version 1.4.0 | 03 Sep 2019
 
-#### 1. Added Script File Recording
+#### 1. Improved Collection Load Speed
+
+Improved the speed of opening a new Collection by optimizing the sorting of Notes as they are loaded into memory. 
+
+
+#### 2. Work Type now uses a Combo Box
+
+When a Collection (typically, of quotations) has a 'Work Type' field, then Notenik will now present a standard, selectable list of options to choose from using what is known as a "Combo Box" control for editing. 
+
+
+#### 3. Added Script File Recording
 
 Notenik can now be used to record script files, as well as play them back. 
 
 
-#### 2. Miscellaneous Improvements
+#### 4. Miscellaneous Improvements
 
 A few minor bug fixes and minor improvements. 
 

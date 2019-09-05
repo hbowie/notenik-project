@@ -4,7 +4,7 @@ Tags:   docs, swift
 
 Seq:    7.6
 
-Link:   file:///Users/hbowie/Projects/Mac%20Info/ChronoSync%20Scripts/Notenik%20Help%20notes%20refresh.sync
+Link:   file:///Users/hbowie/Mac%20Info/ChronoSync%20Scripts/Notenik%20Help%20notes%20refresh.sync
 
 Body: 
 
@@ -14,7 +14,7 @@ See the folder at this location:
 
 The notes folder here can be refreshed by running the following ChronoSync script:
 
-* /Users/hbowie/Projects/Mac Info/ChronoSync Scripts/Notenik Help notes refresh.sync
+* /Users/hbowie/Mac Info/ChronoSync Scripts/Notenik Help notes refresh.sync
 
 You can then rebuild the Notenik.help help book by using Notenik to run the following script:
 

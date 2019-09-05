@@ -1,0 +1,9 @@
+Title:  Improved Collection Load Speed
+
+Seq:    1.4.0
+
+Date:   03 Sep 2019
+
+Body: 
+
+Improved the speed of opening a new Collection by optimizing the sorting of Notes as they are loaded into memory. 

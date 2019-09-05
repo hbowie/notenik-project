@@ -1,0 +1,9 @@
+Title:  Work Type now uses a Combo Box
+
+Seq:    1.4.0
+
+Date:   03 Sep 2019
+
+Body: 
+
+When a Collection (typically, of quotations) has a 'Work Type' field, then Notenik will now present a standard, selectable list of options to choose from using what is known as a "Combo Box" control for editing. 
