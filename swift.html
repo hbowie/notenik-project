@@ -145,6 +145,7 @@ But here’s a few other help items that are available, including some that may 
 <p>The Notenik application can open multiple Collections at a time, each in its own window. The Open Recent command under the File menu provides easy access to recently opened Collections.</p>
 <p>You may use a command under the File menu to designate the current Collection as your Essential Collection. Once identified, this will be the first Collection opened each time the application launches.</p>
 <p>The Save As command under the File menu allows you to save an entire Collection in a new location, with the option to either keep the current location (effectively making a copy) or to delete it (effectively moving the Collection to a new location).</p>
+<p>Note that Notenik does not make any assumptions about how you wish to name your Notenik folders. When creating a new Collection, or using Save As to save your current Collection to a new location, Notenik expects you to create and appropriately name a new folder that will contain your Collection. In other words, you should not simply select an existing folder with the expectation that Notenik will then create a subfolder to store your Collection.</p>
 <p>You might want to use the New command on the File menu to create your first Collection now, if you don’t already have one created.</p>
 <p><a name="add-delete-and-update-your-notes"><h2>Add, Delete and Update Your Notes</h2></a></p>
 <p>The Display tab shows you what your Note looks like. Your note is formatted as a web page, and displayed within Notenik using a built-in web browser. If you click on a hyperlink within the display, then the linked page will replace your Note. If you wish to get back to your Note, then click on the Refresh button in the Toolbar. If your Note has a Link value, then click on the Launch Link button in the Toolbar to see the linked page within your default web browser, instead of Notenik’s internal browser.
@@ -535,6 +536,9 @@ The Notenik application is published as  <a href="http://opensource.org/osd">ope
 <p><a name="support"><h2>Support</h2></a></p>
 <p>If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at <a href="mailto:support@powersurgepub.com">support@powersurgepub.com</a> and I’ll try to get back to you as quickly as I can.</p>
 <p><a name="version-history"><h2>Version History</h2></a></p>
+<h3>Version 1.4.1 | 08 Sep 2019</h3>
+<h4>1. Added Checks Before Completing Save As</h4>
+<p>The Save As command relies on the user creating a new folder to receive the copied contents of the current Collection. It then deletes the folder in order to take advantage of a native macOS command to copy the existing folder to the new location. However, this logic would allow the user to select an existing folder, containing other contents, and would then delete it. Notenik has been modified to make sure that the requested recipient of a Save As command is actually empty, before copying the old Collection to that (presumed new) location. The program is also now making an additional check to ensure the user doesn’t try to make his entire Desktop folder a Notenik Collection (even if it is empty).</p>
 <h3>Version 1.4.0 | 03 Sep 2019</h3>
 <h4>1. Improved Collection Load Speed</h4>
 <p>Improved the speed of opening a new Collection by optimizing the sorting of Notes as they are loaded into memory.</p>

@@ -141,9 +141,11 @@ You can organize your Notes into as many Collections as you would like, and stor
 
 The Notenik application can open multiple Collections at a time, each in its own window. The Open Recent command under the File menu provides easy access to recently opened Collections. 
 
-You may use a command under the File menu to designate the current Collection as your Essential Collection. Once identified, this will be the first Collection opened each time the application launches. 
+You may use a command under the File menu to designate the current Collection as your Essential Collection. Once identified, this will be the first Collection opened each time the application launches.  
 
 The Save As command under the File menu allows you to save an entire Collection in a new location, with the option to either keep the current location (effectively making a copy) or to delete it (effectively moving the Collection to a new location). 
+
+Note that Notenik does not make any assumptions about how you wish to name your Notenik folders. When creating a new Collection, or using Save As to save your current Collection to a new location, Notenik expects you to create and appropriately name a new folder that will contain your Collection. In other words, you should not simply select an existing folder with the expectation that Notenik will then create a subfolder to store your Collection.
 
 You might want to use the New command on the File menu to create your first Collection now, if you don't already have one created. 
 
@@ -608,6 +610,13 @@ If you have questions about Notenik, bug reports, or requests for enhancements, 
 
 
 <a name="version-history"><h2>Version History</h2></a>
+
+### Version 1.4.1 | 08 Sep 2019
+
+#### 1. Added Checks Before Completing Save As
+
+The Save As command relies on the user creating a new folder to receive the copied contents of the current Collection. It then deletes the folder in order to take advantage of a native macOS command to copy the existing folder to the new location. However, this logic would allow the user to select an existing folder, containing other contents, and would then delete it. Notenik has been modified to make sure that the requested recipient of a Save As command is actually empty, before copying the old Collection to that (presumed new) location. The program is also now making an additional check to ensure the user doesn't try to make his entire Desktop folder a Notenik Collection (even if it is empty). 
+
 
 ### Version 1.4.0 | 03 Sep 2019
 
