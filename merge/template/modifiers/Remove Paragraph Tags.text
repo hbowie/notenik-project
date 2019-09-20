@@ -1,0 +1,7 @@
+Title:  Remove Paragraph Tags
+
+Seq:    Dash
+
+Body: 
+
+When used following the letter 'o', indicating conversion from Markdown to HTML, a dash ('-') indicates that leading and trailing paragraph tags should be stripped from the output. 

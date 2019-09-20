@@ -35,6 +35,7 @@ Code:
 <tr><td>y</td><td>Year</td></tr>
 <tr><td>dd</td><td>Day of Month</td></tr>
 <tr><td>EEE</td><td>Day of Week, Abbreviated</td></tr>
+<tr><td>Dash</td><td>Remove Paragraph Tags</td></tr>
 <tr><td>EEEE</td><td>Day of Week</td></tr>
 </table>
 

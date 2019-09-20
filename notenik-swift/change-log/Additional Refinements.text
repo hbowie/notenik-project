@@ -1,0 +1,9 @@
+Title:  Additional Refinements
+
+Seq:    1.5.0
+
+Date:   19 Sep 2019
+
+Body: 
+
+Fixed a bug that sometimes caused newline characters to be ignored when trying to load a Note from disk. 

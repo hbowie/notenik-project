@@ -59,6 +59,7 @@ The Notenik Project
 <li><a href="#specify-date-recurs-rules">Specify Date Recurs Rules</a></li>
 <li><a href="#track-your-tasks">Track Your Tasks</a></li>
 <li><a href="#add-code-snippets-to-your-notes">Add Code Snippets to Your Notes</a></li>
+<li><a href="#track-authors-and-artists">Track Authors and Artists</a></li>
 <li><a href="#search-for-one-or-more-notes-containing-specified-text">Search for One or More Notes Containing Specified Text</a></li>
 <li><a href="#use-other-special-fields">Use Other Special Fields</a></li>
 <li><a href="#attach-files-to-your-notes">Attach Files to Your Notes</a></li>
@@ -198,6 +199,7 @@ You may use the Preferences command under the Collection menu to modify the temp
 <p>You can also use any text editor to modify the sample template file to reflect the fields you desire for that Collection.</p>
 <p>When creating a new Collection, you will be presented with the Collection Preferences window automatically, to give you a chance to customize the fields to be used for that new Collection.</p>
 <p>The file extension used for the template file will be used as the file extension for Notes subsequently created within the Collection.</p>
+<p>By specifying the value ‘<longtext>’ (without the quotation marks) as the value for a field in a template file, the user can indicate that a field is to be treated as a long text field, rather than a one-line text field.</p>
 <p><a name="a-note-file-template"><h2>A Note File Template</h2></a></p>
 <p>Following is a sample Note file, showing all of the Fields that Notenik treats as special in some way. Feel free to copy and paste to create a template file, as described in the previous section.</p>
 <pre><code>Title:  The unique title for this note
@@ -275,6 +277,10 @@ A Seq field may contain letters, digits and one or more periods (aka decimal poi
 <p><a name="add-code-snippets-to-your-notes"><h2>Add Code Snippets to Your Notes</h2></a></p>
 <p>Add a Code field to a Collection in order to store a code snippet as part of each Note in that Collection.
 The code block you enter in a Code field will be formatted on the Display tab enclosed in HTML pre and code tags, so that line breaks will be honored, and the code will be displayed using a monospaced font.</p>
+<p><a name="track-authors-and-artists"><h2>Track Authors and Artists</h2></a></p>
+<p>You can specify an Author or an Artist field when using a Collection as some sort of catalog of works by others. For example, I have one Collection that I use to keep track of my favorite Quotations, and the Author field indicates the author of each quotation. I have another Collection where I maintain my thoughts about a series of albums, and use the Artist field to indicate the individual or group responsible for each album.</p>
+<p>In either case, you can use Sort Option # 5 (under the Sort menu) to sort a Collection by Author or Artist.</p>
+<p>When sorting by Author, the sort will be by last name first; if a Collection contains an Artist field, but no Author field, then the sort will be by Artist, and the word ‘the’ will be ignored when found as the first work in the Artist’s name. (In other words, ‘The Beatles’ will be sorted under ‘B’, not under ‘T’.)</p>
 <p><a name="search-for-one-or-more-notes-containing-specified-text"><h2>Search for One or More Notes Containing Specified Text</h2></a></p>
 <p>The Search field on the Toolbar allows you to search for the entered text, and display the first Note containing this text in any field being searched. After finding the first occurrence, you may use the Find Again command under the Note menu to search for the next Note containing the specified text.
 The Search function will search each Note’s Title, Link, Tags and Body fields for matching text. Case (upper- or lower-) will be ignored for the purposes of the Search.</p>
@@ -536,6 +542,17 @@ The Notenik application is published as  <a href="http://opensource.org/osd">ope
 <p><a name="support"><h2>Support</h2></a></p>
 <p>If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at <a href="mailto:support@powersurgepub.com">support@powersurgepub.com</a> and I’ll try to get back to you as quickly as I can.</p>
 <p><a name="version-history"><h2>Version History</h2></a></p>
+<h3>Version 1.5.0 | 20 Sep 2019</h3>
+<h4>1. Enhanced Logic for Incrementing the Seq Field</h4>
+<p>Made some improvements in the logic for incrementing the Seq field to properly increment following Notes to prevent overlap.</p>
+<h4>2. Added a Dash as a New Variable Modifier</h4>
+<p>A dash may now optionally follow the letter O, which will result in the html string produced by the Markdown conversion having opening and closing paragraph tags stripped from the resulting string.</p>
+<h4>3. Additional Refinements</h4>
+<p>Fixed a bug that sometimes caused newline characters to be ignored when trying to load a Note from disk.</p>
+<h4>4. Added Special Treatment for Artist Field</h4>
+<p>A field name of Artist will now be used as an alternate to Author when sorting by Author. A leading ‘The’ will be ignored, and values will be sorted as if they were all lower case.</p>
+<h4>5. Added <longtext> option to Template file</h4>
+<p>By specifying the value &lt;longtext&gt; as the value for a field in a template file, the user can now indicate that a field is to be a long text field, rather than a one-line text field.</p>
 <h3>Version 1.4.1 | 08 Sep 2019</h3>
 <h4>1. Added Checks Before Completing Save As</h4>
 <p>The Save As command relies on the user creating a new folder to receive the copied contents of the current Collection. It then deletes the folder in order to take advantage of a native macOS command to copy the existing folder to the new location. However, this logic would allow the user to select an existing folder, containing other contents, and would then delete it. Notenik has been modified to make sure that the requested recipient of a Save As command is actually empty, before copying the old Collection to that (presumed new) location. The program is also now making an additional check to ensure the user doesn’t try to make his entire Desktop folder a Notenik Collection (even if it is empty).</p>

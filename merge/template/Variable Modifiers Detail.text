@@ -97,6 +97,9 @@ Remove HTML break (br) tags from the string.
 
 The letter "O" will cause the field to be treated as Markdown, and converted to HTML.
 
+Following this letter with a minus sign ('-') will cause any opening and closing paragraph tags ('\<p\>' and '\</p\>' respectively) to be stripped from the resulting field (thus reducing the chance for possible conflicts with other tags). 
+
+
 #### Punctuation Purification "P"
 
 Remove awkward punctuation characters.
@@ -154,6 +157,11 @@ Represents a two-digit day of month within a date formatting string.
 #### Day of Week, Abbreviated "EEE"
 
 Represents an abbreviated, 3-character, day of week within a date formatting string.
+
+#### Remove Paragraph Tags "Dash"
+
+When used following the letter 'o', indicating conversion from Markdown to HTML, a dash ('-') indicates that leading and trailing paragraph tags should be stripped from the output. 
+
 
 #### Day of Week "EEEE"
 

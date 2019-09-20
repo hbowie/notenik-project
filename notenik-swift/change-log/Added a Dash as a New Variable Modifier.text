@@ -1,0 +1,9 @@
+Title:  Added a Dash as a New Variable Modifier 
+
+Seq:    1.5.0
+
+Date:   19 Sep 2019
+
+Body: 
+
+A dash may now optionally follow the letter O, which will result in the html string produced by the Markdown conversion having opening and closing paragraph tags stripped from the resulting string. 

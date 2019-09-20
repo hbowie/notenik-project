@@ -1,6 +1,6 @@
 Title:  Update Logging
 
-Seq:    9
+Seq:    10
 
 Body: 
 
@@ -8,3 +8,4 @@ For production release, the AppDelegate should be updated with the following opt
 
 	logger.logDestPrint = false
 	logger.logDestUnified = true
+
