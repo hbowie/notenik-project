@@ -62,6 +62,9 @@ sort	add	Ascending	Seq
 sort	set		params
 template	open	text		#PATH#../merge/script/reports/merge-script template.html
 template	generate
+template	open	text		#PATH#../merge/script/reports/script-spec template.text
+template	generate
+
 <!--
 <!-- Generate the Merge Template File Spec
 <!--
@@ -71,6 +74,8 @@ input	open	notenik-defined		#PATH#../merge/template/
 sort	add	Ascending	Seq
 sort	set		params
 template	open	text		#PATH#../merge/template/reports/merge-template template.html
+template	generate
+template	open	text		#PATH#../merge/template/reports/template-spec template.text
 template	generate
 <!--
 <!-- Generate the Notenik for Swift Change Log
@@ -98,6 +103,21 @@ template	generate
 filter	clear
 filter	set		params
 template	open	text		#PATH#../notenik-swift/reports/swift-guide.text
+template	generate
+<!--
+<!-- Generate the Blog
+<!--
+input	set		xpltags	false
+input	set		dirdepth	1
+input	open	notenik-defined		/Users/hbowie/Sites/notenik/blog
+filter	clear
+filter	add	ge	Status	9
+filter	set		params
+sort	clear
+sort	add	ascending	Date
+sort	set		params
+template	webroot			/Users/hbowie/Sites/notenik
+template	open			/Users/hbowie/Sites/notenik/blog/reports/blog template.text
 template	generate
 <!--
 <!-- Generate the HTML pages for the Notenik Web Site

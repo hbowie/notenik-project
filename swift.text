@@ -1,6 +1,6 @@
 Title:   swift
 
-Title 2: Notenik Software Written in Swift
+Title 2: User Guide
 
 Seq:     11
 
@@ -11,9 +11,10 @@ Link:
 Body:
 
 
-<a name="introduction-to-notenik"><h2>Introduction to Notenik</h2></a>
+<a name="intro"><h2>Intro</h2></a>
 
-Hi, I'm [Herb Bowie](https://herbbowie.com), and I'm responsible for the concepts and code behind [Notenik](https://notenik.net), a simple but powerful system for taking, collecting and referencing notes. On the following pages I'll provide a gradual introduction to the version of [Notenik](http://notenik.net) written in [Swift](https://developer.apple.com/swift/) specifically for [macOS](https://www.apple.com/macos/).
+The following sections contain detailed instructions on the use of Notenik for the Mac, starting with basic concepts and the most common functions, and proceeding on to more complex operations. 
+
 
 <a name="table-of-contents"><h2>Table of Contents</h2></a>
 
@@ -415,7 +416,7 @@ Notenik provides a function for merging data from Notes (or other data sources) 
 
 The text files created may be of any type, but certainly one of the most useful formats is html, allowing users to generate one or more Web pages from their notes. 
 
-See the [Merge Template File Spec](https://www.notenik.net/merge-template.html) for complete information on the expected format of a Merge Template file. 
+See the [Merge Template File Spec](https://notenik.net/template-spec.html) for complete information on the expected format of a Merge Template file. 
 
 Template files can be placed in a folder named 'reports' within the Collection folder where the reports are to be used. Each template file should include the word 'template' somewhere within its file name. 
 
@@ -460,7 +461,7 @@ Note that there are Script commands that can be entered here that will not be fo
 
 * stop — Use this command to stop recording a script. It is at this point that the executed and recorded commands will be written to disk. 
 
-[script]: https://www.notenik.net/merge-script.html
+[script]: https://notenik.net/script-spec.html
 
 
 <a name="import-and-export-your-notes"><h2>Import and Export Your Notes</h2></a>

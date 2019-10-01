@@ -1,0 +1,167 @@
+Title:  script-spec
+
+Title 2: Script File Spec
+
+Seq:    2
+
+Date Added: 2019-05-17 19:06:55
+
+Body:
+
+This specification describes the contents of a script file, used for executing a series of commands to transform input data sources and templates into appropriate output. 
+
+The file extension for a script file should be '.tcz', short for 'TDF Czar', which was a predecessor to PSTextMerge, which was in turn a prececessor to Notenik. 
+
+A script file is a text file formatted into five columns, using either tabs or commas as delimiters to separate the columns. 
+
+Blank lines, as well as lines beginning with '<!— ', will be ignored. 
+
+### Columns
+<table>
+<tr><th>#</th><th>Heading</th><th>Contents</th></tr>
+<tr><td>1</td><td>module</td><td>Specifies the module to be used to execute the command. 
+</td></tr>
+<tr><td>2</td><td>action</td><td>The action to be taken by the indicated module. 
+</td></tr>
+<tr><td>3</td><td>modifier</td><td>A field used to modify the effects of the action in some way. 
+</td></tr>
+<tr><td>4</td><td>object</td><td>Names the object of the action. 
+</td></tr>
+<tr><td>5</td><td>value</td><td>Specifies a value to be assigned, or to be compared. 
+</td></tr>
+</table>
+
+### Modules
+The module column may contain any of the following values. 
+
+* input - Read input rows and columns from a Note Collection or another data source. 
+
+* filter - Specify one or more filter criteria that will be used to filter the data source to a subset of its original set of rows. 
+
+* sort - Specify one or more sort fields (major to minor) to be used to sort the data source. 
+
+* template - Specify the location of a [template file](https://www.notenik.net/merge-template.html) to be processed using the data source. 
+
+* output - Write the filtered, sorted data to an output file in tab-delimited format. 
+
+### Input Parameters
+The action for an input command may be either 'set' or 'open'. The set command(s) should precede the open command to which they will apply. 
+
+#### Set
+
+When using 'set', the variable to be set would be named in the object column, and the value to which it should be set would be supplied in the value column. 
+
+The following variables may be set.
+
+* xpltags - Set this variable to 'true' to create a row for each tag included in the original row's Tags field. A field called 'Tag' will be added to the data source. Set the variable to 'false' to bypass tags explosion. 
+
+* dirdepth - The number of levels of folders to be considered, when reading from a data source that might drill down into multiple folders. The top level folder specified counts as 1. 
+
+#### Open
+
+When using 'open', the modifier field specifies the type of data source, and the value field specifies a path to the data source to be opened. 
+
+The object field is normally left blank, but an object of 'merge' can be used to cause the current data source to be merged with the prior data source, rather than replacing it. 
+
+The following modifier values are valid:
+
+* dir - Reads the directory entries from the specified directory (including sub-directories, if the dirdepth variable has been set to a value greater than 1).
+
+* file - Reads an input text file with columns separated by tabs or commas. 
+
+* notenik-defined - Reads a Notenik collection with its fields defined by a template file. 
+
+* notenik+ - Reads a Notenik collection with a broad set of standard fields. 
+
+* notenik-general - Reads a Notenik Collection with any set of fields. 
+
+* notenik-index - Reads a Notenik Collection using the Index field, and generates one row for each index term. 
+
+* xlsx - Reads the first table in the specified XLSX file. 
+
+### Filter Parameters
+A filter command may have an action of 'clear', 'add' or 'set'.
+
+#### Clear
+
+Clears any filter parameters that might have previously been set, so that new ones can be added. A clear action must be followed by a set action in order to actually remove any previously specified filtering rules. 
+
+#### Add
+
+Adds a new filter rule. The object would name the field to be compared as part of the filter. The value field would specify a value to which the object will be compared. And the modifier field specifies the nature of the comparison. 
+
+The following modifiers are valid (with all of the different forms on a line producing identical results).
+
+* "=", "==", "eq" or "equals"
+
+* ">", "gt" or "greater than"
+
+* ">=", "!<", "ge" or "greater than or equal to"
+
+* "<", "lt" or "less than"
+
+* "<=", "!>", "le" or "less than or equal to"
+
+* "<>", "!=", "ne" or "not equal to"
+
+* "()", "[]", "co" or "contains"
+
+* "!()", "![]", "nc" or "does not contain"
+
+* "(<)", "[<]", "st" or "starts with"
+
+* "!(<)", "![<]", "ns" or "does not start with"
+
+* "(>)", "[>]", "fi" or "ends with"
+
+* "!(>)", "![>]", "nf" or "does not end with"
+
+#### Set
+
+An action of set causes the previously added filtering rules, specified since the last clear action, to be applied. 
+
+### Sort Parameters
+Just as with the Filter module, the Sort module uses actions of 'clear', 'add' and 'set'.
+
+#### Clear
+
+Clears any sort fields that might have previously been set, so that new ones can be added. 
+
+#### Add
+
+Adds a new sort field, with major ones coming first, and minor ones following. The object would name the field to be used as part of a sort key. 
+
+If the modifier field starts with a 'd', then the field values will be sorted into descending sequence; anything else will result in an ascending sequence. 
+
+#### Set
+
+An action of set causes the previously added sort fields, specified since the last clear action, to be applied. 
+
+### Template Parameters
+A Template command may have an action of 'webroot', 'open' or 'generate'.
+
+#### Webroot
+
+A 'webroot' action causes the value column to be used as a path to the top level of a website to be generated. Template variables of 'relative' will then be replaced with a series of '../' strings taking a file reference back to the top of the website. 
+
+
+#### Open
+
+The file pointed to by the path in the value column will be opened as a [Template file][template].
+
+#### Generate
+
+The previously opened Template file will be processed, generating one or more output files. 
+
+[template]: https://www.notenik.net/merge-template.html
+
+### Output Parameters
+An Output command may only have an action of 'open'.
+
+#### Open
+
+The current data source, filtered and sorted per any previous relevant commands, will be written to the output file specified in the value column. 
+
+A file extension of '.csv' will result in a comma-separated values file being written; any other file extension will result in a tab-delimited file being written. 
+
+

@@ -1,6 +1,6 @@
 Title:  index
 
-Title 2: Welcome
+Title 2: Home
 
 Seq:    1
 
@@ -8,52 +8,17 @@ Date Added: 2019-05-17 19:06:55
 
 Body: 
 
-Hi, I'm [Herb Bowie](https://herbbowie.com), and I'm responsible for the concepts and code behind Notenik, a simple but powerful system for taking, collecting and referencing notes.
+Download the free and [open-source][license] Notenik from the [Mac App Store][macstore] and use it to record whatever bits of information are important to you. Create as many collections of notes as you would like and track a unique set of fields for each different collection, configuring one collection as a to-do list, another as a set of web bookmarks -- you're limited only by your interests and your imagination! 
 
-Depending on your interests, you may wish to explore any or all of the following topics. Use the back button in your browser or click on the Notenik icon at the top of a page to return to this Welcome page. 
+Each note is stored in its own plain text file, so you need never worry about your valuable information becoming lost or inaccessible. Sync your notes to any device using your favorite file syncing service. Read and edit your notes using any text editor, in addition to Notenik on your Mac.  
 
-1. Introduction
-	- [Intentions](intentions.html)
-	- [Basic Terms and Concepts](basics.html)
-	- [Common Fields](fields.html)
-	- [Status Value Defaults](status.html)
-	- [Files and Folders](files.html)
-	- [Software](software.html)
-	- [Rights](rights.html)
-	- [Privacy Policy](privacy.html)
+View your notes as a list, sorted in any one of a number of different ways, or use the outline view to see your notes organized by their tags. Sort, filter and publish your notes using Notenik's powerful templating and scripting system. 
 
-2. Notenik Application written in Swift for macOS
-	- [Download from the Mac App Store][appstore]
-	- [Read the User Guide][swiftug]
-	- [View the Source on GitHub][swiftgit]
+Notenik for the Mac is written entirely in Swift, but inherits concepts and ideas from previous PowerSurge Publishing applications written in Java, including a prior version of Notenik, PSTextMerge, TDF Czar, Two Due, URL Union and iWisdom. The best ideas from all of these earlier applications have been combined into the new modern version of Notenik, based on Apple's latest technologies. 
 
-3. Notenik Desktop Application written in Java
-	- [Download the Mac App][javamac]
-	- [Download the Jar files][javajar]
-	- [Read the User Guide][javaug]
-	- [View the Source on GitHub][javagit]
+[license]:  license.html
+[macstore]: https://apps.apple.com/us/app/notenik/id1465997984?mt=12
 
-4. File Specs
-	- [Merge Template File Spec][template]
-	- [Merge Script File Spec][script]
 
-5. Architecture
-	- [Notenik Architecture - OmniOutliner doc][arch-omni]
-	- [Notenik Architecture - Dynamic HTML][arch-html]
 
-6. All Project Documentation
-	- [View the Source on GitHub][docsgit]
-
-[appstore]: https://apps.apple.com/us/app/notenik/id1465997984?mt=12
-[arch-html]: specs/notenik-architecture-html/index.html
-[arch-omni]: specs/notenik-architecture.ooutline
-[docsgit]:  https://github.com/hbowie/notenik-project
-[javagit]:  https://github.com/hbowie/notenik2
-[javajar]:  downloads/pspub-omni-pack.zip
-[javamac]:  downloads/Notenik-4.80.dmg
-[javaug]:   java.html
-[script]:   https://www.notenik.net/merge-script.html
-[swiftug]:  swift.html
-[swiftgit]: https://github.com/hbowie/notenik-swift
-[template]: https://www.notenik.net/merge-template.html
 

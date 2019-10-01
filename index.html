@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Notenik | Welcome</title>
+<title>Notenik | Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Notenik Software">
 <meta name="author" content="Herb Bowie">
@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-<div class="container">
+<div id="page-container">
 <div id="header">
 <div id="logo">
 <a href="index.html">
@@ -25,69 +25,64 @@
 Notenik
 </div>
 <div id="site-slogan">
-The Notenik Project
+For People Who Like Text
 </div>
 </div>
 </div>
 
-<div id="body">
+<div id="navbar">
+<ul class="navlist">
+<li class="navitem">
+<a class="navlink" href="index.html">
+Home
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="blog.html">
+Blog
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="swift.html">
+User Guide
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="template-spec.html">
+Template Spec
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="script-spec.html">
+Script Spec
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="support.html">
+Support
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="license.html">
+License
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="privacy.html">
+Privacy
+</a>
+</li>
+</ul>
+</div>
 
-<h2>Welcome</h2>
+<div id="content">
 
-<p>Hi, I’m <a href="https://herbbowie.com">Herb Bowie</a>, and I’m responsible for the concepts and code behind Notenik, a simple but powerful system for taking, collecting and referencing notes.</p>
-<p>Depending on your interests, you may wish to explore any or all of the following topics. Use the back button in your browser or click on the Notenik icon at the top of a page to return to this Welcome page.</p>
-<ol>
-<li>
-<p>Introduction</p>
-<ul>
-<li><a href="intentions.html">Intentions</a></li>
-<li><a href="basics.html">Basic Terms and Concepts</a></li>
-<li><a href="fields.html">Common Fields</a></li>
-<li><a href="status.html">Status Value Defaults</a></li>
-<li><a href="files.html">Files and Folders</a></li>
-<li><a href="software.html">Software</a></li>
-<li><a href="rights.html">Rights</a></li>
-<li><a href="privacy.html">Privacy Policy</a></li>
-</ul>
-</li>
-<li>
-<p>Notenik Application written in Swift for macOS</p>
-<ul>
-<li><a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Download from the Mac App Store</a></li>
-<li><a href="swift.html">Read the User Guide</a></li>
-<li><a href="https://github.com/hbowie/notenik-swift">View the Source on GitHub</a></li>
-</ul>
-</li>
-<li>
-<p>Notenik Desktop Application written in Java</p>
-<ul>
-<li><a href="downloads/Notenik-4.80.dmg">Download the Mac App</a></li>
-<li><a href="downloads/pspub-omni-pack.zip">Download the Jar files</a></li>
-<li><a href="java.html">Read the User Guide</a></li>
-<li><a href="https://github.com/hbowie/notenik2">View the Source on GitHub</a></li>
-</ul>
-</li>
-<li>
-<p>File Specs</p>
-<ul>
-<li><a href="https://www.notenik.net/merge-template.html">Merge Template File Spec</a></li>
-<li><a href="https://www.notenik.net/merge-script.html">Merge Script File Spec</a></li>
-</ul>
-</li>
-<li>
-<p>Architecture</p>
-<ul>
-<li><a href="specs/notenik-architecture.ooutline">Notenik Architecture - OmniOutliner doc</a></li>
-<li><a href="specs/notenik-architecture-html/index.html">Notenik Architecture - Dynamic HTML</a></li>
-</ul>
-</li>
-<li>
-<p>All Project Documentation</p>
-<ul>
-<li><a href="https://github.com/hbowie/notenik-project">View the Source on GitHub</a></li>
-</ul>
-</li>
-</ol>
+<h2>Home</h2>
+
+<p>Download the free and <a href="license.html">open-source</a> Notenik from the <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Mac App Store</a> and use it to record whatever bits of information are important to you. Create as many collections of notes as you would like and track a unique set of fields for each different collection, configuring one collection as a to-do list, another as a set of web bookmarks – you’re limited only by your interests and your imagination!</p>
+<p>Each note is stored in its own plain text file, so you need never worry about your valuable information becoming lost or inaccessible. Sync your notes to any device using your favorite file syncing service. Read and edit your notes using any text editor, in addition to Notenik on your Mac.</p>
+<p>View your notes as a list, sorted in any one of a number of different ways, or use the outline view to see your notes organized by their tags. Sort, filter and publish your notes using Notenik’s powerful templating and scripting system.</p>
+<p>Notenik for the Mac is written entirely in Swift, but inherits concepts and ideas from previous PowerSurge Publishing applications written in Java, including a prior version of Notenik, PSTextMerge, TDF Czar, Two Due, URL Union and iWisdom. The best ideas from all of these earlier applications have been combined into the new modern version of Notenik, based on Apple’s latest technologies.</p>
 
 
 </div>

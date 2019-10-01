@@ -1,0 +1,13 @@
+module	action	modifier	object	value
+input	set		xpltags	false
+input	set		dirdepth	1
+input	open	notenik-defined		/Users/hbowie/Sites/notenik/blog
+filter	clear			
+filter	add	ge	Status	9
+filter	set		params	
+sort	clear			
+sort	add	ascending	Date	
+sort	set		params	
+template	webroot			/Users/hbowie/Sites/notenik
+template	open			/Users/hbowie/Sites/notenik/blog/reports/blog template.text
+template	generate			

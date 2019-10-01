@@ -1,0 +1,23 @@
+<?output "../../../script-spec.text"?>
+Title:  script-spec
+
+Title 2: Script File Spec
+
+Seq:    2
+
+Date Added: 2019-05-17 19:06:55
+
+Body:
+
+<?nextrec?>
+<?if "=$heading$=" ?>
+### =$heading$=
+<?endif?>
+<?if =$type$= eq md ?>
+=$body$=
+<?endif?>
+<?if =$type$= eq html ?>
+=$code$=
+<?endif?>
+<?loop?>
+

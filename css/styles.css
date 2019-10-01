@@ -8,10 +8,59 @@ body
 	margin: 2em;
 }
 
-div.container {
-	max-width: 30em;
+#page-container {
+	max-width: 36em;
   margin-left: auto;
   margin-right: auto; 
+}
+
+#header { 
+	text-align: center; 
+	margin-left: 8em;
+}
+
+#site-title { 
+  font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #687C99;
+  font-size: 3em;
+}
+
+#site-slogan {
+  font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #687C99;
+  font-size: 1.5em;
+}
+
+#navbar
+{
+	font-family: 'concourse_t4regular', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	float: left;
+	width: 7em;
+	margin-top: 4em;
+	margin-right: 1em;
+	padding-left: 0.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	background-color: #E6ECF9;
+	color: #000000;
+	border-radius: 0.5em;
+}
+
+ul.navlist {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a.navlink {
+	display: block;
+	width: 7em;
+}
+
+#content {
+	float: right;
+	max-width: 26em;
+	margin-right: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,7 +72,7 @@ h1 {
 	margin-bottom: 3pt;
 }
 
-h2 { margin-bottom: 3pt; }
+h2 { margin-bottom: 3pt;  }
 
 h3
 {
@@ -51,19 +100,7 @@ img.centered {
   margin-right: auto; 
 }
 
-#header { text-align: center; }
 
-#site-title { 
-  font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #687C99;
-  font-size: 3em;
-}
-
-#site-slogan {
-  font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #687C99;
-  font-size: 1.5em;
-}
 
 .sand { color: #F8BA51; }
 
@@ -362,10 +399,6 @@ td {
 .biblio { }
 
 .breadcrumb {
-	font-family: 'concourse_t4regular', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.navbar {
 	font-family: 'concourse_t4regular', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 

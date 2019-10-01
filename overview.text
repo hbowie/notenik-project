@@ -1,0 +1,56 @@
+Title:  overview
+
+Title 2: Overview
+
+Seq:    1
+
+Body: 
+
+Hi, I'm [Herb Bowie](https://herbbowie.com), and I'm responsible for the concepts and code behind Notenik, a simple but powerful system for taking, collecting and referencing notes.
+
+Depending on your interests, you may wish to explore any or all of the following topics. Use the back button in your browser or click on the Notenik icon at the top of a page to return to this Welcome page. 
+
+1. Introduction
+	- [Intentions](intentions.html)
+	- [Basic Terms and Concepts](basics.html)
+	- [Common Fields](fields.html)
+	- [Status Value Defaults](status.html)
+	- [Files and Folders](files.html)
+	- [Software](software.html)
+	- [Rights](rights.html)
+	- [Privacy Policy](privacy.html)
+
+2. Notenik Application written in Swift for macOS
+	- [Download from the Mac App Store][appstore]
+	- [Read the User Guide][swiftug]
+	- [View the Source on GitHub][swiftgit]
+
+3. Notenik Desktop Application written in Java
+	- [Download the Mac App][javamac]
+	- [Download the Jar files][javajar]
+	- [Read the User Guide][javaug]
+	- [View the Source on GitHub][javagit]
+
+4. File Specs
+	- [Merge Template File Spec][template]
+	- [Merge Script File Spec][script]
+
+5. Architecture
+	- [Notenik Architecture - OmniOutliner doc][arch-omni]
+	- [Notenik Architecture - Dynamic HTML][arch-html]
+
+6. All Project Documentation
+	- [View the Source on GitHub][docsgit]
+
+[appstore]: https://apps.apple.com/us/app/notenik/id1465997984?mt=12
+[arch-html]: specs/notenik-architecture-html/index.html
+[arch-omni]: specs/notenik-architecture.ooutline
+[docsgit]:  https://github.com/hbowie/notenik-project
+[javagit]:  https://github.com/hbowie/notenik2
+[javajar]:  downloads/pspub-omni-pack.zip
+[javamac]:  downloads/Notenik-4.80.dmg
+[javaug]:   java.html
+[script]:   https://www.notenik.net/merge-script.html
+[swiftug]:  swift.html
+[swiftgit]: https://github.com/hbowie/notenik-swift
+[template]: https://www.notenik.net/merge-template.html

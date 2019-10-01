@@ -1,0 +1,21 @@
+<?output "../../blog.text" ?>
+Title:   blog
+
+Title 2: Blog
+
+Seq:     11
+
+Tags:
+
+Link:
+
+Body:
+
+<?nextrec?>
+
+### =$title$=
+
+*Published =$date$=*
+
+=$body$=
+<?loop?>
