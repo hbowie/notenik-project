@@ -1,0 +1,9 @@
+Title:  Textile Parser Added
+
+Seq:    1.6.0
+
+Date:   15 Oct 2019
+
+Body: 
+
+A homegrown "good enough" Textile Parser has been added to Notenik. It can be invoked by including a file with a '.textile' file extension when generating HTML output. 

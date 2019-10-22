@@ -1,0 +1,9 @@
+Title:  Template Include File Conversion Honored
+
+Seq:    1.6.0
+
+Date:   10 Oct 2019
+
+Body: 
+
+When using the Include command within a Scripting Template file to include another file, automatic conversion will now be done when the included file extension differs from the output file extension. In particular, Markdown and Textile documents will be converted to HTML, when appropriate. Note that the Textile parser used is one internal to Notenik, and is at best a "good enough" tool, but one that is far from comprehensive. 

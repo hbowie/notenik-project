@@ -1,0 +1,9 @@
+Title:  Seq Field Prefix Now Honored
+
+Seq:    1.6.0
+
+Date:   10 Oct 2019
+
+Body: 
+
+Field names beginning with "Seq" will now be treated as Seq fields for the purpose of sorting when using the Scripting Engine. This will cause numeric fields, for example, to sort into their proper numeric sequence, instead of treating them as alphanumeric fields. 
