@@ -1,0 +1,9 @@
+Title:  Internal Refactoring
+
+Seq:    1.7.0
+
+Date:   29 Oct 2019
+
+Body: 
+
+Made some internal changes to handle field types in a way that will better lend itself to future growth. 

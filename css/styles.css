@@ -9,7 +9,7 @@ body
 }
 
 #page-container {
-	max-width: 36em;
+	max-width: 40em;
   margin-left: auto;
   margin-right: auto; 
 }
@@ -59,7 +59,7 @@ a.navlink {
 
 #content {
 	float: right;
-	max-width: 26em;
+	max-width: 30em;
 	margin-right: 1em;
 }
 
@@ -93,6 +93,11 @@ p {
 }
 
 ul { margin-bottom: 1em; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 img.centered {
   display: block;

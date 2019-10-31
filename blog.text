@@ -11,37 +11,26 @@ Link:
 Body:
 
 
-### All Swift, All the Time
+### [Notenik: A Contrarian Mix of Old and New](blog/notenik-a-contrarian-mix-of-old-and-new.html)
+
+*Published 24 Oct 2019*
+
+Given my background as a programmer and long-time Mac user, it should probably come as no surprise that my first native Mac app is a sometimes surprising mix of old and new. 
+
+
+*[Read more...](blog/notenik-a-contrarian-mix-of-old-and-new.html)*
+
+----
+
+
+### [All Swift, All the Time](blog/all-swift-all-the-time.html)
 
 *Published 1 Oct 2019*
 
-I started programming professionally in the early 1970's. 
+Moving on from Java, Notenik development is now all Swift, all the time. 
 
-Over time, though, my day job became a management position that didn't require me to write any code. I still enjoyed programming though, and so decided to learn Java when it came along in the late 1990's. It was in this same decade that I also learned HTML and CSS and became interested in making websites, starting with [Reason to Rock](https://reasontorock.com). 
 
-So when I started programming in Java on the Mac, originally using MetroWerks CodeWarrior, then later using Netbeans and finally IntelliJ IDEA, I was working strictly as a hobbyist. 
+*[Read more...](blog/all-swift-all-the-time.html)*
 
-Over the next 20 years I developed a number of desktop apps that would run on both PCs and the Mac, including TDF Czar, PSTextMerge, URL Union, iWisdom and finally Notenik. I used all these apps myself, both at work, where I had a Windows machine, and at home, where I had a Mac. I also made the apps available to others, at low or no cost, and maintained a website at PowerSurgePub.com where people could find out about these apps and download working copies. 
-
-Over the last several years, though, several things have changed.
-
-* I retired from my day job, so no longer have interest in, or access to, Windows machines.
-
-* Apple and the Mac became less and less supportive of Java applications. 
-
-* Oracle and Java became less and less supportive of a desktop user interface. First there was the decision to replace Swing with JavaFX, then the decision to stop bundling JavaFX with Oracle's JDK. At the same time, new Java releases were coming along more rapidly, making it challenging to maintain a working, current code base. 
-
-* Apple introduced the Swift programming language, and over a few years seemed to have reached a reasonable level of maturity with it. 
-
-* I started learning Swift, and quickly became convinced that in general it was an improvement over Java, for my purposes, and from my point of view. 
-
-* I redeveloped Notenik using Swift, released a workable version in the Mac App store, and over the next several months added almost all of the functionality from older Java programs that I still cared about. 
-
-So, as of today, I've removed any references to all of this Java legacy from Notenik.net, and am refocusing the site strictly on the new version, written entirely in Swift. 
-
-From this point on it's all Swift, all the time. 
-
-Not a day goes by now that I don't make use of the new Notenik for my own, regular personal use. It's not perfect, and it's a labor of love, not a product made for profit, and I know it won't be for everyone, but I'm offering it up to the world with the suspicion that some of you out there might find it interesting and useful as well. 
-
-If you have comments or questions, then [drop me a line](mailto:support@notenik.net). 
+----
 

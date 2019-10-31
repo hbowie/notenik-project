@@ -13,9 +13,14 @@ Body:
 
 <?nextrec?>
 
-### =$title$=
+### [=$title$=](blog/=$title&f$=.html)
 
 *Published =$date$=*
 
-=$body$=
+=$teaser$=
+
+*[Read more...](blog/=$title&f$=.html)*
+
+----
+
 <?loop?>

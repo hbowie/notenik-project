@@ -1,0 +1,94 @@
+<?nextrec?>
+<?output "../=$title&f$=.html"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Notenik | =$title$=</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Notenik Software">
+	<meta name="author" content="Herb Bowie">
+	<link rel="shortcut icon" href="=$relative$=favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="=$relative$=favicon.png" type="image/png" />
+	<link rel="stylesheet" href="=$relative$=fonts/concourse_t3.css" type="text/css" />
+	<link rel="stylesheet" href="=$relative$=fonts/stylesheet.css" type="text/css" />
+	<link rel="stylesheet" href="=$relative$=css/styles.css" />
+</head>
+<body>
+	<div id="page-container">
+		<div id="header">
+			<div id="logo">
+				<a href="=$relative$=index.html">
+					<img class="centered" alt="Notenik Logo" src="=$relative$=images/notenik.png" />
+				</a>
+			</div>
+			<div id="title-and-slogan">
+				<div id="site-title">
+					Notenik
+				</div>
+				<div id="site-slogan">
+					For People Who Like Text
+				</div>
+			</div>
+		</div>
+
+		<div id="navbar">
+			<ul class="navlist">
+				<li class="navitem">
+					<a class="navlink" href="index.html">
+						Home
+					</a>
+				</li>
+				<li class="navitem">
+					<a class="navlink" href="blog.html">
+						Blog
+					</a>
+				</li>
+				<li class="navitem">
+					<a class="navlink" href="swift.html">
+						User Guide
+					</a>
+				</li>
+				<li class="navitem">
+					<a class="navlink" href="template-spec.html">
+						Template Spec
+					</a>
+				</li>
+				<li class="navitem">
+					<a class="navlink" href="script-spec.html">
+						Script Spec
+					</a>
+				</li>
+				<li class="navitem">
+					<a class="navlink" href="support.html">
+						Support
+					</a>
+				</li>
+				<li class="navitem">
+					<a class="navlink" href="license.html">
+						License
+					</a>
+				</li>
+				<li class="navitem">
+					<a class="navlink" href="privacy.html">
+						Privacy
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="content">
+
+			<h2>=$title$=</h2>
+
+			<p><em>Published =$date$=</em></p>
+
+=$body&o$=
+
+<p><em><a href="../blog.html">Back to the Blog Index</a><em></p>
+
+		</div>
+	</div>
+</body>
+</html>
+<?loop?>
