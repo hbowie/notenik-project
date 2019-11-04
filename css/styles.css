@@ -122,7 +122,7 @@ hr
 	border-right: 0;
 	border-bottom: 0;
 	border-left: 0;
-} */
+} 
 
 hr { 
   border: 0; 
@@ -161,7 +161,7 @@ hr.bottom {
 hr.bottom:after {
 	content: none;
 	background: none;
-}
+} */
 
 a:link 		{ color: #687C99; text-decoration: none; }
 a:visited { color: #687C99; text-decoration: none; }
@@ -418,8 +418,9 @@ td {
 	font-size: 0.9em;
 }
 #content-footer { 
-	margin-top: 3em;
-	font-family: 'concourse_t4regular', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin-top: 1em;
+	font-family: 'concourse_t2italic', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
 }
 
 .content-footer-left {

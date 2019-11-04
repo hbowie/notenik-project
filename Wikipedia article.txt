@@ -1,0 +1,53 @@
+{{Use dmy dates|date=November 2019}}
+{{Infobox software
+| name                   = Notenik
+| title                  = Notenik
+| logo                   = 
+| screenshot             = 
+| caption                = 
+| collapsible            = 
+| developer              =  Herb Bowie
+| released               = <!-- {{Start date|2019|06|03|df=yes}} -->
+| discontinued           = 
+| latest release version = 1.7.0
+| latest release date    = {{Start date and age|df=yes|2019|11|01}}
+| latest preview version = 
+| latest preview date    = <!-- {{Start date and age|YYYY|MM|DD}} -->
+| programming language   = Swift
+| operating system       = [[Mac OS X]]
+| platform               = 
+| size                   = 
+| language               = 
+| genre                  = [[Notetaking software]]
+| license                = [[MIT]]
+| website                = {{URL|notenik.net}}
+}}
+'''Notenik''' is the name of a free [[notetaking]] application for [[Mac OS X]]. 
+
+Notenik stores each note in its own [[Text file]]. Notenik can be used to maintain multiple collections of notes, with each collection stored in its own [[Directory (computing)|folder]]. The user has full control over the placement of each folder. 
+
+One or more [[Tag (metadata)|tags]] may be assigned to each note. Each tag may have multiple levels. Tags are stored internally within each note's text file. The application offers a view of a collection in which notes are presented in a [[Tree structure]].
+
+Each note contains multiple [[Field (computer science)|fields]], always including a title and a body. Each collection may then be tailored to add other fields for notes contained within that collection. 
+
+The body of each note may be formatted using [[Markdown]].
+
+A note collection may be exported into a [[Comma-separated values]] file or a [[Tab-separated values]] file. 
+
+Notenik has its own [[Template processor]] that can be used to format notes into [[HTML]] or any other text-based format. 
+
+Notenik also has its own [[Scripting language]] that can be used to read a source collection, filter the data, sort the data, and then output the data using one or more formatting templates. 
+
+== See also ==
+*[[Comparison of notetaking software]]
+
+== References ==
+{{reflist}}
+
+==External Links==
+* [https://notenik.net Official website]
+* [https://github.com/hbowie/notenik-swift GitHub project]
+* [https://apps.apple.com/us/app/notenik/id1465997984?mt=12 Mac App Store]
+
+[[Category:MacOS-only free software]]
+[[Category:Note-taking software]]

@@ -1,0 +1,76 @@
+Title:  press
+
+Title 2: Press Kit
+
+Seq:    12
+
+Date Added: 2019-11-03 18:07:36 +0000
+
+Body: 
+
+### What is Notenik?
+
+Notenik is a note-taking app for the Mac that provides unusual levels of flexibility in terms of the types of information stored, the ways that notes can be organized, and the formatting available for output. 
+
+### Key Features
+
+- Each note is stored in its own plain text file.
+- Multiple collections of notes can be maintained, each in its own folder. 
+- Users have full control over the placement of collections, and can easily access their contents. 
+- Each note can have one or more tags, and each tag can have multiple levels. 
+- Each note has multiple fields, and each collection can be tailored to use different sets of fields. 
+- Notes and collections can be easily synced to other devices using iCloud or Dropbox. 
+- Collections can be exported to comma-separated value (csv) or tab-delimited files. 
+- A template processor is included, allowing notes to be formatted into HTML or any other text-based format. 
+- A scripting processor is included, allowing collections to be filtered, sorted and formatted using templates.
+
+### Fact Sheet
+
+**Developer**  
+Herb Bowie
+
+**Release Date**  
+June 3, 2019
+
+**Platform**  
+macOS
+
+**Cost and Licensing**  
+Free, released as Open Source software under the terms of the MIT License
+
+### Links
+
+**Website**  
+[https://notenik.net](https://notenik.net)
+
+**App Store**  
+[https://apps.apple.com/us/app/notenik/id1465997984?mt=12](https://apps.apple.com/us/app/notenik/id1465997984?mt=12)
+
+**User Guide**  
+[https://notenik.net/swift.html](https://notenik.net/swift.html)
+
+**Privacy Policy**  
+[https://notenik.net/privacy.html](https://notenik.net/privacy.html)
+
+**Swift Source Code**  
+[https://github.com/hbowie/notenik-swift](https://github.com/hbowie/notenik-swift)
+
+**Notenik Source for this page**  
+[press.text](press.text)
+
+### Screenshot
+
+![Notenik List and Display](images/notenik-list-and-display.jpg)
+
+Click [here for a .png image of the screenshot above in a higher-resolution](images/notenik-list-and-display.png).
+
+### Logo
+
+![Notenik Logo](images/notenik.png)
+
+### Questions?
+
+If you have any questions about Notenik, then drop me a line at [support@notenik.net](mailto:support@notenik.net). 
+
+
+
