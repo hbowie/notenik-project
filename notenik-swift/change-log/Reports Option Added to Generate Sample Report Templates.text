@@ -1,0 +1,14 @@
+Title:  Reports Option Added to Generate Sample Report Templates
+
+Seq:    1.8.0
+
+Date:   04 Nov 2019
+
+Body: 
+
+When the user pulls down the Reports Action menu from the Toolbar, the first two items they see will now be:
+
+- Generate Report Sample in HTML
+- Generate Report Sample in Markdown
+
+Selecting one of these will then cause Notenik to create a reports folder for the collection, if one does not already exist, and then to create a report template containing all of the Collection's fields in a basic layout. The user may then modify this template in order to further customize the output formatting. 

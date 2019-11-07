@@ -1,0 +1,15 @@
+Title:  Folder Open thru Finder Drag-and-Drop Enabled
+
+Seq:    1.8.0
+
+Date:   06 Nov 2019
+
+Body: 
+
+Folder(s) may now be opened by dragging them onto the Notenik icon in the Finder. Notenik will respond in one of four ways to each Finder item. 
+
+* If a folder contains an existing Notenik Collection, then that Collection will be opened in a new window. 
+* If a folder is empty, then it will be initialized as a new Notenik Collection, and opened in a new window. 
+* if the dragged item is not a folder at all, then an error message will be displayed. 
+* Any other folder will be treated as a parent realm, and the resulting window will show Collections and Scripts found within that realm. 
+

@@ -426,6 +426,13 @@ Once a template file is created, suitably named and placed, it will become avail
 
 Selecting a report will then cause the Collection's notes to be merged into the corresponding template file, creating whatever ouput is identified in the template file. 
 
+Two other options appear on the Reports Action drop-down (identified with the gear icon). 
+
+- Generate Report Sample in HTML
+- Generate Report Sample in Markdown
+
+Selecting one of these will then cause Notenik to create a reports folder for the collection, if one does not already exist, and then to create a report template containing all of the Collection's fields in a basic layout. The user may then modify this template in order to further customize the output formatting.  Once the user reloads the Collection, those reports will then become available to run. 
+
 
 <a name="record-and-play-scripts"><h2>Record and Play Scripts</h2></a>
 
@@ -534,6 +541,8 @@ Here's how this works.
 
 3. If you use the Open Parent Realm command under the File menu to have Notenik search for its Collections and Scripts within a parent folder, then those Collections and Scripts will be available to be opened, because you have explicitly given Notenik permission to access everything within that parent folder. 
 
+(Note that you can also achieve these same results by using the macOS FInder to drag a folder and drop it onto the Notenik app icon.)
+
 In general, the rules above will be enough to cover most situations. If they prove too restrictive, though, you can always grant Notenik full disk access in the Security & Privacy pane of System Preferences. 
 
 
@@ -625,6 +634,33 @@ If you have questions about Notenik, bug reports, or requests for enhancements, 
 
 
 <a name="version-history"><h2>Version History</h2></a>
+
+### Version 1.8.0 | 06 Nov 2019
+
+#### 1. Changed Deployment Target Back to 10.14 to Allow Operation on Mojave
+
+The last release inadvertently made Notenik unavailable to Mojave users. 
+
+
+#### 2. Folder Open thru Finder Drag-and-Drop Enabled
+
+Folder(s) may now be opened by dragging them onto the Notenik icon in the Finder. Notenik will respond in one of four ways to each Finder item. 
+
+* If a folder contains an existing Notenik Collection, then that Collection will be opened in a new window. 
+* If a folder is empty, then it will be initialized as a new Notenik Collection, and opened in a new window. 
+* if the dragged item is not a folder at all, then an error message will be displayed. 
+* Any other folder will be treated as a parent realm, and the resulting window will show Collections and Scripts found within that realm. 
+
+
+#### 3. Reports Option Added to Generate Sample Report Templates
+
+When the user pulls down the Reports Action menu from the Toolbar, the first two items they see will now be:
+
+- Generate Report Sample in HTML
+- Generate Report Sample in Markdown
+
+Selecting one of these will then cause Notenik to create a reports folder for the collection, if one does not already exist, and then to create a report template containing all of the Collection's fields in a basic layout. The user may then modify this template in order to further customize the output formatting. 
+
 
 ### Version 1.7.0 | 31 Oct 2019
 

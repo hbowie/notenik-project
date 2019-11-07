@@ -1,0 +1,9 @@
+Title:  Changed Deployment Target Back to 10.14 to Allow Operation on Mojave
+
+Seq:    1.8.0
+
+Date:   06 Nov 2019
+
+Body: 
+
+The last release inadvertently made Notenik unavailable to Mojave users. 

@@ -367,6 +367,12 @@ The Search function will search each Note’s Title, Link, Tags and Body fields 
 <p>Template files can be placed in a folder named ‘reports’ within the Collection folder where the reports are to be used. Each template file should include the word ‘template’ somewhere within its file name.</p>
 <p>Once a template file is created, suitably named and placed, it will become available as a report that can be selected from a drop-down (identified with a gear icon) on the Collection’s toolbar.</p>
 <p>Selecting a report will then cause the Collection’s notes to be merged into the corresponding template file, creating whatever ouput is identified in the template file.</p>
+<p>Two other options appear on the Reports Action drop-down (identified with the gear icon).</p>
+<ul>
+<li>Generate Report Sample in HTML</li>
+<li>Generate Report Sample in Markdown</li>
+</ul>
+<p>Selecting one of these will then cause Notenik to create a reports folder for the collection, if one does not already exist, and then to create a report template containing all of the Collection’s fields in a basic layout. The user may then modify this template in order to further customize the output formatting.  Once the user reloads the Collection, those reports will then become available to run.</p>
 <p><a name="record-and-play-scripts"><h2>Record and Play Scripts</h2></a></p>
 <p>Notenik can record and play a script file that will execute a series of data transformations. Data can be input from one or more Notenik Collections and/or from tab-delimited or comma-separated files. The input data can be sorted and filtered using any of the fields contained within the data. The data can then be used as input to a Template file, or output to a new tab-delimited or comma-separated file.</p>
 <p>See the <a href="https://notenik.net/script-spec.html">Merge Script File Spec</a> for a complete description of a Script file.</p>
@@ -464,6 +470,7 @@ Following are the supported formats.</p>
 <p>If you use the Open Parent Realm command under the File menu to have Notenik search for its Collections and Scripts within a parent folder, then those Collections and Scripts will be available to be opened, because you have explicitly given Notenik permission to access everything within that parent folder.</p>
 </li>
 </ol>
+<p>(Note that you can also achieve these same results by using the macOS FInder to drag a folder and drop it onto the Notenik app icon.)</p>
 <p>In general, the rules above will be enough to cover most situations. If they prove too restrictive, though, you can always grant Notenik full disk access in the Security &amp; Privacy pane of System Preferences.</p>
 <p><a name="website-building"><h2>Website Building</h2></a></p>
 <p>Note that many of the individual Notenik functions described above can be combined in order to build websites. Create a Collection, add appropriate fields, create template files, record a script, and you can easily generate a set of HTML files that will work together to present a unified website.</p>
@@ -593,6 +600,24 @@ The Notenik application is published as  <a href="http://opensource.org/osd">ope
 <p><a name="support"><h2>Support</h2></a></p>
 <p>If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at <a href="mailto:support@powersurgepub.com">support@powersurgepub.com</a> and I’ll try to get back to you as quickly as I can.</p>
 <p><a name="version-history"><h2>Version History</h2></a></p>
+<h3>Version 1.8.0 | 06 Nov 2019</h3>
+<h4>1. Changed Deployment Target Back to 10.14 to Allow Operation on Mojave</h4>
+<p>The last release inadvertently made Notenik unavailable to Mojave users.</p>
+<h4>2. Folder Open thru Finder Drag-and-Drop Enabled</h4>
+<p>Folder(s) may now be opened by dragging them onto the Notenik icon in the Finder. Notenik will respond in one of four ways to each Finder item.</p>
+<ul>
+<li>If a folder contains an existing Notenik Collection, then that Collection will be opened in a new window.</li>
+<li>If a folder is empty, then it will be initialized as a new Notenik Collection, and opened in a new window.</li>
+<li>if the dragged item is not a folder at all, then an error message will be displayed.</li>
+<li>Any other folder will be treated as a parent realm, and the resulting window will show Collections and Scripts found within that realm.</li>
+</ul>
+<h4>3. Reports Option Added to Generate Sample Report Templates</h4>
+<p>When the user pulls down the Reports Action menu from the Toolbar, the first two items they see will now be:</p>
+<ul>
+<li>Generate Report Sample in HTML</li>
+<li>Generate Report Sample in Markdown</li>
+</ul>
+<p>Selecting one of these will then cause Notenik to create a reports folder for the collection, if one does not already exist, and then to create a report template containing all of the Collection’s fields in a basic layout. The user may then modify this template in order to further customize the output formatting.</p>
 <h3>Version 1.7.0 | 31 Oct 2019</h3>
 <h4>1. Markdown Applied to all Long Text fields</h4>
 <p>Markdown is now used to format all longtext fields as they appear on the Display tab.</p>
