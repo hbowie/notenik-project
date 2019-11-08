@@ -1,0 +1,15 @@
+Title:  Scripter Can Now Read Markdown Headers
+
+Seq:    1.9.0
+
+Date:   08 Nov 2019
+
+Body: 
+
+Added a new input format to read a Markdown file and chunk it up into sections, based on its headers. Each resulting row of data will consist of fhe following fields:
+
+* Title - The text content of the header
+* Level - The level of the header (1 - 6)
+* Body - All of the text following the header, up to the next header. 
+
+Note that the resulting data can be used to generate a Table of Contents for the Markdown file, using an appropriately formatted template. 

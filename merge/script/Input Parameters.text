@@ -32,6 +32,8 @@ The following modifier values are valid:
 
 * file - Reads an input text file with columns separated by tabs or commas. 
 
+* markdown-with-headers - Reads a Markdown-formatted text file, and chunks it up into sections based on its headers. The content of each header will be placed in the Title field, the level of each header (1 - 6) will be placed in a Level field, and all text between this header and the next one will be placed into the Body field.
+
 * notenik-defined - Reads a Notenik collection with its fields defined by a template file. 
 
 * notenik+ - Reads a Notenik collection with a broad set of standard fields. 
@@ -41,3 +43,4 @@ The following modifier values are valid:
 * notenik-index - Reads a Notenik Collection using the Index field, and generates one row for each index term. 
 
 * xlsx - Reads the first table in the specified XLSX file. 
+
