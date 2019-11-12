@@ -1,0 +1,9 @@
+Title:  Fixed a Note Delete Bug
+
+Seq:    1.9.0
+
+Date:   11 Nov 2019
+
+Body: 
+
+A note that was being deleted would sometimes be immediately re-added. This has been corrected. 

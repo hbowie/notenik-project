@@ -1,0 +1,9 @@
+Title:  Fixed an Attachments Bug
+
+Seq:    1.9.0
+
+Date:   11 Nov 2019
+
+Body: 
+
+Attachments were being deleted when the parent Note's title was changed. This has now been corrected. 

@@ -291,11 +291,12 @@ Following is a sample Note file, showing all of the Fields that Notenik treats a
 <a name="sequence-your-notes"><h2>Sequence Your Notes</h2></a>
 
 Add a Seq Field to a Collection (using a template file) in order to specify a sequence number, revision letter, version number or priority to be associated with each Note.
+
 A Seq field may contain letters, digits and one or more periods (aka decimal points) or hyphens or a dollar sign ('$'). 
 
 You may wish to assign a unique Seq value to each Note in a Collection, but Notenik does not require this (in other words, it does allow duplicate Seq values to be assigned to different Notes). 
 
-If you'd like to see your Notes listed in sequence by their assigned number, you can use the Sort Menu to change the sequence of the displayed list from Title to Seq + Title.
+If you'd like to see your Notes listed in sequence by their assigned number, you can use the Sort Menu to change the sequence of the displayed list from Title to Seq + Title. Use the Reverse option to see them in descending sequence. 
 
 If you want to insert a new note with a Seq Value already assigned to another Note, then first select the other Note, then use the Increment command under the Note menu to increment the Seq field of the existing note, as well as following notes that might otherwise cause duplicate Seq values. 
 
@@ -634,6 +635,34 @@ If you have questions about Notenik, bug reports, or requests for enhancements, 
 
 
 <a name="version-history"><h2>Version History</h2></a>
+
+### Version 1.9.0 | 11 Nov 2019
+
+#### 1. Added Option to Reverse the Sort
+
+An option has been added to the Sort menu that will allow the user to reverse the current sequence of the list (from ascending to descending, or vice-versa).
+
+
+#### 2. Fixed an Attachments Bug
+
+Attachments were being deleted when the parent Note's title was changed. This has now been corrected. 
+
+
+#### 3. Fixed a Note Delete Bug
+
+A note that was being deleted would sometimes be immediately re-added. This has been corrected. 
+
+
+#### 4. Scripter Can Now Read Markdown Headers
+
+Added a new input format to read a Markdown file and chunk it up into sections, based on its headers. Each resulting row of data will consist of fhe following fields:
+
+* Title - The text content of the header
+* Level - The level of the header (1 - 6)
+* Body - All of the text following the header, up to the next header. 
+
+Note that the resulting data can be used to generate a Table of Contents for the Markdown file, using an appropriately formatted template. 
+
 
 ### Version 1.8.0 | 06 Nov 2019
 
