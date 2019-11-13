@@ -1,0 +1,9 @@
+Title:  Added Notenik with Split Tags to Scripter Input Modifiers
+
+Seq:    2.0.0
+
+Date:   13 Nov 2019
+
+Body: 
+
+When reading input data via the Scripter window, the user may now specify a modifier of 'notenik-split-tags' to add a 'Tag' field, and then return one row for each tag assigned to each note (or one row with a blank tag, for notes with no tags). 
