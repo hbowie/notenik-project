@@ -10,6 +10,15 @@ Link:
 
 Body:
 
+### [Notenik Project # 1: Create a Simple Collection of Notes](blog/notenik-project-1-create-a-simple-collection-of-notes.html)
+
+*Published 14 Nov 2019*
+
+This post is the first in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we're going to use Notenik just to create a basic Collection of Notes about anything that might interest you.
+
+*[Read more...](blog/notenik-project-1-create-a-simple-collection-of-notes.html)*
+
+----
 
 ### [Notenik: A Contrarian Mix of Old and New](blog/notenik-a-contrarian-mix-of-old-and-new.html)
 
@@ -22,7 +31,6 @@ Given my background as a programmer and long-time Mac user, it should probably c
 
 ----
 
-
 ### [All Swift, All the Time](blog/all-swift-all-the-time.html)
 
 *Published 1 Oct 2019*
@@ -31,6 +39,4 @@ Moving on from Java, Notenik development is now all Swift, all the time.
 
 
 *[Read more...](blog/all-swift-all-the-time.html)*
-
-----
 

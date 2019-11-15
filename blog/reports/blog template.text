@@ -11,8 +11,13 @@ Link:
 
 Body:
 
+<?set posts = 0 ?>
 <?nextrec?>
+<?if =$posts$= gt 0 ?>
+----
 
+<?endif?>
+<?set posts ++ ?>
 ### [=$title$=](blog/=$title&f$=.html)
 
 *Published =$date$=*
@@ -20,7 +25,5 @@ Body:
 =$teaser$=
 
 *[Read more...](blog/=$title&f$=.html)*
-
-----
 
 <?loop?>
