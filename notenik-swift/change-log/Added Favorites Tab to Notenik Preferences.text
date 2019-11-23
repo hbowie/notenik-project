@@ -1,0 +1,9 @@
+Title:  Added Favorites Tab to Notenik Preferences
+
+Seq:    2.1.0
+
+Date:   18 Nov 2019
+
+Body: 
+
+The user can now change the Columns per Page, the Rows per Column, and the width of each Column on the Favorites tab of the application Preferences. 

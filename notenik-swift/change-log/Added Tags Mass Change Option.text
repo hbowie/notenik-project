@@ -1,0 +1,10 @@
+Title:  Added Tags Mass Change Option
+
+Seq:    2.1.0
+
+Date:   22 Nov 2019
+
+Body: 
+
+Beneath the Collection menu an option has been added to perform a Tags Mass Change. The user will be prompted to specify from tags and to tags, and Notenik will then replace the from tags (in combination, if more than one is specified) with the to tags. 
+
