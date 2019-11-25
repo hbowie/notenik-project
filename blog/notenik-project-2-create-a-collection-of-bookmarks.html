@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Notenik | Notenik Project # 2: Create a Collection of Bookmarks</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notenik Software">
+<meta name="author" content="Herb Bowie">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="icon" href="../favicon.png" type="image/png" />
+<link rel="stylesheet" href="../fonts/concourse_t3.css" type="text/css" />
+<link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css" />
+<link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+<div id="page-container">
+<div id="header">
+<div id="logo">
+<a href="../index.html">
+<img class="centered" alt="Notenik Logo" src="../images/notenik.png" />
+</a>
+</div>
+<div id="title-and-slogan">
+<div id="site-title">
+Notenik
+</div>
+<div id="site-slogan">
+For People Who Like Text
+</div>
+</div>
+</div>
+
+<div id=navshare>
+
+<div id="navbar">
+<ul class="navlist">
+<li class="navitem">
+<a class="navlink" href="../index.html">
+Home
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="../blog.html">
+Blog
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="../swift.html">
+User Guide
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="../template-spec.html">
+Template Spec
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="../script-spec.html">
+Script Spec
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="../support.html">
+Support
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="../license.html">
+License
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="../privacy.html">
+Privacy
+</a>
+</li>
+<li class="navitem">
+<a class="navlink" href="../press.html">
+Press Kit
+</a>
+</li>
+</ul>
+</div>
+
+<div id="sharebox">
+
+<p id="share-header">SHARE</p>
+
+<!-- Sharingbutton Facebook -->
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html" target="_blank" rel="noopener" aria-label="">
+<div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+</div>
+</div>
+</a>
+
+<!-- Sharingbutton Twitter -->
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Notenik Project # 2: Create a Collection of Bookmarks;url=https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html" target="_blank" rel="noopener" aria-label="">
+<div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/></svg>
+</div>
+</div>
+</a>
+
+<!-- Sharingbutton E-Mail -->
+<a class="resp-sharing-button__link" href="mailto:?subject=Notenik Project # 2: Create a Collection of Bookmarks&body=https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html" target="_self" rel="noopener" aria-label="">
+<div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z"/></svg>
+</div>
+</div>
+</a>
+
+<!-- Sharingbutton LinkedIn -->
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html&amp;title=Notenik Project # 2: Create a Collection of Bookmarks;summary=Notenik Project # 2: Create a Collection of Bookmarks;source=https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html" target="_blank" rel="noopener" aria-label="">
+<div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"/></svg>
+</div>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<div id="content">
+
+<h2>Notenik Project # 2: Create a Collection of Bookmarks</h2>
+
+<p><em>Published 25 Nov 2019</em></p>
+
+<p>This post is the second in a series designed to gradually explain the use of the Mac App <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik</a> for increasingly complex and sophisticated tasks.</p>
+<p>Before proceeding, you might want to review some of the basics covered in <a href="https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html">Project # 1</a>, if these aren’t already fresh in your mind.</p>
+<p>You will need at least Notenik version 2.1.0 to perform all the functions described in this piece.</p>
+<h3>Motivation</h3>
+<p>All modern web browsers (Safari, Chrome, Firefox, etc.) have their own capabilities for storing frequently used web links (aka URLs) as a bunch of bookmarks, sometimes referred to as favorites.</p>
+<p>However, if you have a tendency to use different browsers for different purposes, or as the mood strikes you, then you might find it convenient to have your favorite web bookmarks stored independently, in a way that can be accessed equally well from any browser.</p>
+<p>This is where Notenik comes in.</p>
+<h3>Step 1: Create a New Collection</h3>
+<p>Name the folder ‘Favorites’ or ‘Bookmarks’ or something similar.  If you have <a href="https://discussions.apple.com/docs/DOC-3083">Apache enabled</a>, then you might wish to place it somewhere in your ‘Sites’ folder. (If you have no idea what this means, then don’t worry about it.) Another option would be to place the new Collection in your Dropbox folder or iCloud Drive, if you’d like it to be synced to the cloud and/or to other devices. Or just put it somewhere in your Documents folder. It’s up to you!</p>
+<h3>Step 2: Configure with Default Fields</h3>
+<p>Title, Tags, Link and Body should be fine for our purposes today.</p>
+<h3>Step 3: Add Your Favorite Websites</h3>
+<p>For each site, enter the Link field and the Title field. For a title, enter whatever is most meaningful to you – it doesn’t have to exactly match any sort of official title on the site itself. If you wish to add some comments about a site in the body of its note, then that’s ok too.</p>
+<h3>Step 4: Use Tags to Categorize the Sites</h3>
+<p>Here there’s something specific you need to enter in order to enable a later step.</p>
+<p>Enter your tag in the format ‘Favorites.xxx’ where ‘xxx’ is the category you wish to assign to the note. The first part of the tag must be ‘favorites’, although the case (upper or lower) is not significant.</p>
+<p>If you have a lot of bookmarks you wish to track in Notenik, then they don’t all need to have the ‘Favorites’ tag. In fact, a maximum of about 60 is recommended. And all of your tags, including the ones tagged as a ‘favorite’, can have multiple tags.</p>
+<p>With or without the favorites tag, note that you can use the ‘Tags’ tab to view your growing list of bookmarks in outline form, with the tags used to organize the outline. When a note has multiple tags, it will appear multiple times, so that it can show up under each different tag.</p>
+<p><img src="../images/notenik-edit-bookmark.jpg" alt="Screen Shot # 1" /></p>
+<h3>Step 5: Launch Links from within Notenik</h3>
+<p>Once you have your bookmarks entered into Notenik, you can always open that collection, select the bookmark you are interested in, and then launch the link, either via the Toolbar command, or via the command beneath the Note menu, or by using the CMD-L keyboard shortcut. Launching the Link via any of these methods will result in the page opening in your default web browser (Safari, Chrome, etc.)</p>
+<p>But wait, there’s more!</p>
+<h3>Step 6: Save your Favorites to HTML</h3>
+<p>Beneath the File menu, there is an option to save your Favorites to HTML. Once you select this command, you’ll be prompted to specify a file name and location. Once you’ve completed this, Notenik will generate a web page for you, containing all of the bookmarks you have tagged as Favorites, grouped neatly into the categories you have specified.</p>
+<p>After saving this web page for you, Notenik will ask that it be opened by your default web browser. Once this happens, if you look at the URL for the page, you’ll see the location you specified expressed as a local file URL, starting with the ‘file://’ protocol.</p>
+<p><img src="../images/safari-favorites-page.jpg" alt="Screen Shot # 2" /></p>
+<h3>Step 7: Adjust Settings</h3>
+<p>The defaults are to arrange your favorite links into 4 columns, with each column a maximum of 32 lines long, and taking up a screen width of 250 pixels. I’ve found that these defaults work well for me but, if you’d like to adjust them, you can use the Favorites tab within Notenik’s application Preferences to bump them up or down, to suit your tastes (and screen real estate).</p>
+<p>The other settings you might want to adjust are your Display Fonts. You can get to these by clicking on the appropriately named button on your toolbar, or by selecting Display Appearance beneath the Format menu. You can then change the Display font and the display size. These settings will primarily affect the appearance of your Notes on the Display tab (for all of your collections – these settings are not collection-specific), but these same values will also be used for the webpage generated when you select Favorites to HTML beneath the File menu.</p>
+<p>After making changes to any of these settings, you will need to repeat Step 6, overwriting the file you created previously, in order to see the effects of your changes.</p>
+<h3>Step 8: Set As Your Browser Home Page</h3>
+<p>Once you have the generated HTML looking the way you would like,  you will want to select the generated page’s URL from your browser and copy it.</p>
+<p>Now go into the Preferences for each web browser that you use, and paste this local file address into the field identifying your homepage, or your home button. You might also want to specify that new browser windows and/or tabs will open to your homepage.</p>
+<p>That’s it! Now whenever you open your web browser, you’ll see a nice clean page showing all of your favorite websites, without any advertising or tracking or animation or javascript or cookies or download delays. Just click on any of the titles to be taken to the corresponding website. And sites will be named and categorized and located in a way that makes sense to you, making it easy for you to find the site you are looking for and open it.</p>
+<p>When you want to add, remove or change the contents of this page, then all you have to do is re-open your Notenik collection of favorites, make the desired changes there, then repeat step # 6, making sure to overwrite the file you created before, by specifying the same location and file name. From that point on, the new page will appear in all of the browsers you have set to this homepage (understanding that you may sometimes have to ask the browser to reload the page, to replace any cached copies it might be holding on to).</p>
+<h3>Wrapping Up</h3>
+<p>And that’s it for Project # 2! As always, feel free to send any questions or comments to <a href="mailto:hbowie@notenik.net">hbowie@notenik.net</a>. Looking forward to hearing from you!</p>
+
+
+<p><em><a href="../blog.html">Back to the Blog Index</a><em></p>
+
+</div>
+</div>
+</body>
+</html>

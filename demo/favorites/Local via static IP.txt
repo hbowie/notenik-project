@@ -1,0 +1,7 @@
+Title:  Local via static IP
+
+Tags:   Favorites.Local Network, Local Network
+
+Link:   http://192.168.1.101/~hbowie/
+
+Date Added: 2018-11-16 18:41:18 +0000

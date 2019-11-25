@@ -16,9 +16,11 @@ View your notes as a list, sorted in any one of a number of different ways, or u
 
 Notenik for the Mac is written entirely in Swift, but inherits concepts and ideas from previous PowerSurge Publishing applications written in Java, including a prior version of Notenik, PSTextMerge, TDF Czar, Two Due, URL Union and iWisdom. The best ideas from all of these earlier applications have been combined into the new modern version of Notenik, based on Apple's latest technologies. 
 
+See the [User Guide][ug] for complete details, or check out the [Notenik Blog][blog] for step-by-step instructions taking you through some starter projects. 
+
+[blog]: 	blog.html
 [license]:  license.html
 [macstore]: https://apps.apple.com/us/app/notenik/id1465997984?mt=12
-
-
+[ug]: 		swift.html
 
 
