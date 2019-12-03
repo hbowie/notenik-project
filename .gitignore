@@ -1,2 +1,9 @@
 .DS_Store
 /downloads
+js/bootstrap*
+/icons
+css/bootstrap*
+/js/popper.min.js
+/js/bootstrap.js
+/js/bootstrap.min.js
+/open-iconic

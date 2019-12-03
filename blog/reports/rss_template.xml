@@ -1,0 +1,24 @@
+<?output "../../rss.xml"?>
+<rss version="2.0">
+  <channel>
+    <title>Notenik.net</title>
+    <link>https://notenik.net/</link>
+    <description>The Notenik Blog</description>
+    <language>en</language>
+<?set item-count = 0 ?>
+<?nextrec?>
+<?set item-count += 1 ?>
+<?if =$item-count$= le 10 ?>
+	<item>
+	  <title>=$title&x$=</title>
+	  <link>https://notenik.net/blog/=$title&f$=.html</link>
+	  <guid>https://notenik.net/blog/=$title&f$=.html</guid>
+	  <pubdate>=$date&EEE, dd MMM yyyy$= 12:00:00 -0700</pubdate>
+	  <description>
+	  	=$teaser&xo-$=
+	  </description>
+	</item>
+<?endif?>
+<?loop?>
+  </channel>
+</rss>

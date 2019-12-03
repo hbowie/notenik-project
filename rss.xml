@@ -1,0 +1,44 @@
+<rss version="2.0">
+<channel>
+<title>Notenik.net</title>
+<link>https://notenik.net/</link>
+<description>The Notenik Blog</description>
+<language>en</language>
+<item>
+<title>Notenik Project # 2: Create a Collection of Bookmarks</title>
+<link>https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html</link>
+<guid>https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html</guid>
+<pubdate>Mon, 25 Nov 2019 12:00:00 -0700</pubdate>
+<description>
+This post is the second in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we're going to use this Mac app to create a Collection of Bookmarks that you can access from any of your web browsers.
+</description>
+</item>
+<item>
+<title>Notenik Project # 1: Create a Simple Collection of Notes</title>
+<link>https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html</link>
+<guid>https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html</guid>
+<pubdate>Thu, 14 Nov 2019 12:00:00 -0700</pubdate>
+<description>
+This post is the first in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we're going to use Notenik just to create a basic Collection of Notes about anything that might interest you.
+</description>
+</item>
+<item>
+<title>Notenik: A Contrarian Mix of Old and New</title>
+<link>https://notenik.net/blog/notenik-a-contrarian-mix-of-old-and-new.html</link>
+<guid>https://notenik.net/blog/notenik-a-contrarian-mix-of-old-and-new.html</guid>
+<pubdate>Thu, 24 Oct 2019 12:00:00 -0700</pubdate>
+<description>
+Given my background as a programmer and long-time Mac user, it should probably come as no surprise that my first native Mac app is a sometimes surprising mix of old and new.
+</description>
+</item>
+<item>
+<title>All Swift, All the Time</title>
+<link>https://notenik.net/blog/all-swift-all-the-time.html</link>
+<guid>https://notenik.net/blog/all-swift-all-the-time.html</guid>
+<pubdate>Tue, 01 Oct 2019 12:00:00 -0700</pubdate>
+<description>
+Moving on from Java, Notenik development is now all Swift, all the time.
+</description>
+</item>
+</channel>
+</rss>

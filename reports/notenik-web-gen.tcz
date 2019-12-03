@@ -121,6 +121,10 @@ template	open			/Users/hbowie/Sites/notenik/blog/reports/blog template.text
 template	generate
 template	open			/Users/hbowie/Sites/notenik/blog/reports/blog post template.html
 template	generate
+template	open			/Users/hbowie/Sites/notenik/blog/reports/rss_template.xml
+template	generate
+template	open			/Users/hbowie/Sites/notenik/blog/reports/atom_template.xml
+template	generate
 
 <!--
 <!-- Generate the HTML pages for the Notenik Web Site

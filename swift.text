@@ -495,6 +495,8 @@ There are several different actions you can perform with individual notes.
 
 Be aware that the user should be on the Display Tab, and not the Edit tab, in order to perform cut/copy/paste functions since, when on the Edit tab, cut/copy/paste will typically apply to the text within a field, and not to the entire note. 
 
+Also be aware that Note Attachments will not be copied or pasted. 
+
 
 <a name="import-and-export-your-notes"><h2>Import and Export Your Notes</h2></a>
 

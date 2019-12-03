@@ -29,6 +29,7 @@ body
   font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #687C99;
   font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
 #navshare {
@@ -58,8 +59,8 @@ body
 }
 
 #share-header {
-	font-size: 0.8em;
-	color: #687C99;
+	/* font-size: 0.8em;
+	color: #687C99; */
 }
 
 #sharebox {
@@ -80,6 +81,10 @@ body
 	border-width: 3px;
 	border-color: #E6ECF9; */
 	clear: both;
+}
+
+.navbar {
+	font-family: 'concourse_t4regular', Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 ul.navlist {
@@ -119,8 +124,8 @@ h3
 h4
 {
 	margin-bottom: 3pt;
-	font-style: italic;
-	font-size: 1em;
+	font-style: normal;
+	font-size: 1.2em;
 }
 
 p {

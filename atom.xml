@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>The Notenik Blog</title>
+<subtitle>The latest news about the Notenik Project</subtitle>
+<link href="https://notenik.net/atom.xml" type="application/atom+xml" rel="self" />
+<link href="https://notenik.net/" type="text/html" rel="alternate"  />
+<updated>2019-12-02</updated>
+<rights>Copyright © 2019, Herb Bowie</rights>
+<author>
+<name>Herb Bowie</name>
+</author>
+<id>https://hbowie.net/atom.xml</id>
+<entry>
+<title>Notenik Project # 2: Create a Collection of Bookmarks</title>
+<link rel="related" type="text/html" href="https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html"/>
+<id>https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html</id>
+<published>2019-11-25T09:00:00Z</published>
+<updated>2019-11-25T12:00:00Z</updated>
+<author>
+<name>Herb Bowie</name>
+<uri>https://hbowie.net/</uri>
+</author>
+<summary>
+<p>This post is the second in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we're going to use this Mac app to create a Collection of Bookmarks that you can access from any of your web browsers.</p>
+
+</summary>
+<content type="html">
+<![CDATA[
+<p>This post is the second in a series designed to gradually explain the use of the Mac App <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik</a> for increasingly complex and sophisticated tasks.</p>
+<p>Before proceeding, you might want to review some of the basics covered in <a href="https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html">Project # 1</a>, if these aren't already fresh in your mind.</p>
+<p>You will need at least Notenik version 2.1.0 to perform all the functions described in this piece.</p>
+<h3>Motivation</h3>
+<p>All modern web browsers (Safari, Chrome, Firefox, etc.) have their own capabilities for storing frequently used web links (aka URLs) as a bunch of bookmarks, sometimes referred to as favorites.</p>
+<p>However, if you have a tendency to use different browsers for different purposes, or as the mood strikes you, then you might find it convenient to have your favorite web bookmarks stored independently, in a way that can be accessed equally well from any browser.</p>
+<p>This is where Notenik comes in.</p>
+<h3>Step 1: Create a New Collection</h3>
+<p>Name the folder 'Favorites' or 'Bookmarks' or something similar.  If you have <a href="https://discussions.apple.com/docs/DOC-3083">Apache enabled</a>, then you might wish to place it somewhere in your 'Sites' folder. (If you have no idea what this means, then don't worry about it.) Another option would be to place the new Collection in your Dropbox folder or iCloud Drive, if you'd like it to be synced to the cloud and/or to other devices. Or just put it somewhere in your Documents folder. It's up to you!</p>
+<h3>Step 2: Configure with Default Fields</h3>
+<p>Title, Tags, Link and Body should be fine for our purposes today.</p>
+<h3>Step 3: Add Your Favorite Websites</h3>
+<p>For each site, enter the Link field and the Title field. For a title, enter whatever is most meaningful to you – it doesn't have to exactly match any sort of official title on the site itself. If you wish to add some comments about a site in the body of its note, then that's ok too.</p>
+<h3>Step 4: Use Tags to Categorize the Sites</h3>
+<p>Here there's something specific you need to enter in order to enable a later step.</p>
+<p>Enter your tag in the format 'Favorites.xxx' where 'xxx' is the category you wish to assign to the note. The first part of the tag must be 'favorites', although the case (upper or lower) is not significant.</p>
+<p>If you have a lot of bookmarks you wish to track in Notenik, then they don't all need to have the 'Favorites' tag. In fact, a maximum of about 60 is recommended. And all of your tags, including the ones tagged as a 'favorite', can have multiple tags.</p>
+<p>With or without the favorites tag, note that you can use the 'Tags' tab to view your growing list of bookmarks in outline form, with the tags used to organize the outline. When a note has multiple tags, it will appear multiple times, so that it can show up under each different tag.</p>
+<p><img src="../images/notenik-edit-bookmark.jpg" alt="Screen Shot # 1" /></p>
+<h3>Step 5: Launch Links from within Notenik</h3>
+<p>Once you have your bookmarks entered into Notenik, you can always open that collection, select the bookmark you are interested in, and then launch the link, either via the Toolbar command, or via the command beneath the Note menu, or by using the CMD-L keyboard shortcut. Launching the Link via any of these methods will result in the page opening in your default web browser (Safari, Chrome, etc.)</p>
+<p>But wait, there's more!</p>
+<h3>Step 6: Save your Favorites to HTML</h3>
+<p>Beneath the File menu, there is an option to save your Favorites to HTML. Once you select this command, you'll be prompted to specify a file name and location. Once you've completed this, Notenik will generate a web page for you, containing all of the bookmarks you have tagged as Favorites, grouped neatly into the categories you have specified.</p>
+<p>After saving this web page for you, Notenik will ask that it be opened by your default web browser. Once this happens, if you look at the URL for the page, you'll see the location you specified expressed as a local file URL, starting with the 'file://' protocol.</p>
+<p><img src="../images/safari-favorites-page.jpg" alt="Screen Shot # 2" /></p>
+<h3>Step 7: Adjust Settings</h3>
+<p>The defaults are to arrange your favorite links into 4 columns, with each column a maximum of 32 lines long, and taking up a screen width of 250 pixels. I've found that these defaults work well for me but, if you'd like to adjust them, you can use the Favorites tab within Notenik's application Preferences to bump them up or down, to suit your tastes (and screen real estate).</p>
+<p>The other settings you might want to adjust are your Display Fonts. You can get to these by clicking on the appropriately named button on your toolbar, or by selecting Display Appearance beneath the Format menu. You can then change the Display font and the display size. These settings will primarily affect the appearance of your Notes on the Display tab (for all of your collections – these settings are not collection-specific), but these same values will also be used for the webpage generated when you select Favorites to HTML beneath the File menu.</p>
+<p>After making changes to any of these settings, you will need to repeat Step 6, overwriting the file you created previously, in order to see the effects of your changes.</p>
+<h3>Step 8: Set As Your Browser Home Page</h3>
+<p>Once you have the generated HTML looking the way you would like,  you will want to select the generated page's URL from your browser and copy it.</p>
+<p>Now go into the Preferences for each web browser that you use, and paste this local file address into the field identifying your homepage, or your home button. You might also want to specify that new browser windows and/or tabs will open to your homepage.</p>
+<p>That's it! Now whenever you open your web browser, you'll see a nice clean page showing all of your favorite websites, without any advertising or tracking or animation or javascript or cookies or download delays. Just click on any of the titles to be taken to the corresponding website. And sites will be named and categorized and located in a way that makes sense to you, making it easy for you to find the site you are looking for and open it.</p>
+<p>When you want to add, remove or change the contents of this page, then all you have to do is re-open your Notenik collection of favorites, make the desired changes there, then repeat step # 6, making sure to overwrite the file you created before, by specifying the same location and file name. From that point on, the new page will appear in all of the browsers you have set to this homepage (understanding that you may sometimes have to ask the browser to reload the page, to replace any cached copies it might be holding on to).</p>
+<h3>Wrapping Up</h3>
+<p>And that's it for Project # 2! As always, feel free to send any questions or comments to <a href="mailto:hbowie@notenik.net">hbowie@notenik.net</a>. Looking forward to hearing from you!</p>
+
+]]>
+</content>
+</entry>
+<entry>
+<title>Notenik Project # 1: Create a Simple Collection of Notes</title>
+<link rel="related" type="text/html" href="https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html"/>
+<id>https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html</id>
+<published>2019-11-14T09:00:00Z</published>
+<updated>2019-11-14T12:00:00Z</updated>
+<author>
+<name>Herb Bowie</name>
+<uri>https://hbowie.net/</uri>
+</author>
+<summary>
+<p>This post is the first in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we're going to use Notenik just to create a basic Collection of Notes about anything that might interest you.</p>
+
+</summary>
+<content type="html">
+<![CDATA[
+<p><a href="https://notenik.net">Notenik</a> is a free and open-source Mac application that you can use to track and publish all sorts of notes on any topic.</p>
+<p>This post is the first in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks.</p>
+<p>See the <a href="https://notenik.net/swift.html">Notenik User Guide</a> for complete descriptions of all of Notenik's many features.</p>
+<p>Today we're going to use Notenik just to create a basic Collection of Notes about anything that might interest you.</p>
+<h3>Step 1: Download Notenik from the Mac App Store</h3>
+<p>Follow <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">this link</a> to easily locate Notenik in the Mac App Store, then press GET and OPEN to install and open the application.</p>
+<p>The first time you open Notenik, it will show its Collection of Help Notes. This is provided as reference, but is not meant to be edited. Leave this window open for now.</p>
+<h3>Step 2: Create a New Collection</h3>
+<p>Within Notenik, Notes are always stored within Collections, and you may have as many different Collections as you desire.</p>
+<p>Each Collection is stored on disk as its own folder, and each Note within a Collection is stored as a file within that folder.</p>
+<p>You get to decide where to store your Collection(s), and you can always navigate to them within the Finder. (Hint: Store a Collection in your Dropbox folder or in iCloud Drive if you'd like to sync it to the cloud and to other devices.)</p>
+<p>To create a new Collection, select New from the File menu. This action will open up a standard Mac window for selecting a folder. Use the standard New Folder button in the lower left corner of this window to create an empty folder for your new Collection, then select that newly created folder (all within the same window) and hit the Open button.</p>
+<p><img src="../images/notenik-new-collection-window.jpg" alt="Screen Shot # 1" /></p>
+<h3>Step 3: Indicate Your Collection Preferences</h3>
+<p>The next thing you will see is a window allowing you to specify certain attributes for your new Collection.</p>
+<p>The Collections Title will be formed from the folder path containing this Collection. Feel free to tweak this if you'd like.</p>
+<p>Each Note file is an ordinary text file, and can be opened using any text editor, in addition to being editable within Notenik. Depending on what application you might wish to be the default text editor for your notes, you may wish to pick some special file extension to be used. If you don't care about this, or this doesn't make any sense to you, then feel free to just ignore this whole paragraph and leave the Preferred File Extension set to txt.</p>
+<p>Next select the fields you would like to be made part of each Note. Every Note must have a Title and a Body, and the Tags and Link fields are commonly used, but feel free to use the checkboxes to select whatever fields would be most useful to you. (You can add additional fields later, so a minimal set is probably best to start.)</p>
+<p>When you're done with this screen, click OK to continue.</p>
+<p><img src="../images/notenik-collection-preferences.jpg" alt="Screen Shot #2" /></p>
+<h3>Step 4: Add Some Notes</h3>
+<p>Your new Collection will be initially populated with a Note titled 'Notenik'. Feel free to delete this later, but first you must add one or more of your own Notes to the Collection, so that it is not empty.</p>
+<p>Click on the Plus Sign ('+') in the Toolbar to add a Note.</p>
+<p>Enter a brief Title indicating the subject of the Note. (Each Note in a Collection must have a unique Title.)</p>
+<p>Enter whatever you like in the Body of your Note. You may use the <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> syntax to format the body of your Note.</p>
+<p>If you've elected to use the Link field, and if you have some sort of URL you'd like to associate with this Note, then enter that Web address in the Link field.</p>
+<p>Tags can be used to organize the Notes within a Collection. You may enter from zero to many Tags for each Note, and may enter one or more levels for each Tag. Separate different Tags with a comma or a semicolon, and separate different levels with a period.</p>
+<p>When you're done with your data entry, hit the Display tab above the fields (next to the Edit tab), or the OK button in the Toolbar. Your Note will then be saved, and a formatted display of your Note will replace the Edit screen.</p>
+<p>Add other Notes in the same way.</p>
+<p>As you add Notes, they will appear on the List tab on the left side of your window, sorted by Title.</p>
+<h3>Step 5: Open Links</h3>
+<p>Later, when referencing your Notes, you may open a Link in your Web browser (Safari, for example) by hitting the Launch Link button in the Toolbar.</p>
+<p>Note that you can also click on the Link field within the Display tab, but clicking here will open the linked webpage within the Notenik Display tab, rather than in your Web browser. When you're done viewing the linked webpage within Notenik, you can click on the Refresh button in the Toolbar to reload your Note within the Display tab.</p>
+<h3>Step 6: View the Tags Outline</h3>
+<p>If you have elected to enter Tags for your Notes, then you may click on the Tags tab (next to the List tab) to see your Notes arranged by their Tags. Notes appear on this tab within an outline view. You can open and close tags and sub-tags (if present) to reveal or hide various groups of notes.</p>
+<h3>Step 7: Adjust the Display Font</h3>
+<p>If you'd like to see your Notes displayed differently on the Display tab, then hit the Display Fonts button on the Toolbar. You can use the resulting screen to select a different font family, and can also adjust the font size. If you're familiar with CSS, then you can edit the resulting CSS code directly if you'd like.</p>
+<p>When you're done, hit OK to see your changes take effect on the Display tab. (You may need to click on one or two Notes before the changes take effect.)</p>
+<h3>Step 8: Adjust the Edit Font Size</h3>
+<p>Use the bottom three commands under the View menu to adjust the size of the font used on the Edit screen, if you'd like it to be larger or smaller.</p>
+<p>Note that font changes, on the Display tab and on the Edit tab, will affect the way all Collections are displayed within Notenik. Font settings cannot be made on a collection-by-collection basis.</p>
+<h3>Step 9: Make Your Collection Essential</h3>
+<p>If you'd like this Collection to be opened automatically the next time you launch Notenik, then choose the Make This Collection Essential command under the File menu. If you've specified an Essential Collection, then it will be opened automatically each time you open Notenik.</p>
+<h3>Step 10: Share Your Notes</h3>
+<p>Click on the Share button on the Toolbar to share a Note in an email, a text message, or via any of the other standard sharing tools available on a Mac. Notes shared in this fashion will just be formatted as plain text.</p>
+<p>However there's also another sharing option, available under the Note menu. When you select Share here, you will see another screen that will present you with a number of sharing options.</p>
+<ul>
+<li>Share the body of the Note only, or share all of the fields;</li>
+<li>Share in the Notenik format, in Markdown, or in HTML (as either a fragment or a complete document);</li>
+<li>Send the resulting output to the Clipboard, so that you can then paste it somewhere else, or to a file whose name and location you will then get to specify.</li>
+</ul>
+<p>After you've chosen the appropriate options, hit the OK button to complete the sharing.</p>
+<h3>Summary</h3>
+<p>Well, that's it! You've seen how you can use Notenik to create a basic collection of Notes to keep track of information on any topic that might interest you.</p>
+<p>Hopefully you can find some uses for this most basic Notenik function.</p>
+<p>In later projects we will move on to more sophisticated uses.</p>
+
+]]>
+</content>
+</entry>
+<entry>
+<title>Notenik: A Contrarian Mix of Old and New</title>
+<link rel="related" type="text/html" href="https://notenik.net/blog/notenik-a-contrarian-mix-of-old-and-new.html"/>
+<id>https://notenik.net/blog/notenik-a-contrarian-mix-of-old-and-new.html</id>
+<published>2019-10-24T09:00:00Z</published>
+<updated>2019-10-24T12:00:00Z</updated>
+<author>
+<name>Herb Bowie</name>
+<uri>https://hbowie.net/</uri>
+</author>
+<summary>
+<p>Given my background as a programmer and long-time Mac user, it should probably come as no surprise that my first native Mac app is a sometimes surprising mix of old and new.</p>
+
+</summary>
+<content type="html">
+<![CDATA[
+<p>I started programming professionally over forty years ago, in 1973.</p>
+<p>My first Macintosh computer was an SE, and I've been using one Mac or another as my preferred computing device since 1988.</p>
+<p>However 2019 was the year in which I was able to realize my long-harbored wish of combining these two interests, and releasing my first native Mac app.</p>
+<p>Given my background, then, it should probably come as no surprise that my note-taking app, dubbed <a href="https://notenik.net">Notenik</a>, is a sometimes surprising mix of old and new.</p>
+<p>Let me start by telling you about the new things that I've embraced with this app.</p>
+<h3>The Shiny New Stuff</h3>
+<p>I've used <strong>Swift</strong> for all of the code behind Notenik. I had previously done a fair bit of programming in Java. And I had taken a run at Objective-C a few years ago, but found its idiosyncratic syntax to be a bridge too far for my programming tastes. And I'd heard that the first few years of Swift were a bumpy ride for early adopters. But even though trying to learn <a href="https://developer.apple.com/xcode/">Xcode</a>, <a href="https://developer.apple.com/swift/">Swift</a> and <a href="https://developer.apple.com/documentation/appkit">AppKit</a> all at the same time was a bit much, the learning curve was worth it, and I'm now a happy convert to Apple's shiny new programming language.</p>
+<p>When it came to the decision of how to release my software for use by others, I opted to go all in with the <strong>Mac App Store</strong>. And I'm happy to report, after going through the initial release as well as several follow-on updates, that this feels like the right decision. The <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">store</a> makes it easy for Mac users to find and install and trust and update my software. And as a developer, I've found the release of new versions to be a relatively smooth and straightforward process. I did receive some early rejections, but those came with entirely reasonable requests for changes, and once I made those, it was smooth sailing. And later updates all went through the review and release process within the space of a few days.</p>
+<p>Of course, along with these other new items come all of the latest <strong>Apple security restrictions</strong> on what apps can and can't do. But rather than fight and resist these, I decided to embrace them. So my app lets the user decide what folders he or she wishes Notenik to have access to, rather than assuming full disk access. So we're working entirely within the <a href="https://developer.apple.com/app-sandboxing/">macOS sandbox</a>, as it's called.</p>
+<p>And then I decided to make my app available to users at no charge, and as <strong><a href="https://github.com/hbowie/notenik-swift">open-source</a></strong> software. For me this sort of app development is a hobby, not a business. I've selfishly written Notenik for my own use and entertainment, but if others also find it useful then that's just a bonus, both for me and for others.</p>
+<p>Finally I decided to use <strong><a href="https://daringfireball.net/projects/markdown/">Markdown</a></strong> to allow users to format the bodies of their notes. Notenik will then use <a href="https://github.com/iwasrobbed/Down">Down</a> and <a href="https://github.com/commonmark/cmark">cmark</a> to render users' notes per the <a href="https://commonmark.org">CommonMark</a> spec.</p>
+<h3>The Great Old Stuff</h3>
+<p>There are a number of recent trends in Mac app development that have tended to assume users want a simple, pretty face to their apps, but don't want to be bothered with whatever may be going on under the hood.</p>
+<p>This sort of newness doesn't have much appeal for me. Rather than me making all of the decisions about what you want to do with the app, I believe it's better to let you make decisions for yourself. So I've stayed old school in the following respects.</p>
+<p>My app allows, and perhaps even encourages, the user to open multiple <strong>windows</strong>. After all, you're using this on a Mac, not an iPhone or an iPad. Open as many as you want. Make them as big or as small as you like. Put them anywhere you wish on your screen. As the user, you're in charge of how many windows you want open at a time, and how you arrange them.</p>
+<p>My app uses a familiar and straightforward user interface. There's nothing newfangled or confusing here. You can do pretty much everything with <strong>menus, tabs, buttons and scrollbars</strong>.</p>
+<p>Notenik stores all of its data in <strong>folders full of text files</strong>, and the user decides explicitly where these should be stored. Create as many folders as you'd like, and put them wherever you think best. You can even decide what file extension you'd like Notenik to use for the text files. And if you'd like to open Notenik files with your trusted text editor – whether that's <a href="https://www.barebones.com/products/bbedit/">BBEdit</a> or something else – then knock yourself out. No secrets here. And of course you can backup and sync all of this data however you would like, because it's all just there in an easily accessible form.</p>
+<p>And rather than being an app designed with laser-like focus for one particular task, Notenik is designed to be <strong>flexible and extensible</strong>. Every note has a title and a body. But you can also add other fields if you'd like. A date. A link. Tags. And other stuff. You decide.</p>
+<h3>Bottom Line</h3>
+<p>I tend to view programming, as well as other forms of writing, as a means of finding out what I really want to say. <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik</a> is certainly not a perfect app, but it's a pretty good expression of my intentions to create a Mac app that in many respects is fully modern, but that also carries forward many of the empowering aspects of personal computing that I've come to appreciate over the years.</p>
+<p>It certainly won't be for everyone, but I'm hoping that at least a few other people will find it useful.</p>
+<p>If you have something you'd like to say about it, then feel free to <a href="mailto:support@notenik.net">shoot me an email</a>. I'd be happy to hear from you.
+<img src="../images/notenik-list-and-display.jpg" alt="Notenik in all its glory" /></p>
+
+]]>
+</content>
+</entry>
+<entry>
+<title>All Swift, All the Time</title>
+<link rel="related" type="text/html" href="https://notenik.net/blog/all-swift-all-the-time.html"/>
+<id>https://notenik.net/blog/all-swift-all-the-time.html</id>
+<published>2019-10-01T09:00:00Z</published>
+<updated>2019-10-01T12:00:00Z</updated>
+<author>
+<name>Herb Bowie</name>
+<uri>https://hbowie.net/</uri>
+</author>
+<summary>
+<p>Moving on from Java, Notenik development is now all Swift, all the time.</p>
+
+</summary>
+<content type="html">
+<![CDATA[
+<p>I started programming professionally in the early 1970's.</p>
+<p>Over time, though, my day job became a management position that didn't require me to write any code. I still enjoyed programming though, and so decided to learn Java when it came along in the late 1990's. It was in this same decade that I also learned HTML and CSS and became interested in making websites, starting with <a href="https://reasontorock.com">Reason to Rock</a>.</p>
+<p>So when I started programming in Java on the Mac, originally using MetroWerks CodeWarrior, then later using Netbeans and finally IntelliJ IDEA, I was working strictly as a hobbyist.</p>
+<p>Over the next 20 years I developed a number of desktop apps that would run on both PCs and the Mac, including TDF Czar, PSTextMerge, URL Union, iWisdom and finally Notenik. I used all these apps myself, both at work, where I had a Windows machine, and at home, where I had a Mac. I also made the apps available to others, at low or no cost, and maintained a website at PowerSurgePub.com where people could find out about these apps and download working copies.</p>
+<p>Over the last several years, though, several things have changed.</p>
+<ul>
+<li>
+<p>I retired from my day job, so no longer have interest in, or access to, Windows machines.</p>
+</li>
+<li>
+<p>Apple and the Mac became less and less supportive of Java applications.</p>
+</li>
+<li>
+<p>Oracle and Java became less and less supportive of a desktop user interface. First there was the decision to replace Swing with JavaFX, then the decision to stop bundling JavaFX with Oracle's JDK. At the same time, new Java releases were coming along more rapidly, making it challenging to maintain a working, current code base.</p>
+</li>
+<li>
+<p>Apple introduced the Swift programming language, and over a few years seemed to have reached a reasonable level of maturity with it.</p>
+</li>
+<li>
+<p>I started learning Swift, and quickly became convinced that in general it was an improvement over Java, for my purposes, and from my point of view.</p>
+</li>
+<li>
+<p>I redeveloped Notenik using Swift, released a workable version in the Mac App store, and over the next several months added almost all of the functionality from older Java programs that I still cared about.</p>
+</li>
+</ul>
+<p>So, as of today, I've removed any references to all of this Java legacy from Notenik.net, and am refocusing the site strictly on the new version, written entirely in Swift.</p>
+<p>From this point on it's all Swift, all the time.</p>
+<p>Not a day goes by now that I don't make use of the new Notenik for my own, regular personal use. It's not perfect, and it's a labor of love, not a product made for profit, and I know it won't be for everyone, but I'm offering it up to the world with the suspicion that some of you out there might find it interesting and useful as well.</p>
+<p>If you have comments or questions, then <a href="mailto:support@notenik.net">drop me a line</a>.</p>
+
+]]>
+</content>
+</entry>
+</feed>
