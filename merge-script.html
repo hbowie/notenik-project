@@ -112,7 +112,15 @@ The Notenik Project
 <p>notenik-general - Reads a Notenik Collection with any set of fields.</p>
 </li>
 <li>
-<p>notenik-index - Reads a Notenik Collection using the Index field, and generates one row for each index term.</p>
+<p>notenik-index - Reads a Notenik Collection using the Index field, and generates one row for each index term, containing the following columns.</p>
+<ul>
+<li>Initial Letter - The first letter of the index term.</li>
+<li>Term - The term being indexed.</li>
+<li>Lower Case Term - The same index term, but converted to lowercase.</li>
+<li>Term Link -</li>
+<li>Page - The Title of the Note containing this index term.</li>
+<li>Anchor -</li>
+</ul>
 </li>
 <li>
 <p>notenik-split-tags - Reads a Notenik Collection, adds a “Tag” field, and returns one row for each tag (or one row with a blank tag, for Notes with no tags).</p>

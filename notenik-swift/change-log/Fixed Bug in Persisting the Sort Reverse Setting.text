@@ -1,0 +1,9 @@
+Title:  Fixed Bug in Persisting the Sort Reverse Setting
+
+Seq:    2.2.0
+
+Date:   04 Dec 2019
+
+Body: 
+
+Notenik had been resetting the Reverse setting each time a Collection was opened. 

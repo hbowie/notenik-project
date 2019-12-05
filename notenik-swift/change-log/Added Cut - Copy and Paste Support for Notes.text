@@ -1,4 +1,4 @@
-Title:  Added Cut, Copy and Paste Supprt for Notes
+Title:  Added Cut, Copy and Paste Support for Notes
 
 Seq:    2.2.0
 
@@ -7,3 +7,4 @@ Date:   27 Nov 2019
 Body: 
 
 The Cut, Copy and Paste commands — along with their corresponding keyboard shortcuts — are now enabled on the Edit menu for Notes. After selecting a Note, the Cut or Copy commands may be used to cut/copy the entire note. The note is copied to the clipboard as text, so that it can then be pasted into any application where text is accepted — including, but not limited to, Notenik itself. Be aware that the user should be on the Display Tab, and not the Edit tab, in order to perform these note-based functions since, when on the Edit tab, cut/copy/paste will typically apply to the text within a field, and not to the entire note. 
+

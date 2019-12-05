@@ -10,6 +10,16 @@ Link:
 
 Body:
 
+### [Notenik for the Mac Version 2.2.0 Released](blog/notenik-for-the-mac-version-2.2.0-released.html)
+
+*Published 03 Dec 2019*
+
+Added Cut, Copy and Paste support for Notes; added support for British spelling of 'Favorites'; relocated Reload Collection command to the Collection menu to make it easier to find; suppressed empty tags from the Favorites to HTML export.
+
+*[Read more...](blog/notenik-for-the-mac-version-2.2.0-released.html)*
+
+----
+
 ### [Notenik Project # 2: Create a Collection of Bookmarks](blog/notenik-project-2-create-a-collection-of-bookmarks.html)
 
 *Published 25 Nov 2019*
@@ -34,8 +44,7 @@ This post is the first in a series designed to gradually explain the use of Note
 
 *Published 24 Oct 2019*
 
-Given my background as a programmer and long-time Mac user, it should probably come as no surprise that my first native Mac app is a sometimes surprising mix of old and new. 
-
+Given my background as a programmer and long-time Mac user, it should probably come as no surprise that my first native Mac app is a sometimes surprising mix of old and new.
 
 *[Read more...](blog/notenik-a-contrarian-mix-of-old-and-new.html)*
 
@@ -45,8 +54,7 @@ Given my background as a programmer and long-time Mac user, it should probably c
 
 *Published 1 Oct 2019*
 
-Moving on from Java, Notenik development is now all Swift, all the time. 
-
+Moving on from Java, Notenik development is now all Swift, all the time.
 
 *[Read more...](blog/all-swift-all-the-time.html)*
 

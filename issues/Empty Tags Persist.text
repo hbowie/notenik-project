@@ -1,0 +1,19 @@
+Title:  Empty Tags Persist
+
+Status: 9 - Closed
+
+Seq:    4
+
+Date:   01 Dec 2019
+
+Reported By: Warwick L
+
+Issue: 
+
+I started playing with tasks. In the process I ended up with plenty of superfluous tags that couldn’t be deleted. 
+
+Body: 
+
+Modified the Favorites to HTML export to suppress empty tags. Implemented in 2.2.0. 
+
+Can also be addressed by using the Reload Collection command. 

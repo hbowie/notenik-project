@@ -4,12 +4,47 @@
 <subtitle>The latest news about the Notenik Project</subtitle>
 <link href="https://notenik.net/atom.xml" type="application/atom+xml" rel="self" />
 <link href="https://notenik.net/" type="text/html" rel="alternate"  />
-<updated>2019-12-02</updated>
+<updated>2019-12-05</updated>
 <rights>Copyright © 2019, Herb Bowie</rights>
 <author>
 <name>Herb Bowie</name>
 </author>
 <id>https://hbowie.net/atom.xml</id>
+<entry>
+<title>Notenik for the Mac Version 2.2.0 Released</title>
+<link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html"/>
+<id>https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html</id>
+<published>2019-12-03T09:00:00Z</published>
+<updated>2019-12-03T12:00:00Z</updated>
+<author>
+<name>Herb Bowie</name>
+<uri>https://hbowie.net/</uri>
+</author>
+<summary>
+<p>Added Cut, Copy and Paste support for Notes; added support for British spelling of 'Favorites'; relocated Reload Collection command to the Collection menu to make it easier to find; suppressed empty tags from the Favorites to HTML export.</p>
+
+</summary>
+<content type="html">
+<![CDATA[
+<p>This is another release containing a few incremental improvements.</p>
+<ul>
+<li>
+<p>Added Cut, Copy and Paste support for Notes. Select a Note within a Collection and then use the Cut or Copy commands. You can then Paste the Note into another Collection, or into an Email message, or anywhere that accepts a block of text.</p>
+</li>
+<li>
+<p>Added support for the British spelling of 'Favorites'. An Australian user pointed out that they spell it 'favourites,' so Notenik has been updated to accept either spelling when exporting Favorites to HTML.</p>
+</li>
+<li>
+<p>The Reload Collection command has been moved from the File menu to the Collection menu, where it will hopefully be easier to find.</p>
+</li>
+<li>
+<p>Empty tags are now bypassed when exporting Favorites to HTML.</p>
+</li>
+</ul>
+
+]]>
+</content>
+</entry>
 <entry>
 <title>Notenik Project # 2: Create a Collection of Bookmarks</title>
 <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html"/>

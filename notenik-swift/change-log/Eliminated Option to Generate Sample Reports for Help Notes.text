@@ -1,0 +1,9 @@
+Title:  Eliminated Option to Generate Sample Reports for Help Notes
+
+Seq:    2.2.0
+
+Date:   04 Dec 2019
+
+Body: 
+
+App Store testers correctly pointed out that selecting this option for the Help Notes would cause a crash. 

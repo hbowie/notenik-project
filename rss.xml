@@ -5,6 +5,15 @@
 <description>The Notenik Blog</description>
 <language>en</language>
 <item>
+<title>Notenik for the Mac Version 2.2.0 Released</title>
+<link>https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html</link>
+<guid>https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html</guid>
+<pubdate>Tue, 03 Dec 2019 12:00:00 -0700</pubdate>
+<description>
+Added Cut, Copy and Paste support for Notes; added support for British spelling of 'Favorites'; relocated Reload Collection command to the Collection menu to make it easier to find; suppressed empty tags from the Favorites to HTML export.
+</description>
+</item>
+<item>
 <title>Notenik Project # 2: Create a Collection of Bookmarks</title>
 <link>https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html</link>
 <guid>https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html</guid>

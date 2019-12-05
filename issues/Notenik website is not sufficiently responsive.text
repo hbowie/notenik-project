@@ -1,0 +1,21 @@
+Title:  Notenik website is not sufficiently responsive
+
+Tags:   docs
+
+Link:   https://notenik.net
+
+Status: 9 - Closed
+
+Seq:    2
+
+Date:   28 Nov 2019
+
+Reported By: Daniel M
+
+Issue: 
+
+Doesn't size correctly on a mobile screen. 
+
+Body: 
+
+Implemented Bootstrap to make it fully responsive. Verified by Daniel M. 

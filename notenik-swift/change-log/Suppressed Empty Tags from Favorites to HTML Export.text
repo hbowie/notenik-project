@@ -1,0 +1,9 @@
+Title:  Suppressed Empty Tags from Favorites to HTML Export
+
+Seq:    2.2.0
+
+Date:   03 Dec 2019
+
+Body: 
+
+You can sometimes end up with empty tags in a collection, as a result of deleting notes or changing tags. Previously these would be included when creating a Favorites page, but they are now suppressed. 
