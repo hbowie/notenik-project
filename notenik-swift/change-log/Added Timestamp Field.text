@@ -1,0 +1,18 @@
+Title:  Added Timestamp Field
+
+Seq:    2.3.0
+
+Date:   09 Dec 2019
+
+Body: 
+
+A Timestamp field can be used to generate a timestamp for each note, in a "yyyyMMddkkmmss" format, consisting of:
+
+* 4-digit year
+* 2-digit month
+* 2-digit day of month
+* hour of day, using a 24-hour range
+* minute of hour
+* second of minute
+
+All of this is normalized to Greenwich Mean Time, and formatted without spaces or punctuation. 
