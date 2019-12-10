@@ -147,6 +147,7 @@ Template:  page-template.html  -->
 <li><a href="#track-your-tasks">Track Your Tasks</a></li>
 <li><a href="#add-code-snippets-to-your-notes">Add Code Snippets to Your Notes</a></li>
 <li><a href="#track-authors-and-artists">Track Authors and Artists</a></li>
+<li><a href="#timestamp-your-notes">Timestamp Your Notes</a></li>
 <li><a href="#search-for-one-or-more-notes-containing-specified-text">Search for One or More Notes Containing Specified Text</a></li>
 <li><a href="#use-other-special-fields">Use Other Special Fields</a></li>
 <li><a href="#attach-files-to-your-notes">Attach Files to Your Notes</a></li>
@@ -259,14 +260,14 @@ You can navigate through this list using some of the buttons on the Toolbar:</p>
 <p><a name="format-the-body-of-a-note-using-markdown"><h2>Format the Body of a Note using Markdown</h2></a></p>
 <p><a href="http://daringfireball.net/projects/markdown/">Markdown</a> is a simple syntax for formatting plain text files so that they can be easily read and written by humans, but also can easily be converted into HTML for use on the Web. If you’d like, you can use the Markdown syntax for formatting the body of each note. But it’s not required.</p>
 <p>When you view a Note on the Display tab, you will see the Body Field Value converted to HTML using a Markdown parser. If you haven’t used any special Markdown formatting, then the text will simply appear as you entered it.</p>
-<p>Notenik uses the <a href="https://github.com/iwasrobbed/Down">Down</a> parser to convert from Markdown to HTML.</p>
+<p>Notenik uses the <a href="https://github.com/iwasrobbed/Down">Down</a> parser as the default for conversion of Markdown to HTML, but <a href="https://github.com/JohnSundell/Ink">Ink</a> may be specified as an alternate on the Markdown tab of the Application preferences.</p>
 <p><a name="add-other-fields-to-your-notes"><h2>Add Other Fields to Your Notes</h2></a></p>
 <p>I’ve said that, at their most basic, each Note consists of a Title Field and a Body Field. But each Note can actually contain any number of fields.</p>
 <p>Each Field in a Note consists of the Field’s Label, followed by a colon and one or more spaces, followed by the Field’s Value.</p>
 <p>In other words, something like this:</p>
 <pre><code>Title: This is a Sample Note
 </code></pre>
-<p>Field Labels must follow a few rules. A Field Label must always start at the beginning of a line. A Field Label may not consist of more than 48 characters, and may not contain a comma (’,’).</p>
+<p>Field Labels must follow a few rules. A Field Label must always start at the beginning of a line. A Field Label may not consist of more than 48 characters, and may not contain a comma, brackets or parentheses.</p>
 <p>The Field Value may be specified on the same line, and/or on one or more following lines.</p>
 <p>The Body Field, if present, will always be the last Field in a Note, since all following text will be assumed to be part of the Body (even if it contains strings of text that might otherwise appear to be additional Field Labels).</p>
 <p>Each Field Label may be considered to have a <em>proper form</em> (including capitalization, spaces and punctuation), and a <em>common form</em> (the proper form without capitalization, whitespace or punctuation). The common form is considered to be the key identifier for the Field, so that any variations of the Label that include the same letters and digits in the same sequence will be considered equivalent.</p>
@@ -371,6 +372,20 @@ The code block you enter in a Code field will be formatted on the Display tab en
 <p>You can specify an Author or an Artist field when using a Collection as some sort of catalog of works by others. For example, I have one Collection that I use to keep track of my favorite Quotations, and the Author field indicates the author of each quotation. I have another Collection where I maintain my thoughts about a series of albums, and use the Artist field to indicate the individual or group responsible for each album.</p>
 <p>In either case, you can use Sort Option # 5 (under the Sort menu) to sort a Collection by Author or Artist.</p>
 <p>When sorting by Author, the sort will be by last name first; if a Collection contains an Artist field, but no Author field, then the sort will be by Artist, and the word ‘the’ will be ignored when found as the first work in the Artist’s name. (In other words, ‘The Beatles’ will be sorted under ‘B’, not under ‘T’.)</p>
+<p><a name="timestamp-your-notes"><h2>Timestamp Your Notes</h2></a></p>
+<p>Add a Timestamp field to a Collection in order to generate a timestamp for each Note. Timestamp values are assigned automatically, and are not available for editing within Notenik. Timestamps reflect the original creation date and time for the Note and therefore should never change over the lifecycle of a Note.</p>
+<p>Timestamp values will be generated in a “yyyyMMddkkmmss” format, consisting of:</p>
+<ul>
+<li>4-digit year</li>
+<li>2-digit month</li>
+<li>2-digit day of month</li>
+<li>hour of day, using a 24-hour range</li>
+<li>minute of hour</li>
+<li>second of minute</li>
+</ul>
+<p>All of this is normalized to Greenwich Mean Time, and formatted without spaces or punctuation.</p>
+<p>In general, such a field can be used as a unique identifier for each Note in a Collection.</p>
+<p>Timestamps such as these are often used when creating a <em><a href="https://zettelkasten.de">zettelkasten</a></em>.</p>
 <p><a name="search-for-one-or-more-notes-containing-specified-text"><h2>Search for One or More Notes Containing Specified Text</h2></a></p>
 <p>The Search field on the Toolbar allows you to search for the entered text, and display the first Note containing this text in any field being searched. After finding the first occurrence, you may use the Find Again command under the Note menu to search for the next Note containing the specified text.
 The Search function will search each Note’s Title, Link, Tags and Body fields for matching text. Case (upper- or lower-) will be ignored for the purposes of the Search.</p>
@@ -667,6 +682,28 @@ The Notenik application is published as  <a href="http://opensource.org/osd">ope
 <p><a name="support"><h2>Support</h2></a></p>
 <p>If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at <a href="mailto:support@powersurgepub.com">support@powersurgepub.com</a> and I’ll try to get back to you as quickly as I can.</p>
 <p><a name="version-history"><h2>Version History</h2></a></p>
+<h3>Version 2.3.0 | 09 Dec 2019</h3>
+<h4>1. Increased Tolerance for Notes with Alternative Formatting</h4>
+<p>Some note-takers start their text files with lines such as the following.</p>
+<pre><code># Note Title
+#tag
+Body starts here. 
+</code></pre>
+<p>Notenik will now recognize the first line of such a file as containing the Note’s title, and will recognize the second line as containing a tag for the Note.</p>
+<p>Also, bracket characters and parentheses preceding a colon will now indicate to Notenik that such text should not be treated as a field label.</p>
+<h4>2. Added Timestamp Field</h4>
+<p>A Timestamp field can be used to generate a timestamp for each note, in a “yyyyMMddkkmmss” format, consisting of:</p>
+<ul>
+<li>4-digit year</li>
+<li>2-digit month</li>
+<li>2-digit day of month</li>
+<li>hour of day, using a 24-hour range</li>
+<li>minute of hour</li>
+<li>second of minute</li>
+</ul>
+<p>All of this is normalized to Greenwich Mean Time, and formatted without spaces or punctuation.</p>
+<h4>3. Ink Added as another Markdown Parser Option</h4>
+<p>Down is the default, but you can switch to Ink on the new Markdown tab within the Application Preferences.</p>
 <h3>Version 2.2.0 | 04 Dec 2019</h3>
 <h4>1. Fixed Bug in Persisting the Sort Reverse Setting</h4>
 <p>Notenik had been resetting the Reverse setting each time a Collection was opened.</p>

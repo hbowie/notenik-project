@@ -40,23 +40,24 @@ The following sections contain detailed instructions on the use of Notenik for t
 20. [Track Your Tasks](#track-your-tasks)
 21. [Add Code Snippets to Your Notes](#add-code-snippets-to-your-notes)
 22. [Track Authors and Artists](#track-authors-and-artists)
-23. [Search for One or More Notes Containing Specified Text](#search-for-one-or-more-notes-containing-specified-text)
-24. [Use Other Special Fields](#use-other-special-fields)
-25. [Attach Files to Your Notes](#attach-files-to-your-notes)
-26. [Use Report Templates](#use-report-templates)
-27. [Record and Play Scripts](#record-and-play-scripts)
-28. [Copy, Cut, Paste and Share your Notes](#copy-cut-paste-and-share-your-notes)
-29. [Import and Export Your Notes](#import-and-export-your-notes)
-30. [Favorites to HTML](#favorites-to-html)
-31. [Open Parent Realm](#open-parent-realm)
-32. [Disk Access Permissions](#disk-access-permissions)
-33. [Website Building](#website-building)
-34. [View the Log](#view-the-log)
-35. [Keyboard Shortcuts](#keyboard-shortcuts)
-36. [Files and Folders](#files-and-folders)
-37. [Rights](#rights)
-38. [Support](#support)
-39. [Version History](#version-history)
+23. [Timestamp Your Notes](#timestamp-your-notes)
+24. [Search for One or More Notes Containing Specified Text](#search-for-one-or-more-notes-containing-specified-text)
+25. [Use Other Special Fields](#use-other-special-fields)
+26. [Attach Files to Your Notes](#attach-files-to-your-notes)
+27. [Use Report Templates](#use-report-templates)
+28. [Record and Play Scripts](#record-and-play-scripts)
+29. [Copy, Cut, Paste and Share your Notes](#copy-cut-paste-and-share-your-notes)
+30. [Import and Export Your Notes](#import-and-export-your-notes)
+31. [Favorites to HTML](#favorites-to-html)
+32. [Open Parent Realm](#open-parent-realm)
+33. [Disk Access Permissions](#disk-access-permissions)
+34. [Website Building](#website-building)
+35. [View the Log](#view-the-log)
+36. [Keyboard Shortcuts](#keyboard-shortcuts)
+37. [Files and Folders](#files-and-folders)
+38. [Rights](#rights)
+39. [Support](#support)
+40. [Version History](#version-history)
 
 
 <a name="motivations"><h2>Motivations</h2></a>
@@ -194,7 +195,9 @@ Since a Collection of Notes lives on your local storage as a folder full of text
 
 When you view a Note on the Display tab, you will see the Body Field Value converted to HTML using a Markdown parser. If you haven't used any special Markdown formatting, then the text will simply appear as you entered it. 
 
-Notenik uses the [Down](https://github.com/iwasrobbed/Down) parser to convert from Markdown to HTML. 
+Notenik uses the [Down](https://github.com/iwasrobbed/Down) parser as the default for conversion of Markdown to HTML, but [Ink][] may be specified as an alternate on the Markdown tab of the Application preferences.
+
+[ink]: https://github.com/JohnSundell/Ink 
 
 
 <a name="add-other-fields-to-your-notes"><h2>Add Other Fields to Your Notes</h2></a>
@@ -207,7 +210,7 @@ In other words, something like this:
 
 	Title: This is a Sample Note
 
-Field Labels must follow a few rules. A Field Label must always start at the beginning of a line. A Field Label may not consist of more than 48 characters, and may not contain a comma (',').
+Field Labels must follow a few rules. A Field Label must always start at the beginning of a line. A Field Label may not consist of more than 48 characters, and may not contain a comma, brackets or parentheses. 
 
 The Field Value may be specified on the same line, and/or on one or more following lines.
 
@@ -376,6 +379,26 @@ You can specify an Author or an Artist field when using a Collection as some sor
 In either case, you can use Sort Option # 5 (under the Sort menu) to sort a Collection by Author or Artist. 
 
 When sorting by Author, the sort will be by last name first; if a Collection contains an Artist field, but no Author field, then the sort will be by Artist, and the word 'the' will be ignored when found as the first work in the Artist's name. (In other words, 'The Beatles' will be sorted under 'B', not under 'T'.) 
+
+
+<a name="timestamp-your-notes"><h2>Timestamp Your Notes</h2></a>
+
+Add a Timestamp field to a Collection in order to generate a timestamp for each Note. Timestamp values are assigned automatically, and are not available for editing within Notenik. Timestamps reflect the original creation date and time for the Note and therefore should never change over the lifecycle of a Note. 
+
+Timestamp values will be generated in a "yyyyMMddkkmmss" format, consisting of:
+
+* 4-digit year
+* 2-digit month
+* 2-digit day of month
+* hour of day, using a 24-hour range
+* minute of hour
+* second of minute
+
+All of this is normalized to Greenwich Mean Time, and formatted without spaces or punctuation. 
+
+In general, such a field can be used as a unique identifier for each Note in a Collection. 
+
+Timestamps such as these are often used when creating a *[zettelkasten](https://zettelkasten.de)*.
 
 
 <a name="search-for-one-or-more-notes-containing-specified-text"><h2>Search for One or More Notes Containing Specified Text</h2></a>
@@ -662,6 +685,40 @@ If you have questions about Notenik, bug reports, or requests for enhancements, 
 
 
 <a name="version-history"><h2>Version History</h2></a>
+
+### Version 2.3.0 | 09 Dec 2019
+
+#### 1. Increased Tolerance for Notes with Alternative Formatting
+
+Some note-takers start their text files with lines such as the following. 
+
+	# Note Title
+	#tag
+	Body starts here. 
+
+Notenik will now recognize the first line of such a file as containing the Note's title, and will recognize the second line as containing a tag for the Note. 
+
+Also, bracket characters and parentheses preceding a colon will now indicate to Notenik that such text should not be treated as a field label. 
+
+
+#### 2. Added Timestamp Field
+
+A Timestamp field can be used to generate a timestamp for each note, in a "yyyyMMddkkmmss" format, consisting of:
+
+* 4-digit year
+* 2-digit month
+* 2-digit day of month
+* hour of day, using a 24-hour range
+* minute of hour
+* second of minute
+
+All of this is normalized to Greenwich Mean Time, and formatted without spaces or punctuation. 
+
+
+#### 3. Ink Added as another Markdown Parser Option
+
+Down is the default, but you can switch to Ink on the new Markdown tab within the Application Preferences. 
+
 
 ### Version 2.2.0 | 04 Dec 2019
 
