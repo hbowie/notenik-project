@@ -1,0 +1,25 @@
+Title:  Notenik for the Mac Version 2.3.0 Released
+
+Seq:    6
+
+Status: 9 - Published
+
+Date:   10 Dec 2019
+
+Teaser: 
+
+Fixed treatment of the Teaser field, to treat it as a long text field; increased tolerance for Notes with alternative formatting; added Ink as an alternate for parsing of Markdown; added an optional Timestamp field, as a first step to enabling use of Notenik to create a Zettelkasten. 
+
+
+Body: 
+
+A few more fixes and improvements…
+
+* Modified treatment of the Teaser field to treat it as a long text field. 
+
+* Added an optional Timestamp field which will create a series of digits representing the year, month, day, hour, minute and second on which the Note was created. This can be used as a fixed ID for each note, in line with the concept of a *Zettelkasten*.
+
+* Increased the tolerance for parsing Notes that use a Markdown level 1 header to identify the Note's title.
+
+* Added a second Markdown parser, Ink, which can be used as an alternative to Down. 
+

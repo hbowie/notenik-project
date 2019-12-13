@@ -41,23 +41,24 @@ The following sections contain detailed instructions on the use of Notenik for t
 21. [Add Code Snippets to Your Notes](#add-code-snippets-to-your-notes)
 22. [Track Authors and Artists](#track-authors-and-artists)
 23. [Timestamp Your Notes](#timestamp-your-notes)
-24. [Search for One or More Notes Containing Specified Text](#search-for-one-or-more-notes-containing-specified-text)
-25. [Use Other Special Fields](#use-other-special-fields)
-26. [Attach Files to Your Notes](#attach-files-to-your-notes)
-27. [Use Report Templates](#use-report-templates)
-28. [Record and Play Scripts](#record-and-play-scripts)
-29. [Copy, Cut, Paste and Share your Notes](#copy-cut-paste-and-share-your-notes)
-30. [Import and Export Your Notes](#import-and-export-your-notes)
-31. [Favorites to HTML](#favorites-to-html)
-32. [Open Parent Realm](#open-parent-realm)
-33. [Disk Access Permissions](#disk-access-permissions)
-34. [Website Building](#website-building)
-35. [View the Log](#view-the-log)
-36. [Keyboard Shortcuts](#keyboard-shortcuts)
-37. [Files and Folders](#files-and-folders)
-38. [Rights](#rights)
-39. [Support](#support)
-40. [Version History](#version-history)
+24. [Add Links Between Notes](#add-links-between-notes)
+25. [Search for One or More Notes Containing Specified Text](#search-for-one-or-more-notes-containing-specified-text)
+26. [Use Other Special Fields](#use-other-special-fields)
+27. [Attach Files to Your Notes](#attach-files-to-your-notes)
+28. [Use Report Templates](#use-report-templates)
+29. [Record and Play Scripts](#record-and-play-scripts)
+30. [Copy, Cut, Paste and Share your Notes](#copy-cut-paste-and-share-your-notes)
+31. [Import and Export Your Notes](#import-and-export-your-notes)
+32. [Favorites to HTML](#favorites-to-html)
+33. [Open Parent Realm](#open-parent-realm)
+34. [Disk Access Permissions](#disk-access-permissions)
+35. [Website Building](#website-building)
+36. [View the Log](#view-the-log)
+37. [Keyboard Shortcuts](#keyboard-shortcuts)
+38. [Files and Folders](#files-and-folders)
+39. [Rights](#rights)
+40. [Support](#support)
+41. [Version History](#version-history)
 
 
 <a name="motivations"><h2>Motivations</h2></a>
@@ -197,7 +198,6 @@ When you view a Note on the Display tab, you will see the Body Field Value conve
 
 Notenik uses the [Down](https://github.com/iwasrobbed/Down) parser as the default for conversion of Markdown to HTML, but [Ink][] may be specified as an alternate on the Markdown tab of the Application preferences.
 
-[ink]: https://github.com/JohnSundell/Ink 
 
 
 <a name="add-other-fields-to-your-notes"><h2>Add Other Fields to Your Notes</h2></a>
@@ -398,7 +398,28 @@ All of this is normalized to Greenwich Mean Time, and formatted without spaces o
 
 In general, such a field can be used as a unique identifier for each Note in a Collection. 
 
+If you are adding a Timestamp field to an existing Collection, then you should first modify the Collection Preferences to check the box for the Timestamp field, and then execute the Normalize Storage command beneath the Collection menu to set the Timestamp values for the existing Notes. 
+
 Timestamps such as these are often used when creating a *[zettelkasten](https://zettelkasten.de)*.
+
+
+<a name="add-links-between-notes"><h2>Add Links Between Notes</h2></a>
+
+Notenik allows the user to create a link from one Note to another Note within the same Collection. 
+
+You may create such a link directly by using something like the following code within the body of the linking note.
+
+	[Motivations](#motivations)
+
+For example, here's a working link to the [Motivations](#motivations) Note within this Help Collection.  
+
+Note that this is coded within the body of the Note using normal [Markdown syntax for links](https://daringfireball.net/projects/markdown/syntax#link). What makes this a note-to-note link is the special URL prefix of 'https://ntnk.app/'. Links to this domain will be intercepted by Notenik and treated as note-to-note links. The string following this prefix will be treated as either a note Title or, if you [Timestamp your Notes](#timestamp-your-notes), a Timestamp. A link using a Note title will ignore case (upper or lower), spaces and punctuation, so that, for example, a link to the Note titled 'Timestamp Your Notes' may be coded as 'https://ntnk.app/timestamp-your-notes'. 
+
+While this method works, and has the advantage of staying within the normal Markdown syntax, it is not the most convenient approach. As an optional alternative, the user may choose to use the wiki-like syntax of enclosing a link to another Note within double square brackets. 
+
+In order to enable this option, the user must first check the "Double Bracket Parsing for Inter-Note Links" checkbox on the Collection Preferences pane. Once this option has been enabled for a Collection, then a link to another Note may be coded by simply enclosing the title of the target Note (or its timestamp!) within double square brackets. 
+
+For example, here's a working link to the [Motivations](#motivations) note using this syntax. 
 
 
 <a name="search-for-one-or-more-notes-containing-specified-text"><h2>Search for One or More Notes Containing Specified Text</h2></a>
@@ -497,7 +518,6 @@ Note that there are Script commands that can be entered here that will not be fo
 
 * stop — Use this command to stop recording a script. It is at this point that the executed and recorded commands will be written to disk. 
 
-[script]: https://notenik.net/script-spec.html
 
 
 <a name="copy-cut-paste-and-share-your-notes"><h2>Copy, Cut, Paste and Share your Notes</h2></a>
@@ -641,13 +661,7 @@ Following are the keyboard shortcuts available within the app. When combined wit
 * 4 - Sort Tasks by Seq
 * 5 - Sort by Author
 
-* [ - Prior Note
-* ]  - Next Note
-* → - Scroll to Selected Note
-
-* '=' - Increase Edit Font Size
-* '-' - Decrease Edit Font Size
-
+* 
 
 <a name="files-and-folders"><h2>Files and Folders</h2></a>
 
@@ -686,9 +700,27 @@ If you have questions about Notenik, bug reports, or requests for enhancements, 
 
 <a name="version-history"><h2>Version History</h2></a>
 
-### Version 2.3.0 | 09 Dec 2019
+### Version 2.4.0 | 13 Dec 2019
 
-#### 1. Increased Tolerance for Notes with Alternative Formatting
+#### 1. Added Note-to-Note Linking
+
+Wiki-style links between Notes within a Collection are now supported. Several related pieces of functionality work together to enable this capability. 
+
+* The Collection Preferences pane now includes a checkbox for "Double Bracket Parsing for Inter-Note Links". Turning this option on for a particular Collection allows the user to begin adding links between Notes. 
+
+* Once this option is enabled, the body of a Note may include a link to another Note by enclosing the title of that other Note within double square brackets. 
+
+* A new Variable Modifier of 'W' available in Merge Templates allows these inter-note pointers to be converted to usable links when generating HTML. 
+
+
+### Version 2.3.0 | 10 Dec 2019
+
+#### 1. Fixed Treatment of Teaser Field
+
+Modified to treat the Teaser field as longtext.
+
+
+#### 2. Increased Tolerance for Notes with Alternative Formatting
 
 Some note-takers start their text files with lines such as the following. 
 
@@ -701,7 +733,7 @@ Notenik will now recognize the first line of such a file as containing the Note'
 Also, bracket characters and parentheses preceding a colon will now indicate to Notenik that such text should not be treated as a field label. 
 
 
-#### 2. Added Timestamp Field
+#### 3. Added Timestamp Field
 
 A Timestamp field can be used to generate a timestamp for each note, in a "yyyyMMddkkmmss" format, consisting of:
 
@@ -715,7 +747,7 @@ A Timestamp field can be used to generate a timestamp for each note, in a "yyyyM
 All of this is normalized to Greenwich Mean Time, and formatted without spaces or punctuation. 
 
 
-#### 3. Ink Added as another Markdown Parser Option
+#### 4. Ink Added as another Markdown Parser Option
 
 Down is the default, but you can switch to Ink on the new Markdown tab within the Application Preferences. 
 

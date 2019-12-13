@@ -100,6 +100,7 @@ The Notenik Project
 <tr><td>S</td><td>Summarize</td></tr>
 <tr><td>U</td><td>Uppercase Modifier</td></tr>
 <tr><td>V</td><td>Variance</td></tr>
+<tr><td>W</td><td>Wiki-Style Links</td></tr>
 <tr><td>X</td><td>XML</td></tr>
 <tr><td>_</td><td>Underscore</td></tr>
 <tr><td>a</td><td>AM/PM</td></tr>
@@ -181,6 +182,17 @@ Two uppercase ‘K’s will represente a 2-digit hour on a 24-hour clock.</p>
 <p>Converts the letters of the variable to uppercase (capital letters). If immediately followed by ‘I’, then only the initial letter of the variable will be changed to uppercase.</p>
 <h4>Variance “V”</h4>
 <p>The first character following the ‘v’ will be used as a delimiter. Everything between the delimiters will be used as a from field. Everything following the second delimiter will be used as a to field. All output lines will be scanned for occurrences of the from field, and will be replaced with the to field.</p>
+<h4>Wiki-Style Links “W”</h4>
+<p>If your input is coming from a Collection using wiki-style inter-note links (links to other Notes formed by placing the Title of the target note within double square brackets), then you will probably wish to convert these to functional links in your output.</p>
+<p>You can accomplish this by using the letter “W” as a variable modifier to modify the Markdown code containing inter-note links. The “W” must then be followed by one of the following values.</p>
+<ul>
+<li>
+<p>1 - The digit ‘1’ will cause the target Note title to be converted to a conventional, universal file name, changing spaces to dashes, removing any odd characters, making all letters lower-case, and converting white space to hyphens. The ‘.html’ file extension will then be appended as a suffix. This option can be used when each note has its own page.</p>
+</li>
+<li>
+<p>2 - The digit ‘2’ will cause the Note title to be similarly converted, but then have a ‘#’ prepended, with no suffix added. This option can be used when each note has its own heading within the same page.</p>
+</li>
+</ul>
 <h4>XML “X”</h4>
 <p>The letter “X” will cause selected special characters to be translated to their equivalent XML entities. This is recommended, for example, when publishing an RSS (Really Simple Syndication) feed.</p>
 <h4>Underscore “_”</h4>

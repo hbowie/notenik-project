@@ -10,6 +10,17 @@ Link:
 
 Body:
 
+### [Notenik for the Mac Version 2.3.0 Released](blog/notenik-for-the-mac-version-2.3.0-released.html)
+
+*Published 10 Dec 2019*
+
+Fixed treatment of the Teaser field, to treat it as a long text field; increased tolerance for Notes with alternative formatting; added Ink as an alternate for parsing of Markdown; added an optional Timestamp field, as a first step to enabling use of Notenik to create a Zettelkasten. 
+
+
+*[Read more...](blog/notenik-for-the-mac-version-2.3.0-released.html)*
+
+----
+
 ### [Notenik for the Mac Version 2.2.0 Released](blog/notenik-for-the-mac-version-2.2.0-released.html)
 
 *Published 03 Dec 2019*

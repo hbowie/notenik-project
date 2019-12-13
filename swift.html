@@ -148,6 +148,7 @@ Template:  page-template.html  -->
 <li><a href="#add-code-snippets-to-your-notes">Add Code Snippets to Your Notes</a></li>
 <li><a href="#track-authors-and-artists">Track Authors and Artists</a></li>
 <li><a href="#timestamp-your-notes">Timestamp Your Notes</a></li>
+<li><a href="#add-links-between-notes">Add Links Between Notes</a></li>
 <li><a href="#search-for-one-or-more-notes-containing-specified-text">Search for One or More Notes Containing Specified Text</a></li>
 <li><a href="#use-other-special-fields">Use Other Special Fields</a></li>
 <li><a href="#attach-files-to-your-notes">Attach Files to Your Notes</a></li>
@@ -260,7 +261,7 @@ You can navigate through this list using some of the buttons on the Toolbar:</p>
 <p><a name="format-the-body-of-a-note-using-markdown"><h2>Format the Body of a Note using Markdown</h2></a></p>
 <p><a href="http://daringfireball.net/projects/markdown/">Markdown</a> is a simple syntax for formatting plain text files so that they can be easily read and written by humans, but also can easily be converted into HTML for use on the Web. If you’d like, you can use the Markdown syntax for formatting the body of each note. But it’s not required.</p>
 <p>When you view a Note on the Display tab, you will see the Body Field Value converted to HTML using a Markdown parser. If you haven’t used any special Markdown formatting, then the text will simply appear as you entered it.</p>
-<p>Notenik uses the <a href="https://github.com/iwasrobbed/Down">Down</a> parser as the default for conversion of Markdown to HTML, but <a href="https://github.com/JohnSundell/Ink">Ink</a> may be specified as an alternate on the Markdown tab of the Application preferences.</p>
+<p>Notenik uses the <a href="https://github.com/iwasrobbed/Down">Down</a> parser as the default for conversion of Markdown to HTML, but [Ink][] may be specified as an alternate on the Markdown tab of the Application preferences.</p>
 <p><a name="add-other-fields-to-your-notes"><h2>Add Other Fields to Your Notes</h2></a></p>
 <p>I’ve said that, at their most basic, each Note consists of a Title Field and a Body Field. But each Note can actually contain any number of fields.</p>
 <p>Each Field in a Note consists of the Field’s Label, followed by a colon and one or more spaces, followed by the Field’s Value.</p>
@@ -385,7 +386,18 @@ The code block you enter in a Code field will be formatted on the Display tab en
 </ul>
 <p>All of this is normalized to Greenwich Mean Time, and formatted without spaces or punctuation.</p>
 <p>In general, such a field can be used as a unique identifier for each Note in a Collection.</p>
+<p>If you are adding a Timestamp field to an existing Collection, then you should first modify the Collection Preferences to check the box for the Timestamp field, and then execute the Normalize Storage command beneath the Collection menu to set the Timestamp values for the existing Notes.</p>
 <p>Timestamps such as these are often used when creating a <em><a href="https://zettelkasten.de">zettelkasten</a></em>.</p>
+<p><a name="add-links-between-notes"><h2>Add Links Between Notes</h2></a></p>
+<p>Notenik allows the user to create a link from one Note to another Note within the same Collection.</p>
+<p>You may create such a link directly by using something like the following code within the body of the linking note.</p>
+<pre><code>[Motivations](#motivations)
+</code></pre>
+<p>For example, here’s a working link to the <a href="#motivations">Motivations</a> Note within this Help Collection.</p>
+<p>Note that this is coded within the body of the Note using normal <a href="https://daringfireball.net/projects/markdown/syntax#link">Markdown syntax for links</a>. What makes this a note-to-note link is the special URL prefix of ‘https://ntnk.app/’. Links to this domain will be intercepted by Notenik and treated as note-to-note links. The string following this prefix will be treated as either a note Title or, if you <a href="#timestamp-your-notes">Timestamp your Notes</a>, a Timestamp. A link using a Note title will ignore case (upper or lower), spaces and punctuation, so that, for example, a link to the Note titled ‘Timestamp Your Notes’ may be coded as ‘https://ntnk.app/timestamp-your-notes’.</p>
+<p>While this method works, and has the advantage of staying within the normal Markdown syntax, it is not the most convenient approach. As an optional alternative, the user may choose to use the wiki-like syntax of enclosing a link to another Note within double square brackets.</p>
+<p>In order to enable this option, the user must first check the “Double Bracket Parsing for Inter-Note Links” checkbox on the Collection Preferences pane. Once this option has been enabled for a Collection, then a link to another Note may be coded by simply enclosing the title of the target Note (or its timestamp!) within double square brackets.</p>
+<p>For example, here’s a working link to the <a href="#motivations">Motivations</a> note using this syntax.</p>
 <p><a name="search-for-one-or-more-notes-containing-specified-text"><h2>Search for One or More Notes Containing Specified Text</h2></a></p>
 <p>The Search field on the Toolbar allows you to search for the entered text, and display the first Note containing this text in any field being searched. After finding the first occurrence, you may use the Find Again command under the Note menu to search for the next Note containing the specified text.
 The Search function will search each Note’s Title, Link, Tags and Body fields for matching text. Case (upper- or lower-) will be ignored for the purposes of the Search.</p>
@@ -429,7 +441,7 @@ The Search function will search each Note’s Title, Link, Tags and Body fields 
 <p>Selecting one of these will then cause Notenik to create a reports folder for the collection, if one does not already exist, and then to create a report template containing all of the Collection’s fields in a basic layout. The user may then modify this template in order to further customize the output formatting.  Once the user reloads the Collection, those reports will then become available to run.</p>
 <p><a name="record-and-play-scripts"><h2>Record and Play Scripts</h2></a></p>
 <p>Notenik can record and play a script file that will execute a series of data transformations. Data can be input from one or more Notenik Collections and/or from tab-delimited or comma-separated files. The input data can be sorted and filtered using any of the fields contained within the data. The data can then be used as input to a Template file, or output to a new tab-delimited or comma-separated file.</p>
-<p>See the <a href="https://notenik.net/script-spec.html">Merge Script File Spec</a> for a complete description of a Script file.</p>
+<p>See the [Merge Script File Spec][script] for a complete description of a Script file.</p>
 <p>Place one or more script files within the reports folder for a Collection, and these files will then become available as Reports.</p>
 <p>Scripts will be executed within a separate Scripter window. You can open this window directly by selecting it from the Window menu.</p>
 <p>The Scripter window can be used for a number of different functions.</p>
@@ -445,7 +457,7 @@ The Search function will search each Note’s Title, Link, Tags and Body fields 
 </li>
 </ol>
 <p>In all of these cases, the scripting actions and results will be displayed within the lower portion of the window.</p>
-<p>The first five fields at the top of the Scripter window — Module, Action, Modifier, Object and Value — correspond directly to the columns in a <a href="https://notenik.net/script-spec.html">Script</a> file. These fields should generally be entered from left to right, since earlier selections will modify the options available in later fields.</p>
+<p>The first five fields at the top of the Scripter window — Module, Action, Modifier, Object and Value — correspond directly to the columns in a [Script][] file. These fields should generally be entered from left to right, since earlier selections will modify the options available in later fields.</p>
 <p>The next column, identified with the ‘@’ symbol, allows you to select a local file whose path is to be entered in the Value field.</p>
 <p>The final column, labeled “Go” will cause Notenik to try to execute the command that has been entered into the first five fields, and will record the command, if you are currently recording a Script.</p>
 <p>Note that there are Script commands that can be entered here that will not be found within the Script file spec, since these commands are provided to allow the recording and playing of Script files, but cannot be recursively executed from within a Script file. For these commands, the Module field is ‘script’. The available Actions are as follows.</p>
@@ -636,21 +648,7 @@ You can usually ignore the Log, but if Notenik is not behaving as you think it s
 <li>
 <p>5 - Sort by Author</p>
 </li>
-<li>
-<p>[ - Prior Note</p>
-</li>
-<li>
-<p>]  - Next Note</p>
-</li>
-<li>
-<p>→ - Scroll to Selected Note</p>
-</li>
-<li>
-<p>‘=’ - Increase Edit Font Size</p>
-</li>
-<li>
-<p>‘-’ - Decrease Edit Font Size</p>
-</li>
+<li></li>
 </ul>
 <p><a name="files-and-folders"><h2>Files and Folders</h2></a></p>
 <p>Each Collection is stored within its own folder. You may store each Collection wherever you like. You may wish to store one or more of your Collections in a special folder used by a syncing service such as iCloud or Dropbox, in which case your Collection will be synced just like any other files and folders managed by that service.
@@ -682,8 +680,24 @@ The Notenik application is published as  <a href="http://opensource.org/osd">ope
 <p><a name="support"><h2>Support</h2></a></p>
 <p>If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at <a href="mailto:support@powersurgepub.com">support@powersurgepub.com</a> and I’ll try to get back to you as quickly as I can.</p>
 <p><a name="version-history"><h2>Version History</h2></a></p>
-<h3>Version 2.3.0 | 09 Dec 2019</h3>
-<h4>1. Increased Tolerance for Notes with Alternative Formatting</h4>
+<h3>Version 2.4.0 | 13 Dec 2019</h3>
+<h4>1. Added Note-to-Note Linking</h4>
+<p>Wiki-style links between Notes within a Collection are now supported. Several related pieces of functionality work together to enable this capability.</p>
+<ul>
+<li>
+<p>The Collection Preferences pane now includes a checkbox for “Double Bracket Parsing for Inter-Note Links”. Turning this option on for a particular Collection allows the user to begin adding links between Notes.</p>
+</li>
+<li>
+<p>Once this option is enabled, the body of a Note may include a link to another Note by enclosing the title of that other Note within double square brackets.</p>
+</li>
+<li>
+<p>A new Variable Modifier of ‘W’ available in Merge Templates allows these inter-note pointers to be converted to usable links when generating HTML.</p>
+</li>
+</ul>
+<h3>Version 2.3.0 | 10 Dec 2019</h3>
+<h4>1. Fixed Treatment of Teaser Field</h4>
+<p>Modified to treat the Teaser field as longtext.</p>
+<h4>2. Increased Tolerance for Notes with Alternative Formatting</h4>
 <p>Some note-takers start their text files with lines such as the following.</p>
 <pre><code># Note Title
 #tag
@@ -691,7 +705,7 @@ Body starts here.
 </code></pre>
 <p>Notenik will now recognize the first line of such a file as containing the Note’s title, and will recognize the second line as containing a tag for the Note.</p>
 <p>Also, bracket characters and parentheses preceding a colon will now indicate to Notenik that such text should not be treated as a field label.</p>
-<h4>2. Added Timestamp Field</h4>
+<h4>3. Added Timestamp Field</h4>
 <p>A Timestamp field can be used to generate a timestamp for each note, in a “yyyyMMddkkmmss” format, consisting of:</p>
 <ul>
 <li>4-digit year</li>
@@ -702,7 +716,7 @@ Body starts here.
 <li>second of minute</li>
 </ul>
 <p>All of this is normalized to Greenwich Mean Time, and formatted without spaces or punctuation.</p>
-<h4>3. Ink Added as another Markdown Parser Option</h4>
+<h4>4. Ink Added as another Markdown Parser Option</h4>
 <p>Down is the default, but you can switch to Ink on the new Markdown tab within the Application Preferences.</p>
 <h3>Version 2.2.0 | 04 Dec 2019</h3>
 <h4>1. Fixed Bug in Persisting the Sort Reverse Setting</h4>

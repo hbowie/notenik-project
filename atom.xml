@@ -4,12 +4,47 @@
 <subtitle>The latest news about the Notenik Project</subtitle>
 <link href="https://notenik.net/atom.xml" type="application/atom+xml" rel="self" />
 <link href="https://notenik.net/" type="text/html" rel="alternate"  />
-<updated>2019-12-09</updated>
+<updated>2019-12-13</updated>
 <rights>Copyright © 2019, Herb Bowie</rights>
 <author>
 <name>Herb Bowie</name>
 </author>
 <id>https://hbowie.net/atom.xml</id>
+<entry>
+<title>Notenik for the Mac Version 2.3.0 Released</title>
+<link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.3.0-released.html"/>
+<id>https://notenik.net/blog/notenik-for-the-mac-version-2.3.0-released.html</id>
+<published>2019-12-10T09:00:00Z</published>
+<updated>2019-12-10T12:00:00Z</updated>
+<author>
+<name>Herb Bowie</name>
+<uri>https://hbowie.net/</uri>
+</author>
+<summary>
+<p>Fixed treatment of the Teaser field, to treat it as a long text field; increased tolerance for Notes with alternative formatting; added Ink as an alternate for parsing of Markdown; added an optional Timestamp field, as a first step to enabling use of Notenik to create a Zettelkasten.</p>
+
+</summary>
+<content type="html">
+<![CDATA[
+<p>A few more fixes and improvements…</p>
+<ul>
+<li>
+<p>Modified treatment of the Teaser field to treat it as a long text field.</p>
+</li>
+<li>
+<p>Added an optional Timestamp field which will create a series of digits representing the year, month, day, hour, minute and second on which the Note was created. This can be used as a fixed ID for each note, in line with the concept of a <em>Zettelkasten</em>.</p>
+</li>
+<li>
+<p>Increased the tolerance for parsing Notes that use a Markdown level 1 header to identify the Note's title.</p>
+</li>
+<li>
+<p>Added a second Markdown parser, Ink, which can be used as an alternative to Down.</p>
+</li>
+</ul>
+
+]]>
+</content>
+</entry>
 <entry>
 <title>Notenik for the Mac Version 2.2.0 Released</title>
 <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html"/>

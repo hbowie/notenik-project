@@ -1,14 +1,32 @@
 Title:  Version History
 
-Seq:    44
+Seq:    43
 
 Tags:   changes, history, log
 
 Body:
 
-### Version 2.3.0 | 09 Dec 2019
+### Version 2.4.0 | 13 Dec 2019
 
-#### 1. Increased Tolerance for Notes with Alternative Formatting
+#### 1. Added Note-to-Note Linking
+
+Wiki-style links between Notes within a Collection are now supported. Several related pieces of functionality work together to enable this capability. 
+
+* The Collection Preferences pane now includes a checkbox for "Double Bracket Parsing for Inter-Note Links". Turning this option on for a particular Collection allows the user to begin adding links between Notes. 
+
+* Once this option is enabled, the body of a Note may include a link to another Note by enclosing the title of that other Note within double square brackets. 
+
+* A new Variable Modifier of 'W' available in Merge Templates allows these inter-note pointers to be converted to usable links when generating HTML. 
+
+
+### Version 2.3.0 | 10 Dec 2019
+
+#### 1. Fixed Treatment of Teaser Field
+
+Modified to treat the Teaser field as longtext.
+
+
+#### 2. Increased Tolerance for Notes with Alternative Formatting
 
 Some note-takers start their text files with lines such as the following. 
 
@@ -21,7 +39,7 @@ Notenik will now recognize the first line of such a file as containing the Note'
 Also, bracket characters and parentheses preceding a colon will now indicate to Notenik that such text should not be treated as a field label. 
 
 
-#### 2. Added Timestamp Field
+#### 3. Added Timestamp Field
 
 A Timestamp field can be used to generate a timestamp for each note, in a "yyyyMMddkkmmss" format, consisting of:
 
@@ -35,7 +53,7 @@ A Timestamp field can be used to generate a timestamp for each note, in a "yyyyM
 All of this is normalized to Greenwich Mean Time, and formatted without spaces or punctuation. 
 
 
-#### 3. Ink Added as another Markdown Parser Option
+#### 4. Ink Added as another Markdown Parser Option
 
 Down is the default, but you can switch to Ink on the new Markdown tab within the Application Preferences. 
 

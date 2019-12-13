@@ -15,5 +15,5 @@ Body:
 
 <a name="=$title&f$="><h2>=$title$=</h2></a>
 
-=$body$=
+=$body&w2$=
 <?loop?>

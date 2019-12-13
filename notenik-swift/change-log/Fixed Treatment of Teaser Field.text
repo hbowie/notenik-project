@@ -1,0 +1,9 @@
+Title:  Fixed Treatment of Teaser Field
+
+Seq:    2.3.0
+
+Date:   10 Dec 2019
+
+Body: 
+
+Modified to treat the Teaser field as longtext.

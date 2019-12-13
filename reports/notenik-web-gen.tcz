@@ -100,6 +100,11 @@ filter	add	greater than	Seq	2
 filter	set		params
 template	open	text		#PATH#../notenik-swift/reports/swift-toc.text
 template	generate
+input	set		normalization	0
+input	set		xpltags	false
+input	open	notenik-defined		#PATH#../notenik-swift/
+sort	add	Ascending	Seq
+sort	set		params
 filter	clear
 filter	set		params
 template	open	text		#PATH#../notenik-swift/reports/swift-guide.text
