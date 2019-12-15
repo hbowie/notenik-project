@@ -1,0 +1,9 @@
+Title:  Added Startup Check
+
+Seq:    2.4.0
+
+Date:   13 Dec 2019
+
+Body: 
+
+Added a logic check to see if the app completed a successful launch the last time it was run. If not, then the application resets the user preferences to avoid a recurring crash. 

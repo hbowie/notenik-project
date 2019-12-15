@@ -9,6 +9,6 @@ Body:
 
 <?set count = 1 ?>
 <?nextrec?>
-=$count$=. [=$title$=](#=$title&f$=)
+=$count$=. [[=$title$=]]
 <?set count += 1 ?>
 <?loop?>

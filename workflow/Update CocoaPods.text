@@ -1,9 +1,0 @@
-Title:  Update CocoaPods
-
-Seq:    6
-
-Link:   https://guides.cocoapods.org/using/pod-install-vs-update.html
-
-Body: 
-
-Use the Terminal App to navigate to the Notenik folder, then run pod update to bring in the latest versions of needed modules. 

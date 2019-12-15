@@ -4,12 +4,35 @@
 <subtitle>The latest news about the Notenik Project</subtitle>
 <link href="https://notenik.net/atom.xml" type="application/atom+xml" rel="self" />
 <link href="https://notenik.net/" type="text/html" rel="alternate"  />
-<updated>2019-12-13</updated>
+<updated>2019-12-15</updated>
 <rights>Copyright © 2019, Herb Bowie</rights>
 <author>
 <name>Herb Bowie</name>
 </author>
 <id>https://hbowie.net/atom.xml</id>
+<entry>
+<title>Notenik for the Mac Version 2.4.0 Released</title>
+<link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.4.0-released.html"/>
+<id>https://notenik.net/blog/notenik-for-the-mac-version-2.4.0-released.html</id>
+<published>2019-12-13T09:00:00Z</published>
+<updated>2019-12-13T12:00:00Z</updated>
+<author>
+<name>Herb Bowie</name>
+<uri>https://hbowie.net/</uri>
+</author>
+<summary>
+<p>Most of the changes for this release were focused on providing the capability for wiki-like inter-note linking.</p>
+
+</summary>
+<content type="html">
+<![CDATA[
+<p>Most of the changes for this release were focused on providing the capability for wiki-like inter-note linking. In order for this to work, you first have to check the Collection Preferences box titled &quot;Double Bracket Parsing for Inter-Note Links&quot;. Then, within the body of any of your notes, you can include a link to another Note in the same Collection by enclosing the Title of the target note within double square brackets. Then, when you click on the resulting link on the Display tab, you will be taken to the Note you have linked to. Click on the back arrow in the Toolbar to be taken back to the linking Note.</p>
+<p>A new variable modifier of 'W' was also added to the Template processing logic, which will enable the user to convert the inter-note links to appropriate anchor tags when generating HTML.</p>
+<p>One additional, unrelated change was made to reset the user's preferences on the first launch after a prior crash on launch.</p>
+
+]]>
+</content>
+</entry>
 <entry>
 <title>Notenik for the Mac Version 2.3.0 Released</title>
 <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.3.0-released.html"/>
