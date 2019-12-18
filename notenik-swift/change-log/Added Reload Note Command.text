@@ -1,0 +1,9 @@
+Title:  Added Reload Note Command
+
+Seq:    2.5.0
+
+Date:   17 Dec 2019
+
+Body: 
+
+The Note menu now contains a Reload Note command, which will reload the currently selected Note from disk. This is useful after using an external editor to modify a Note on disk. 
