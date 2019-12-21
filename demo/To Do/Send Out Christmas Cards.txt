@@ -1,0 +1,15 @@
+Title:  Send Out Christmas Cards
+
+Tags:   holiday
+
+Link:   https://www.mpix.com/cards/christmas-cards
+
+Status: 3 - Planned
+
+Date:   01 Dec 2019
+
+Recurs: Every Year
+
+Body: 
+
+Print labels from the Contacts app. 

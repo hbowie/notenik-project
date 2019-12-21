@@ -6,6 +6,18 @@ Tags:   changes, history, log
 
 Body:
 
+### Version 2.5.0 | 18 Dec 2019
+
+#### 1. Enabled Spelling Checker on Body text
+
+Spelling will now be checked in the Body field. 
+
+
+#### 2. Added Reload Note Command
+
+The Note menu now contains a Reload Note command, which will reload the currently selected Note from disk. This is useful after using an external editor to modify a Note on disk. 
+
+
 ### Version 2.4.0 | 13 Dec 2019
 
 #### 1. Added Startup Check

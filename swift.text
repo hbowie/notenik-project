@@ -639,6 +639,7 @@ Following are the keyboard shortcuts available within the app. When combined wit
 * G - Find Again
 * H - Hide Notenik
 * I - Increment Date or Seq
+* J - Reload Note
 * K - Close Note
 * L - Launch Link
 * M - Minimize
@@ -659,7 +660,13 @@ Following are the keyboard shortcuts available within the app. When combined wit
 * 4 - Sort Tasks by Seq
 * 5 - Sort by Author
 
-* 
+* \[ - Prior Note
+* \]  - Next Note
+* → - Scroll to Selected Note
+
+* '=' - Increase Edit Font Size
+* '-' - Decrease Edit Font Size
+
 
 <a name="files-and-folders"><h2>Files and Folders</h2></a>
 
@@ -697,6 +704,18 @@ If you have questions about Notenik, bug reports, or requests for enhancements, 
 
 
 <a name="version-history"><h2>Version History</h2></a>
+
+### Version 2.5.0 | 18 Dec 2019
+
+#### 1. Enabled Spelling Checker on Body text
+
+Spelling will now be checked in the Body field. 
+
+
+#### 2. Added Reload Note Command
+
+The Note menu now contains a Reload Note command, which will reload the currently selected Note from disk. This is useful after using an external editor to modify a Note on disk. 
+
 
 ### Version 2.4.0 | 13 Dec 2019
 
