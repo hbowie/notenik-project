@@ -1,0 +1,13 @@
+Title:  Install Vapor
+
+Tags:   vapor
+
+Seq:    3
+
+Tool:   terminal
+
+Code: 
+
+brew tap vapor/tap
+brew install vapor/tap/vapor
+

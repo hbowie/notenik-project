@@ -1,0 +1,10 @@
+Title:  Upgrade to Latest Release
+
+Tags:   vapor
+
+Seq:    5
+
+Code: 
+
+brew upgrade vapor
+

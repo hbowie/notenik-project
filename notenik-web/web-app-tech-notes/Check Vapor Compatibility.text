@@ -1,0 +1,10 @@
+Title:  Check Vapor Compatibility
+
+Tags:   vapor
+
+Seq:    2
+
+Code: 
+
+eval "$(curl -sL check.vapor.sh)"
+

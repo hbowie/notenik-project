@@ -1,0 +1,10 @@
+Title:  Create New Vapor Project
+
+Tags:   vapor
+
+Seq:    7
+
+Code: 
+
+vapor new ProjectName
+

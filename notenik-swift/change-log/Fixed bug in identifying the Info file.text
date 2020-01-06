@@ -1,0 +1,10 @@
+Title:  Fixed bug in identifying the Info file
+
+Seq:    2.5.0
+
+Date:   22 Dec 2019
+
+Body: 
+
+Corrected a bug that could sometimes cause a legitimate note to be misidentified as the collection's info file. 
+

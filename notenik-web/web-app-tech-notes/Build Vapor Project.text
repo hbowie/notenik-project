@@ -1,0 +1,15 @@
+Title:  Build Vapor Project
+
+Tags:   vapor
+
+Seq:    8
+
+Code: 
+
+vapor build
+
+
+Body: 
+
+cd into the project directory, then execute 'vapor build'
+

@@ -1,0 +1,16 @@
+Title:  Generate/Regenerate Xcode Project
+
+Tags:   vapor, xcode
+
+Seq:    12
+
+Tool:   terminal
+
+Code: 
+
+vapor xcode -y
+
+
+Body: 
+
+You should regenerate your Xcode project on a regular basis. 

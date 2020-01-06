@@ -1,0 +1,12 @@
+Title:  Install the Mongo C Driver
+
+Tags:   mongodb
+
+Seq:    18
+
+Tool:   terminal
+
+Code: 
+
+brew install mongo-c-driver
+

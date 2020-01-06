@@ -1,0 +1,11 @@
+Title:  Intro
+
+Body: 
+
+I'm using these notes to document my journey towards making a Notenik web app. 
+
+My plan is to use these three core technologies:
+
+1. Swift
+2. Vapor
+3. MongoDB

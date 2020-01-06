@@ -229,7 +229,7 @@ But here’s a few other help items that are available, including some that may 
 <li>.txt</li>
 </ul>
 <p>The two preferred extensions are ‘.txt’ (short for text) and ‘.md’ (short for markdown – more on this later).</p>
-<p>Use the Text Edit Note command under the Note menu to open the currently displayed Note in your default text editor.</p>
+<p>Use the Text Edit Note command under the Note menu to open the currently displayed Note in your default text editor. When you’re done with your external edits, and have saved the file, use the Reload Note command to see the results of your external edits within Notenik.</p>
 <p><a name="notes-are-collected-into-folders"><h2>Notes are Collected into Folders</h2></a></p>
 <p>Each Note is part of a Collection, and each Collection is stored in its own folder (aka directory). Each Note within a Collection must have its own unique Title.</p>
 <p>You can organize your Notes into as many Collections as you would like, and store each Collection wherever you would like.</p>
@@ -513,6 +513,10 @@ Following are the supported formats.</p>
 <p>Import/Export in CSV Format</p>
 <p>Each Note will be represented as one row/line, and each field will be represented in a separate column. Commas are used to separate columns. This format is suitable for import into MS Excel, for example.</p>
 </li>
+<li>
+<p>Export in JSON Format</p>
+<p>Each Note will be represented as one JSON object.</p>
+</li>
 </ul>
 <p>When exporting the Notes in a Collection, you will be presented with a few options for the export.</p>
 <ul>
@@ -695,10 +699,16 @@ The Notenik application is published as  <a href="http://opensource.org/osd">ope
 <p><a name="support"><h2>Support</h2></a></p>
 <p>If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at <a href="mailto:support@powersurgepub.com">support@powersurgepub.com</a> and I’ll try to get back to you as quickly as I can.</p>
 <p><a name="version-history"><h2>Version History</h2></a></p>
-<h3>Version 2.5.0 | 18 Dec 2019</h3>
-<h4>1. Enabled Spelling Checker on Body text</h4>
+<h3>Version 2.5.0 | 29 Dec 2019</h3>
+<h4>1. Fixed a few other bugs</h4>
+<p>A few more code improvements.</p>
+<h4>2. Fixed bug in identifying the Info file</h4>
+<p>Corrected a bug that could sometimes cause a legitimate note to be misidentified as the collection’s info file.</p>
+<h4>3. Added JSON Export and Sharing</h4>
+<p>A note can now be shared in JSON format, and a collection can be exported in JSON.</p>
+<h4>4. Enabled Spelling Checker on Body text</h4>
 <p>Spelling will now be checked in the Body field.</p>
-<h4>2. Added Reload Note Command</h4>
+<h4>5. Added Reload Note Command</h4>
 <p>The Note menu now contains a Reload Note command, which will reload the currently selected Note from disk. This is useful after using an external editor to modify a Note on disk.</p>
 <h3>Version 2.4.0 | 13 Dec 2019</h3>
 <h4>1. Added Startup Check</h4>

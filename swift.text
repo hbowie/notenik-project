@@ -135,7 +135,7 @@ Any of the following file extensions may be used:
 
 The two preferred extensions are '.txt' (short for text) and '.md' (short for markdown -- more on this later). 
 
-Use the Text Edit Note command under the Note menu to open the currently displayed Note in your default text editor. 
+Use the Text Edit Note command under the Note menu to open the currently displayed Note in your default text editor. When you're done with your external edits, and have saved the file, use the Reload Note command to see the results of your external edits within Notenik. 
 
 
 <a name="notes-are-collected-into-folders"><h2>Notes are Collected into Folders</h2></a>
@@ -556,6 +556,10 @@ Following are the supported formats.
 
 	Each Note will be represented as one row/line, and each field will be represented in a separate column. Commas are used to separate columns. This format is suitable for import into MS Excel, for example.
 
+* Export in JSON Format
+
+	Each Note will be represented as one JSON object. 
+
 When exporting the Notes in a Collection, you will be presented with a few options for the export. 
 
 * Output Format: Described above. 
@@ -705,14 +709,29 @@ If you have questions about Notenik, bug reports, or requests for enhancements, 
 
 <a name="version-history"><h2>Version History</h2></a>
 
-### Version 2.5.0 | 18 Dec 2019
+### Version 2.5.0 | 29 Dec 2019
 
-#### 1. Enabled Spelling Checker on Body text
+#### 1. Fixed a few other bugs
+
+A few more code improvements. 
+
+
+#### 2. Fixed bug in identifying the Info file
+
+Corrected a bug that could sometimes cause a legitimate note to be misidentified as the collection's info file. 
+
+
+#### 3. Added JSON Export and Sharing
+
+A note can now be shared in JSON format, and a collection can be exported in JSON. 
+
+
+#### 4. Enabled Spelling Checker on Body text
 
 Spelling will now be checked in the Body field. 
 
 
-#### 2. Added Reload Note Command
+#### 5. Added Reload Note Command
 
 The Note menu now contains a Reload Note command, which will reload the currently selected Note from disk. This is useful after using an external editor to modify a Note on disk. 
 

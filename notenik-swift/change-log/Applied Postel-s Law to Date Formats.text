@@ -1,0 +1,9 @@
+Title:  Applied Postel's Law to Date Formats
+
+Seq:    2.6.0
+
+Date:   04 Jan 2020
+
+Body: 
+
+Notenik is now more liberal in terms of the sorts of dates it will parse correctly. Specifically, an 8-digit yyyymmdd date, without any punctuation, should now be correctly parsed. 

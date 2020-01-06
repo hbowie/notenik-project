@@ -1,0 +1,11 @@
+Title:  Check Vapor Version
+
+Tags:   vapor
+
+Seq:    4
+
+Tool:   terminal
+
+Code: 
+
+vapor --version
