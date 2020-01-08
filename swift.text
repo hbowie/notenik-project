@@ -29,36 +29,37 @@ The following sections contain detailed instructions on the use of Notenik for t
 9. [Sync Your Notes](#sync-your-notes)
 10. [Format the Body of a Note using Markdown](#format-the-body-of-a-note-using-markdown)
 11. [Add Other Fields to Your Notes](#add-other-fields-to-your-notes)
-12. [Organize Your Notes with Tags](#organize-your-notes-with-tags)
-13. [Add a Link Field to Make a Bookmark](#add-a-link-field-to-make-a-bookmark)
-14. [Override Default Fields with a Template file](#override-default-fields-with-a-template-file)
-15. [A Note File Template](#a-note-file-template)
-16. [Sequence Your Notes](#sequence-your-notes)
-17. [Track the Status of Your Notes](#track-the-status-of-your-notes)
-18. [Date Your Notes](#date-your-notes)
-19. [Specify Date Recurs Rules](#specify-date-recurs-rules)
-20. [Track Your Tasks](#track-your-tasks)
-21. [Add Code Snippets to Your Notes](#add-code-snippets-to-your-notes)
-22. [Track Authors and Artists](#track-authors-and-artists)
-23. [Timestamp Your Notes](#timestamp-your-notes)
-24. [Add Links Between Notes](#add-links-between-notes)
-25. [Search for One or More Notes Containing Specified Text](#search-for-one-or-more-notes-containing-specified-text)
-26. [Use Other Special Fields](#use-other-special-fields)
-27. [Attach Files to Your Notes](#attach-files-to-your-notes)
-28. [Use Report Templates](#use-report-templates)
-29. [Record and Play Scripts](#record-and-play-scripts)
-30. [Copy, Cut, Paste and Share your Notes](#copy-cut-paste-and-share-your-notes)
-31. [Import and Export Your Notes](#import-and-export-your-notes)
-32. [Favorites to HTML](#favorites-to-html)
-33. [Open Parent Realm](#open-parent-realm)
-34. [Disk Access Permissions](#disk-access-permissions)
-35. [Website Building](#website-building)
-36. [View the Log](#view-the-log)
-37. [Keyboard Shortcuts](#keyboard-shortcuts)
-38. [Files and Folders](#files-and-folders)
-39. [Rights](#rights)
-40. [Support](#support)
-41. [Version History](#version-history)
+12. [Supported Variations in Text File Formats](#supported-variations-in-text-file-formats)
+13. [Organize Your Notes with Tags](#organize-your-notes-with-tags)
+14. [Add a Link Field to Make a Bookmark](#add-a-link-field-to-make-a-bookmark)
+15. [Override Default Fields with a Template file](#override-default-fields-with-a-template-file)
+16. [A Note File Template](#a-note-file-template)
+17. [Sequence Your Notes](#sequence-your-notes)
+18. [Track the Status of Your Notes](#track-the-status-of-your-notes)
+19. [Date Your Notes](#date-your-notes)
+20. [Specify Date Recurs Rules](#specify-date-recurs-rules)
+21. [Track Your Tasks](#track-your-tasks)
+22. [Add Code Snippets to Your Notes](#add-code-snippets-to-your-notes)
+23. [Track Authors and Artists](#track-authors-and-artists)
+24. [Timestamp Your Notes](#timestamp-your-notes)
+25. [Add Links Between Notes](#add-links-between-notes)
+26. [Search for One or More Notes Containing Specified Text](#search-for-one-or-more-notes-containing-specified-text)
+27. [Use Other Special Fields](#use-other-special-fields)
+28. [Attach Files to Your Notes](#attach-files-to-your-notes)
+29. [Use Report Templates](#use-report-templates)
+30. [Record and Play Scripts](#record-and-play-scripts)
+31. [Copy, Cut, Paste and Share your Notes](#copy-cut-paste-and-share-your-notes)
+32. [Import and Export Your Notes](#import-and-export-your-notes)
+33. [Favorites to HTML](#favorites-to-html)
+34. [Open Parent Realm](#open-parent-realm)
+35. [Disk Access Permissions](#disk-access-permissions)
+36. [Website Building](#website-building)
+37. [View the Log](#view-the-log)
+38. [Keyboard Shortcuts](#keyboard-shortcuts)
+39. [Files and Folders](#files-and-folders)
+40. [Rights](#rights)
+41. [Support](#support)
+42. [Version History](#version-history)
 
 
 <a name="motivations"><h2>Motivations</h2></a>
@@ -219,6 +220,33 @@ The Body Field, if present, will always be the last Field in a Note, since all f
 Each Field Label may be considered to have a *proper form* (including capitalization, spaces and punctuation), and a *common form* (the proper form without capitalization, whitespace or punctuation). The common form is considered to be the key identifier for the Field, so that any variations of the Label that include the same letters and digits in the same sequence will be considered equivalent.
 
 The Notenik approach to identifying fields within a Note is very similar to the [Multimarkdown metadata syntax](http://fletcher.github.io/MultiMarkdown-4/metadata.html), and also similar to [YAML](https://en.wikipedia.org/wiki/YAML). 
+
+
+<a name="supported-variations-in-text-file-formats"><h2>Supported Variations in Text File Formats</h2></a>
+
+To better support users with existing collections of notes stored in text files, Notenik makes its best effort to recognize and appropriately handle the following variations on the normal Notenik format. 
+
+1. Markdown - The first line of the file contains a Markdown level 1 heading, which is to be used as the Note's title. The remainder of the file makes up the body. No metadata, and no field labels. 
+
+2. MultiMarkdown - The file may start with metadata, including a title, but there is no explicit label identifying the start of the body; instead, the first blank line indicates the end of the metadata and the start of the body. 
+
+3. Plain Text - The title is taken from the file name, and the entire contents of the file makes up the body. No metadata, and no field labels.  
+
+Note that these three formats differ from the normal Notenik format in one or more of the following ways:
+
+* While Notenik will create a Note's file name from its title, Notenik expects the title of the note to be explicitly identified in the first line of the file, as in the following example:
+
+		Title: Supported Variations in Text File Formats
+
+* Notenik will generally write out a blank line between fields, to aid in readability, which means that the beginning of the body is not triggered by the first blank line. 
+
+* Notenik will explicitly identify the start of the Note's body with a body label, as in the following example:
+
+		Body: 
+
+Notenik will generally be able to determine which of these variations is being used based on the contents of the first few lines of the text file. 
+
+Notenik will also attempt to respect these variations when modifying an existing Note, keeping each Note in its original format. 
 
 
 <a name="organize-your-notes-with-tags"><h2>Organize Your Notes with Tags</h2></a>
@@ -708,6 +736,18 @@ If you have questions about Notenik, bug reports, or requests for enhancements, 
 
 
 <a name="version-history"><h2>Version History</h2></a>
+
+### Version 2.6.0 | 04 Jan 2020
+
+#### 1. Applied Postel's Law to Note Formats
+
+Notenik is now more liberal in terms of accepting Notes in a wider variety of formats. Plain text notes, Multi-Markdown notes, and Markdown notes will now be accepted, in addition to the defined Notenik format. 
+
+
+#### 2. Applied Postel's Law to Date Formats
+
+Notenik is now more liberal in terms of the sorts of dates it will parse correctly. Specifically, an 8-digit yyyymmdd date, without any punctuation, should now be correctly parsed. 
+
 
 ### Version 2.5.0 | 29 Dec 2019
 

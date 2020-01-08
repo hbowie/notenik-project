@@ -11,6 +11,7 @@ Body:
 ### delims Command
 
 If used at all, this command should be the first command in the template file. This command overrides the standard delimiters used to recognize the beginnings and ends of commands and variables, for the remainder of the current template file. The command can have one to five operands. Each operand will become a new delimiter. They should be specified in the following order.
+
 * beginning of a command (normally paired less than signs)
 * the end of a command (normally paired greater than signs)
 * the beginning of a variable (normally paired less than signs)
@@ -23,6 +24,7 @@ Note that, in addition to specification of the delims command, the first charact
 ### set Command
 
 This command can define a global variable and set its value. This command would normally have three operands: the name of the global variable, an operator, and a value.
+
 - Global variable name. This should not be the same as the name of any variable name specified by the input data file. The global variable name, when used as the object of a set command, should not be enclosed within the normal variable delimiters, since this would cause the variable name to be replaced by its current value.
 
 - Operator. Any of the following operators can be used.
@@ -47,6 +49,7 @@ Another common use for the set command is to preserve record variables in global
 ### output Command
 
 This command names and opens the output file, where the results of the template merge will be stored. The single operand is the name of the output file. This command would normally be the first line in your template file. Subsequent template records will be written to the output file.
+
 Note, however, that the filename can contain a variable name. In this case, the output command would follow the nextrec command, and a new output file would be opened for each row input.
 
 

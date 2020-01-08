@@ -110,6 +110,7 @@ The letter "B" will cause the file extension, including the period, to be remove
 #### Word Demarcation "C"
 
 The letter "C" indicates that the variable consists of a series of words, and you wish to change or standardize the way in which the words are distinguished from one another.
+
 When parsing the variable, the beginning of a new word will be indicated by either whitespace or punctuation between words, or by a transition from lowercase to uppercase (as in CamelCase usage). In other words, "two words", "TWO_WORDS" or "twoWords" would all be parsed into two separate words. 
 
 What you want done with the word demarcation is defined by the characters following the "C" in the modifiers string. The letter "u" indicates a conversion to uppercase, the letter "l" indicates a conversion to lowercase, and the letter "a" indicates that the character should be left as-is. Anything other than these three characters (including a space) will be interpreted as a separator to be placed between the words. 
@@ -156,6 +157,7 @@ Convert a URL to an HTML anchor tag with that URL as the href value.
 #### Hour of Day "K"
 
 Two lowercase 'k's will represent a 2-digit hour of the day on a 12-hour clock, within a date formatting string.
+
 Two uppercase 'K's will represente a 2-digit hour on a 24-hour clock. 
 
 
@@ -166,6 +168,7 @@ Converts the letters of the variable to lowercase. If immediately followed by 'I
 #### Month or Minutes "M"
 
 Used in a date formatting string, with the following effects:
+
 - MM - Two-digit month
 - MMM - Three-letter month abbreviation
 - MMMM - Full month name
@@ -240,6 +243,7 @@ Represents an AM/PM indicator within a date formatting string.
 #### Year "y"
 
 Used within a formatting string, with the following effects:
+
 - yy - Two-digit year
 - yyyy - Four-digit year
 
@@ -440,6 +444,7 @@ The following commands are recognized. They are presented in the typical sequenc
 ### delims Command
 
 If used at all, this command should be the first command in the template file. This command overrides the standard delimiters used to recognize the beginnings and ends of commands and variables, for the remainder of the current template file. The command can have one to five operands. Each operand will become a new delimiter. They should be specified in the following order.
+
 * beginning of a command (normally paired less than signs)
 * the end of a command (normally paired greater than signs)
 * the beginning of a variable (normally paired less than signs)
@@ -452,6 +457,7 @@ Note that, in addition to specification of the delims command, the first charact
 ### set Command
 
 This command can define a global variable and set its value. This command would normally have three operands: the name of the global variable, an operator, and a value.
+
 - Global variable name. This should not be the same as the name of any variable name specified by the input data file. The global variable name, when used as the object of a set command, should not be enclosed within the normal variable delimiters, since this would cause the variable name to be replaced by its current value.
 
 - Operator. Any of the following operators can be used.
@@ -476,6 +482,7 @@ Another common use for the set command is to preserve record variables in global
 ### output Command
 
 This command names and opens the output file, where the results of the template merge will be stored. The single operand is the name of the output file. This command would normally be the first line in your template file. Subsequent template records will be written to the output file.
+
 Note, however, that the filename can contain a variable name. In this case, the output command would follow the nextrec command, and a new output file would be opened for each row input.
 
 

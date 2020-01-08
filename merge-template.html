@@ -122,8 +122,8 @@ The Notenik Project
 <h4>Base File Name “B”</h4>
 <p>The letter “B” will cause the file extension, including the period, to be removed from a file name. This can be used, for example, to generate an output file name with the same name as the input data file (using the variable name “datafilename”), but with a different extension.</p>
 <h4>Word Demarcation “C”</h4>
-<p>The letter “C” indicates that the variable consists of a series of words, and you wish to change or standardize the way in which the words are distinguished from one another.
-When parsing the variable, the beginning of a new word will be indicated by either whitespace or punctuation between words, or by a transition from lowercase to uppercase (as in CamelCase usage). In other words, “two words”, “TWO_WORDS” or “twoWords” would all be parsed into two separate words.</p>
+<p>The letter “C” indicates that the variable consists of a series of words, and you wish to change or standardize the way in which the words are distinguished from one another.</p>
+<p>When parsing the variable, the beginning of a new word will be indicated by either whitespace or punctuation between words, or by a transition from lowercase to uppercase (as in CamelCase usage). In other words, “two words”, “TWO_WORDS” or “twoWords” would all be parsed into two separate words.</p>
 <p>What you want done with the word demarcation is defined by the characters following the “C” in the modifiers string. The letter “u” indicates a conversion to uppercase, the letter “l” indicates a conversion to lowercase, and the letter “a” indicates that the character should be left as-is. Anything other than these three characters (including a space) will be interpreted as a separator to be placed between the words.</p>
 <p>Note that the u/l/a indicator can be specified three different times.</p>
 <ol>
@@ -151,8 +151,8 @@ When parsing the variable, the beginning of a new word will be indicated by eith
 <h4>Link “J”</h4>
 <p>Convert a URL to an HTML anchor tag with that URL as the href value.</p>
 <h4>Hour of Day “K”</h4>
-<p>Two lowercase ‘k’s will represent a 2-digit hour of the day on a 12-hour clock, within a date formatting string.
-Two uppercase ‘K’s will represente a 2-digit hour on a 24-hour clock.</p>
+<p>Two lowercase ‘k’s will represent a 2-digit hour of the day on a 12-hour clock, within a date formatting string.</p>
+<p>Two uppercase ‘K’s will represente a 2-digit hour on a 24-hour clock.</p>
 <h4>Lowercase Modifier “L”</h4>
 <p>Converts the letters of the variable to lowercase. If immediately followed by ‘I’, then only the initial letter of the variable will be changed to lowercase.</p>
 <h4>Month or Minutes “M”</h4>
@@ -425,8 +425,8 @@ even they are not embraced within single quotes.</p>
 <p>One intended use for the set command is to support a line counter. By initializing the value to 0, and then adding to it whenever an output line is generated, the IF command can be used to check for page overflow (in a table column, for example), and then start a new page or column, resetting the counter to 0 again.</p>
 <p>Another common use for the set command is to preserve record variables in global variables so that they will be available within an ifendgroup block.</p>
 <h3>output Command</h3>
-<p>This command names and opens the output file, where the results of the template merge will be stored. The single operand is the name of the output file. This command would normally be the first line in your template file. Subsequent template records will be written to the output file.
-Note, however, that the filename can contain a variable name. In this case, the output command would follow the nextrec command, and a new output file would be opened for each row input.</p>
+<p>This command names and opens the output file, where the results of the template merge will be stored. The single operand is the name of the output file. This command would normally be the first line in your template file. Subsequent template records will be written to the output file.</p>
+<p>Note, however, that the filename can contain a variable name. In this case, the output command would follow the nextrec command, and a new output file would be opened for each row input.</p>
 <h3>nextrec Command</h3>
 <p>This command indicates the beginning of the code that will be processed/written out once per data row. Lines prior to the nextrec command will only be processed/written out once.</p>
 <h3>definegroup Command</h3>

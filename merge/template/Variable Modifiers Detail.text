@@ -27,6 +27,7 @@ The letter "B" will cause the file extension, including the period, to be remove
 #### Word Demarcation "C"
 
 The letter "C" indicates that the variable consists of a series of words, and you wish to change or standardize the way in which the words are distinguished from one another.
+
 When parsing the variable, the beginning of a new word will be indicated by either whitespace or punctuation between words, or by a transition from lowercase to uppercase (as in CamelCase usage). In other words, "two words", "TWO_WORDS" or "twoWords" would all be parsed into two separate words. 
 
 What you want done with the word demarcation is defined by the characters following the "C" in the modifiers string. The letter "u" indicates a conversion to uppercase, the letter "l" indicates a conversion to lowercase, and the letter "a" indicates that the character should be left as-is. Anything other than these three characters (including a space) will be interpreted as a separator to be placed between the words. 
@@ -73,6 +74,7 @@ Convert a URL to an HTML anchor tag with that URL as the href value.
 #### Hour of Day "K"
 
 Two lowercase 'k's will represent a 2-digit hour of the day on a 12-hour clock, within a date formatting string.
+
 Two uppercase 'K's will represente a 2-digit hour on a 24-hour clock. 
 
 
@@ -83,6 +85,7 @@ Converts the letters of the variable to lowercase. If immediately followed by 'I
 #### Month or Minutes "M"
 
 Used in a date formatting string, with the following effects:
+
 - MM - Two-digit month
 - MMM - Three-letter month abbreviation
 - MMMM - Full month name
@@ -157,6 +160,7 @@ Represents an AM/PM indicator within a date formatting string.
 #### Year "y"
 
 Used within a formatting string, with the following effects:
+
 - yy - Two-digit year
 - yyyy - Four-digit year
 

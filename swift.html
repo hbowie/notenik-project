@@ -136,6 +136,7 @@ Template:  page-template.html  -->
 <li><a href="#sync-your-notes">Sync Your Notes</a></li>
 <li><a href="#format-the-body-of-a-note-using-markdown">Format the Body of a Note using Markdown</a></li>
 <li><a href="#add-other-fields-to-your-notes">Add Other Fields to Your Notes</a></li>
+<li><a href="#supported-variations-in-text-file-formats">Supported Variations in Text File Formats</a></li>
 <li><a href="#organize-your-notes-with-tags">Organize Your Notes with Tags</a></li>
 <li><a href="#add-a-link-field-to-make-a-bookmark">Add a Link Field to Make a Bookmark</a></li>
 <li><a href="#override-default-fields-with-a-template-file">Override Default Fields with a Template file</a></li>
@@ -273,6 +274,37 @@ You can navigate through this list using some of the buttons on the Toolbar:</p>
 <p>The Body Field, if present, will always be the last Field in a Note, since all following text will be assumed to be part of the Body (even if it contains strings of text that might otherwise appear to be additional Field Labels).</p>
 <p>Each Field Label may be considered to have a <em>proper form</em> (including capitalization, spaces and punctuation), and a <em>common form</em> (the proper form without capitalization, whitespace or punctuation). The common form is considered to be the key identifier for the Field, so that any variations of the Label that include the same letters and digits in the same sequence will be considered equivalent.</p>
 <p>The Notenik approach to identifying fields within a Note is very similar to the <a href="http://fletcher.github.io/MultiMarkdown-4/metadata.html">Multimarkdown metadata syntax</a>, and also similar to <a href="https://en.wikipedia.org/wiki/YAML">YAML</a>.</p>
+<p><a name="supported-variations-in-text-file-formats"><h2>Supported Variations in Text File Formats</h2></a></p>
+<p>To better support users with existing collections of notes stored in text files, Notenik makes its best effort to recognize and appropriately handle the following variations on the normal Notenik format.</p>
+<ol>
+<li>
+<p>Markdown - The first line of the file contains a Markdown level 1 heading, which is to be used as the Note’s title. The remainder of the file makes up the body. No metadata, and no field labels.</p>
+</li>
+<li>
+<p>MultiMarkdown - The file may start with metadata, including a title, but there is no explicit label identifying the start of the body; instead, the first blank line indicates the end of the metadata and the start of the body.</p>
+</li>
+<li>
+<p>Plain Text - The title is taken from the file name, and the entire contents of the file makes up the body. No metadata, and no field labels.</p>
+</li>
+</ol>
+<p>Note that these three formats differ from the normal Notenik format in one or more of the following ways:</p>
+<ul>
+<li>
+<p>While Notenik will create a Note’s file name from its title, Notenik expects the title of the note to be explicitly identified in the first line of the file, as in the following example:</p>
+<pre><code>  Title: Supported Variations in Text File Formats
+</code></pre>
+</li>
+<li>
+<p>Notenik will generally write out a blank line between fields, to aid in readability, which means that the beginning of the body is not triggered by the first blank line.</p>
+</li>
+<li>
+<p>Notenik will explicitly identify the start of the Note’s body with a body label, as in the following example:</p>
+<pre><code>  Body: 
+</code></pre>
+</li>
+</ul>
+<p>Notenik will generally be able to determine which of these variations is being used based on the contents of the first few lines of the text file.</p>
+<p>Notenik will also attempt to respect these variations when modifying an existing Note, keeping each Note in its original format.</p>
 <p><a name="organize-your-notes-with-tags"><h2>Organize Your Notes with Tags</h2></a></p>
 <p>The Tags Field offers another way to organize the Notes within a Collection.
 Tags may be used to group related notes into categories. One or more tags may be associated with each note, and each tag may contain one or more sub-tags. A period or a slash may be used to separate one level of a tag from the next level, with the period being preferred. A comma or a semi-colon may be used to separate one tag from another, with the comma being preferred.</p>
@@ -699,6 +731,11 @@ The Notenik application is published as  <a href="http://opensource.org/osd">ope
 <p><a name="support"><h2>Support</h2></a></p>
 <p>If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at <a href="mailto:support@powersurgepub.com">support@powersurgepub.com</a> and I’ll try to get back to you as quickly as I can.</p>
 <p><a name="version-history"><h2>Version History</h2></a></p>
+<h3>Version 2.6.0 | 04 Jan 2020</h3>
+<h4>1. Applied Postel’s Law to Note Formats</h4>
+<p>Notenik is now more liberal in terms of accepting Notes in a wider variety of formats. Plain text notes, Multi-Markdown notes, and Markdown notes will now be accepted, in addition to the defined Notenik format.</p>
+<h4>2. Applied Postel’s Law to Date Formats</h4>
+<p>Notenik is now more liberal in terms of the sorts of dates it will parse correctly. Specifically, an 8-digit yyyymmdd date, without any punctuation, should now be correctly parsed.</p>
 <h3>Version 2.5.0 | 29 Dec 2019</h3>
 <h4>1. Fixed a few other bugs</h4>
 <p>A few more code improvements.</p>
@@ -979,7 +1016,7 @@ Body starts here.
 <div class="row">
 <div class="col-lg-12 footer">
 <hr class="bottom">
-Copyright &copy; 2019 by <a href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a href="https://opensource.org/licenses/MIT">MIT license</a>
+Copyright &copy; 2019 - 2020 by <a href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a href="https://opensource.org/licenses/MIT">MIT license</a>
 </div>
 </div>
 

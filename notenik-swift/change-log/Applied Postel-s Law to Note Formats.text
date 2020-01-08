@@ -6,4 +6,5 @@ Date:   04 Jan 2020
 
 Body: 
 
-Notenik is now more liberal in terms of accepting Notes in a wider variety of formats. 
+Notenik is now more liberal in terms of accepting Notes in a wider variety of formats. Plain text notes, Multi-Markdown notes, and Markdown notes will now be accepted, in addition to the defined Notenik format. 
+
