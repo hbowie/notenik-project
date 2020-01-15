@@ -1,0 +1,19 @@
+Title:  Callback URL
+
+Tags:   callback-url
+
+Status: 0 - Idea
+
+Seq:    18
+
+Date:   8 Jan 2020
+
+Reported By: Max S. 
+
+Issue: 
+
+Is there a callback-url implemented for notenik?
+
+I am new to scripting and wanted to take a look at integrating Notenik with Hook.
+
+I was looking at [hookproductivity.com/help/integration/creating-integration-scripts](https://hookproductivity.com/help/integration/creating-integration-scripts) and noticed that Hook documentation mentioned callback-urls.

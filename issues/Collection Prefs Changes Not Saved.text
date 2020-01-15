@@ -1,0 +1,23 @@
+Title:  Collection Prefs Changes Not Saved
+
+Tags:   collection-prefs
+
+Status: 9 - Closed
+
+Seq:    23
+
+Date:   8 Jan 2020
+
+Reported By: Jonathan C.
+
+Release: 2.7.0
+
+Issue: 
+
+I open Collection > Preferences, and check Date and Tag on the list of Fields, and click OK. Window dismisses, but the setting doesn't take effect and isn't saved.
+
+
+Body: 
+
+Bug found, should be fixed in 2.7.0.
+

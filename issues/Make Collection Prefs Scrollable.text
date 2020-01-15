@@ -1,0 +1,19 @@
+Title:  Make Collection Prefs Scrollable
+
+Status: 6 - Completed
+
+Seq:    14
+
+Date:   30 Dec 2019
+
+Reported By: Jonathan C.
+
+Release: 2.8.0
+
+Issue: 
+
+The list of fields in the Collection Preferences can sometimes exceed the height of the enclosing window. 
+
+Body: 
+
+Scrolling mplemented in 2.8.0.

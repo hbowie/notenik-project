@@ -1,0 +1,19 @@
+Title:  Erroneous Detection of Metadata
+
+Status: 6 - Completed
+
+Seq:    25
+
+Date:   13 Jan 2020
+
+Reported By: Mac OS X Guru
+
+Release: 2.8.0
+
+Issue: 
+
+Too many fields picked up as metadata. Many of the resulting field labels contain special characters.
+
+Body: 
+
+Decreased tolerance for special characters in field labels. Hyphens and underscores should still be tolerated, but not much else. 

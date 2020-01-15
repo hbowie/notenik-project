@@ -1,0 +1,47 @@
+Title:   issues
+
+Title 2: Issues
+
+Seq:     11
+
+Tags:
+
+Link:
+
+Body:
+
+#### Status: 0 - Idea
+
+* #27 [Provide a Way to Add a New Custom Field](issues/provide-a-way-to-add-a-new-custom-field.html)
+* #26 [Provide a Way to Rename an Existing Field](issues/provide-a-way-to-rename-an-existing-field.html)
+* #21 [Preserve Width of List Display](issues/preserve-width-of-list-display.html)
+* #20 [Ability to customize Display Tab contents](issues/ability-to-customize-display-tab-contents.html)
+* #19 [Keep App Open After Last Window Closes](issues/keep-app-open-after-last-window-closes.html)
+* #18 [Callback URL](issues/callback-url.html)
+* #17 [iOS Version](issues/ios-version.html)
+* #15 [Allow PanDoc execution to create PDFs](issues/allow-pandoc-execution-to-create-pdfs.html)
+* #9 [Allow User to See Multiple Collections in Tabs instead of Windows](issues/allow-user-to-see-multiple-collections-in-tabs-instead-of-windows.html)
+* #6 [Produce Date Sorted Task List in HTML](issues/produce-date-sorted-task-list-in-html.html)
+* #5 [Make HTML Generation Automatic after Updates](issues/make-html-generation-automatic-after-updates.html)
+
+#### Status: 6 - Completed
+
+* #25 [Erroneous Detection of Metadata](issues/erroneous-detection-of-metadata.html)
+* #24 [Immediate Refresh of Displayed Notes after Changing Display Prefs](issues/immediate-refresh-of-displayed-notes-after-changing-display-prefs.html)
+* #14 [Make Collection Prefs Scrollable](issues/make-collection-prefs-scrollable.html)
+* #13 [Make Edit View Scrollable](issues/make-edit-view-scrollable.html)
+
+#### Status: 9 - Closed
+
+* #23 [Collection Prefs Changes Not Saved](issues/collection-prefs-changes-not-saved.html)
+* #22 [Odd Font Sizes Not Saved](issues/odd-font-sizes-not-saved.html)
+* #16 [Why Not Standard MMD/YAML Parsing?](issues/why-not-standard-mmd-yaml-parsing.html)
+* #12 [Increase Support for Existing Note Collections using Alternate Formats](issues/increase-support-for-existing-note-collections-using-alternate-formats.html)
+* #11 [Allow a Note to Link to another Note](issues/allow-a-note-to-link-to-another-note.html)
+* #10 [Uniquely Identify Each Note with a Timestamp](issues/uniquely-identify-each-note-with-a-timestamp.html)
+* #8 [Move Reload Collection Command to Collection Menu](issues/move-reload-collection-command-to-collection-menu.html)
+* #7 [Alternate Spelling for Favorites](issues/alternate-spelling-for-favorites.html)
+* #4 [Empty Tags Persist](issues/empty-tags-persist.html)
+* #3 [Misspelling under Collection Menu](issues/misspelling-under-collection-menu.html)
+* #2 [Notenik website is not sufficiently responsive](issues/notenik-website-is-not-sufficiently-responsive.html)
+* #1 [Notenik Blog has no RSS Feed](issues/notenik-blog-has-no-rss-feed.html)

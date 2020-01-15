@@ -1,0 +1,15 @@
+Title:  Allow PanDoc execution to create PDFs
+
+Tags:   pandoc
+
+Status: 0 - Idea
+
+Seq:    15
+
+Date:   30 Dec 2019
+
+Reported By: Jonathan C.
+
+Issue: 
+
+Reasonably enough you're focussed on HTML output. I hardly ever want that, instead sharing most things as formatted PDF documents, with translation by the extensive and flexible pandoc. I'm not familiar enough with notenik yet to know whether it already has the ability to use scripts to include pandoc steps.

@@ -90,6 +90,12 @@ Template:  page-template.html  -->
 							</li>
 
 							<li class="nav-item">
+								<a class="nav-link" href="issues.html">
+									Issues Log
+								</a>
+							</li>
+
+							<li class="nav-item">
 								<a class="nav-link" href="support.html">
 									Support
 								</a>
@@ -157,6 +163,7 @@ Template:  page-template.html  -->
 <li><a href="#record-and-play-scripts">Record and Play Scripts</a></li>
 <li><a href="#copy-cut-paste-and-share-your-notes">Copy, Cut, Paste and Share your Notes</a></li>
 <li><a href="#import-and-export-your-notes">Import and Export Your Notes</a></li>
+<li><a href="#export-to-notenik-vs-save-as">Export to Notenik vs. Save As</a></li>
 <li><a href="#favorites-to-html">Favorites to HTML</a></li>
 <li><a href="#open-parent-realm">Open Parent Realm</a></li>
 <li><a href="#disk-access-permissions">Disk Access Permissions</a></li>
@@ -165,8 +172,8 @@ Template:  page-template.html  -->
 <li><a href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
 <li><a href="#files-and-folders">Files and Folders</a></li>
 <li><a href="#rights">Rights</a></li>
-<li><a href="#support">Support</a></li>
 <li><a href="#version-history">Version History</a></li>
+<li><a href="#support">Support</a></li>
 </ol>
 <p><a name="motivations"><h2>Motivations</h2></a></p>
 <p>I’ll start off by explaining my primary motivations behind the creation of Notenik.</p>
@@ -269,7 +276,7 @@ You can navigate through this list using some of the buttons on the Toolbar:</p>
 <p>In other words, something like this:</p>
 <pre><code>Title: This is a Sample Note
 </code></pre>
-<p>Field Labels must follow a few rules. A Field Label must always start at the beginning of a line. A Field Label may not consist of more than 48 characters, and may not contain a comma, brackets or parentheses.</p>
+<p>Field Labels must follow a few rules. A Field Label must always start at the beginning of a line. A Field Label may not consist of more than 48 characters, and may not contain special characters other than dashes and underscores.</p>
 <p>The Field Value may be specified on the same line, and/or on one or more following lines.</p>
 <p>The Body Field, if present, will always be the last Field in a Note, since all following text will be assumed to be part of the Body (even if it contains strings of text that might otherwise appear to be additional Field Labels).</p>
 <p>Each Field Label may be considered to have a <em>proper form</em> (including capitalization, spaces and punctuation), and a <em>common form</em> (the proper form without capitalization, whitespace or punctuation). The common form is considered to be the key identifier for the Field, so that any variations of the Label that include the same letters and digits in the same sequence will be considered equivalent.</p>
@@ -571,6 +578,24 @@ Following are the supported formats.</p>
 <p>Add Web Extensions? Select ‘Yes’ to add a number of fields that can be useful for generating Web pages.</p>
 </li>
 </ul>
+<p><a name="export-to-notenik-vs-save-as"><h2>Export to Notenik vs. Save As</h2></a></p>
+<p>The careful observer may at some point wonder why Notenik includes both a ‘Save As’ command as well as the ability to Export a Collection in the Notenik format. Are these just two ways of accomplishing the same objective? Well, not quite.</p>
+<p>It’s true that both commands will copy your current Collection of Notes to a new location. However, there are some subtle differences between the two.</p>
+<p>With ‘Save As’:</p>
+<ul>
+<li>The command will finish with the new Collection becoming the one that is currently open.</li>
+<li>The current note files will be copied exactly as-is.</li>
+<li>Attachments will be copied as-is.</li>
+</ul>
+<p>With ‘Export to Notenik’:</p>
+<ul>
+<li>The command will finish with the old Collection remaining the one that is currently open.</li>
+<li>Each Note will be rewritten using the standard Notenik format. This can be especially useful if you’re starting with a folder full of text files that were not created by Notenik, and you’re ready to fully commit to the Notenik file format.</li>
+<li>You will have the chance to specify a new file extension to be used, and this will be used consistently for all Notes in the Collection.</li>
+<li>Not all Notes may be copied! If there are any Notes with duplicate Titles, then only one will make the move. Check the Log window carefully to see if this problem stranded any of your Notes in the old Collection.</li>
+<li>Attachments will be ignored.</li>
+</ul>
+<p>In summary, these are two different tools, and you should be careful to use whichever one is the best fit for your particular situation.</p>
 <p><a name="favorites-to-html"><h2>Favorites to HTML</h2></a></p>
 <p>If you have a Collection of Notes representing Web Bookmarks, then you may wish to use the ‘Favorites’ tag (or ‘Favourites’ for those who prefer the British spelling) to identify the bookmarks you reference most often. You may then use a sub-tag within the ‘Favorites’ tag to organize your favorite bookmarks into categories. Once you’ve identified your Favorites, then you may use the Favorites to HTML command under the File menu to create a Web page containing all your favorite bookmarks, organized under headings representing the categories you have chosen. Notenik will display your favorites in four columns, with a maximum of 32 lines per column. Assuming a reasonable number of favorite bookmarks, these will typically display all of your favorites within a single Web page on your Mac. You may then wish to identify the resulting page as the homepage within all of your Web browsers (Safari, Chrome, etc.).</p>
 <p>Note that you can change the Columns per Page, the Rows per Column, and the width of each Column on the Favorites tab of the application Preferences.</p>
@@ -728,9 +753,23 @@ The Notenik application is published as  <a href="http://opensource.org/osd">ope
 <p>Notenik source code is available on <a href="https://github.com/hbowie/notenik-swift">GitHub</a>.</p>
 <p>Notenik makes use of <a href="https://github.com/iwasrobbed/Down">Down</a> and <a href="https://github.com/commonmark/cmark">cmark</a>, both of which are separately licensed.</p>
 <p>Notenik also makes use of <a href="https://github.com/MaxDesiatov/CoreXLSX">CoreXLSX</a> to read XLSX files. CoreXLSX is also separately licensed.</p>
-<p><a name="support"><h2>Support</h2></a></p>
-<p>If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at <a href="mailto:support@powersurgepub.com">support@powersurgepub.com</a> and I’ll try to get back to you as quickly as I can.</p>
 <p><a name="version-history"><h2>Version History</h2></a></p>
+<h3>Version 2.8.0 | 14 Jan 2020</h3>
+<h4>1. Made Collection Preferences Scrollable</h4>
+<p>Added vertical scrolling to the Collection Prefs window, to make sure all content is always accessible. This resolves Issue # 14.</p>
+<h4>2. Edit View Now Scrollable</h4>
+<p>The entire Edit view is now scrollable, to ensure all fields are accessible, no matter what size the screen or window, and no matter how many fields a Collection has. This resolves Issue # 13.</p>
+<h4>3. Improved Display Refresh after Updates to Font Prefs</h4>
+<p>After updating the font info in the Display Prefs, all current Display panels should now be refreshed immediately to reflect the new choices.</p>
+<h4>4. Decreased Tolerance for Special Characters in Field Labels</h4>
+<p>In order to avoid excessive identification of metadata, most special characters (other than hyphens and underscores) will now disqualify a text string preceding a colon from being treated as a field label.</p>
+<h3>Version 2.7.0 | 10 Jan 2020</h3>
+<h4>1. Improved MultiMarkdown Metadata Support</h4>
+<p>Improved support for opening existing files using MultiMarkdown Metadata; in particular, now looking for triple-dash lines before and after the metadata, and treating those lines appropriately. A line with four periods is also accepted following the metadata.</p>
+<h4>2. Bug Fixes</h4>
+<p>Fixed a few bugs.</p>
+<h4>3. Added Notenik Export</h4>
+<p>Added an option to export a Collection to a new Notenik Collection; this is intended to be especially useful when opening an existing folder full of text files, not necessarily in the usual Notenik file format, and then exporting them to a new Collection in which the Notenik format is fully normalized.</p>
 <h3>Version 2.6.0 | 04 Jan 2020</h3>
 <h4>1. Applied Postel’s Law to Note Formats</h4>
 <p>Notenik is now more liberal in terms of accepting Notes in a wider variety of formats. Plain text notes, Multi-Markdown notes, and Markdown notes will now be accepted, in addition to the defined Notenik format.</p>
@@ -914,6 +953,8 @@ Body starts here.
 <h3>Version 1.0.0 | 03 Jun 2019</h3>
 <h4>1. Initial Release</h4>
 <p>This is the initial release of Notenik written in Swift.</p>
+<p><a name="support"><h2>Support</h2></a></p>
+<p>If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at <a href="mailto:support@powersurgepub.com">support@powersurgepub.com</a> and I’ll try to get back to you as quickly as I can.</p>
 
 </div>
 

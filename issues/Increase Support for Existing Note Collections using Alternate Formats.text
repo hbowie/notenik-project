@@ -1,0 +1,19 @@
+Title:  Increase Support for Existing Note Collections using Alternate Formats
+
+Status: 9 - Closed
+
+Seq:    12
+
+Date:   08 Dec 2019
+
+Reported By: MacOSX Guru
+
+Release: 2.6.0
+
+Issue: 
+
+I opened a folder containing all my notes and wanted to make a new note. This is what I got. Also, it wasn't scrollable. I couldn't go down to find the body element of the window.
+
+Body: 
+
+Began enhanced support for alternate formats with 2.6.0. 

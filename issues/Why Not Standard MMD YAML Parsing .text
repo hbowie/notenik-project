@@ -1,0 +1,25 @@
+Title:  Why Not Standard MMD/YAML Parsing?
+
+Tags:   MutliMarkdown, YAML
+
+Link:   https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html
+
+Status: 9 - Closed
+
+Seq:    16
+
+Date:   31 Dec 2019
+
+Reported By: Jonathan C.
+
+Release: 2.6.0
+
+Issue: 
+
+Yep, I picked up from the docs that Notenik is expecting a body: field, but I thought I would try it anyway. I have hundreds of longish (20-30kb) markdown files of talks and other documents that don't have such a field, not least because it's outside the (M)MD spec. Even with some of the clever uses you've got Notenik to handle (having read your good blog posts), I'm not sure why you need to have your extended metadata parsing, and not the standard MMD/YAML parsing?
+
+Body: 
+
+Improved support for standard MMD/YAML parsing implemented in 2.6.0 (and in 2.7.0). Also see new blog post on the subject. 
+
+* [The Thinking Behind the Notenik File Format](https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html)

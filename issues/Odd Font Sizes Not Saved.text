@@ -1,0 +1,23 @@
+Title:  Odd Font Sizes Not Saved
+
+Tags:   fonts
+
+Status: 9 - Closed
+
+Seq:    22
+
+Date:   8 Jan 2020
+
+Reported By: Jonathan C.
+
+Release: 2.7.0
+
+Issue: 
+
+ I click 'Display Fonts' change the size and press Enter. The font window disappears, but the setting doesn't take effect and isn't saved.
+
+
+Body: 
+
+Should be fixed with the 2.7.0 release.
+

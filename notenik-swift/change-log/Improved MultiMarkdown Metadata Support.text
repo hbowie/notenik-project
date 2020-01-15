@@ -1,0 +1,9 @@
+Title:  Improved MultiMarkdown Metadata Support
+
+Seq:    2.7.0
+
+Date:   10 Jan 2020
+
+Body: 
+
+Improved support for opening existing files using MultiMarkdown Metadata; in particular, now looking for triple-dash lines before and after the metadata, and treating those lines appropriately. A line with four periods is also accepted following the metadata. 

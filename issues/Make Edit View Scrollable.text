@@ -1,0 +1,20 @@
+Title:  Make Edit View Scrollable
+
+Status: 6 - Completed
+
+Seq:    13
+
+Date:   08 Dec 2019
+
+Reported By: MacOSX Guru
+
+Release: 2.8.0
+
+Issue: 
+
+I opened a folder containing all my notes and wanted to make a new note. This is what I got. Also, it wasn't scrollable. I couldn't go down to find the body element of the window.
+
+
+Body: 
+
+The entire Edit view should be scrollable in the 2.8.0 release. 

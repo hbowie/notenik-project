@@ -1,0 +1,23 @@
+<?output "../../issues.text" ?>
+Title:   issues
+
+Title 2: Issues
+
+Seq:     11
+
+Tags:
+
+Link:
+
+Body:
+
+<?nextrec?>
+<?definegroup 1 "=$status$=" ?>
+<?ifendgroup 1 ?>
+
+<?ifnewgroup 1 ?>
+#### Status: =$status$= 
+
+<?endif?>
+* #=$seq$= [=$title$=](issues/=$title&f$=.html)
+<?loop?>

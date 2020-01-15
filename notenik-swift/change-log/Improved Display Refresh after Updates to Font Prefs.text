@@ -1,0 +1,9 @@
+Title:  Improved Display Refresh after Updates to Font Prefs
+
+Seq:    2.8.0
+
+Date:   13 Jan 2020
+
+Body: 
+
+After updating the font info in the Display Prefs, all current Display panels should now be refreshed immediately to reflect the new choices. 

@@ -1,0 +1,19 @@
+Title:  Immediate Refresh of Displayed Notes after Changing Display Prefs
+
+Status: 6 - Completed
+
+Seq:    24
+
+Date:   13 Jan 2020
+
+Reported By: Jonathan C. 
+
+Release: 2.8.0
+
+Issue: 
+
+Surprising that Notenik doesn't automatically apply the new style to the open note [after an update to the Display Prefs].
+
+Body: 
+
+Should be fixed in 2.8.0

@@ -1,0 +1,9 @@
+Title:  Decreased Tolerance for Special Characters in Field Labels
+
+Seq:    2.8.0
+
+Date:   13 Jan 2020
+
+Body: 
+
+In order to avoid excessive identification of metadata, most special characters (other than hyphens and underscores) will now disqualify a text string preceding a colon from being treated as a field label. 
