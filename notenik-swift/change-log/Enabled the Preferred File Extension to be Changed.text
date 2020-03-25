@@ -1,0 +1,9 @@
+Title:  Enabled the Preferred File Extension to be Changed
+
+Seq:    2.9.0
+
+Date:   22 Jan 2020
+
+Body: 
+
+The Collection Preferences window is shown when creating a new Collection, but can also be accessed after a Collection has been created. Previously, changing the preferred file extension after initial creation had no effect, but the file extension for the template file will now be changed to reflect the new preferred extension. Notes already created, however, will retain their existing extensions. This should close Issue # 31. 

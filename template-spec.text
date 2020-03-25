@@ -8,12 +8,17 @@ Date Added: 2019-05-17 19:06:55
 
 Body:
 
+
 This specification describes the contents of a template file, used for producing formatted output from a Collection of Notes.
 
 Notenik will look for two sorts of special strings embedded within a template file: variables and commands. These are identified by special delimiters.
 
+
 ### Delimiters
+
+
 Notenik will recognize either of two sets of command and variable delimiters automatically. The choice of delimiters will be triggered by the first command-beginning delimiters encountered. The new delimiters are generally recommended, since they are more likely to be treated kindly by various HTML editors when creating your template files.
+
 
 <table>
 <tr><th>Meaning</th><th>Original Delimiters</th><th>New Delimiters</th></tr>
@@ -24,7 +29,10 @@ Notenik will recognize either of two sets of command and variable delimiters aut
 <tr><td>Start of Variable Modifiers</td><td>&amp;</td><td>&amp;</td></tr>
 </table>
 
+
 ### Variables
+
+
 Variables will be replaced by values taken from the corresponding fields of the current Note, or from an internal table of global variables. Variables must be enclosed in the chosen delimiters. Each variable name must match a field label from the data source, or a global name specified in a SET command. The comparison ignores case (upper or lower), embedded spaces and embedded punctuation when looking for a matching field label. So a field label of "First Name" will match with a variable of "firstname", for example.
 
 A variable, unlike a command, can appear anywhere within the template file, and need not be isolated on a line by itself. More than one variable can appear on the same line. Variables can be used within template commands, as well as other places within the template file.
@@ -50,7 +58,10 @@ The following special variables are predefined and available for substitution, n
 <dd>The current date, at the time that template output is being generated.</dd>
 </dl>
 
+
 ### Variable Modifiers
+
+
 A variable can be optionally followed (before the ending variable delimiters) by a modifier indicator and one or more modifiers. The default modifier character is the ampersand (&amp;).
 
 The following list summarizes the primary use of various letters and characters as variable modifiers.
@@ -89,7 +100,10 @@ The following list summarizes the primary use of various letters and characters 
 <tr><td>EEEE</td><td>Day of Week</td></tr>
 </table>
 
+
 Following is a list of the variable modifiers with complete descriptions of how each works. 
+
+
 
 #### Email Apostrophes "'"
 
@@ -133,7 +147,6 @@ Then the resulting name in the output text file would be:
 
 	Herb Bowie
 
-
 #### File Name "F"
 
 Converts a string to a conventional, universal file name, changing spaces to dashes, removing any odd characters, making all letters lower-case, and converting white space to hyphens.
@@ -174,7 +187,6 @@ Used in a date formatting string, with the following effects:
 - MMMM - Full month name
 - mm - Two-digit minute within the hour
 
-
 #### No Breaks "N"
 
 Remove HTML break (br) tags from the string.
@@ -183,8 +195,7 @@ Remove HTML break (br) tags from the string.
 
 The letter "O" will cause the field to be treated as Markdown, and converted to HTML.
 
-Following this letter with a minus sign ('-') will cause any opening and closing paragraph tags ('\<p\>' and '\</p\>' respectively) to be stripped from the resulting field (thus reducing the chance for possible conflicts with other tags). 
-
+Following this letter with a minus sign ('-') will cause any opening and closing paragraph tags (`<p>` and `</p>` respectively) to be stripped from the resulting field (thus reducing the chance for possible conflicts with other tags).
 
 #### Punctuation Purification "P"
 
@@ -225,8 +236,9 @@ You can accomplish this by using the letter "W" as a variable modifier to modify
 
 * 1 - The digit '1' will cause the target Note title to be converted to a conventional, universal file name, changing spaces to dashes, removing any odd characters, making all letters lower-case, and converting white space to hyphens. The '.html' file extension will then be appended as a suffix. This option can be used when each note has its own page. 
 
-* 2 - The digit '2' will cause the Note title to be similarly converted, but then have a '#' prepended, with no suffix added. This option can be used when each note has its own heading within the same page. 
+* 2 - The digit '2' will cause the Note title to be similarly converted, but then have a '#' prepended, with no suffix added. This option can be used when each note has its own heading within the same page.
 
+Note that the 'W1' / 'W2' option should be specified before the letter 'O' requesting the conversion from Markdown to HTML.
 
 #### XML "X"
 
@@ -247,7 +259,6 @@ Used within a formatting string, with the following effects:
 - yy - Two-digit year
 - yyyy - Four-digit year
 
-
 #### Day of Month "dd"
 
 Represents a two-digit day of month within a date formatting string.
@@ -264,6 +275,7 @@ When used following the letter 'o', indicating conversion from Markdown to HTML,
 #### Day of Week "EEEE"
 
 Represents a full day of week within a date formatting string.
+
 
 ### Formatting String
 
@@ -402,6 +414,7 @@ See below for full definition of allowable characters and their meanings.
 </tr>
 </table>
 
+
 The count of pattern letters determine the format.
 
 <strong>(Text)</strong>: 4 or more pattern letters--use full form,
@@ -418,7 +431,10 @@ and ['A'..'Z'] will be treated as quoted text. For instance, characters
 like ':', '.', ' ', '#' and '@' will appear in the resulting time text
 even they are not embraced within single quotes.
 
+
 ### Commands
+
+
 All commands must be enclosed in the chosen delimiters. In addition, all commands must appear on lines by themselves. Command names can be in upper- or lower-case. Each command may have zero or more operands. Operands may be separated by any of the following delimiters: space, comma (','), semi-colon (';') or colon (':'). Operands that contain any of these delimiters must be enclosed in single or double-quotation marks.
 
 The following commands are recognized. They are presented in the typical sequence in which they would be used.
@@ -441,6 +457,7 @@ The following commands are recognized. They are presented in the typical sequenc
 <p>&lt;?loop?&gt;</p>
 </div>
 
+
 ### delims Command
 
 If used at all, this command should be the first command in the template file. This command overrides the standard delimiters used to recognize the beginnings and ends of commands and variables, for the remainder of the current template file. The command can have one to five operands. Each operand will become a new delimiter. They should be specified in the following order.
@@ -451,8 +468,7 @@ If used at all, this command should be the first command in the template file. T
 * the end of a variable (normally paired greater than signs)
 * the beginning of variable modifiers (normally a single ampersand)
 
-Note that, in addition to specification of the delims command, the first characters found on the first line of the template file can trigger the Notenik template processor to use an alternate set of delimiters. 
-
+Note that, in addition to specification of the delims command, the first characters found on the first line of the template file can trigger the Notenik template processor to use an alternate set of delimiters.
 
 ### set Command
 
@@ -470,14 +486,13 @@ This command can define a global variable and set its value. This command would 
 
 	+ -= or simply - — This will cause the value to be subtracted from the current value of the global variable.
 
-	+ — Two minus signs in a row can be used to subtract a value of 1 from the current value of the global variable, without having to specify the following value of 1. (In this case, the set command only requires two operands.)
+	+ \-\- Two minus signs in a row can be used to subtract a value of 1 from the current value of the global variable, without having to specify the following value of 1. (In this case, the set command only requires two operands.)
 
 - Value. This can be a literal or a variable (in which case it should be surrounded by the normal variable delimiters). The value can be a text string or an integer.
 
 One intended use for the set command is to support a line counter. By initializing the value to 0, and then adding to it whenever an output line is generated, the IF command can be used to check for page overflow (in a table column, for example), and then start a new page or column, resetting the counter to 0 again.
 
 Another common use for the set command is to preserve record variables in global variables so that they will be available within an ifendgroup block.
-
 
 ### output Command
 
@@ -506,8 +521,7 @@ The definegroup command has two operands.
 
 * Group Number. This must be a number from 1 to 10. Numbers should be assigned sequentially beginning with 1. Lower-numbered groups are considered more major than higher-numbered groups, in the sense that lower-numbered group breaks will automatically trigger higher-numbered group breaks.
 
-* Variable Name. This is the name of the key field variable. The variable should be surrounded by the normal variable delimiters, so that Notenik will see, not the name of the variable, but its current value. 
-
+* Variable Name. This is the name of the key field variable. The variable should be surrounded by the normal variable delimiters, so that Notenik will see, not the name of the variable, but its current value.
 
 ### ifendgroup Command
 
@@ -520,7 +534,6 @@ Ifendgroup commands should follow definegroup commands and precede ifnewgroup co
 The ifendgroup command has one operand.
 
 - Group Number. The group number whose group-ending output lines follow.
-
 
 ### ifendlist Command
 
@@ -536,8 +549,7 @@ The ifendlist command has one operand. Note that the ifendlist and ifnewlist com
 
 * Group Number. The group number whose list-ending output lines follow.
 
-Note that references to record variables within an ifendlist block will retrieve the data from the record causing the break (i.e., the first record in the new group), not the last record in the group just ended. Use the set command to save data in global variables if you need to later access it when a list break has been detected. 
-
+Note that references to record variables within an ifendlist block will retrieve the data from the record causing the break (i.e., the first record in the new group), not the last record in the group just ended. Use the set command to save data in global variables if you need to later access it when a list break has been detected.
 
 ### ifnewlist Command
 
@@ -548,7 +560,6 @@ Lines following this command and preceding the next group or endif command will 
 Ifnewlist commands should follow definegroup, ifendgroup and ifendlist commands, should precede ifnewgroup commands, and should generally be specified in *ascending* order by group number. The ifnewlist command has one operand.
 
 + Group Number. The group number whose list-beginning output lines follow.
-
 
 ### ifnewgroup Command
 
@@ -562,7 +573,6 @@ The ifnewgroup command has one operand.
 
 
 + Group Number. The group number whose group-beginning output lines follow.
-
 
 ### if Command
 
@@ -587,8 +597,7 @@ Any of the following comparisons may be performed, and each may be invoked with 
 11. (&gt;) / [&gt;] / fi / ends with
 12. !(&gt;) / ![&gt;] / ng / does not end with
 
-Note that, if both values appear to be integers, then a numeric comparison will be performed for operands 1 - 6. In all other cases, strings will be compared. 
-
+Note that, if both values appear to be integers, then a numeric comparison will be performed for operands 1 - 6. In all other cases, strings will be compared.
 
 ### else Command
 
@@ -620,7 +629,6 @@ The filename may include variables, allowing you to tailor the included content 
 For any conversion resulting in HTML, a pseudo-tag of &lt;toc&gt; can be used to generate a table of contents based on following heading tags. An optional attribute of "from" can be used to specify the beginning of a range of heading levels to be included; an optional attribute of "through" or "thru" can be used to specify the end of a range of heading levels to be included. See the following example.
 
 		<toc from="h2" thru="h4" />
-
 
 ### loop Command
 

@@ -34,10 +34,10 @@ The Notenik Project
 
 <h2>Merge Script File Spec</h2>
 
-<p>This specification describes the contents of a script file, used for executing a series of commands to transform input data sources and templates into appropriate output.</p>
-<p>The file extension for a script file should be ‘.tcz’, short for ‘TDF Czar’, which was a predecessor to PSTextMerge, which was in turn a prececessor to Notenik.</p>
-<p>A script file is a text file formatted into five columns, using either tabs or commas as delimiters to separate the columns.</p>
-<p>Blank lines, as well as lines beginning with ’&lt;!— ’, will be ignored.</p>
+<p>This specification describes the contents of a script file, used for executing a series of commands to transform input data sources and templates into appropriate output. </p>
+<p>The file extension for a script file should be &#8216;.tcz&#8217;, short for &#8216;TDF Czar&#8217;, which was a predecessor to PSTextMerge, which was in turn a prececessor to Notenik. </p>
+<p>A script file is a text file formatted into five columns, using either tabs or commas as delimiters to separate the columns. </p>
+<p>Blank lines, as well as lines beginning with <code>&lt;!—</code>, will be ignored. </p>
 
 <h3>Columns</h3>
 <table>
@@ -55,153 +55,153 @@ The Notenik Project
 </table>
 
 <h3>Modules</h3>
-<p>The module column may contain any of the following values.</p>
+<p>The module column may contain any of the following values. </p>
 
 <ul>
 <li>
-<p>input - Read input rows and columns from a Note Collection or another data source.</p>
+<p>input - Read input rows and columns from a Note Collection or another data source. </p>
 </li>
 <li>
-<p>filter - Specify one or more filter criteria that will be used to filter the data source to a subset of its original set of rows.</p>
+<p>filter - Specify one or more filter criteria that will be used to filter the data source to a subset of its original set of rows. </p>
 </li>
 <li>
-<p>sort - Specify one or more sort fields (major to minor) to be used to sort the data source.</p>
+<p>sort - Specify one or more sort fields (major to minor) to be used to sort the data source. </p>
 </li>
 <li>
-<p>template - Specify the location of a <a href="https://www.notenik.net/merge-template.html">template file</a> to be processed using the data source.</p>
+<p>template - Specify the location of a <a href="https://www.notenik.net/merge-template.html">template file</a> to be processed using the data source. </p>
 </li>
 <li>
-<p>output - Write the filtered, sorted data to an output file in tab-delimited format.</p>
+<p>output - Write the filtered, sorted data to an output file in tab-delimited format. </p>
 </li>
 </ul>
 
 <h3>Input Parameters</h3>
-<p>The action for an input command may be either ‘set’ or ‘open’. The set command(s) should precede the open command to which they will apply.</p>
+<p>The action for an input command may be either &#8216;set&#8217; or &#8216;open&#8217;. The set command(s) should precede the open command to which they will apply. </p>
 <h4>Set</h4>
-<p>When using ‘set’, the variable to be set would be named in the object column, and the value to which it should be set would be supplied in the value column.</p>
-<p>The following variables may be set.</p>
+<p>When using &#8216;set&#8217;, the variable to be set would be named in the object column, and the value to which it should be set would be supplied in the value column. </p>
+<p>The following variables may be set. </p>
 <ul>
 <li>
-<p>xpltags - Set this variable to ‘true’ to create a row for each tag included in the original row’s Tags field. A field called ‘Tag’ will be added to the data source. Set the variable to ‘false’ to bypass tags explosion.</p>
+<p>xpltags - Set this variable to &#8216;true&#8217; to create a row for each tag included in the original row's Tags field. A field called &#8216;Tag&#8217; will be added to the data source. Set the variable to &#8216;false&#8217; to bypass tags explosion. </p>
 </li>
 <li>
-<p>dirdepth - The number of levels of folders to be considered, when reading from a data source that might drill down into multiple folders. The top level folder specified counts as 1.</p>
+<p>dirdepth - The number of levels of folders to be considered, when reading from a data source that might drill down into multiple folders. The top level folder specified counts as 1. </p>
 </li>
 </ul>
 <h4>Open</h4>
-<p>When using ‘open’, the modifier field specifies the type of data source, and the value field specifies a path to the data source to be opened.</p>
-<p>The object field is normally left blank, but an object of ‘merge’ can be used to cause the current data source to be merged with the prior data source, rather than replacing it.</p>
-<p>The following modifier values are valid:</p>
+<p>When using &#8216;open&#8217;, the modifier field specifies the type of data source, and the value field specifies a path to the data source to be opened. </p>
+<p>The object field is normally left blank, but an object of &#8216;merge&#8217; can be used to cause the current data source to be merged with the prior data source, rather than replacing it. </p>
+<p>The following modifier values are valid: </p>
 <ul>
 <li>
-<p>dir - Reads the directory entries from the specified directory (including sub-directories, if the dirdepth variable has been set to a value greater than 1).</p>
+<p>dir - Reads the directory entries from the specified directory (including sub-directories, if the dirdepth variable has been set to a value greater than 1). </p>
 </li>
 <li>
-<p>file - Reads an input text file with columns separated by tabs or commas.</p>
+<p>file - Reads an input text file with columns separated by tabs or commas. </p>
 </li>
 <li>
-<p>markdown-with-headers - Reads a Markdown-formatted text file, and chunks it up into sections based on its headers. The content of each header will be placed in the Title field, the level of each header (1 - 6) will be placed in a Level field, and all text between this header and the next one will be placed into the Body field.</p>
+<p>markdown-with-headers - Reads a Markdown-formatted text file, and chunks it up into sections based on its headers. The content of each header will be placed in the Title field, the level of each header (1 - 6) will be placed in a Level field, and all text between this header and the next one will be placed into the Body field. </p>
 </li>
 <li>
-<p>notenik-defined - Reads a Notenik collection with its fields defined by a template file.</p>
+<p>notenik-defined - Reads a Notenik collection with its fields defined by a template file. </p>
 </li>
 <li>
-<p>notenik+ - Reads a Notenik collection with a broad set of standard fields.</p>
+<p>notenik+ - Reads a Notenik collection with a broad set of standard fields. </p>
 </li>
 <li>
-<p>notenik-general - Reads a Notenik Collection with any set of fields.</p>
+<p>notenik-general - Reads a Notenik Collection with any set of fields. </p>
 </li>
 <li>
-<p>notenik-index - Reads a Notenik Collection using the Index field, and generates one row for each index term, containing the following columns.</p>
+<p>notenik-index - Reads a Notenik Collection using the Index field, and generates one row for each index term, containing the following columns. </p>
 <ul>
-<li>Initial Letter - The first letter of the index term.</li>
-<li>Term - The term being indexed.</li>
-<li>Lower Case Term - The same index term, but converted to lowercase.</li>
-<li>Term Link -</li>
-<li>Page - The Title of the Note containing this index term.</li>
-<li>Anchor -</li>
+<li>Initial Letter - The first letter of the index term. </li>
+<li>Term - The term being indexed. </li>
+<li>Lower Case Term - The same index term, but converted to lowercase. </li>
+<li>Term Link - </li>
+<li>Page - The Title of the Note containing this index term. </li>
+<li>Anchor - </li>
 </ul>
 </li>
 <li>
-<p>notenik-split-tags - Reads a Notenik Collection, adds a “Tag” field, and returns one row for each tag (or one row with a blank tag, for Notes with no tags).</p>
+<p>notenik-split-tags - Reads a Notenik Collection, adds a &#8220;Tag&#8221; field, and returns one row for each tag (or one row with a blank tag, for Notes with no tags). </p>
 </li>
 <li>
-<p>xlsx - Reads the first table in the specified XLSX file.</p>
+<p>xlsx - Reads the first table in the specified XLSX file. </p>
 </li>
 </ul>
 
 <h3>Filter Parameters</h3>
-<p>A filter command may have an action of ‘clear’, ‘add’ or ‘set’.</p>
+<p>A filter command may have an action of &#8216;clear&#8217;, &#8216;add&#8217; or &#8216;set&#8217;. </p>
 <h4>Clear</h4>
-<p>Clears any filter parameters that might have previously been set, so that new ones can be added. A clear action must be followed by a set action in order to actually remove any previously specified filtering rules.</p>
+<p>Clears any filter parameters that might have previously been set, so that new ones can be added. A clear action must be followed by a set action in order to actually remove any previously specified filtering rules. </p>
 <h4>Add</h4>
-<p>Adds a new filter rule. The object would name the field to be compared as part of the filter. The value field would specify a value to which the object will be compared. And the modifier field specifies the nature of the comparison.</p>
-<p>The following modifiers are valid (with all of the different forms on a line producing identical results).</p>
+<p>Adds a new filter rule. The object would name the field to be compared as part of the filter. The value field would specify a value to which the object will be compared. And the modifier field specifies the nature of the comparison. </p>
+<p>The following modifiers are valid (with all of the different forms on a line producing identical results). </p>
 <ul>
 <li>
-<p>“=”, “==”, “eq” or “equals”</p>
+<p>&#8220;=&#8221;, &#8220;==&#8221;, &#8220;eq&#8221; or &#8220;equals&#8221; </p>
 </li>
 <li>
-<p>“&gt;”, “gt” or “greater than”</p>
+<p>&#8220;>&#8221;, &#8220;gt&#8221; or &#8220;greater than&#8221; </p>
 </li>
 <li>
-<p>“&gt;=”, “!&lt;”, “ge” or “greater than or equal to”</p>
+<p>&#8220;>=&#8221;, &#8220;!&lt;&#8221;, &#8220;ge&#8221; or &#8220;greater than or equal to&#8221; </p>
 </li>
 <li>
-<p>“&lt;”, “lt” or “less than”</p>
+<p>&#8220;&lt;&#8221;, &#8220;lt&#8221; or &#8220;less than&#8221; </p>
 </li>
 <li>
-<p>“&lt;=”, “!&gt;”, “le” or “less than or equal to”</p>
+<p>&#8220;<=&#8221;, "!>&#8220;, &#8221;le" or &#8220;less than or equal to&#8221; </p>
 </li>
 <li>
-<p>“&lt;&gt;”, “!=”, “ne” or “not equal to”</p>
+<p>&#8220;<>&#8221;, &#8220;!=&#8221;, &#8220;ne&#8221; or &#8220;not equal to&#8221; </p>
 </li>
 <li>
-<p>“()”, “[]”, “co” or “contains”</p>
+<p>&#8220;()&#8221;, &#8220;[]&#8221;, &#8220;co&#8221; or &#8220;contains&#8221; </p>
 </li>
 <li>
-<p>“!()”, “![]”, “nc” or “does not contain”</p>
+<p>&#8220;!()&#8221;, &#8220;![]&#8221;, &#8220;nc&#8221; or &#8220;does not contain&#8221; </p>
 </li>
 <li>
-<p>“(&lt;)”, “[&lt;]”, “st” or “starts with”</p>
+<p>&#8220;(&lt;)&#8221;, &#8220;[&lt;]&#8221;, &#8220;st&#8221; or &#8220;starts with&#8221; </p>
 </li>
 <li>
-<p>“!(&lt;)”, “![&lt;]”, “ns” or “does not start with”</p>
+<p>&#8220;!(&lt;)&#8221;, &#8220;![&lt;]&#8221;, &#8220;ns&#8221; or &#8220;does not start with&#8221; </p>
 </li>
 <li>
-<p>“(&gt;)”, “[&gt;]”, “fi” or “ends with”</p>
+<p>&#8220;(>)&#8221;, &#8220;[>]&#8221;, &#8220;fi&#8221; or &#8220;ends with&#8221; </p>
 </li>
 <li>
-<p>“!(&gt;)”, “![&gt;]”, “nf” or “does not end with”</p>
+<p>&#8220;!(>)&#8221;, &#8220;![>]&#8221;, &#8220;nf&#8221; or &#8220;does not end with&#8221; </p>
 </li>
 </ul>
 <h4>Set</h4>
-<p>An action of set causes the previously added filtering rules, specified since the last clear action, to be applied.</p>
+<p>An action of set causes the previously added filtering rules, specified since the last clear action, to be applied. </p>
 
 <h3>Sort Parameters</h3>
-<p>Just as with the Filter module, the Sort module uses actions of ‘clear’, ‘add’ and ‘set’.</p>
+<p>Just as with the Filter module, the Sort module uses actions of &#8216;clear&#8217;, &#8216;add&#8217; and &#8216;set&#8217;. </p>
 <h4>Clear</h4>
-<p>Clears any sort fields that might have previously been set, so that new ones can be added.</p>
+<p>Clears any sort fields that might have previously been set, so that new ones can be added. </p>
 <h4>Add</h4>
-<p>Adds a new sort field, with major ones coming first, and minor ones following. The object would name the field to be used as part of a sort key.</p>
-<p>If the modifier field starts with a ‘d’, then the field values will be sorted into descending sequence; anything else will result in an ascending sequence.</p>
+<p>Adds a new sort field, with major ones coming first, and minor ones following. The object would name the field to be used as part of a sort key. </p>
+<p>If the modifier field starts with a &#8216;d&#8217;, then the field values will be sorted into descending sequence; anything else will result in an ascending sequence. </p>
 <h4>Set</h4>
-<p>An action of set causes the previously added sort fields, specified since the last clear action, to be applied.</p>
+<p>An action of set causes the previously added sort fields, specified since the last clear action, to be applied. </p>
 
 <h3>Template Parameters</h3>
-<p>A Template command may have an action of ‘webroot’, ‘open’ or ‘generate’.</p>
+<p>A Template command may have an action of &#8216;webroot&#8217;, &#8216;open&#8217; or &#8216;generate&#8217;. </p>
 <h4>Webroot</h4>
-<p>A ‘webroot’ action causes the value column to be used as a path to the top level of a website to be generated. Template variables of ‘relative’ will then be replaced with a series of ‘../’ strings taking a file reference back to the top of the website.</p>
+<p>A &#8216;webroot&#8217; action causes the value column to be used as a path to the top level of a website to be generated. Template variables of &#8216;relative&#8217; will then be replaced with a series of &#8216;../&#8217; strings taking a file reference back to the top of the website. </p>
 <h4>Open</h4>
-<p>The file pointed to by the path in the value column will be opened as a <a href="https://www.notenik.net/merge-template.html">Template file</a>.</p>
+<p>The file pointed to by the path in the value column will be opened as a <a href="https://www.notenik.net/merge-template.html">Template file</a>. </p>
 <h4>Generate</h4>
-<p>The previously opened Template file will be processed, generating one or more output files.</p>
+<p>The previously opened Template file will be processed, generating one or more output files. </p>
 
 <h3>Output Parameters</h3>
-<p>An Output command may only have an action of ‘open’.</p>
+<p>An Output command may only have an action of &#8216;open&#8217;. </p>
 <h4>Open</h4>
-<p>The current data source, filtered and sorted per any previous relevant commands, will be written to the output file specified in the value column.</p>
-<p>A file extension of ‘.csv’ will result in a comma-separated values file being written; any other file extension will result in a tab-delimited file being written.</p>
+<p>The current data source, filtered and sorted per any previous relevant commands, will be written to the output file specified in the value column. </p>
+<p>A file extension of &#8216;.csv&#8217; will result in a comma-separated values file being written; any other file extension will result in a tab-delimited file being written. </p>
 
 
 </div>

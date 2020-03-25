@@ -18,8 +18,7 @@ If used at all, this command should be the first command in the template file. T
 * the end of a variable (normally paired greater than signs)
 * the beginning of variable modifiers (normally a single ampersand)
 
-Note that, in addition to specification of the delims command, the first characters found on the first line of the template file can trigger the Notenik template processor to use an alternate set of delimiters. 
-
+Note that, in addition to specification of the delims command, the first characters found on the first line of the template file can trigger the Notenik template processor to use an alternate set of delimiters.
 
 ### set Command
 
@@ -37,14 +36,13 @@ This command can define a global variable and set its value. This command would 
 
 	+ -= or simply - — This will cause the value to be subtracted from the current value of the global variable.
 
-	+ — Two minus signs in a row can be used to subtract a value of 1 from the current value of the global variable, without having to specify the following value of 1. (In this case, the set command only requires two operands.)
+	+ \-\- Two minus signs in a row can be used to subtract a value of 1 from the current value of the global variable, without having to specify the following value of 1. (In this case, the set command only requires two operands.)
 
 - Value. This can be a literal or a variable (in which case it should be surrounded by the normal variable delimiters). The value can be a text string or an integer.
 
 One intended use for the set command is to support a line counter. By initializing the value to 0, and then adding to it whenever an output line is generated, the IF command can be used to check for page overflow (in a table column, for example), and then start a new page or column, resetting the counter to 0 again.
 
 Another common use for the set command is to preserve record variables in global variables so that they will be available within an ifendgroup block.
-
 
 ### output Command
 
@@ -73,8 +71,7 @@ The definegroup command has two operands.
 
 * Group Number. This must be a number from 1 to 10. Numbers should be assigned sequentially beginning with 1. Lower-numbered groups are considered more major than higher-numbered groups, in the sense that lower-numbered group breaks will automatically trigger higher-numbered group breaks.
 
-* Variable Name. This is the name of the key field variable. The variable should be surrounded by the normal variable delimiters, so that Notenik will see, not the name of the variable, but its current value. 
-
+* Variable Name. This is the name of the key field variable. The variable should be surrounded by the normal variable delimiters, so that Notenik will see, not the name of the variable, but its current value.
 
 ### ifendgroup Command
 
@@ -87,7 +84,6 @@ Ifendgroup commands should follow definegroup commands and precede ifnewgroup co
 The ifendgroup command has one operand.
 
 - Group Number. The group number whose group-ending output lines follow.
-
 
 ### ifendlist Command
 
@@ -103,8 +99,7 @@ The ifendlist command has one operand. Note that the ifendlist and ifnewlist com
 
 * Group Number. The group number whose list-ending output lines follow.
 
-Note that references to record variables within an ifendlist block will retrieve the data from the record causing the break (i.e., the first record in the new group), not the last record in the group just ended. Use the set command to save data in global variables if you need to later access it when a list break has been detected. 
-
+Note that references to record variables within an ifendlist block will retrieve the data from the record causing the break (i.e., the first record in the new group), not the last record in the group just ended. Use the set command to save data in global variables if you need to later access it when a list break has been detected.
 
 ### ifnewlist Command
 
@@ -115,7 +110,6 @@ Lines following this command and preceding the next group or endif command will 
 Ifnewlist commands should follow definegroup, ifendgroup and ifendlist commands, should precede ifnewgroup commands, and should generally be specified in *ascending* order by group number. The ifnewlist command has one operand.
 
 + Group Number. The group number whose list-beginning output lines follow.
-
 
 ### ifnewgroup Command
 
@@ -129,7 +123,6 @@ The ifnewgroup command has one operand.
 
 
 + Group Number. The group number whose group-beginning output lines follow.
-
 
 ### if Command
 
@@ -154,8 +147,7 @@ Any of the following comparisons may be performed, and each may be invoked with 
 11. (&gt;) / [&gt;] / fi / ends with
 12. !(&gt;) / ![&gt;] / ng / does not end with
 
-Note that, if both values appear to be integers, then a numeric comparison will be performed for operands 1 - 6. In all other cases, strings will be compared. 
-
+Note that, if both values appear to be integers, then a numeric comparison will be performed for operands 1 - 6. In all other cases, strings will be compared.
 
 ### else Command
 
@@ -187,7 +179,6 @@ The filename may include variables, allowing you to tailor the included content 
 For any conversion resulting in HTML, a pseudo-tag of &lt;toc&gt; can be used to generate a table of contents based on following heading tags. An optional attribute of "from" can be used to specify the beginning of a range of heading levels to be included; an optional attribute of "through" or "thru" can be used to specify the end of a range of heading levels to be included. See the following example.
 
 		<toc from="h2" thru="h4" />
-
 
 ### loop Command
 

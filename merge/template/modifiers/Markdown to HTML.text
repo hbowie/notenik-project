@@ -6,4 +6,4 @@ Body:
 
 The letter "O" will cause the field to be treated as Markdown, and converted to HTML.
 
-Following this letter with a minus sign ('-') will cause any opening and closing paragraph tags ('\<p\>' and '\</p\>' respectively) to be stripped from the resulting field (thus reducing the chance for possible conflicts with other tags). 
+Following this letter with a minus sign ('-') will cause any opening and closing paragraph tags (`<p>` and `</p>` respectively) to be stripped from the resulting field (thus reducing the chance for possible conflicts with other tags).

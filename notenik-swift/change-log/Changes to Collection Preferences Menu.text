@@ -1,0 +1,9 @@
+Title:  Changes to Collection Preferences Menu
+
+Seq:    2.9.0
+
+Date:   18 Jan 2020
+
+Body: 
+
+Added ellipsis to menu item to indicate that a new window will open before any action occurs. See Issue # 29. Also added a keyboard shortcut of CMD-; (Command semicolon). 

@@ -1,0 +1,35 @@
+Title:  about
+
+Title 2: About
+
+Seq:    13
+
+Date Added: 2020-02-05 18:42:16 +0000
+
+Body: 
+
+I'm [Herb Bowie](https://hbowie.net), and I'm the developer for Notenik. 
+
+I'm also the owner of the domain name powersurgepub.com, and have "PowerSurge Publishing" registered in the US state of Washington as a Trade Name (sometimes known as a "DBA", for "Doing Business As"). 
+
+In the past I operated PowerSurgePub.com as its own website, where you could find a number of desktop apps I'd written in Java over a period of years, including the following:
+
+* Club Planner
+* HeadOut
+* iWisdom
+* Link Tweaker
+* Notenik (a version written in Java)
+* PSExplorer
+* PSRenamer
+* PSTextMerge
+* Tunes Checker
+* Two Due
+* URL Union
+
+In 2019 I switched from Java to Swift as my primary programming language. If you're interested in my thinking about this, you can read more about my decision in my blog post, "[All Swift, All the Time](https://notenik.net/blog/all-swift-all-the-time.html)."
+
+The functionality of many of the Java programs listed above has been folded into the new Notenik, now written in Swift, and described in detail on this site, Notenik.net. 
+
+At this point I am no longer maintaining any of the Java apps listed above, and am no longer maintaining PowerSurgePub.com as its own website. 
+
+

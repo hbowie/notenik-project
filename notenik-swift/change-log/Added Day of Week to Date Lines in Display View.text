@@ -1,0 +1,9 @@
+Title:  Added Day of Week to Date Lines in Display View
+
+Seq:    3.1.0
+
+Date:   21 Feb 2020
+
+Body: 
+
+When a Collection contains a date field, it will now be shown on a Note's display view with the appropriate day of week name. 

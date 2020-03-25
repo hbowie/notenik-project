@@ -1,14 +1,31 @@
 <?output "../Table of Contents.text" ?>
 Title:  Table of Contents
 
-Seq:    2
+Seq:    1
+
+Level:  2
 
 Tags:   ToC
 
 Body:
 
-<?set count = 1 ?>
+<?set count2 = 0 ?>
+<?set count3 = 0 ?>
+<?set liopen = 0 ?>
+<ol>
 <?nextrec?>
-=$count$=. [[=$title$=]]
-<?set count += 1 ?>
+<?if =$level$= eq 2 ?>
+<?if =$liopen$= eq 1 ?>
+</li>
+<?endif?>
+<?set count2 += 1 ?>
+<li><a href="#=$title&f$=">=$title$=</a> <br />
+<?set liopen = 1 ?>
+<?set count3 = 0 ?>
+<?else?>
+<?set count3 += 1 ?>
+=$count2$=.=$count3$= <a href="#=$title&f$=">=$title$=</a>  <br />
+<?endif?>
 <?loop?>
+</li>
+</ol>

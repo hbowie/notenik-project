@@ -1,0 +1,12 @@
+Title:  Third Markdown Parser Added
+
+Seq:    3.2.0
+
+Date:   21 Mar 2020
+
+Body: 
+
+Notenik now has its own internal Markdown parser. I tried to implement pretty much everything in the original [Markdown][md] and [SmartyPants][sp] specs from John Gruber. The other two parsers are still available as options, but the Notenik parser is now the default, since it is now the only way to add links between Notes. 
+
+[md]: https://daringfireball.net/projects/markdown/
+[sp]: https://daringfireball.net/projects/smartypants/

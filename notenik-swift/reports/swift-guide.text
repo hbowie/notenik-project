@@ -11,9 +11,22 @@ Link:
 
 Body:
 
+<?set count2 = 0 ?>
+<?set count3 = 0 ?>
 <?nextrec?>
 
-<a name="=$title&f$="><h2>=$title$=</h2></a>
+<?if =$level$= eq 2 ?>
+<?set count2 += 1 ?>
+<a name="=$title&f$="><h2>=$count2$=. =$title$=</h2></a>
+<?set count3 = 0 ?>
+<?else?>
+<?set count3 += 1 ?>
+<a name="=$title&f$="><h3>=$count2$=.=$count3$= =$title$=</h3></a>
+<?endif?>
 
 =$body&w2$=
+
+<?if =$seq$= gt 1 ?>
+<p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
+<?endif?>
 <?loop?>

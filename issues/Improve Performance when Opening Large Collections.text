@@ -1,0 +1,20 @@
+Title:  Improve Performance when Opening Large Collections
+
+Status: 6 - Completed
+
+Seq:    28
+
+Date:   18 Jan 2020
+
+Reported By: Mac OS X Guru
+
+Release: 2.9.0
+
+Issue: 
+
+It takes an inordinately long time to open the folder into a new tab. Just an insanely long time.
+
+Body: 
+
+Made some potential improvements for the 2.9.0 release. 
+

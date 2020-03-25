@@ -26,6 +26,10 @@ Body:
 
 #### Status: 6 - Completed
 
+* #31 [Allow User to Change the Preferred File Extension](issues/allow-user-to-change-the-preferred-file-extension.html)
+* #30 [Improve Collection Preferences Window](issues/improve-collection-preferences-window.html)
+* #29 [Changes to Collection Preferences Menu](issues/changes-to-collection-preferences-menu.html)
+* #28 [Improve Performance when Opening Large Collections](issues/improve-performance-when-opening-large-collections.html)
 * #25 [Erroneous Detection of Metadata](issues/erroneous-detection-of-metadata.html)
 * #24 [Immediate Refresh of Displayed Notes after Changing Display Prefs](issues/immediate-refresh-of-displayed-notes-after-changing-display-prefs.html)
 * #14 [Make Collection Prefs Scrollable](issues/make-collection-prefs-scrollable.html)

@@ -11,7 +11,9 @@ Body:
 
 <?nextrec?>
 <?if "=$heading$=" ?>
+
 ### =$heading$=
+
 <?endif?>
 <?if =$type$= eq md ?>
 =$body$=

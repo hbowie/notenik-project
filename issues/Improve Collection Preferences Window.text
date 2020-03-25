@@ -1,0 +1,20 @@
+Title:  Improve Collection Preferences Window
+
+Status: 6 - Completed
+
+Seq:    30
+
+Date:   17 Jan 2020
+
+Reported By: Jonathan C.
+
+Release: 2.9.0
+
+Issue: 
+
+I was expecting you to keep the OK and Cancel buttons permanently in view at the bottom, and make a scroll area above for all the other UI elements.
+
+
+Body: 
+
+Collections Preferences window has been redesigned. 

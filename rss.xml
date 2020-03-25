@@ -5,12 +5,30 @@
 <description>The Notenik Blog</description>
 <language>en</language>
 <item>
+<title>Recent Updates to Notenik - March, 2020</title>
+<link>https://notenik.net/blog/recent-updates-to-notenik-march-2020.html</link>
+<guid>https://notenik.net/blog/recent-updates-to-notenik-march-2020.html</guid>
+<pubdate>Wed, 25 Mar 2020 12:00:00 -0700</pubdate>
+<description>
+A summary of notable changes to the Mac App since December, 2019. 
+</description>
+</item>
+<item>
+<title>Using Notenik with Existing Text Files</title>
+<link>https://notenik.net/blog/using-notenik-with-existing-text-files.html</link>
+<guid>https://notenik.net/blog/using-notenik-with-existing-text-files.html</guid>
+<pubdate>Wed, 29 Jan 2020 12:00:00 -0700</pubdate>
+<description>
+Since Notenik is rather late to the game of managing text files, and since those already using similar sorts of files are probably among those interested in my app, I wanted to talk a bit about how the latest version of Notenik can be used with existing folders full of text files. 
+</description>
+</item>
+<item>
 <title>The Thinking Behind the Notenik File Format</title>
 <link>https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html</link>
 <guid>https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html</guid>
 <pubdate>Fri, 10 Jan 2020 12:00:00 -0700</pubdate>
 <description>
-People have been storing notes in text files long before Notenik came along. So why is the Notenik format different?
+People have been storing notes in text files long before Notenik came along. So why is the Notenik format different? 
 </description>
 </item>
 <item>
@@ -19,7 +37,7 @@ People have been storing notes in text files long before Notenik came along. So 
 <guid>https://notenik.net/blog/notenik-for-the-mac-versions-2.5.0-and-2.6.0-released.html</guid>
 <pubdate>Wed, 08 Jan 2020 12:00:00 -0700</pubdate>
 <description>
-Version 2.6.0 was focused on strengthening support for opening folders full of existing text files and handling them smoothly as Notenik Collections.
+Version 2.6.0 was focused on strengthening support for opening folders full of existing text files and handling them smoothly as Notenik Collections. 
 </description>
 </item>
 <item>
@@ -28,7 +46,7 @@ Version 2.6.0 was focused on strengthening support for opening folders full of e
 <guid>https://notenik.net/blog/notenik-project-3-create-a-to-do-list.html</guid>
 <pubdate>Fri, 20 Dec 2019 12:00:00 -0700</pubdate>
 <description>
-This post is the third in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we're going to use this Mac app to create a To Do list.
+This post is the third in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use this Mac app to create a To Do list. 
 </description>
 </item>
 <item>
@@ -37,7 +55,7 @@ This post is the third in a series designed to gradually explain the use of Note
 <guid>https://notenik.net/blog/notenik-for-the-mac-version-2.4.0-released.html</guid>
 <pubdate>Fri, 13 Dec 2019 12:00:00 -0700</pubdate>
 <description>
-Most of the changes for this release were focused on providing the capability for wiki-like inter-note linking.
+Most of the changes for this release were focused on providing the capability for wiki-like inter-note linking. 
 </description>
 </item>
 <item>
@@ -46,7 +64,7 @@ Most of the changes for this release were focused on providing the capability fo
 <guid>https://notenik.net/blog/notenik-for-the-mac-version-2.3.0-released.html</guid>
 <pubdate>Tue, 10 Dec 2019 12:00:00 -0700</pubdate>
 <description>
-Fixed treatment of the Teaser field, to treat it as a long text field; increased tolerance for Notes with alternative formatting; added Ink as an alternate for parsing of Markdown; added an optional Timestamp field, as a first step to enabling use of Notenik to create a Zettelkasten.
+Fixed treatment of the Teaser field, to treat it as a long text field; increased tolerance for Notes with alternative formatting; added Ink as an alternate for parsing of Markdown; added an optional Timestamp field, as a first step to enabling use of Notenik to create a Zettelkasten. 
 </description>
 </item>
 <item>
@@ -55,7 +73,7 @@ Fixed treatment of the Teaser field, to treat it as a long text field; increased
 <guid>https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html</guid>
 <pubdate>Tue, 03 Dec 2019 12:00:00 -0700</pubdate>
 <description>
-Added Cut, Copy and Paste support for Notes; added support for British spelling of 'Favorites'; relocated Reload Collection command to the Collection menu to make it easier to find; suppressed empty tags from the Favorites to HTML export.
+Added Cut, Copy and Paste support for Notes; added support for British spelling of &apos;Favorites&apos;; relocated Reload Collection command to the Collection menu to make it easier to find; suppressed empty tags from the Favorites to HTML export. 
 </description>
 </item>
 <item>
@@ -64,7 +82,7 @@ Added Cut, Copy and Paste support for Notes; added support for British spelling 
 <guid>https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html</guid>
 <pubdate>Mon, 25 Nov 2019 12:00:00 -0700</pubdate>
 <description>
-This post is the second in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we're going to use this Mac app to create a Collection of Bookmarks that you can access from any of your web browsers.
+This post is the second in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use this Mac app to create a Collection of Bookmarks that you can access from any of your web browsers. 
 </description>
 </item>
 <item>
@@ -73,25 +91,7 @@ This post is the second in a series designed to gradually explain the use of Not
 <guid>https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html</guid>
 <pubdate>Thu, 14 Nov 2019 12:00:00 -0700</pubdate>
 <description>
-This post is the first in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we're going to use Notenik just to create a basic Collection of Notes about anything that might interest you.
-</description>
-</item>
-<item>
-<title>Notenik: A Contrarian Mix of Old and New</title>
-<link>https://notenik.net/blog/notenik-a-contrarian-mix-of-old-and-new.html</link>
-<guid>https://notenik.net/blog/notenik-a-contrarian-mix-of-old-and-new.html</guid>
-<pubdate>Thu, 24 Oct 2019 12:00:00 -0700</pubdate>
-<description>
-Given my background as a programmer and long-time Mac user, it should probably come as no surprise that my first native Mac app is a sometimes surprising mix of old and new.
-</description>
-</item>
-<item>
-<title>All Swift, All the Time</title>
-<link>https://notenik.net/blog/all-swift-all-the-time.html</link>
-<guid>https://notenik.net/blog/all-swift-all-the-time.html</guid>
-<pubdate>Tue, 01 Oct 2019 12:00:00 -0700</pubdate>
-<description>
-Moving on from Java, Notenik development is now all Swift, all the time.
+This post is the first in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use Notenik just to create a basic Collection of Notes about anything that might interest you. 
 </description>
 </item>
 </channel>

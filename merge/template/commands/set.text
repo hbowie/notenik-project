@@ -2,7 +2,9 @@ Title:  set
 
 Seq:    2
 
-Body:   This command can define a global variable and set its value. This command would normally have three operands: the name of the global variable, an operator, and a value.
+Body: 
+
+This command can define a global variable and set its value. This command would normally have three operands: the name of the global variable, an operator, and a value.
 
 - Global variable name. This should not be the same as the name of any variable name specified by the input data file. The global variable name, when used as the object of a set command, should not be enclosed within the normal variable delimiters, since this would cause the variable name to be replaced by its current value.
 
@@ -16,7 +18,7 @@ Body:   This command can define a global variable and set its value. This comman
 
 	+ -= or simply - — This will cause the value to be subtracted from the current value of the global variable.
 
-	+ — Two minus signs in a row can be used to subtract a value of 1 from the current value of the global variable, without having to specify the following value of 1. (In this case, the set command only requires two operands.)
+	+ \-\- Two minus signs in a row can be used to subtract a value of 1 from the current value of the global variable, without having to specify the following value of 1. (In this case, the set command only requires two operands.)
 
 - Value. This can be a literal or a variable (in which case it should be surrounded by the normal variable delimiters). The value can be a text string or an integer.
 

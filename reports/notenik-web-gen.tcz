@@ -64,7 +64,6 @@ template	open	text		#PATH#../merge/script/reports/merge-script template.html
 template	generate
 template	open	text		#PATH#../merge/script/reports/script-spec template.text
 template	generate
-
 <!--
 <!-- Generate the Merge Template File Spec
 <!--
@@ -96,8 +95,6 @@ input	set		xpltags	false
 input	open	notenik-defined		#PATH#../notenik-swift/
 sort	add	Ascending	Seq
 sort	set		params
-filter	add	greater than	Seq	2
-filter	set		params
 template	open	text		#PATH#../notenik-swift/reports/swift-toc.text
 template	generate
 input	set		normalization	0
@@ -105,9 +102,7 @@ input	set		xpltags	false
 input	open	notenik-defined		#PATH#../notenik-swift/
 sort	add	Ascending	Seq
 sort	set		params
-filter	clear
-filter	set		params
-template	open	text		#PATH#../notenik-swift/reports/swift-guide.text
+template	open	text		#PATH#../notenik-swift/reports/swift-guide.html
 template	generate
 <!--
 <!-- Generate the Blog
@@ -150,7 +145,7 @@ template	generate
 <!--
 input	set		normalization	0
 input	set		xpltags	false
-input	open	notenik+		#PATH#../
+input	open	notenik-defined		#PATH#../
 filter	add	not equal to	Title	README
 filter	add	greater than or equal to	Seq	1
 filter	set		params

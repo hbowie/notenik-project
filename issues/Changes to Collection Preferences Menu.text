@@ -1,0 +1,21 @@
+Title:  Changes to Collection Preferences Menu
+
+Status: 6 - Completed
+
+Seq:    29
+
+Date:   18 Jan 2020
+
+Reported By: Jonathan C.
+
+Release: 2.9.0
+
+Issue: 
+
+In the Collection menu, I suggest it should be "Preferences…" not just "Preferences", and why not have a keyboard shortcut like ↑⌘ ?
+
+
+Body: 
+
+Implemented in 2.9.0. ⌘; assigned as keyboard shortcut. 
+

@@ -1,0 +1,9 @@
+Title:  Various Performance Improvements
+
+Seq:    2.9.0
+
+Date:   18 Jan 2020
+
+Body: 
+
+Made various changes intended to improve performance, especially when opening large collections. See Issue # 28. 

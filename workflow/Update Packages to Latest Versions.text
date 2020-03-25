@@ -1,3 +1,11 @@
 Title:  Update Packages to Latest Versions
 
 Seq:    6
+
+Body: 
+
+Use Xcode
+
+- File menu
+- Swift Packages
+- Update to Latest Versions

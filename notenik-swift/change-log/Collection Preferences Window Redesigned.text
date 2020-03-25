@@ -1,0 +1,9 @@
+Title:  Collection Preferences Window Redesigned
+
+Seq:    2.9.0
+
+Date:   22 Jan 2020
+
+Body: 
+
+The new Collection Preferences design now has two tabs, one for a scrollable list of fields, and the other for various other Collection Attributes. OK and Cancel buttons are positioned at the bottom of the window, outside of the tabs. A new file path has been added at the very bottom of the window, showing the file system path to the Collection whose preferences are being modified. This should close Issue # 30. 

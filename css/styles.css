@@ -581,6 +581,11 @@ table.toc {
 	color: #333;
 }
 
+.back-to-toc {
+	text-align: right;
+	font-style: italic;
+}
+
 /**
 
   Styling for sharing buttons

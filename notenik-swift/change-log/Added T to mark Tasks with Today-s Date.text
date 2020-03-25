@@ -1,0 +1,9 @@
+Title:  Added T to mark Tasks with Today's Date
+
+Seq:    3.1.0
+
+Date:   21 Feb 2020
+
+Body: 
+
+In the List view, when sorting tasks, the first column contains an 'X' to mark items that have been completed. In addition, any tasks bearing today's date (and not yet completed) will now additionally show a 'T' in this same column. 

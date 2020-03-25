@@ -1,0 +1,11 @@
+Title:  Bug Fixes for 3.2.0
+
+Seq:    3.2.0
+
+Date:   22 Mar 2020
+
+Body: 
+
+The following bugs were fixed in this release. 
+
+- The sharing function now respects a request to share the body only in HTML; previously, the entire Note was shared, disregarding the user's selection.

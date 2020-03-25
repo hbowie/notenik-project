@@ -50,7 +50,6 @@ Then the resulting name in the output text file would be:
 
 	Herb Bowie
 
-
 #### File Name "F"
 
 Converts a string to a conventional, universal file name, changing spaces to dashes, removing any odd characters, making all letters lower-case, and converting white space to hyphens.
@@ -91,7 +90,6 @@ Used in a date formatting string, with the following effects:
 - MMMM - Full month name
 - mm - Two-digit minute within the hour
 
-
 #### No Breaks "N"
 
 Remove HTML break (br) tags from the string.
@@ -100,8 +98,7 @@ Remove HTML break (br) tags from the string.
 
 The letter "O" will cause the field to be treated as Markdown, and converted to HTML.
 
-Following this letter with a minus sign ('-') will cause any opening and closing paragraph tags ('\<p\>' and '\</p\>' respectively) to be stripped from the resulting field (thus reducing the chance for possible conflicts with other tags). 
-
+Following this letter with a minus sign ('-') will cause any opening and closing paragraph tags (`<p>` and `</p>` respectively) to be stripped from the resulting field (thus reducing the chance for possible conflicts with other tags).
 
 #### Punctuation Purification "P"
 
@@ -142,8 +139,9 @@ You can accomplish this by using the letter "W" as a variable modifier to modify
 
 * 1 - The digit '1' will cause the target Note title to be converted to a conventional, universal file name, changing spaces to dashes, removing any odd characters, making all letters lower-case, and converting white space to hyphens. The '.html' file extension will then be appended as a suffix. This option can be used when each note has its own page. 
 
-* 2 - The digit '2' will cause the Note title to be similarly converted, but then have a '#' prepended, with no suffix added. This option can be used when each note has its own heading within the same page. 
+* 2 - The digit '2' will cause the Note title to be similarly converted, but then have a '#' prepended, with no suffix added. This option can be used when each note has its own heading within the same page.
 
+Note that the 'W1' / 'W2' option should be specified before the letter 'O' requesting the conversion from Markdown to HTML.
 
 #### XML "X"
 
@@ -163,7 +161,6 @@ Used within a formatting string, with the following effects:
 
 - yy - Two-digit year
 - yyyy - Four-digit year
-
 
 #### Day of Month "dd"
 

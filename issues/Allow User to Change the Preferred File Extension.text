@@ -1,0 +1,20 @@
+Title:  Allow User to Change the Preferred File Extension
+
+Status: 6 - Completed
+
+Seq:    31
+
+Date:   17 Jan 2020
+
+Reported By: Jonathan C.
+
+Release: 2.9.0
+
+Issue: 
+
+I've checked two Collections Preferences and both were set to txt Preferred File Extension. On both I set to md, and pressed save, but when re-opening the Preferences it was set back to txt. 
+
+
+Body: 
+
+Changes in the preferred file extension are now captured and saved (although file extensions for existing Notes are not modified). 

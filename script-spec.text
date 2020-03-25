@@ -14,9 +14,10 @@ The file extension for a script file should be '.tcz', short for 'TDF Czar', whi
 
 A script file is a text file formatted into five columns, using either tabs or commas as delimiters to separate the columns. 
 
-Blank lines, as well as lines beginning with '<!— ', will be ignored. 
+Blank lines, as well as lines beginning with `<!—`, will be ignored.
 
 ### Columns
+
 <table>
 <tr><th>#</th><th>Heading</th><th>Contents</th></tr>
 <tr><td>1</td><td>module</td><td>Specifies the module to be used to execute the command. 
@@ -31,7 +32,9 @@ Blank lines, as well as lines beginning with '<!— ', will be ignored.
 </td></tr>
 </table>
 
+
 ### Modules
+
 The module column may contain any of the following values. 
 
 * input - Read input rows and columns from a Note Collection or another data source. 
@@ -42,9 +45,10 @@ The module column may contain any of the following values.
 
 * template - Specify the location of a [template file](https://www.notenik.net/merge-template.html) to be processed using the data source. 
 
-* output - Write the filtered, sorted data to an output file in tab-delimited format. 
+* output - Write the filtered, sorted data to an output file in tab-delimited format.
 
 ### Input Parameters
+
 The action for an input command may be either 'set' or 'open'. The set command(s) should precede the open command to which they will apply. 
 
 #### Set
@@ -88,9 +92,10 @@ The following modifier values are valid:
 
 * notenik-split-tags - Reads a Notenik Collection, adds a "Tag" field, and returns one row for each tag (or one row with a blank tag, for Notes with no tags). 
 
-* xlsx - Reads the first table in the specified XLSX file. 
+* xlsx - Reads the first table in the specified XLSX file.
 
 ### Filter Parameters
+
 A filter command may have an action of 'clear', 'add' or 'set'.
 
 #### Clear
@@ -129,9 +134,10 @@ The following modifiers are valid (with all of the different forms on a line pro
 
 #### Set
 
-An action of set causes the previously added filtering rules, specified since the last clear action, to be applied. 
+An action of set causes the previously added filtering rules, specified since the last clear action, to be applied.
 
 ### Sort Parameters
+
 Just as with the Filter module, the Sort module uses actions of 'clear', 'add' and 'set'.
 
 #### Clear
@@ -146,9 +152,10 @@ If the modifier field starts with a 'd', then the field values will be sorted in
 
 #### Set
 
-An action of set causes the previously added sort fields, specified since the last clear action, to be applied. 
+An action of set causes the previously added sort fields, specified since the last clear action, to be applied.
 
 ### Template Parameters
+
 A Template command may have an action of 'webroot', 'open' or 'generate'.
 
 #### Webroot
@@ -167,12 +174,12 @@ The previously opened Template file will be processed, generating one or more ou
 [template]: https://www.notenik.net/merge-template.html
 
 ### Output Parameters
+
 An Output command may only have an action of 'open'.
 
 #### Open
 
 The current data source, filtered and sorted per any previous relevant commands, will be written to the output file specified in the value column. 
 
-A file extension of '.csv' will result in a comma-separated values file being written; any other file extension will result in a tab-delimited file being written. 
-
+A file extension of '.csv' will result in a comma-separated values file being written; any other file extension will result in a tab-delimited file being written.
 

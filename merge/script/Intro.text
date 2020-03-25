@@ -12,4 +12,5 @@ The file extension for a script file should be '.tcz', short for 'TDF Czar', whi
 
 A script file is a text file formatted into five columns, using either tabs or commas as delimiters to separate the columns. 
 
-Blank lines, as well as lines beginning with '<!— ', will be ignored. 
+Blank lines, as well as lines beginning with `<!—`, will be ignored.
+
