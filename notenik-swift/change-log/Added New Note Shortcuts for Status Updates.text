@@ -1,0 +1,16 @@
+Title:  Added New Note Shortcuts for Status Updates
+
+Seq:    3.4.0
+
+Date:   08 Apr 2020
+
+Body: 
+
+See these new commands beneath the Note menu:
+
+* Toggle Status - Switches from least complete to most, and back again. 
+* Increment Status - Bump to the next stage in the Collection's lifecycle. 
+
+There are keyboard shortcuts available for both of these. 
+
+Note that these are designed to be used in Display mode, not in Edit mode. 

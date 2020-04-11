@@ -1,0 +1,10 @@
+Title:  Fixed Blockquote Parsing Bug
+
+Seq:    3.3.0
+
+Date:   25 Mar 2020
+
+Body: 
+
+When a blockquote was continued to a second paragraph, the second paragraph ended up being a blockquote within a blockquote. This has now been fixed. 
+

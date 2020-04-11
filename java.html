@@ -133,6 +133,7 @@ Template:  page-template.html  -->
 <!-- Center Column: Text -->
 <div class="col-12 col-md-12 col-lg-7 col-xl-6">
 <h2>Notenik Software Written in Java</h2>
+<!-- Markdown to HTML conversion provided by NotenikMkdown -->
 <h2 id="introduction-to-notenik">Introduction to Notenik</h2>
 <p>Let me introduce you to the Java version of <a href="https://notenik.net">Notenik</a>, a simple but powerful system for taking, collecting and referencing notes. </p>
 <p>This introduction describes Notenik for Java <a href="http://www.powersurgepub.com/products/notenik/versions.html">Version 4.80</a>. </p>
@@ -278,8 +279,7 @@ Template:  page-template.html  -->
 <p>I want to store my notes in an open, non-proprietary format that I can easily write, read and understand, but also in a format that can be usefully manipulated by a number of software tools. </p>
 </li>
 <li>
-<p>I want my notes to be portable. I want to be able to easily move them around from one device to another, from one platform to another, without losing anything in the process.   <br />
-</p>
+<p>I want my notes to be portable. I want to be able to easily move them around from one device to another, from one platform to another, without losing anything in the process.   </p>
 </li>
 <li>
 <p>I want my notes to be durable. I don't want to have to worry about  being unable to read them a few years down the road because some piece of software is no longer available or some &#8220;free&#8221; service has gone out of business. </p>
@@ -659,8 +659,7 @@ Template:  page-template.html  -->
 <p>Following are the supported formats. </p>
 <ul>
 <li>
-<p>Import/Export in Notenik Format  <br />
-</p>
+<p>Import/Export in Notenik Format  </p>
 <p>You can import and export your Notes in the current collection from/to a folder in the same Notenik format. </p>
 </li>
 <li>
@@ -669,18 +668,15 @@ Template:  page-template.html  -->
 <p>Note that, for XML formats, the resulting file may contain invalid characters if those are present in your Notes. </p>
 </li>
 <li>
-<p>Import/Export in Tab-Delimited Format  <br />
-</p>
+<p>Import/Export in Tab-Delimited Format  </p>
 <p>Each Note will be represented as one row/line, and each field will be represented in a separate column. This format is suitable for import into MS Excel, for example. </p>
 </li>
 <li>
-<p>Export to Tab-Delimited for MS Links  <br />
-</p>
+<p>Export to Tab-Delimited for MS Links  </p>
 <p>Similar to tab-delimited, but the Title and link are concatenated into a single field, with a &#8216;#&#8217; character separating the title from the link. Some Microsoft apps can use this format to import each link into a special field that combines the title and the hyperlink into a single field. </p>
 </li>
 <li>
-<p>Import/Export in XML Format  <br />
-</p>
+<p>Import/Export in XML Format  </p>
 <p>Your Notes will be represented in an XML format with each field represented as a separate XML tag. </p>
 <p>Note that, for XML formats, an exported file may contain invalid characters if those are present in your Notes. </p>
 </li>
@@ -706,8 +702,7 @@ Template:  page-template.html  -->
 <code>Minimum System Version:
 </code></pre>
 <pre>
-<code>Body:   <br />
-
+<code>Body:   
 </code></pre>
 <pre>
 <code>The body of the note
@@ -743,8 +738,7 @@ Template:  page-template.html  -->
 <p>Second, you can specify when to Purge inaccessible files. Doing this at startup is a good option. This way, if you decide to delete or rename a Collection of notes outside of Notenik, then that old Collection will drop off the list and you won't have to worry about accidentally selecting it. (You might <em>not</em> want to use this option, however, if you keep any of your Collections on a drive that's not always available, since these will then fall off the list if the drive is not mounted when you launch Notenik.) </p>
 <p>If you find Notenik really useful, and continue creating more Collections, then at some point you may wish to create a Master Collection. </p>
 <p>In a Master Collection, each Note tracks one of your other Collections. </p>
-<p>You start by executing the Create Master Collection command on the File menu. You will then need to pick a folder in which to store your Master Collection. Notenik will then populate this folder with one Note for each Collection listed on the Open Recent menu.  <br />
-</p>
+<p>You start by executing the Create Master Collection command on the File menu. You will then need to pick a folder in which to store your Master Collection. Notenik will then populate this folder with one Note for each Collection listed on the Open Recent menu.  </p>
 <p>Once you have created a Master Collection, then the Open Master Collection command under the File menu becomes available. Use this command to open your Master Collection. </p>
 <p>Now there are several features available to help you manage your Collection of Collections. </p>
 <p>The Link field for each Note in the Master Collection contains a link to the folder for that Collection. When working with the Master Collection, the Launch button becomes an Open button. Click on the Open button to open the selected Collection. </p>
@@ -807,7 +801,10 @@ Template:  page-template.html  -->
 <p>Licensed under the Apache License, Version 2.0 (the &#8220;License&#8221;); you may not use Notenik except in compliance with the License. You may obtain a copy of the License at <a href="http://www.apache.org/licenses/LICENSE-2.0">www.apache.org/licenses/LICENSE-2.0</a>. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &#8220;AS IS&#8221; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
 <p>Notenik also incorporates the following open-source libraries. </p>
 <ul>
-<li>JExcelAPI Copyright 2002 Andrew Khan, used under the terms of the GNU Lesser General Public License    * Flexmark Copyright 2016 by Vladimir Schneider, used under the terms of the BSD 2-clause license.    * Xerces Copyright 1999-2012 The Apache Software Foundation, used under the terms of the Apache License, Version 2.0     * Saxon Copyright Michael H. Kay, used under the terms of the Mozilla Public License, Version 1.0</li>
+<li>JExcelAPI Copyright 2002 Andrew Khan, used under the terms of the GNU Lesser General Public License   </li>
+<li>Flexmark Copyright 2016 by Vladimir Schneider, used under the terms of the BSD 2-clause license.   </li>
+<li>Xerces Copyright 1999-2012 The Apache Software Foundation, used under the terms of the Apache License, Version 2.0     </li>
+<li>Saxon Copyright Michael H. Kay, used under the terms of the Mozilla Public License, Version 1.0 </li>
 </ul>
 <h2 id="support">Support</h2>
 <p>If you have questions about Notenik, bug reports, or requests for enhancements, please shoot me a note at <a href="mailto:support@powersurgepub.com">support@powersurgepub.com</a> and I'll try to get back to you as quickly as I can. </p>

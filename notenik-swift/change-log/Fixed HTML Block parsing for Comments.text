@@ -1,0 +1,9 @@
+Title:  Fixed HTML Block parsing for Comments
+
+Seq:    3.3.0
+
+Date:   29 Mar 2020
+
+Body: 
+
+Updated the new internal Markdown parser to recognize HTML comments. 

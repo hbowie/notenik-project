@@ -1,0 +1,15 @@
+Title:  Broke Reusable Code out into Separate Libraries
+
+Seq:    3.4.0
+
+Date:   08 Apr 2020
+
+Body: 
+
+Created the following separate Swift packages. 
+
+* NotenikUtils
+* NotenikTextile
+* NotenikMkdown
+
+Users should not see any impact from this change. 
