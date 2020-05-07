@@ -1,0 +1,9 @@
+Title:  Bookmarks Retention Now Attempted
+
+Seq:    3.6.0
+
+Date:   05 May 2020
+
+Body: 
+
+There are a couple of new commands beneath the File menu. The `Bookmarks Board` command will open up a window showing folders that have been remembered from previous sessions, and will show these in a hierarchical tree view. At a minimum, this window will show the same folders listed unter the `Open Recent` menu. The second, related, new command, `Load Bookmarks`, will attempt to load additional folder references that have been stored in the User Defaults as Security-Scoped Bookmarks. If none of this makes any sense, or seems to offer anything useful, then it can safely be ignored. 

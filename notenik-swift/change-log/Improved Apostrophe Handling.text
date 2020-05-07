@@ -1,0 +1,9 @@
+Title:  Improved Apostrophe Handling
+
+Seq:    3.6.0
+
+Date:   24 Apr 2020
+
+Body: 
+
+An apostrophe appearing in the middle of a word, or at the beginning of a word, is no longer treated as if it might be a closing single quote mark. 

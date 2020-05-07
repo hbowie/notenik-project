@@ -1,0 +1,10 @@
+Title:  Drag and Drop from One Collection to Another
+
+Seq:    3.6.0
+
+Date:   01 May 2020
+
+Body: 
+
+When two Collections are open, the user may now drag a Note from the List view of one Collection to the List view of a second Collection and Drop it there. The Note will be added to the second Collection, and will still remain in its original Collection. Any fields present in the first Collection but not defined in the second will be dropped. 
+

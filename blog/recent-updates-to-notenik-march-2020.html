@@ -137,7 +137,6 @@ Template:  blog post template.html  -->
 
 <p><em>Published 25 Mar 2020</em></p>
 
-<!-- Markdown to HTML conversion provided by NotenikMkdown -->
 <p>There have been a few version releases since I last wrote about recent changes in the <a href="https://notenik.net/blog.html">blog</a> back in December, so let me hit on some of the more significant recent developments. </p>
 <ul>
 <li>The most recent release, 3.2.0, added a new internal Markdown parser as a third alternative, in addition to <a href="https://github.com/iwasrobbed/Down">Down</a> and <a href="https://github.com/JohnSundell/Ink">Ink</a>. It's probably not quite perfect, but I tried to stick as close as possible to John Gruber's documentation of the functionality intended for both <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> and <a href="https://daringfireball.net/projects/smartypants/">SmartyPants</a>, and it seems to be working pretty well for me. The main improvement here is better handling of wiki-style inter-note links. These are now only available when using the internal parser, but no longer require you to specifically request this feature: it's just built in to the new parser. See the Application Preferences to select the new parser. </li>

@@ -1,0 +1,13 @@
+Title:  Bug Fixed When Pasting or Dragging a Note with Dissimilar Fields
+
+Seq:    3.6.0
+
+Date:   01 May 2020
+
+Body: 
+
+When pasting a copied Note into a Collection, if the Note to be copied had fields not already in the target Collection, then the paste would fail and the app would crash. 
+
+Dragging and dropping a Note from one Collection to another would cause a similar situation. 
+
+This has been fixed so that additional fields not present in the target Collection will be ignored. 

@@ -1,0 +1,9 @@
+Title:  Create New Notes with Drag and Drop
+
+Seq:    3.5.0
+
+Date:   19 Apr 2020
+
+Body: 
+
+You can now drag a "bookmark" (consisting of a title and a link) into the list view of Notenik in order to add a new Note. Bookmarks can be dragged from the URL field at the top of a browser window, or from a hyperlink within a web page. 
