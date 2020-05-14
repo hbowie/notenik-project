@@ -153,9 +153,10 @@ Template:  swift-guide.html  -->
 4.2 <a href="#notes-are-collected-into-folders">Notes are Collected into Folders</a>  <br />
 4.3 <a href="#other-files-and-subfolders">Other Files and Subfolders</a>  <br />
 4.4 <a href="#open-parent-realm">Open Parent Realm</a>  <br />
-4.5 <a href="#disk-access-permissions">Disk Access Permissions</a>  <br />
-4.6 <a href="#supported-variations-in-text-file-formats">Supported Variations in Text File Formats</a>  <br />
-4.7 <a href="#sync-your-notes">Sync Your Notes</a>  <br />
+4.5 <a href="#the-notenik-icloud-container">The Notenik iCloud Container</a>  <br />
+4.6 <a href="#disk-access-permissions">Disk Access Permissions</a>  <br />
+4.7 <a href="#supported-variations-in-text-file-formats">Supported Variations in Text File Formats</a>  <br />
+4.8 <a href="#sync-your-notes">Sync Your Notes</a>  <br />
 </li>
 <li><a href="#fields">Fields</a> <br />
 5.1 <a href="#each-note-has-a-title-and-a-body">Each Note has a Title and a Body</a>  <br />
@@ -191,8 +192,8 @@ Template:  swift-guide.html  -->
 8.8 <a href="#website-building">Website Building</a>  <br />
 </li>
 <li><a href="#reference">Reference</a> <br />
-9.1 <a href="#keyboard-shortcuts">Keyboard Shortcuts</a>  <br />
-9.2 <a href="#version-history">Version History</a>  <br />
+9.1 <a href="#version-history">Version History</a>  <br />
+9.2 <a href="#keyboard-shortcuts">Keyboard Shortcuts</a>  <br />
 9.3 <a href="#rights">Rights</a>  <br />
 9.4 <a href="#support">Support</a>  <br />
 </li>
@@ -239,11 +240,13 @@ Template:  swift-guide.html  -->
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
 <a name="add-delete-and-update-your-notes"><h3>3.3 Add, Delete and Update Your Notes</h3></a>
 
-<p>The Display tab shows you what your Note looks like. Your note is formatted as a web page, and displayed within Notenik using a built-in web browser. If you click on a hyperlink within the display, then the linked page will replace your Note. If you wish to get back to your Note, then click on the Refresh button in the Toolbar. If your Note has a Link value, then click on the Launch Link button in the Toolbar to see the linked page within your default web browser, instead of Notenik's internal browser.  The Edit tab lets you make changes to the Field Values of a Note. </p>
+<p>The Display tab shows you what your Note looks like. Your note is formatted as a web page, and displayed within Notenik using a built-in web browser. If you click on a hyperlink within the display, then the linked page will replace your Note. If you wish to get back to your Note, then click on the Refresh button in the Toolbar. If your Note has a Link value, then click on the Launch Link button in the Toolbar to see the linked page within your default web browser, instead of Notenik's internal browser. </p>
+<p>The Edit tab lets you make changes to the Field Values of a Note. </p>
 <p>Use the &#8216;+&#8217; (plus) sign on the Toolbar to clear the Field Values and prepare to Add a new Note. </p>
 <p>Use the &#8216;-&#8217; (minus) sign on the Toolbar to delete the currently selected Note. </p>
 <p>Click on the OK button on the Toolbar, or click on the Display tab, to complete and save your latest entries on the Edit tab. </p>
 <p>The Note Menu also has equivalent commands, with keyboard shortcuts, to add a New Note or Delete a Note. </p>
+<p>The Note Menu also contains a command to Discard Edits, which can help you easily do away with a new Note you had started to add, or any changes you had started to make to an existing Note. </p>
 <p>You can alter the typeface and font size used on the Display tab by selecting the Display Appearance item under the Format menu, or by clicking on the Display Fonts button on the toolbar. You may then pick a typeface and font from the displayed dropdown menus or, if you'd like, enter the CSS you'd like to be used directly, bypassing the limits of these menus. </p>
 <p>You may also alter the font size used on the Edit tab through use of the commands available to you under the View menu. </p>
 
@@ -346,7 +349,19 @@ Template:  swift-guide.html  -->
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
-<a name="disk-access-permissions"><h3>4.5 Disk Access Permissions</h3></a>
+<a name="the-notenik-icloud-container"><h3>4.5 The Notenik iCloud Container</h3></a>
+
+<p>Starting with Version 3.7.0, Notenik has its own iCloud container. </p>
+<p>From the macOS Finder, you can see this container within <a href="https://support.apple.com/en-us/HT201104">iCloud Drive</a>, appearing as a folder with the unsurprising name of &#8216;Notenik&#8217;. You can tell that this is a container for the app named Notenik, rather than an ordinary folder, by the Notenik app icon overlaid on the normal folder icon. </p>
+<p>Within this Notenik iCloud Container, then, you would normally place one or more of your Notenik Collections, each with its own subfolder. </p>
+<p>Because macOS knows that this folder is really a container for Notenik documents, it gives Notenik some special privileges here: any Collection stored in this folder can always be accessed by the Notenik app, without you having to explicitly select the Collection to be opened each time. </p>
+<p>One easy way to access the Collections within the container is by choosing to open the &#8216;Collections Board&#8217; via an item beneath the File menu. Then, after clicking on the disclosure triangle to reveal the contents of &#8216;iCloud Notenik&#8217;, you will see a list of all the Collections within the Container. Double-click on one of them to open it (or select one and then click on the &#8216;Open&#8217; button below). </p>
+<p>You can also use the Collections Board to create a new Collection within the iCloud container by typing in the desired name of the new Collection in the text field at the bottom of the window, then hitting the &#8216;New&#8217; button. </p>
+<p>And oh, BTW, if and when a Notenik app for iOS ever appears, this is the folder that will be shared between the Mac and various iOS devices. </p>
+
+
+<p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
+<a name="disk-access-permissions"><h3>4.6 Disk Access Permissions</h3></a>
 
 <p>Notenik is a modern, well-mannered Mac application, which means that it does not presume to have free run of your hard drive, roaming wantonly wherever it will. </p>
 <p>In other words, to use the official jargon, Notenik is <a href="https://en.wikipedia.org/wiki/Sandbox_(computer_security)">sandboxed</a>. </p>
@@ -355,7 +370,7 @@ Template:  swift-guide.html  -->
 <p>Here's how this works. </p>
 <ol>
 <li>
-<p>Any Collection folder that you select through the Open command under the File menu will be available to you, because you have explicitly selected it for use by Notenik. </p>
+<p>Any Collection folder that you select through the Open command under the File menu will be available to you, because you have explicitly selected it for use by Notenik. (Note that you can also achieve these same results by using the macOS Finder to drag a folder and drop it onto the Notenik app icon.) </p>
 </li>
 <li>
 <p>Any Collection folder that you select using the Open Recent command under the File menu will be available to you, because macOS remembers that you previously gave Notenik permission to access that Collection. </p>
@@ -364,15 +379,14 @@ Template:  swift-guide.html  -->
 <p>If you use the Open Parent Realm command under the File menu to have Notenik search for its Collections and Scripts within a parent folder, then those Collections and Scripts will be available to be opened, because you have explicitly given Notenik permission to access everything within that parent folder. </p>
 </li>
 <li>
-<p>The Bookmarks Board function, found beneath the File menu, shows you a list of recently accessed folders, shown in an outline view based on the folder structure of your data. Buttons are available to expand everything, collapse everything, to open a collection and to open a parent realm. </p>
+<p>Any Collection stored within the <a href="#the-notenik-icloud-container">The Notenik iCloud Container</a> will always be accessible by Notenik, and the Collections Board can be used to easily open any of the Collections within this special container, or to create a new Collection within this container.  </p>
 </li>
 </ol>
-<p>(Note that you can also achieve these same results by using the macOS Finder to drag a folder and drop it onto the Notenik app icon.) </p>
 <p>In general, the rules above will be enough to cover most situations. If they prove too restrictive, though, you can always grant Notenik full disk access in the Security &amp; Privacy pane of System Preferences. </p>
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
-<a name="supported-variations-in-text-file-formats"><h3>4.6 Supported Variations in Text File Formats</h3></a>
+<a name="supported-variations-in-text-file-formats"><h3>4.7 Supported Variations in Text File Formats</h3></a>
 
 <p>To better support users with existing collections of notes stored in text files, Notenik makes its best effort to recognize and appropriately handle the following variations on the normal Notenik format. </p>
 <ol>
@@ -409,7 +423,7 @@ Template:  swift-guide.html  -->
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
-<a name="sync-your-notes"><h3>4.7 Sync Your Notes</h3></a>
+<a name="sync-your-notes"><h3>4.8 Sync Your Notes</h3></a>
 
 <p>Since a Collection of Notes lives on your local storage as a folder full of text files, it can be easily synced to the cloud and/or to other devices via a service such as <a href="http://www.dropbox.com">Dropbox</a> or <a href="http://www.apple.com/icloud/icloud-drive/">iCloud</a>. Simply store your Collection somewhere in your Dropbox folder, or in your iCloud Drive folder. </p>
 
@@ -610,6 +624,12 @@ Template:  swift-guide.html  -->
 <p>The Note template file is formatted using the normal Notenik format, although the Field Labels specified need not have any accompanying values. </p>
 <p>The file extension used for the template file will be used as the file extension for Notes subsequently created within the Collection. </p>
 <p>By specifying the value <code>&lt;longtext&gt;</code> as the value for a field in a template file, the user can indicate that a field is to be treated as a long text field, rather than a one-line text field. A longtext field will provide the user with multiple lines for data entry on the Edit tab, and will honor Markdown syntax when formatting for display on the Display tab. </p>
+<p>It's also possible to specify a series of possible values for a field, if you would like to have a list to pick from when filling in a custom field. Here's an example of how you would do this. </p>
+<pre>
+<code>Type: pick-from: static, post
+</code></pre>
+<p>In other words, enter the usual field label, followed by a colon, and then follow that with the literal &#8216;pick-from: &#8217;, followed by the possible values, separated using commas or semicolons. </p>
+<p>This template field value will result in a data entry field that allows a direct text entry, but also provides a drop-down list of possible values. </p>
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
@@ -961,52 +981,17 @@ Template:  swift-guide.html  -->
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
-<a name="keyboard-shortcuts"><h3>9.1 Keyboard Shortcuts</h3></a>
+<a name="version-history"><h3>9.1 Version History</h3></a>
 
-<p>Following are the keyboard shortcuts available within the app. When combined with the CMD key, these keys can be used as handy shortcuts. </p>
-<ul>
-<li>A - Select All </li>
-<li>C - Copy </li>
-<li>E - Open Essential Collection </li>
-<li>F - Find </li>
-<li>G - Find Again </li>
-<li>H - Hide Notenik </li>
-<li>I - Increment Date or Seq </li>
-<li>J - Reload Note </li>
-<li>K - Close Note </li>
-<li>L - Launch Link </li>
-<li>M - Minimize </li>
-<li>N - New Note </li>
-<li>O - Open </li>
-<li>Q - Quit Notenik </li>
-<li>R - View Scripter Window </li>
-<li>S - Save Note </li>
-<li>T - Text Edit Note </li>
-<li>U - Catch Up Daily Tasks </li>
-<li>V - Paste </li>
-<li>W - Close Window </li>
-<li>X - Cut </li>
-<li>1 - Sort by Title </li>
-<li>2 - Sort by Seq + Title </li>
-<li>3 - Sort Tasks by Date </li>
-<li>4 - Sort Tasks by Seq </li>
-<li>5 - Sort by Tags + Title </li>
-<li>6 - Sort by Author </li>
-<li>[ - Prior Note </li>
-<li>]  - Next Note </li>
-<li>→ - Scroll to Selected Note </li>
-<li>&#8216;=&#8217; - Increase Edit Font Size </li>
-<li>&#8216;-&#8217; - Decrease Edit Font Size </li>
-<li>&#8216;,&#8217; - Display Application Preferences </li>
-<li>&#8216;;&#8217; - Display Collection Preferences </li>
-<li>&#8216;'&#8217; - Toggle Status </li>
-<li>&#8216;.&#8217; - Increment Status </li>
-</ul>
-
-
-<p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
-<a name="version-history"><h3>9.2 Version History</h3></a>
-
+<h3>Version 3.7.0 | 12 May 2020</h3>
+<h4>1. New Template Option to specify Field values to Pick From</h4>
+<p>In a template file, users can now specify a series of &#8216;pick-from&#8217; values for a field. </p>
+<h4>2. Double-Clicking in the List View now launches the Note's Link</h4>
+<p>Double-clicking on a Note from the List tab will now attempt to launch whatever Link the Note may have. </p>
+<h4>3. Added Command to Discard Edits</h4>
+<p>Beneath the Note menu the user can now find a command (with suitable shortcut) to discard the edits that are currently in work. This can be used to do away with an attempt to add a new Note, or with in-progress changes to an existing Note. </p>
+<h4>4. Notenik iCloud Container</h4>
+<p>Notenik now has its own iCloud Container, and the Collections Board (originally the Bookmarks Board) has been reconfigured a bit to make special use of it. </p>
 <h3>Version 3.6.0 | 06 May 2020</h3>
 <h4>1. Added new Note Sharing Format of Markdown Quote</h4>
 <p>The body of the selected Note will have Markdown blockquoting applied to it. This can be accessed from the Share item beneath the Note menu. </p>
@@ -1286,6 +1271,52 @@ Body starts here.
 <h3>Version 1.0.0 | 03 Jun 2019</h3>
 <h4>1. Initial Release</h4>
 <p>This is the initial release of Notenik written in Swift. </p>
+
+
+<p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
+<a name="keyboard-shortcuts"><h3>9.2 Keyboard Shortcuts</h3></a>
+
+<p>Following are the keyboard shortcuts available within the app. When combined with the CMD key, these keys can be used as handy shortcuts. </p>
+<ul>
+<li>A - Select All </li>
+<li>B - Collections Board </li>
+<li>C - Copy </li>
+<li>D - Discard Edits </li>
+<li>E - Open Essential Collection </li>
+<li>F - Find </li>
+<li>G - Find Again </li>
+<li>H - Hide Notenik </li>
+<li>I - Increment Date or Seq </li>
+<li>J - Reload Note </li>
+<li>K - Close Note </li>
+<li>L - Launch Link </li>
+<li>M - Minimize </li>
+<li>N - New Note </li>
+<li>O - Open </li>
+<li>Q - Quit Notenik </li>
+<li>R - View Scripter Window </li>
+<li>S - Save Note </li>
+<li>T - Text Edit Note </li>
+<li>U - Catch Up Daily Tasks </li>
+<li>V - Paste </li>
+<li>W - Close Window </li>
+<li>X - Cut </li>
+<li>1 - Sort by Title </li>
+<li>2 - Sort by Seq + Title </li>
+<li>3 - Sort Tasks by Date </li>
+<li>4 - Sort Tasks by Seq </li>
+<li>5 - Sort by Tags + Title </li>
+<li>6 - Sort by Author </li>
+<li>[ - Prior Note </li>
+<li>]  - Next Note </li>
+<li>→ - Scroll to Selected Note </li>
+<li>&#8216;=&#8217; - Increase Edit Font Size </li>
+<li>&#8216;-&#8217; - Decrease Edit Font Size </li>
+<li>&#8216;,&#8217; - Display Application Preferences </li>
+<li>&#8216;;&#8217; - Display Collection Preferences </li>
+<li>&#8216;'&#8217; - Toggle Status </li>
+<li>&#8216;.&#8217; - Increment Status </li>
+</ul>
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>

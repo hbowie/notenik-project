@@ -1,0 +1,9 @@
+Title:  Double-Clicking in the List View now launches the Note's Link
+
+Seq:    3.7.0
+
+Date:   10 May 2020
+
+Body: 
+
+Double-clicking on a Note from the List tab will now attempt to launch whatever Link the Note may have. 
