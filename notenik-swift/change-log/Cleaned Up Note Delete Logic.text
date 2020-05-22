@@ -1,0 +1,9 @@
+Title:  Cleaned Up Note Delete Logic
+
+Seq:    3.8.0
+
+Date:   19 May 2020
+
+Body: 
+
+There were several visual oddities that might occur when deleting a Note, and these have been corrected. 
