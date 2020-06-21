@@ -1,0 +1,9 @@
+Title:  Added Menu Command and Keyboard Shortcut to Edit the Selected Note
+
+Seq:    3.9.0
+
+Date:   28 May 2020
+
+Body: 
+
+Added a new menu command beneath the Note menu to switch to the Edit tab, in order to edit the selected Note. 

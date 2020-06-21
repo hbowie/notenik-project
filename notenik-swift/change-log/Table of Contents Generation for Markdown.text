@@ -1,0 +1,10 @@
+Title:  Table of Contents Generation for Markdown
+
+Seq:    4.0.0
+
+Date:   05 Jun 2020
+
+Body: 
+
+Adding a line containing only '[toc]' within the body field will now cause that line to be replaced by a table of contents containing links to all of the headings following the '[toc]' line. This will only happen if you have chosen to use the Notenik Markdown parser in the Notenik preferences. 
+

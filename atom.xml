@@ -4,7 +4,7 @@
 <subtitle>The latest news about the Notenik Project</subtitle>
 <link href="https://notenik.net/atom.xml" type="application/atom+xml" rel="self" />
 <link href="https://notenik.net/" type="text/html" rel="alternate"  />
-<updated>2020-05-21</updated>
+<updated>2020-06-12</updated>
 <rights>Copyright © 2020, Herb Bowie</rights>
 <author>
 <name>Herb Bowie</name>
@@ -62,7 +62,7 @@
 <p>First, philosophically, Notenik tries to follow <a href="https://en.wikipedia.org/wiki/Robustness_principle">Postel&apos;s Law</a>: </p>
 <p>&gt; Be conservative in what you do, be liberal in what you accept from others. </p>
 <p>Unfortunately, it is not possible for Notenik to be endlessly liberal in this regard, and there are certainly loosely formatted text files that may not be interpreted by Notenik according to the author&apos;s wishes. </p>
-<h3>Rules for Reading</h3>
+<h3 id="rules-for-reading">Rules for Reading</h3>
 <p>With that being said, here are some rules that Notenik will try to apply to interpret existing text files in the best possible manner. (Many or even most of these rules involve recognition of the start of the note&apos;s body, even though the note lacks the explicit &apos;Body:&apos; field label found in the standard Notenik format.) </p>
 <ol>
 <li>Notenik will respect a template file that it finds, but it does not insist on the presence of a template file. </li>
@@ -74,15 +74,15 @@
 <li>If a file does not start with either metadata or a Markdown level 1 heading, then Notenik will use the file name (dropping the file extension) as the title of the note, and use the entire contents of the file as the body. </li>
 <li>If a file does not start with metadata, but does start with a Markdown level 1 heading, then the second line of the file may use a &apos;#&apos;, immediately followed by text (without any intervening spaces) to indicate that the text should be treated as tags for the note. I&apos;m not quite sure where this convention originated, or how many people use it, but there it is. </li>
 </ol>
-<h3>Rules for Updating</h3>
+<h3 id="rules-for-updating">Rules for Updating</h3>
 <p>When a note is updated, Notenik will generally try to respect each file&apos;s existing format, rather than rewriting the note using Notenik&apos;s format. </p>
-<h3>Rules for New Notes</h3>
+<h3 id="rules-for-new-notes">Rules for New Notes</h3>
 <p>New notes will be written out using Notenik&apos;s file format. </p>
-<h3>Converting an Entire Collection</h3>
+<h3 id="converting-an-entire-collection">Converting an Entire Collection</h3>
 <p>If you wish to convert an existing collection of files so that they all are consistently formatted using the standard Notenik format, then the best way to do this is to open your existing folder, review it to make sure that all or most of the data is being interpreted favorably, and then use the Export command beneath the File menu to export the collection into the Notenik format. This will create a new folder containing all of your notes, formatted in the Notenik format. </p>
-<h3>Backing Up</h3>
+<h3 id="backing-up">Backing Up</h3>
 <p>Notenik is open-source software released under the terms of the <a href="https://opensource.org/licenses/MIT">MIT license</a>. I mention this only to emphasize the point that, although I&apos;ve done everything I can think of to enable Notenik to be used with existing folders full of text files, the software is provided &quot;As Is&quot;, without warranty of any kind. If you have problems, I&apos;d like to know about them, so I can hopefully further improve the software. But you should be careful to back up your existing data before using it with Notenik (and during, of course).  </p>
-<h3>Feedback</h3>
+<h3 id="feedback">Feedback</h3>
 <p>If you run into any problems with any of this, or have any suggestions for further improvements, please feel free to email me at <a href="mailto:support@notenik.net">support at notenik.net</a> and I&apos;ll see what I can do to help. </p>
 
 ]]>
@@ -208,29 +208,29 @@
 <li><a href="https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html">Create a Simple Collection of Notes</a> </li>
 <li><a href="https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html">Create a Collection of Bookmarks</a> </li>
 </ol>
-<h3>Motivation</h3>
+<h3 id="motivation">Motivation</h3>
 <p>I like to keep a &quot;to do&quot; list to help remind me of various tasks I&apos;d like to perform. However, I don&apos;t want to invest a great deal of time or money in a specialized tool that is overly fiddly. So I use Notenik to track these sorts of things. </p>
-<h3>Step 1: Create a New Collection</h3>
+<h3 id="step-1-create-a-new-collection">Step 1: Create a New Collection</h3>
 <p>Name the folder &apos;To Do&apos; or &apos;Tasks&apos; or something similar. Locate the new folder in your Dropbox folder or in iCloud drive if you&apos;d like to sync this Collection to the cloud and/or to other devices. Or put it in your Documents folder: anyplace that makes sense to you is fine. </p>
-<h3>Step 2: Configure with Additional Fields</h3>
+<h3 id="step-2-configure-with-additional-fields">Step 2: Configure with Additional Fields</h3>
 <p>Once you&apos;ve selected the folder for the Collection, Notenik will present you with the Preferences for this Collection. In addition to the usual four fields (Title, Tags, Link and Body) you&apos;ll want to select the Status, Date and Recurs fields by checking the boxes next to these Field names. You might also wish to include the Seq field if you&apos;d like to identify a priority for each item. Click OK once you&apos;re done. </p>
-<h3>Step 3: Start Adding Some Tasks</h3>
+<h3 id="step-3-start-adding-some-tasks">Step 3: Start Adding Some Tasks</h3>
 <p>Enter a unique title for each task: something brief that will serve to identify the action.  </p>
 <p>Use the Link field if there&apos;s a website involved in completing this task; leave it blank otherwise. </p>
 <p>Use the Tags field if you&apos;d like to categorize your actions; this will allow you to see them grouped by category on the Tags tab. </p>
 <p>Enter any details about the task in the Body field. Feel free to use the <a href="https://daringfireball.net/projects/markdown/syntax">Markdown syntax</a> to format these details. </p>
-<h3>Step 4: Enter Target Dates for Completion</h3>
+<h3 id="step-4-enter-target-dates-for-completion">Step 4: Enter Target Dates for Completion</h3>
 <p>You may use the Date field to enter the date on which you wish to complete this task, or on which you wish to be reminded about it. You can enter a complete or partial date (just the year, or the year and month) in pretty much any recognizable format. Hit the Calendar button to be presented with an easily navigable calendar you can use to select your desired date. Hit OK when done. </p>
-<h3>Step 5: Sort the List in Tasks by Date Sequence</h3>
+<h3 id="step-5-sort-the-list-in-tasks-by-date-sequence">Step 5: Sort the List in Tasks by Date Sequence</h3>
 <p>Select the Tasks by Date option from the Sort menu, or use the handy keyboard shortcut displayed in the menu dropdown. The earliest dates will now sort to the top of the list. Note that you can change the sort sequence to another option whenever you find it useful: it&apos;s not a permanent selection, though your last choice for a Collection will be remembered the next time you open it. </p>
-<h3>Step 6: Enter Recurs Info</h3>
+<h3 id="step-6-enter-recurs-info">Step 6: Enter Recurs Info</h3>
 <p>If a task is something to be done on a regular basis, then you can enter the frequency of occurrence in the Recurs field. You can use most simple natural language constructs in this field: things like &apos;every week&apos; or &apos;every month&apos; should work as expected. </p>
-<h3>Step 7: Keep the Status field Up-To-Date</h3>
+<h3 id="step-7-keep-the-status-field-up-to-date">Step 7: Keep the Status field Up-To-Date</h3>
 <p>Each item&apos;s status can be set via the available dropdown menu on the Edit tab. The default status values run from &apos;Idea&apos; through &apos;Closed&apos; in what is meant to be an approximate lifecycle sequence. Status values of &apos;Completed&apos; on up will sort to the bottom of the Tasks by Date sequence, and will be marked with an &apos;X&apos; on the List to indicate their completion. If you&apos;d like to modify the values available on the Status dropdown, then see the  <a href="https://notenik.net/swift.html#track-the-status-of-your-notes">User Guide</a> for info on how to do this. </p>
 <p><img src="../images/notenik-to-do.jpg" alt="Screen Shot # 1"> </p>
-<h3>Step 8: Make It Essential</h3>
+<h3 id="step-8-make-it-essential">Step 8: Make It Essential</h3>
 <p>You may wish to use the option under the File menu to Make This Collection Essential. This means that it will open automatically whenever you launch Notenik, and that you can always get back to it via a quick keyboard shortcut. </p>
-<h3>Step 9: Memorize a Few Handy Shortcuts</h3>
+<h3 id="step-9-memorize-a-few-handy-shortcuts">Step 9: Memorize a Few Handy Shortcuts</h3>
 <p>Notenik has a few keyboard shortcuts that can prove particularly handy when managing a list of tasks. </p>
 <ul>
 <li>CMD-E &#8211; Open Essential Collection &#8211; This will open your Essential Collection, or take you back to its window (from another Notenik collection window) if it&apos;s already open. </li>
@@ -238,7 +238,7 @@
 <li>CMD-K &#8211; Close Note &#8211; If the selected Note has a Recurs value, then this command will execute the Recurs logic for the Note, bumping up the Date by one cycle. If the selected Note does not have a Recurs value, then the Note&apos;s Status field will be set to Completed. </li>
 <li>CMD-U &#8211; Catch Up Daily Tasks &#8211; If you have one or more tasks with Recurs values of &apos;Daily&apos;, then this command will bring all of their Date values up to the current date. </li>
 </ul>
-<h3>Wrapping Up</h3>
+<h3 id="wrapping-up">Wrapping Up</h3>
 <p>And that&apos;s it for Project # 3! As always, feel free to send any questions or comments to <a href="mailto:hbowie@notenik.net">hbowie@notenik.net</a>. Looking forward to hearing from you! </p>
 
 ]]>
@@ -356,39 +356,39 @@
 <p>This post is the second in a series designed to gradually explain the use of the Mac App <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik</a> for increasingly complex and sophisticated tasks. </p>
 <p>Before proceeding, you might want to review some of the basics covered in <a href="https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html">Project # 1</a>, if these aren&apos;t already fresh in your mind. </p>
 <p>You will need at least Notenik version 2.1.0 to perform all the functions described in this piece. </p>
-<h3>Motivation</h3>
+<h3 id="motivation">Motivation</h3>
 <p>All modern web browsers (Safari, Chrome, Firefox, etc.) have their own capabilities for storing frequently used web links (aka URLs) as a bunch of bookmarks, sometimes referred to as favorites. </p>
 <p>However, if you have a tendency to use different browsers for different purposes, or as the mood strikes you, then you might find it convenient to have your favorite web bookmarks stored independently, in a way that can be accessed equally well from any browser. </p>
 <p>This is where Notenik comes in. </p>
-<h3>Step 1: Create a New Collection</h3>
+<h3 id="step-1-create-a-new-collection">Step 1: Create a New Collection</h3>
 <p>Name the folder &apos;Favorites&apos; or &apos;Bookmarks&apos; or something similar.  If you have <a href="https://discussions.apple.com/docs/DOC-3083">Apache enabled</a>, then you might wish to place it somewhere in your &apos;Sites&apos; folder. (If you have no idea what this means, then don&apos;t worry about it.) Another option would be to place the new Collection in your Dropbox folder or iCloud Drive, if you&apos;d like it to be synced to the cloud and/or to other devices. Or just put it somewhere in your Documents folder. It&apos;s up to you! </p>
-<h3>Step 2: Configure with Default Fields</h3>
+<h3 id="step-2-configure-with-default-fields">Step 2: Configure with Default Fields</h3>
 <p>Title, Tags, Link and Body should be fine for our purposes today. </p>
-<h3>Step 3: Add Your Favorite Websites</h3>
+<h3 id="step-3-add-your-favorite-websites">Step 3: Add Your Favorite Websites</h3>
 <p>For each site, enter the Link field and the Title field. For a title, enter whatever is most meaningful to you &#8211; it doesn&apos;t have to exactly match any sort of official title on the site itself. If you wish to add some comments about a site in the body of its note, then that&apos;s ok too. </p>
-<h3>Step 4: Use Tags to Categorize the Sites</h3>
+<h3 id="step-4-use-tags-to-categorize-the-sites">Step 4: Use Tags to Categorize the Sites</h3>
 <p>Here there&apos;s something specific you need to enter in order to enable a later step. </p>
 <p>Enter your tag in the format &apos;Favorites.xxx&apos; where &apos;xxx&apos; is the category you wish to assign to the note. The first part of the tag must be &apos;favorites&apos;, although the case (upper or lower) is not significant. </p>
 <p>If you have a lot of bookmarks you wish to track in Notenik, then they don&apos;t all need to have the &apos;Favorites&apos; tag. In fact, a maximum of about 60 is recommended. And all of your tags, including the ones tagged as a &apos;favorite&apos;, can have multiple tags. </p>
 <p>With or without the favorites tag, note that you can use the &apos;Tags&apos; tab to view your growing list of bookmarks in outline form, with the tags used to organize the outline. When a note has multiple tags, it will appear multiple times, so that it can show up under each different tag. </p>
 <p><img src="../images/notenik-edit-bookmark.jpg" alt="Screen Shot # 1"> </p>
-<h3>Step 5: Launch Links from within Notenik</h3>
+<h3 id="step-5-launch-links-from-within-notenik">Step 5: Launch Links from within Notenik</h3>
 <p>Once you have your bookmarks entered into Notenik, you can always open that collection, select the bookmark you are interested in, and then launch the link, either via the Toolbar command, or via the command beneath the Note menu, or by using the CMD-L keyboard shortcut. Launching the Link via any of these methods will result in the page opening in your default web browser (Safari, Chrome, etc.) </p>
 <p>But wait, there&apos;s more! </p>
-<h3>Step 6: Save your Favorites to HTML</h3>
+<h3 id="step-6-save-your-favorites-to-html">Step 6: Save your Favorites to HTML</h3>
 <p>Beneath the File menu, there is an option to save your Favorites to HTML. Once you select this command, you&apos;ll be prompted to specify a file name and location. Once you&apos;ve completed this, Notenik will generate a web page for you, containing all of the bookmarks you have tagged as Favorites, grouped neatly into the categories you have specified.  </p>
 <p>After saving this web page for you, Notenik will ask that it be opened by your default web browser. Once this happens, if you look at the URL for the page, you&apos;ll see the location you specified expressed as a local file URL, starting with the &apos;file://&apos; protocol.  </p>
 <p><img src="../images/safari-favorites-page.jpg" alt="Screen Shot # 2"> </p>
-<h3>Step 7: Adjust Settings</h3>
+<h3 id="step-7-adjust-settings">Step 7: Adjust Settings</h3>
 <p>The defaults are to arrange your favorite links into 4 columns, with each column a maximum of 32 lines long, and taking up a screen width of 250 pixels. I&apos;ve found that these defaults work well for me but, if you&apos;d like to adjust them, you can use the Favorites tab within Notenik&apos;s application Preferences to bump them up or down, to suit your tastes (and screen real estate). </p>
 <p>The other settings you might want to adjust are your Display Fonts. You can get to these by clicking on the appropriately named button on your toolbar, or by selecting Display Appearance beneath the Format menu. You can then change the Display font and the display size. These settings will primarily affect the appearance of your Notes on the Display tab (for all of your collections &#8211; these settings are not collection-specific), but these same values will also be used for the webpage generated when you select Favorites to HTML beneath the File menu. </p>
 <p>After making changes to any of these settings, you will need to repeat Step 6, overwriting the file you created previously, in order to see the effects of your changes. </p>
-<h3>Step 8: Set As Your Browser Home Page</h3>
+<h3 id="step-8-set-as-your-browser-home-page">Step 8: Set As Your Browser Home Page</h3>
 <p>Once you have the generated HTML looking the way you would like,  you will want to select the generated page&apos;s URL from your browser and copy it. </p>
 <p>Now go into the Preferences for each web browser that you use, and paste this local file address into the field identifying your homepage, or your home button. You might also want to specify that new browser windows and/or tabs will open to your homepage. </p>
 <p>That&apos;s it! Now whenever you open your web browser, you&apos;ll see a nice clean page showing all of your favorite websites, without any advertising or tracking or animation or javascript or cookies or download delays. Just click on any of the titles to be taken to the corresponding website. And sites will be named and categorized and located in a way that makes sense to you, making it easy for you to find the site you are looking for and open it. </p>
 <p>When you want to add, remove or change the contents of this page, then all you have to do is re-open your Notenik collection of favorites, make the desired changes there, then repeat step # 6, making sure to overwrite the file you created before, by specifying the same location and file name. From that point on, the new page will appear in all of the browsers you have set to this homepage (understanding that you may sometimes have to ask the browser to reload the page, to replace any cached copies it might be holding on to). </p>
-<h3>Wrapping Up</h3>
+<h3 id="wrapping-up">Wrapping Up</h3>
 <p>And that&apos;s it for Project # 2! As always, feel free to send any questions or comments to <a href="mailto:hbowie@notenik.net">hbowie@notenik.net</a>. Looking forward to hearing from you!  </p>
 
 ]]>
@@ -414,23 +414,23 @@
 <p>This post is the first in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. </p>
 <p>See the <a href="https://notenik.net/swift.html">Notenik User Guide</a> for complete descriptions of all of Notenik&apos;s many features. </p>
 <p>Today we&apos;re going to use Notenik just to create a basic Collection of Notes about anything that might interest you. </p>
-<h3>Step 1: Download Notenik from the Mac App Store </h3>
+<h3 id="step-1-download-notenik-from-the-mac-app-store">Step 1: Download Notenik from the Mac App Store </h3>
 <p>Follow <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">this link</a> to easily locate Notenik in the Mac App Store, then press GET and OPEN to install and open the application. </p>
 <p>The first time you open Notenik, it will show its Collection of Help Notes. This is provided as reference, but is not meant to be edited. Leave this window open for now. </p>
-<h3>Step 2: Create a New Collection</h3>
+<h3 id="step-2-create-a-new-collection">Step 2: Create a New Collection</h3>
 <p>Within Notenik, Notes are always stored within Collections, and you may have as many different Collections as you desire. </p>
 <p>Each Collection is stored on disk as its own folder, and each Note within a Collection is stored as a file within that folder. </p>
 <p>You get to decide where to store your Collection(s), and you can always navigate to them within the Finder. (Hint: Store a Collection in your Dropbox folder or in iCloud Drive if you&apos;d like to sync it to the cloud and to other devices.) </p>
 <p>To create a new Collection, select New from the File menu. This action will open up a standard Mac window for selecting a folder. Use the standard New Folder button in the lower left corner of this window to create an empty folder for your new Collection, then select that newly created folder (all within the same window) and hit the Open button. </p>
 <p><img src="../images/notenik-new-collection-window.jpg" alt="Screen Shot # 1"> </p>
-<h3>Step 3: Indicate Your Collection Preferences</h3>
+<h3 id="step-3-indicate-your-collection-preferences">Step 3: Indicate Your Collection Preferences</h3>
 <p>The next thing you will see is a window allowing you to specify certain attributes for your new Collection. </p>
 <p>The Collections Title will be formed from the folder path containing this Collection. Feel free to tweak this if you&apos;d like. </p>
 <p>Each Note file is an ordinary text file, and can be opened using any text editor, in addition to being editable within Notenik. Depending on what application you might wish to be the default text editor for your notes, you may wish to pick some special file extension to be used. If you don&apos;t care about this, or this doesn&apos;t make any sense to you, then feel free to just ignore this whole paragraph and leave the Preferred File Extension set to txt. </p>
 <p>Next select the fields you would like to be made part of each Note. Every Note must have a Title and a Body, and the Tags and Link fields are commonly used, but feel free to use the checkboxes to select whatever fields would be most useful to you. (You can add additional fields later, so a minimal set is probably best to start.) </p>
 <p>When you&apos;re done with this screen, click OK to continue. </p>
 <p><img src="../images/notenik-collection-preferences.jpg" alt="Screen Shot #2"> </p>
-<h3>Step 4: Add Some Notes</h3>
+<h3 id="step-4-add-some-notes">Step 4: Add Some Notes</h3>
 <p>Your new Collection will be initially populated with a Note titled &apos;Notenik&apos;. Feel free to delete this later, but first you must add one or more of your own Notes to the Collection, so that it is not empty. </p>
 <p>Click on the Plus Sign (&apos;+&apos;) in the Toolbar to add a Note. </p>
 <p>Enter a brief Title indicating the subject of the Note. (Each Note in a Collection must have a unique Title.) </p>
@@ -440,20 +440,20 @@
 <p>When you&apos;re done with your data entry, hit the Display tab above the fields (next to the Edit tab), or the OK button in the Toolbar. Your Note will then be saved, and a formatted display of your Note will replace the Edit screen. </p>
 <p>Add other Notes in the same way. </p>
 <p>As you add Notes, they will appear on the List tab on the left side of your window, sorted by Title. </p>
-<h3>Step 5: Open Links</h3>
+<h3 id="step-5-open-links">Step 5: Open Links</h3>
 <p>Later, when referencing your Notes, you may open a Link in your Web browser (Safari, for example) by hitting the Launch Link button in the Toolbar. </p>
 <p>Note that you can also click on the Link field within the Display tab, but clicking here will open the linked webpage within the Notenik Display tab, rather than in your Web browser. When you&apos;re done viewing the linked webpage within Notenik, you can click on the Refresh button in the Toolbar to reload your Note within the Display tab. </p>
-<h3>Step 6: View the Tags Outline</h3>
+<h3 id="step-6-view-the-tags-outline">Step 6: View the Tags Outline</h3>
 <p>If you have elected to enter Tags for your Notes, then you may click on the Tags tab (next to the List tab) to see your Notes arranged by their Tags. Notes appear on this tab within an outline view. You can open and close tags and sub-tags (if present) to reveal or hide various groups of notes. </p>
-<h3>Step 7: Adjust the Display Font</h3>
+<h3 id="step-7-adjust-the-display-font">Step 7: Adjust the Display Font</h3>
 <p>If you&apos;d like to see your Notes displayed differently on the Display tab, then hit the Display Fonts button on the Toolbar. You can use the resulting screen to select a different font family, and can also adjust the font size. If you&apos;re familiar with CSS, then you can edit the resulting CSS code directly if you&apos;d like. </p>
 <p>When you&apos;re done, hit OK to see your changes take effect on the Display tab. (You may need to click on one or two Notes before the changes take effect.) </p>
-<h3>Step 8: Adjust the Edit Font Size</h3>
+<h3 id="step-8-adjust-the-edit-font-size">Step 8: Adjust the Edit Font Size</h3>
 <p>Use the bottom three commands under the View menu to adjust the size of the font used on the Edit screen, if you&apos;d like it to be larger or smaller. </p>
 <p>Note that font changes, on the Display tab and on the Edit tab, will affect the way all Collections are displayed within Notenik. Font settings cannot be made on a collection-by-collection basis. </p>
-<h3>Step 9: Make Your Collection Essential</h3>
+<h3 id="step-9-make-your-collection-essential">Step 9: Make Your Collection Essential</h3>
 <p>If you&apos;d like this Collection to be opened automatically the next time you launch Notenik, then choose the Make This Collection Essential command under the File menu. If you&apos;ve specified an Essential Collection, then it will be opened automatically each time you open Notenik. </p>
-<h3>Step 10: Share Your Notes</h3>
+<h3 id="step-10-share-your-notes">Step 10: Share Your Notes</h3>
 <p>Click on the Share button on the Toolbar to share a Note in an email, a text message, or via any of the other standard sharing tools available on a Mac. Notes shared in this fashion will just be formatted as plain text. </p>
 <p>However there&apos;s also another sharing option, available under the Note menu. When you select Share here, you will see another screen that will present you with a number of sharing options. </p>
 <ul>
@@ -462,7 +462,7 @@
 <li>Send the resulting output to the Clipboard, so that you can then paste it somewhere else, or to a file whose name and location you will then get to specify. </li>
 </ul>
 <p>After you&apos;ve chosen the appropriate options, hit the OK button to complete the sharing. </p>
-<h3>Summary</h3>
+<h3 id="summary">Summary</h3>
 <p>Well, that&apos;s it! You&apos;ve seen how you can use Notenik to create a basic collection of Notes to keep track of information on any topic that might interest you. </p>
 <p>Hopefully you can find some uses for this most basic Notenik function. </p>
 <p>In later projects we will move on to more sophisticated uses. </p>

@@ -1,0 +1,12 @@
+Title:  Added Double-Click Actions to the Tags Tab
+
+Seq:    4.0.0
+
+Date:   10 Jun 2020
+
+Body: 
+
+Double-clicking on a row in the Tags tab will now cause one of two actions:
+
+* If you're double-clicking on a tag, then double-clicking will expand or collapse it;
+* If you're double-clicking on a Note, then double-clicking will attempt to launch whatever is in the Link field for the Note, just as double-clicking does on the List tab. 

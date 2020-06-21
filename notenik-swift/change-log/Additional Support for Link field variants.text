@@ -1,0 +1,9 @@
+Title:  Additional Support for Link field variants
+
+Seq:    4.0.0
+
+Date:   05 Jun 2020
+
+Body: 
+
+Any field whose label contains the word 'link' will now be treated as a Link field, and will be shown as a clickable link on the Display tab. Additionally, if a Note does not have a simple 'Link' field, then launching the Note's link, or double-clicking on the Note, will cause the first non-blank link field on the Note to be used. 

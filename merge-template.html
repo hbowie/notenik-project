@@ -113,15 +113,15 @@ The Notenik Project
 
 <p>Following is a list of the variable modifiers with complete descriptions of how each works. </p>
 
-<h4>Email Apostrophes &#8220;'&#8221;</h4>
+<h4 id="email-apostrophes-">Email Apostrophes &#8220;'&#8221;</h4>
 <p>Placing a single apostrophe as part of the variable modifiers string will cause any HTML entities representing an apostrophe to be converted back to a normal ASCII/UTF apostrophe character: '. This can be useful for generating HTML to use as e-mail content, since e-mail parsers seem to sometimes drop the HTML entities commonly used for apostrophes. </p>
-<h4>List Punctuation &#8220;,&#8221;</h4>
+<h4 id="list-punctuation-">List Punctuation &#8220;,&#8221;</h4>
 <p>Any punctuation character, other than ones specificaly called out in this list for other purposes, will be interpreted as a separator that will be placed before the current variable, if the variable is non-blank, and if the preceding variable was also non-blank and also marked by the same variable modifier. A space will be added after the separator, and before the current variable, if the punctuation is not a forwards or backwards slash (&#8220;/&#8221; or &#8220;\&#8221;). This is an easy way to list several variables on a single line, separating non-blank ones from others with commas (or other punctuation). </p>
-<h4>Length Modifier &#8220;1&#8221;</h4>
+<h4 id="length-modifier-1">Length Modifier &#8220;1&#8221;</h4>
 <p>One or more consecutive digits within the modifiers will be interpreted as the length to which the variable should be truncated or padded. If the length modifier is shorter than the variable length, then by default characters will be truncated on the right (and preserved on the left) of the variable to bring it to the specified length. If it is desired to keep characters on the right, then also use the &#8220;R&#8221; modifier and place it before the length modifier digits. If the length modifier is longer than the initial variable length, then the variable will be padded with zeroes on the left to bring it to the specified length. </p>
-<h4>Base File Name &#8220;B&#8221;</h4>
+<h4 id="base-file-name-b">Base File Name &#8220;B&#8221;</h4>
 <p>The letter &#8220;B&#8221; will cause the file extension, including the period, to be removed from a file name. This can be used, for example, to generate an output file name with the same name as the input data file (using the variable name &#8220;datafilename&#8221;), but with a different extension. </p>
-<h4>Word Demarcation &#8220;C&#8221;</h4>
+<h4 id="word-demarcation-c">Word Demarcation &#8220;C&#8221;</h4>
 <p>The letter &#8220;C&#8221; indicates that the variable consists of a series of words, and you wish to change or standardize the way in which the words are distinguished from one another. </p>
 <p>When parsing the variable, the beginning of a new word will be indicated by either whitespace or punctuation between words, or by a transition from lowercase to uppercase (as in CamelCase usage). In other words, &#8220;two words&#8221;, &#8220;TWO_WORDS&#8221; or &#8220;twoWords&#8221; would all be parsed into two separate words. </p>
 <p>What you want done with the word demarcation is defined by the characters following the &#8220;C&#8221; in the modifiers string. The letter &#8220;u&#8221; indicates a conversion to uppercase, the letter &#8220;l&#8221; indicates a conversion to lowercase, and the letter &#8220;a&#8221; indicates that the character should be left as-is. Anything other than these three characters (including a space) will be interpreted as a separator to be placed between the words. </p>
@@ -143,22 +143,22 @@ The Notenik Project
 <pre>
 <code>Herb Bowie
 </code></pre>
-<h4>File Name &#8220;F&#8221;</h4>
+<h4 id="file-name-f">File Name &#8220;F&#8221;</h4>
 <p>Converts a string to a conventional, universal file name, changing spaces to dashes, removing any odd characters, making all letters lower-case, and converting white space to hyphens. </p>
-<h4>Linked Tags &#8220;G&#8221;</h4>
+<h4 id="linked-tags-g">Linked Tags &#8220;G&#8221;</h4>
 <p>Each tag found in the variable will be made into a link, linking to &#8216;=$relative$=yypathyy/xxtagxx.html&#8217;, where &#8216;xxtagxx&#8217; is the tag, and &#8216;yypathyy&#8217; is the string of characters following the &#8216;g&#8217;. </p>
-<h4>HTML &#8220;H&#8221;</h4>
+<h4 id="html-h">HTML &#8220;H&#8221;</h4>
 <p>The letter &#8220;H&#8221; will cause selected special characters to be translated to their equivalent HTML entities. </p>
-<h4>Initial Case &#8220;I&#8221;</h4>
+<h4 id="initial-case-i">Initial Case &#8220;I&#8221;</h4>
 <p>When the letter &#8216;I&#8217; immediately follows an &#8216;L&#8217; or a &#8216;U&#8217;, then the case transformation (lower or upper) will only be applied to the initial letter of the variable. </p>
-<h4>Link &#8220;J&#8221;</h4>
+<h4 id="link-j">Link &#8220;J&#8221;</h4>
 <p>Convert a URL to an HTML anchor tag with that URL as the href value. </p>
-<h4>Hour of Day &#8220;K&#8221;</h4>
+<h4 id="hour-of-day-k">Hour of Day &#8220;K&#8221;</h4>
 <p>Two lowercase 'k's will represent a 2-digit hour of the day on a 12-hour clock, within a date formatting string. </p>
 <p>Two uppercase 'K's will represente a 2-digit hour on a 24-hour clock. </p>
-<h4>Lowercase Modifier &#8220;L&#8221;</h4>
+<h4 id="lowercase-modifier-l">Lowercase Modifier &#8220;L&#8221;</h4>
 <p>Converts the letters of the variable to lowercase. If immediately followed by &#8216;I&#8217;, then only the initial letter of the variable will be changed to lowercase. </p>
-<h4>Month or Minutes &#8220;M&#8221;</h4>
+<h4 id="month-or-minutes-m">Month or Minutes &#8220;M&#8221;</h4>
 <p>Used in a date formatting string, with the following effects: </p>
 <ul>
 <li>MM - Two-digit month </li>
@@ -166,26 +166,26 @@ The Notenik Project
 <li>MMMM - Full month name </li>
 <li>mm - Two-digit minute within the hour </li>
 </ul>
-<h4>No Breaks &#8220;N&#8221;</h4>
+<h4 id="no-breaks-n">No Breaks &#8220;N&#8221;</h4>
 <p>Remove HTML break (br) tags from the string. </p>
-<h4>Markdown to HTML &#8220;O&#8221;</h4>
+<h4 id="markdown-to-html-o">Markdown to HTML &#8220;O&#8221;</h4>
 <p>The letter &#8220;O&#8221; will cause the field to be treated as Markdown, and converted to HTML. </p>
 <p>Following this letter with a minus sign (&#8216;-&#8217;) will cause any opening and closing paragraph tags (<code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code> respectively) to be stripped from the resulting field (thus reducing the chance for possible conflicts with other tags). </p>
-<h4>Punctuation Purification &#8220;P&#8221;</h4>
+<h4 id="punctuation-purification-p">Punctuation Purification &#8220;P&#8221;</h4>
 <p>Remove awkward punctuation characters. </p>
-<h4>Quotation Encasing &#8220;Q&#8221;</h4>
+<h4 id="quotation-encasing-q">Quotation Encasing &#8220;Q&#8221;</h4>
 <p>This letter will cause the value to be enclosed in quotation marks, if the value contains quotation marks, or tabs, or newline characters. </p>
-<h4>Keep characters on the right &#8220;R&#8221;</h4>
+<h4 id="keep-characters-on-the-right-r">Keep characters on the right &#8220;R&#8221;</h4>
 <p>The letter &#8220;R&#8221;, in combination with a length modifier, will cause the variable to be truncated to the given length, truncating characters on the left and keeping characters on the right. </p>
-<h4>Readable File Name &#8220;R&#8221;</h4>
+<h4 id="readable-file-name-r">Readable File Name &#8220;R&#8221;</h4>
 <p>The letter &#8220;R&#8221;, following the letter &#8220;F&#8221;, will cause the variable to be converted to a safe file name, but preserving as much human readability as possible. </p>
-<h4>Summarize &#8220;S&#8221;</h4>
+<h4 id="summarize-s">Summarize &#8220;S&#8221;</h4>
 <p>The letter &#8220;S&#8221; will pull the first few sentences from the field, within the first 250 characters. Specifying a number immediately following the &#8220;S&#8221; will override the default of 250 with the specified number. </p>
-<h4>Uppercase Modifier &#8220;U&#8221;</h4>
+<h4 id="uppercase-modifier-u">Uppercase Modifier &#8220;U&#8221;</h4>
 <p>Converts the letters of the variable to uppercase (capital letters). If immediately followed by &#8216;I&#8217;, then only the initial letter of the variable will be changed to uppercase. </p>
-<h4>Variance &#8220;V&#8221;</h4>
+<h4 id="variance-v">Variance &#8220;V&#8221;</h4>
 <p>The first character following the &#8216;v&#8217; will be used as a delimiter. Everything between the delimiters will be used as a from field. Everything following the second delimiter will be used as a to field. All output lines will be scanned for occurrences of the from field, and will be replaced with the to field. </p>
-<h4>Wiki-Style Links &#8220;W&#8221;</h4>
+<h4 id="wiki-style-links-w">Wiki-Style Links &#8220;W&#8221;</h4>
 <p>If your input is coming from a Collection using wiki-style inter-note links (links to other Notes formed by placing the Title of the target note within double square brackets), then you will probably wish to convert these to functional links in your output. </p>
 <p>You can accomplish this by using the letter &#8220;W&#8221; as a variable modifier to modify the Markdown code containing inter-note links. The &#8220;W&#8221; must then be followed by one of the following values. </p>
 <ul>
@@ -197,28 +197,28 @@ The Notenik Project
 </li>
 </ul>
 <p>Note that the &#8216;W1&#8217; / &#8216;W2&#8217; option should be specified before the letter &#8216;O&#8217; requesting the conversion from Markdown to HTML. </p>
-<h4>XML &#8220;X&#8221;</h4>
+<h4 id="xml-x">XML &#8220;X&#8221;</h4>
 <p>The letter &#8220;X&#8221; will cause selected special characters to be translated to their equivalent XML entities. This is recommended, for example, when publishing an RSS (Really Simple Syndication) feed. </p>
-<h4>Underscore &#8220;_&#8221;</h4>
+<h4 id="underscore-">Underscore &#8220;_&#8221;</h4>
 <p>An underscore character (&#8220;_&#8221;) will cause all spaces in the variable to be replaced by underscores. This can be useful when creating a file name, for example. Leading and trailing spaces will be trimmed without replacement. </p>
-<h4>AM/PM &#8220;a&#8221;</h4>
+<h4 id="am-pm-a">AM/PM &#8220;a&#8221;</h4>
 <p>Represents an AM/PM indicator within a date formatting string. </p>
-<h4>Year &#8220;y&#8221;</h4>
+<h4 id="year-y">Year &#8220;y&#8221;</h4>
 <p>Used within a formatting string, with the following effects: </p>
 <ul>
 <li>yy - Two-digit year </li>
 <li>yyyy - Four-digit year </li>
 </ul>
-<h4>Day of Month &#8220;dd&#8221;</h4>
+<h4 id="day-of-month-dd">Day of Month &#8220;dd&#8221;</h4>
 <p>Represents a two-digit day of month within a date formatting string. </p>
-<h4>Day of Week, Abbreviated &#8220;EEE&#8221;</h4>
+<h4 id="day-of-week-abbreviated-eee">Day of Week, Abbreviated &#8220;EEE&#8221;</h4>
 <p>Represents an abbreviated, 3-character, day of week within a date formatting string. </p>
-<h4>Remove Paragraph Tags &#8220;Dash&#8221;</h4>
+<h4 id="remove-paragraph-tags-dash">Remove Paragraph Tags &#8220;Dash&#8221;</h4>
 <p>When used following the letter &#8216;o&#8217;, indicating conversion from Markdown to HTML, a dash (&#8216;-&#8217;) indicates that leading and trailing paragraph tags should be stripped from the output. </p>
-<h4>Day of Week &#8220;EEEE&#8221;</h4>
+<h4 id="day-of-week-eeee">Day of Week &#8220;EEEE&#8221;</h4>
 <p>Represents a full day of week within a date formatting string. </p>
 
-<h3>Formatting String</h3>
+<h3 id="formatting-string">Formatting String</h3>
 <p>A string of characters indicating how the variable is to be formatted. The formatting string, if specified, should follow any other variable modifiers. Any character other than the modifiers listed above will cause the remainder of the variable modifiers to be treated as a formatting string. Currently, a formatting string is valid only for dates &#8211; either for the special variable <strong>today</strong>, or for any variable date in &#8220;mm/dd/yy&#8221; format. </p>
 <p>A date formatting string follows the normal rules for Java date formatting. One or more occurrences of an upper-case &#8220;M&#8221; indicates a month, a lower-case &#8220;y&#8221; is used for a year, and a lower-case &#8220;d&#8221; is used for the day of the month. An upper-case &#8220;E&#8221; can be used for the day of the week. Generally, the number of occurrences of each letter you specify will be used to indicate the width of the field you want (&#8220;yyyy&#8221; for a 4-digit year, for example). Specifying more than two occurrences of &#8220;M&#8221; indicates you want the month represented by letters rather than numbers, with 4 or more occurrences indicating you want the month spelled out, and 3 occurrences indicating you want a three-letter abbreviation. </p>
 <p>See below for full definition of allowable characters and their meanings. </p>
@@ -380,7 +380,7 @@ The Notenik Project
 <p>&lt;?loop?&gt;</p>
 </div>
 
-<h3>delims Command</h3>
+<h3 id="delims-command">delims Command</h3>
 <p>If used at all, this command should be the first command in the template file. This command overrides the standard delimiters used to recognize the beginnings and ends of commands and variables, for the remainder of the current template file. The command can have one to five operands. Each operand will become a new delimiter. They should be specified in the following order. </p>
 <ul>
 <li>beginning of a command (normally paired less than signs) </li>
@@ -390,7 +390,7 @@ The Notenik Project
 <li>the beginning of variable modifiers (normally a single ampersand) </li>
 </ul>
 <p>Note that, in addition to specification of the delims command, the first characters found on the first line of the template file can trigger the Notenik template processor to use an alternate set of delimiters. </p>
-<h3>set Command</h3>
+<h3 id="set-command">set Command</h3>
 <p>This command can define a global variable and set its value. This command would normally have three operands: the name of the global variable, an operator, and a value. </p>
 <ul>
 <li>
@@ -422,12 +422,12 @@ The Notenik Project
 </ul>
 <p>One intended use for the set command is to support a line counter. By initializing the value to 0, and then adding to it whenever an output line is generated, the IF command can be used to check for page overflow (in a table column, for example), and then start a new page or column, resetting the counter to 0 again. </p>
 <p>Another common use for the set command is to preserve record variables in global variables so that they will be available within an ifendgroup block. </p>
-<h3>output Command</h3>
+<h3 id="output-command">output Command</h3>
 <p>This command names and opens the output file, where the results of the template merge will be stored. The single operand is the name of the output file. This command would normally be the first line in your template file. Subsequent template records will be written to the output file. </p>
 <p>Note, however, that the filename can contain a variable name. In this case, the output command would follow the nextrec command, and a new output file would be opened for each row input. </p>
-<h3>nextrec Command</h3>
+<h3 id="nextrec-command">nextrec Command</h3>
 <p>This command indicates the beginning of the code that will be processed/written out once per data row. Lines prior to the nextrec command will only be processed/written out once. </p>
-<h3>definegroup Command</h3>
+<h3 id="definegroup-command">definegroup Command</h3>
 <p>This is the first of five commands that define key fields and then conditionally write output when there is a break on any of those fields. </p>
 <p>Up to ten group break fields can be defined. Each must be assigned a number from 1 to 10. Numbers should be assigned sequentially beginning with 1. </p>
 <p>Input data should normally be sorted by the same fields used in any definegroup commands. </p>
@@ -442,7 +442,7 @@ The Notenik Project
 <p>Variable Name. This is the name of the key field variable. The variable should be surrounded by the normal variable delimiters, so that Notenik will see, not the name of the variable, but its current value. </p>
 </li>
 </ul>
-<h3>ifendgroup Command</h3>
+<h3 id="ifendgroup-command">ifendgroup Command</h3>
 <p>This is the second of the five group commands. </p>
 <p>Lines following this command and preceding the next group or endif command will be written to the output file at the end of a group of records sharing a common value for this key field. </p>
 <p>Ifendgroup commands should follow definegroup commands and precede ifnewgroup commands, and should generally be specified in <em>descending</em> order by group number. </p>
@@ -450,7 +450,7 @@ The Notenik Project
 <ul>
 <li>Group Number. The group number whose group-ending output lines follow. </li>
 </ul>
-<h3>ifendlist Command</h3>
+<h3 id="ifendlist-command">ifendlist Command</h3>
 <p>This is the third of the five group commands. </p>
 <p>Lines following this command and preceding the next group or endif command will be written to the output file at the end of a list of records containing this key field. </p>
 <p>The end of a list will be triggered by a change in key values at the next higher level, or by a record containing blanks at the current group level. </p>
@@ -460,14 +460,14 @@ The Notenik Project
 <li>Group Number. The group number whose list-ending output lines follow. </li>
 </ul>
 <p>Note that references to record variables within an ifendlist block will retrieve the data from the record causing the break (i.e., the first record in the new group), not the last record in the group just ended. Use the set command to save data in global variables if you need to later access it when a list break has been detected. </p>
-<h3>ifnewlist Command</h3>
+<h3 id="ifnewlist-command">ifnewlist Command</h3>
 <p>This is the fourth of the five group commands. </p>
 <p>Lines following this command and preceding the next group or endif command will be written to the output file at the beginning of a new list of records at this group level. </p>
 <p>Ifnewlist commands should follow definegroup, ifendgroup and ifendlist commands, should precede ifnewgroup commands, and should generally be specified in <em>ascending</em> order by group number. The ifnewlist command has one operand. </p>
 <ul>
 <li>Group Number. The group number whose list-beginning output lines follow. </li>
 </ul>
-<h3>ifnewgroup Command</h3>
+<h3 id="ifnewgroup-command">ifnewgroup Command</h3>
 <p>This is the fifth of the five group commands. </p>
 <p>Lines following this command and preceding the next group or endif command will be written to the output file at the beginning of a group of records sharing a common value for this key field. </p>
 <p>Ifnewgroup commands should follow all other group commands, and should generally be specified in <em>ascending</em> order by group number. </p>
@@ -475,7 +475,7 @@ The Notenik Project
 <ul>
 <li>Group Number. The group number whose group-beginning output lines follow. </li>
 </ul>
-<h3>if Command</h3>
+<h3 id="if-command">if Command</h3>
 <p>The if command can be used to test a variable to see if it is non-blank. If the variable is non-blank, then the following lines up to the closing endif command will be subject to normal output processing. If the variable is blank, then following lines will be skipped until the closing endif command is encountered. In this case, the first and only operand would be the variable to be tested. </p>
 <p>The if command can also be used to test a variable to compare it to a constant (or other variable). In this case, the command would have three or more operands: the name of the variable, a logical operator, and one or more values. </p>
 <p>In this second scenario, three operands are provided: the first value (variable or constant), a comparison operator, and the second value (variable or constant). </p>
@@ -495,11 +495,11 @@ The Notenik Project
 <li>!(&gt;) / ![&gt;] / ng / does not end with </li>
 </ol>
 <p>Note that, if both values appear to be integers, then a numeric comparison will be performed for operands 1 - 6. In all other cases, strings will be compared. </p>
-<h3>else Command</h3>
+<h3 id="else-command">else Command</h3>
 <p>The else command terminates the scope of its preceding if, ifchange, ifendgroup or ifnewgroup command, and applies the opposite logical condition to the following template lines. </p>
-<h3>endif Command</h3>
+<h3 id="endif-command">endif Command</h3>
 <p>The endif command terminates the scope of its corresponding if, ifchange, ifendgroup or ifnewgroup command. </p>
-<h3>include Command</h3>
+<h3 id="include-command">include Command</h3>
 <p>This command allows you to include text from another file into the output stream being generated by the template. </p>
 <p>An optional operand of &#8220;copy&#8221; will ensure that the include file is included without conversion; otherwise, if the input and output file extensions are different, and are capable of conversion, the input file will be converted to the output file's format (for example, <a href="https://daringfireball.net/projects/markdown/">Markdown</a> or <a href="https://textile-lang.com">Textile</a> can be converted to html). </p>
 <p>Markdown conversion will be done using the <a href="https://github.com/vsch/flexmark-java">flexmark</a> processor, using the options for typographic conversions (as with SmartyPants), table generation and definition lists. </p>
@@ -510,7 +510,7 @@ The Notenik Project
 <pre>
 <code>	&lt;toc from="h2" thru="h4" />
 </code></pre>
-<h3>loop Command</h3>
+<h3 id="loop-command">loop Command</h3>
 <p>This command indicates the end of the code that will be processed/written out once per data row. Lines after the loop command will be processed/written out once per execution. </p>
 
 
