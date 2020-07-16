@@ -2,14 +2,21 @@ Title:  Ability to customize Display Tab contents
 
 Tags:   display
 
-Status: 0 - Idea
+Status: 9 - Closed
 
 Seq:    20
 
 Date:   8 Jan 2020
 
-Reported By: Jonathan C. 
+Reported By: Jonathan C.
+
+Release: 4.1.0
 
 Issue: 
 
 I'm trying to understand the motivation of the note display always showing the (present or imputed) "Body:" tag at the end of the header? It seems to take up unnecessary space.  Is there are way of customising what metadata is displayed and how?  (It's not jumping out at me from the docs if it is there.)
+
+
+Body: 
+
+Added a check box to the Collection preferences controlling whether an explicit Body field label will be shown on the Display tab. 

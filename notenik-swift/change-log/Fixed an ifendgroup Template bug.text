@@ -1,0 +1,9 @@
+Title:  Fixed an ifendgroup Template bug
+
+Seq:    4.2.0
+
+Date:   01 Jul 2020
+
+Body: 
+
+When processing a merge template, ifendgroup commands were not being properly processed after the last note had been processed. 

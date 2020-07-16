@@ -1,0 +1,9 @@
+Title:  Added Open from iCloud item to the File Menu
+
+Seq:    4.2.0
+
+Date:   27 Jun 2020
+
+Body: 
+
+The File menu now contains a submenu called 'Open from iCloud', allowing the user to open any folder located in the Notenik folder within iCloud drive.  

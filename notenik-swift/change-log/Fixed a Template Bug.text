@@ -1,0 +1,10 @@
+Title:  Fixed a Template Bug
+
+Seq:    4.1.0
+
+Date:   21 Jun 2020
+
+Body: 
+
+The longtext and pick-from values were not being included in the template file when it was rewritten. 
+

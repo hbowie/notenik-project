@@ -1,0 +1,11 @@
+Title:  Added Collection Pref for displaying a Body field label
+
+Seq:    4.1.0
+
+Date:   26 Jun 2020
+
+Body: 
+
+Added a check box to the Collection preferences to control display of an explicit Body field label on the Display tab. 
+
+This closes issue #20. 

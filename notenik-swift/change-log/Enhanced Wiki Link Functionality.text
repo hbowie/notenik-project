@@ -1,0 +1,9 @@
+Title:  Enhanced Wiki Link Functionality
+
+Seq:    4.2.0
+
+Date:   10 Jul 2020
+
+Body: 
+
+For a Collection using Timestamps, Notenik will now maintain an alias list (stored in a file named 'alias.txt') containing all the wiki link text values that have ever been used to point to another Note in the Collection. Each Alias entry will match the linking text to the timestamp for the linked note. If the title for the linked note is ever changed, the alias file will be used to look up the right note, even if the link to the target note has not been updated. (Might have also fixed a bug or two along the way.)
