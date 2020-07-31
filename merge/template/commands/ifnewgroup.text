@@ -1,6 +1,6 @@
 Title:  ifnewgroup
 
-Seq:    9
+Seq:    10
 
 Body: 
 
@@ -14,4 +14,3 @@ The ifnewgroup command has one operand.
 
 
 + Group Number. The group number whose group-beginning output lines follow.
-

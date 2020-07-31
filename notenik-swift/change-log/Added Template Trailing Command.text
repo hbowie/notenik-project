@@ -1,0 +1,9 @@
+Title:  Added Template Trailing Command
+
+Seq:    4.3.0
+
+Date:   30 Jul 2020
+
+Body: 
+
+Added a new `trailing` command to the merge template spec. 

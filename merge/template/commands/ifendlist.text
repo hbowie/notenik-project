@@ -1,6 +1,6 @@
 Title:  ifendlist
 
-Seq:    7
+Seq:    8
 
 Body: 
 
@@ -16,4 +16,4 @@ The ifendlist command has one operand. Note that the ifendlist and ifnewlist com
 
 * Group Number. The group number whose list-ending output lines follow.
 
-Note that references to record variables within an ifendlist block will retrieve the data from the record causing the break (i.e., the first record in the new group), not the last record in the group just ended. Use the set command to save data in global variables if you need to later access it when a list break has been detected. 
+Note that references to record variables within an ifendlist block will retrieve the data from the record causing the break (i.e., the first record in the new group), not the last record in the group just ended. Use the set command to save data in global variables if you need to later access it when a list break has been detected.

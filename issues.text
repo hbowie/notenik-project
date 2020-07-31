@@ -10,7 +10,7 @@ Link:
 
 Body:
 
-#### Status: 0 - Idea
+#### Status: 0 - Idea 
 
 * #27 [Provide a Way to Add a New Custom Field](issues/provide-a-way-to-add-a-new-custom-field.html)
 * #26 [Provide a Way to Rename an Existing Field](issues/provide-a-way-to-rename-an-existing-field.html)
@@ -23,7 +23,7 @@ Body:
 * #6 [Produce Date Sorted Task List in HTML](issues/produce-date-sorted-task-list-in-html.html)
 * #5 [Make HTML Generation Automatic after Updates](issues/make-html-generation-automatic-after-updates.html)
 
-#### Status: 6 - Completed
+#### Status: 6 - Completed 
 
 * #31 [Allow User to Change the Preferred File Extension](issues/allow-user-to-change-the-preferred-file-extension.html)
 * #30 [Improve Collection Preferences Window](issues/improve-collection-preferences-window.html)
@@ -34,7 +34,7 @@ Body:
 * #14 [Make Collection Prefs Scrollable](issues/make-collection-prefs-scrollable.html)
 * #13 [Make Edit View Scrollable](issues/make-edit-view-scrollable.html)
 
-#### Status: 9 - Closed
+#### Status: 9 - Closed 
 
 * #23 [Collection Prefs Changes Not Saved](issues/collection-prefs-changes-not-saved.html)
 * #22 [Odd Font Sizes Not Saved](issues/odd-font-sizes-not-saved.html)
@@ -49,3 +49,4 @@ Body:
 * #3 [Misspelling under Collection Menu](issues/misspelling-under-collection-menu.html)
 * #2 [Notenik website is not sufficiently responsive](issues/notenik-website-is-not-sufficiently-responsive.html)
 * #1 [Notenik Blog has no RSS Feed](issues/notenik-blog-has-no-rss-feed.html)
+

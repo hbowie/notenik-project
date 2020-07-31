@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-<title>The Notenik Blog</title>
-<subtitle>The latest news about the Notenik Project</subtitle>
-<link href="https://notenik.net/atom.xml" type="application/atom+xml" rel="self" />
-<link href="https://notenik.net/" type="text/html" rel="alternate"  />
-<updated>2020-07-10</updated>
-<rights>Copyright © 2020, Herb Bowie</rights>
-<author>
-<name>Herb Bowie</name>
-</author>
-<id>https://hbowie.net/atom.xml</id>
-<entry>
-<title>Recent Updates to Notenik - March, 2020</title>
-<link rel="related" type="text/html" href="https://notenik.net/blog/recent-updates-to-notenik-march-2020.html"/>
-<id>https://notenik.net/blog/recent-updates-to-notenik-march-2020.html</id>
-<published>2020-03-25T09:00:00Z</published>
-<updated>2020-03-25T12:00:00Z</updated>
-<author>
-<name>Herb Bowie</name>
-<uri>https://hbowie.net/</uri>
-</author>
-<summary>
-<p>A summary of notable changes to the Mac App since December, 2019. </p>
+  <title>The Notenik Blog</title>
+  <subtitle>The latest news about the Notenik Project</subtitle>
+  <link href="https://notenik.net/atom.xml" type="application/atom+xml" rel="self" />
+  <link href="https://notenik.net/" type="text/html" rel="alternate"  />
+  <updated>2020-07-30</updated>
+  <rights>Copyright © 2020, Herb Bowie</rights>
+  <author>
+    <name>Herb Bowie</name>
+  </author>
+  <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Recent Updates to Notenik - March, 2020</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/recent-updates-to-notenik-march-2020.html"/>
+	  <id>https://notenik.net/blog/recent-updates-to-notenik-march-2020.html</id>
+	  <published>2020-03-25T09:00:00Z</published>
+	  <updated>2020-03-25T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>A summary of notable changes to the Mac App since December, 2019. </p>
 
-</summary>
-<content type="html">
-<![CDATA[
-<p>There have been a few version releases since I last wrote about recent changes in the <a href="https://notenik.net/blog.html">blog</a> back in December, so let me hit on some of the more significant recent developments. </p>
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>There have been a few version releases since I last wrote about recent changes in the <a href="https://notenik.net/blog.html">blog</a> back in December, so let me hit on some of the more significant recent developments. </p>
 <ul>
 <li>The most recent release, 3.2.0, added a new internal Markdown parser as a third alternative, in addition to <a href="https://github.com/iwasrobbed/Down">Down</a> and <a href="https://github.com/JohnSundell/Ink">Ink</a>. It&apos;s probably not quite perfect, but I tried to stick as close as possible to John Gruber&apos;s documentation of the functionality intended for both <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> and <a href="https://daringfireball.net/projects/smartypants/">SmartyPants</a>, and it seems to be working pretty well for me. The main improvement here is better handling of wiki-style inter-note links. These are now only available when using the internal parser, but no longer require you to specifically request this feature: it&apos;s just built in to the new parser. See the Application Preferences to select the new parser. </li>
 <li>Added the ability to mirror a Collection of Notes to an alternate format &#8211; most usefully, HTML. This new ability makes it super easy to generate a simple website that anyone can access with a Web browser. Once you set this up, the HTML mirror copies are automatically kept up-to-date for you in the background, as you go about working on the text files within Notenik. See the new Transform menu for commands to help you set this up. </li>
@@ -39,26 +39,26 @@
 </ul>
 <p>As usual, see the Notenik <a href="https://notenik.net/swift.html#version-history">Version History</a> and the relevant sections of the <a href="https://notenik.net/swift.html">User Guide</a> for further details.  And drop me a line at &lt;support@notenik.net&gt; if any problems or questions. </p>
 
-]]>
-</content>
-</entry>
-<entry>
-<title>Using Notenik with Existing Text Files</title>
-<link rel="related" type="text/html" href="https://notenik.net/blog/using-notenik-with-existing-text-files.html"/>
-<id>https://notenik.net/blog/using-notenik-with-existing-text-files.html</id>
-<published>2020-01-29T09:00:00Z</published>
-<updated>2020-01-29T12:00:00Z</updated>
-<author>
-<name>Herb Bowie</name>
-<uri>https://hbowie.net/</uri>
-</author>
-<summary>
-<p>Since Notenik is rather late to the game of managing text files, and since those already using similar sorts of files are probably among those interested in my app, I wanted to talk a bit about how the latest version of Notenik can be used with existing folders full of text files. </p>
+	  	]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Using Notenik with Existing Text Files</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/using-notenik-with-existing-text-files.html"/>
+	  <id>https://notenik.net/blog/using-notenik-with-existing-text-files.html</id>
+	  <published>2020-01-29T09:00:00Z</published>
+	  <updated>2020-01-29T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>Since Notenik is rather late to the game of managing text files, and since those already using similar sorts of files are probably among those interested in my app, I wanted to talk a bit about how the latest version of Notenik can be used with existing folders full of text files. </p>
 
-</summary>
-<content type="html">
-<![CDATA[
-<p>As I&apos;ve noted in another recent blog post, <a href="https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html">Notenik uses its own unique file format</a>. However, since Notenik is rather late to the game of managing text files, and since those already using similar sorts of files are probably among those interested in my app, I wanted to talk a bit about how the latest version of Notenik can be used with existing folders full of text files. The information provided below includes a number of updates made starting with version 2.6.0 and continuing through 2.9.0. </p>
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>As I&apos;ve noted in another recent blog post, <a href="https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html">Notenik uses its own unique file format</a>. However, since Notenik is rather late to the game of managing text files, and since those already using similar sorts of files are probably among those interested in my app, I wanted to talk a bit about how the latest version of Notenik can be used with existing folders full of text files. The information provided below includes a number of updates made starting with version 2.6.0 and continuing through 2.9.0. </p>
 <p>First, philosophically, Notenik tries to follow <a href="https://en.wikipedia.org/wiki/Robustness_principle">Postel&apos;s Law</a>: </p>
 <p>&gt; Be conservative in what you do, be liberal in what you accept from others. </p>
 <p>Unfortunately, it is not possible for Notenik to be endlessly liberal in this regard, and there are certainly loosely formatted text files that may not be interpreted by Notenik according to the author&apos;s wishes. </p>
@@ -85,26 +85,26 @@
 <h3 id="feedback">Feedback</h3>
 <p>If you run into any problems with any of this, or have any suggestions for further improvements, please feel free to email me at <a href="mailto:support@notenik.net">support at notenik.net</a> and I&apos;ll see what I can do to help. </p>
 
-]]>
-</content>
-</entry>
-<entry>
-<title>The Thinking Behind the Notenik File Format</title>
-<link rel="related" type="text/html" href="https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html"/>
-<id>https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html</id>
-<published>2020-01-10T09:00:00Z</published>
-<updated>2020-01-10T12:00:00Z</updated>
-<author>
-<name>Herb Bowie</name>
-<uri>https://hbowie.net/</uri>
-</author>
-<summary>
-<p>People have been storing notes in text files long before Notenik came along. So why is the Notenik format different? </p>
+	  	]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>The Thinking Behind the Notenik File Format</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html"/>
+	  <id>https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html</id>
+	  <published>2020-01-10T09:00:00Z</published>
+	  <updated>2020-01-10T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>People have been storing notes in text files long before Notenik came along. So why is the Notenik format different? </p>
 
-</summary>
-<content type="html">
-<![CDATA[
-<p>People have been storing notes in text files long before Notenik came along. </p>
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>People have been storing notes in text files long before Notenik came along. </p>
 <p>At their most basic, such a note might consist simply of a chunk of text, with the file name serving as the note&apos;s title. </p>
 <p>A slightly more sophisticated approach would be to use <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> to format a note, with a level 1 heading at the top of the file supplying a title for the note. </p>
 <p>The use of <a href="https://fletcher.github.io/MultiMarkdown-4/metadata.html">MultiMarkdown metadata</a> adds even more possibilities, allowing multiple keys and associated values to be specified at the top of a file. </p>
@@ -141,27 +141,27 @@
 <p>So there you have it: a Notenik Note sits somewhere between a Markdown doc with metadata and a full-fledged  object with any number of complex fields. Which makes it simple enough to be read and written by ordinary humans using any text editor, and yet flexible enough to help such users keep track of any number of useful, everyday objects. </p>
 <p>Which was exactly my intent when concocting this format. </p>
 
-]]>
-</content>
-</entry>
-<entry>
-<title>Notenik for the Mac Versions 2.5.0 and 2.6.0 Released</title>
-<link rel="alternate" type="text/html" href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12"/>
-<link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-versions-2.5.0-and-2.6.0-released.html"/>
-<id>https://notenik.net/blog/notenik-for-the-mac-versions-2.5.0-and-2.6.0-released.html</id>
-<published>2020-01-08T09:00:00Z</published>
-<updated>2020-01-08T12:00:00Z</updated>
-<author>
-<name>Herb Bowie</name>
-<uri>https://hbowie.net/</uri>
-</author>
-<summary>
-<p>Version 2.6.0 was focused on strengthening support for opening folders full of existing text files and handling them smoothly as Notenik Collections. </p>
+	  	]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik for the Mac Versions 2.5.0 and 2.6.0 Released</title>
+		<link rel="alternate" type="text/html" href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12"/>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-versions-2.5.0-and-2.6.0-released.html"/>
+	  <id>https://notenik.net/blog/notenik-for-the-mac-versions-2.5.0-and-2.6.0-released.html</id>
+	  <published>2020-01-08T09:00:00Z</published>
+	  <updated>2020-01-08T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>Version 2.6.0 was focused on strengthening support for opening folders full of existing text files and handling them smoothly as Notenik Collections. </p>
 
-</summary>
-<content type="html">
-<![CDATA[
-<p>Version 2.6.0 was focused on strengthening support for opening folders full of existing text files and handling them smoothly as Notenik Collections. </p>
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>Version 2.6.0 was focused on strengthening support for opening folders full of existing text files and handling them smoothly as Notenik Collections. </p>
 <p>This is especially important since Notenik introduces some important variations from any existing text file formats &#8211; notably the use of an explicit Body label preceding the main part of the note &#8211; and so users with existing collections of text-based notes are not likely to have formatted them to Notenik&apos;s standards, and are probably not interested in reformatting all of their Notes in order to allow Notenik to handle them sensibly. </p>
 <p>Notenik now makes its best effort to recognize and appropriately handle the following variations on the normal Notenik format. </p>
 <ol>
@@ -183,26 +183,26 @@
 <p>JSON export and sharing options were also added. </p>
 <p>And, last but not least, a few additional bugs were corrected. </p>
 
-]]>
-</content>
-</entry>
-<entry>
-<title>Notenik Project # 3: Create a To Do List</title>
-<link rel="related" type="text/html" href="https://notenik.net/blog/notenik-project-3-create-a-to-do-list.html"/>
-<id>https://notenik.net/blog/notenik-project-3-create-a-to-do-list.html</id>
-<published>2019-12-20T09:00:00Z</published>
-<updated>2019-12-20T12:00:00Z</updated>
-<author>
-<name>Herb Bowie</name>
-<uri>https://hbowie.net/</uri>
-</author>
-<summary>
-<p>This post is the third in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use this Mac app to create a To Do list. </p>
+	  	]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik Project # 3: Create a To Do List</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-project-3-create-a-to-do-list.html"/>
+	  <id>https://notenik.net/blog/notenik-project-3-create-a-to-do-list.html</id>
+	  <published>2019-12-20T09:00:00Z</published>
+	  <updated>2019-12-20T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>This post is the third in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use this Mac app to create a To Do list. </p>
 
-</summary>
-<content type="html">
-<![CDATA[
-<p>This post is the third in a series designed to gradually explain the use of the Mac App <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik</a> for increasingly complicated and sophisticated tasks. </p>
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>This post is the third in a series designed to gradually explain the use of the Mac App <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik</a> for increasingly complicated and sophisticated tasks. </p>
 <p>Before proceeding, you might want to review some of the basics covered in earlier projects, if these aren&apos;t already fresh in your mind: </p>
 <ol>
 <li><a href="https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html">Create a Simple Collection of Notes</a> </li>
@@ -241,49 +241,49 @@
 <h3 id="wrapping-up">Wrapping Up</h3>
 <p>And that&apos;s it for Project # 3! As always, feel free to send any questions or comments to <a href="mailto:hbowie@notenik.net">hbowie@notenik.net</a>. Looking forward to hearing from you! </p>
 
-]]>
-</content>
-</entry>
-<entry>
-<title>Notenik for the Mac Version 2.4.0 Released</title>
-<link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.4.0-released.html"/>
-<id>https://notenik.net/blog/notenik-for-the-mac-version-2.4.0-released.html</id>
-<published>2019-12-13T09:00:00Z</published>
-<updated>2019-12-13T12:00:00Z</updated>
-<author>
-<name>Herb Bowie</name>
-<uri>https://hbowie.net/</uri>
-</author>
-<summary>
-<p>Most of the changes for this release were focused on providing the capability for wiki-like inter-note linking. </p>
+	  	]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik for the Mac Version 2.4.0 Released</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.4.0-released.html"/>
+	  <id>https://notenik.net/blog/notenik-for-the-mac-version-2.4.0-released.html</id>
+	  <published>2019-12-13T09:00:00Z</published>
+	  <updated>2019-12-13T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>Most of the changes for this release were focused on providing the capability for wiki-like inter-note linking. </p>
 
-</summary>
-<content type="html">
-<![CDATA[
-<p>Most of the changes for this release were focused on providing the capability for wiki-like inter-note linking. In order for this to work, you first have to check the Collection Preferences box titled &quot;Double Bracket Parsing for Inter-Note Links&quot;. Then, within the body of any of your notes, you can include a link to another Note in the same Collection by enclosing the Title of the target note within double square brackets. Then, when you click on the resulting link on the Display tab, you will be taken to the Note you have linked to. Click on the back arrow in the Toolbar to be taken back to the linking Note. </p>
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>Most of the changes for this release were focused on providing the capability for wiki-like inter-note linking. In order for this to work, you first have to check the Collection Preferences box titled &quot;Double Bracket Parsing for Inter-Note Links&quot;. Then, within the body of any of your notes, you can include a link to another Note in the same Collection by enclosing the Title of the target note within double square brackets. Then, when you click on the resulting link on the Display tab, you will be taken to the Note you have linked to. Click on the back arrow in the Toolbar to be taken back to the linking Note. </p>
 <p>A new variable modifier of &apos;W&apos; was also added to the Template processing logic, which will enable the user to convert the inter-note links to appropriate anchor tags when generating HTML. </p>
 <p>One additional, unrelated change was made to reset the user&apos;s preferences on the first launch after a prior crash on launch. </p>
 
-]]>
-</content>
-</entry>
-<entry>
-<title>Notenik for the Mac Version 2.3.0 Released</title>
-<link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.3.0-released.html"/>
-<id>https://notenik.net/blog/notenik-for-the-mac-version-2.3.0-released.html</id>
-<published>2019-12-10T09:00:00Z</published>
-<updated>2019-12-10T12:00:00Z</updated>
-<author>
-<name>Herb Bowie</name>
-<uri>https://hbowie.net/</uri>
-</author>
-<summary>
-<p>Fixed treatment of the Teaser field, to treat it as a long text field; increased tolerance for Notes with alternative formatting; added Ink as an alternate for parsing of Markdown; added an optional Timestamp field, as a first step to enabling use of Notenik to create a Zettelkasten. </p>
+	  	]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik for the Mac Version 2.3.0 Released</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.3.0-released.html"/>
+	  <id>https://notenik.net/blog/notenik-for-the-mac-version-2.3.0-released.html</id>
+	  <published>2019-12-10T09:00:00Z</published>
+	  <updated>2019-12-10T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>Fixed treatment of the Teaser field, to treat it as a long text field; increased tolerance for Notes with alternative formatting; added Ink as an alternate for parsing of Markdown; added an optional Timestamp field, as a first step to enabling use of Notenik to create a Zettelkasten. </p>
 
-</summary>
-<content type="html">
-<![CDATA[
-<p>A few more fixes and improvements… </p>
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>A few more fixes and improvements… </p>
 <ul>
 <li>
 <p>Modified treatment of the Teaser field to treat it as a long text field. </p>
@@ -299,26 +299,26 @@
 </li>
 </ul>
 
-]]>
-</content>
-</entry>
-<entry>
-<title>Notenik for the Mac Version 2.2.0 Released</title>
-<link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html"/>
-<id>https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html</id>
-<published>2019-12-03T09:00:00Z</published>
-<updated>2019-12-03T12:00:00Z</updated>
-<author>
-<name>Herb Bowie</name>
-<uri>https://hbowie.net/</uri>
-</author>
-<summary>
-<p>Added Cut, Copy and Paste support for Notes; added support for British spelling of &apos;Favorites&apos;; relocated Reload Collection command to the Collection menu to make it easier to find; suppressed empty tags from the Favorites to HTML export. </p>
+	  	]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik for the Mac Version 2.2.0 Released</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html"/>
+	  <id>https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html</id>
+	  <published>2019-12-03T09:00:00Z</published>
+	  <updated>2019-12-03T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>Added Cut, Copy and Paste support for Notes; added support for British spelling of &apos;Favorites&apos;; relocated Reload Collection command to the Collection menu to make it easier to find; suppressed empty tags from the Favorites to HTML export. </p>
 
-</summary>
-<content type="html">
-<![CDATA[
-<p>This is another release containing a few incremental improvements. </p>
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>This is another release containing a few incremental improvements. </p>
 <ul>
 <li>
 <p>Added Cut, Copy and Paste support for Notes. Select a Note within a Collection and then use the Cut or Copy commands. You can then Paste the Note into another Collection, or into an Email message, or anywhere that accepts a block of text. </p>
@@ -334,26 +334,26 @@
 </li>
 </ul>
 
-]]>
-</content>
-</entry>
-<entry>
-<title>Notenik Project # 2: Create a Collection of Bookmarks</title>
-<link rel="related" type="text/html" href="https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html"/>
-<id>https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html</id>
-<published>2019-11-25T09:00:00Z</published>
-<updated>2019-11-25T12:00:00Z</updated>
-<author>
-<name>Herb Bowie</name>
-<uri>https://hbowie.net/</uri>
-</author>
-<summary>
-<p>This post is the second in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use this Mac app to create a Collection of Bookmarks that you can access from any of your web browsers. </p>
+	  	]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik Project # 2: Create a Collection of Bookmarks</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html"/>
+	  <id>https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html</id>
+	  <published>2019-11-25T09:00:00Z</published>
+	  <updated>2019-11-25T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>This post is the second in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use this Mac app to create a Collection of Bookmarks that you can access from any of your web browsers. </p>
 
-</summary>
-<content type="html">
-<![CDATA[
-<p>This post is the second in a series designed to gradually explain the use of the Mac App <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik</a> for increasingly complex and sophisticated tasks. </p>
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>This post is the second in a series designed to gradually explain the use of the Mac App <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik</a> for increasingly complex and sophisticated tasks. </p>
 <p>Before proceeding, you might want to review some of the basics covered in <a href="https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html">Project # 1</a>, if these aren&apos;t already fresh in your mind. </p>
 <p>You will need at least Notenik version 2.1.0 to perform all the functions described in this piece. </p>
 <h3 id="motivation">Motivation</h3>
@@ -391,26 +391,26 @@
 <h3 id="wrapping-up">Wrapping Up</h3>
 <p>And that&apos;s it for Project # 2! As always, feel free to send any questions or comments to <a href="mailto:hbowie@notenik.net">hbowie@notenik.net</a>. Looking forward to hearing from you!  </p>
 
-]]>
-</content>
-</entry>
-<entry>
-<title>Notenik Project # 1: Create a Simple Collection of Notes</title>
-<link rel="related" type="text/html" href="https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html"/>
-<id>https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html</id>
-<published>2019-11-14T09:00:00Z</published>
-<updated>2019-11-14T12:00:00Z</updated>
-<author>
-<name>Herb Bowie</name>
-<uri>https://hbowie.net/</uri>
-</author>
-<summary>
-<p>This post is the first in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use Notenik just to create a basic Collection of Notes about anything that might interest you. </p>
+	  	]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik Project # 1: Create a Simple Collection of Notes</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html"/>
+	  <id>https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html</id>
+	  <published>2019-11-14T09:00:00Z</published>
+	  <updated>2019-11-14T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>This post is the first in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use Notenik just to create a basic Collection of Notes about anything that might interest you. </p>
 
-</summary>
-<content type="html">
-<![CDATA[
-<p><a href="https://notenik.net">Notenik</a> is a free and open-source Mac application that you can use to track and publish all sorts of notes on any topic. </p>
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p><a href="https://notenik.net">Notenik</a> is a free and open-source Mac application that you can use to track and publish all sorts of notes on any topic. </p>
 <p>This post is the first in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. </p>
 <p>See the <a href="https://notenik.net/swift.html">Notenik User Guide</a> for complete descriptions of all of Notenik&apos;s many features. </p>
 <p>Today we&apos;re going to use Notenik just to create a basic Collection of Notes about anything that might interest you. </p>
@@ -467,7 +467,7 @@
 <p>Hopefully you can find some uses for this most basic Notenik function. </p>
 <p>In later projects we will move on to more sophisticated uses. </p>
 
-]]>
-</content>
-</entry>
+	  	]]>
+	  </content>
+	</entry>
 </feed>

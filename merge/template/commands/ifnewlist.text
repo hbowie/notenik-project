@@ -1,6 +1,6 @@
 Title:  ifnewlist
 
-Seq:    8
+Seq:    9
 
 Body: 
 
@@ -11,4 +11,3 @@ Lines following this command and preceding the next group or endif command will 
 Ifnewlist commands should follow definegroup, ifendgroup and ifendlist commands, should precede ifnewgroup commands, and should generally be specified in *ascending* order by group number. The ifnewlist command has one operand.
 
 + Group Number. The group number whose list-beginning output lines follow.
-

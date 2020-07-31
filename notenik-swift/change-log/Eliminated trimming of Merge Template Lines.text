@@ -1,0 +1,9 @@
+Title:  Eliminated trimming of Merge Template Lines
+
+Seq:    4.3.0
+
+Date:   27 Jul 2020
+
+Body: 
+
+Merge template lines were being trimmed -- that is, leading and trailing spaces and tabs were being removed. That should no longer be occurring. 

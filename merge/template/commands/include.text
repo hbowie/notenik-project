@@ -1,6 +1,6 @@
 Title:  include
 
-Seq:    13
+Seq:    14
 
 Body: 
 
@@ -22,4 +22,3 @@ The filename may include variables, allowing you to tailor the included content 
 For any conversion resulting in HTML, a pseudo-tag of &lt;toc&gt; can be used to generate a table of contents based on following heading tags. An optional attribute of "from" can be used to specify the beginning of a range of heading levels to be included; an optional attribute of "through" or "thru" can be used to specify the end of a range of heading levels to be included. See the following example.
 
 		<toc from="h2" thru="h4" />
-

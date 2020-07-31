@@ -6,7 +6,24 @@ Level: 3
 
 Tags:   changes, versions, history, log
 
-Body:
+Body:   
+ 
+### Version 4.3.0 | 30 Jul 2020
+
+#### 1. Added Template Trailing Command
+
+Added a new `trailing` command to the merge template spec. 
+
+
+#### 2. Fixed an End-of-Group bug
+
+A bug in processing the end of a group was preventing the major (or only) end-of-group processing from happening at the end of the input data file. 
+
+
+#### 3. Eliminated trimming of Merge Template Lines
+
+Merge template lines were being trimmed -- that is, leading and trailing spaces and tabs were being removed. That should no longer be occurring. 
+
 
 ### Version 4.2.0 | 10 Jul 2020
 
