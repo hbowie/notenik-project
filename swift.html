@@ -266,7 +266,8 @@
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
 <a name="search-for-one-or-more-notes-containing-specified-text"><h3>3.5 Search for One or More Notes Containing Specified Text</h3></a>
 
-<p>The Search field on the Toolbar allows you to search for the entered text, and display the first Note containing this text in any field being searched. After finding the first occurrence, you may use the Find Again command under the Note menu to search for the next Note containing the specified text.  The Search function will search each Note's Title, Link, Tags and Body fields for matching text. Case (upper- or lower-) will be ignored for the purposes of the Search.</p>
+<p>The Search field on the Toolbar allows you to search for the entered text, and display the first Note containing this text in any field being searched. After finding the first occurrence, you may use the Find Again command under the Note menu to search for the next Note containing the specified text. </p>
+<p>The Search function will search each Note's Title, Link, Tags and Body fields for matching text. The Author field will also be searched, if present. Case (upper- or lower-) will be ignored for the purposes of the Search. </p>
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
@@ -627,6 +628,7 @@
 <p>The Note template file is formatted using the normal Notenik format, although the Field Labels specified need not have any accompanying values. </p>
 <p>The file extension used for the template file will be used as the file extension for Notes subsequently created within the Collection. </p>
 <p>By specifying the value <code>&lt;longtext&gt;</code> as the value for a field in a template file, the user can indicate that a field is to be treated as a long text field, rather than a one-line text field. A longtext field will provide the user with multiple lines for data entry on the Edit tab, and will honor Markdown syntax when formatting for display on the Display tab. </p>
+<p>Supplying a value of <code>&lt;bool&gt;</code> or <code>&lt;boolean&gt;</code> for a field in a Collection's template file will produce a field that can have a value of <code>true</code> or <code>false</code>, and that will be represented on the Edit tab as a checkbox. </p>
 <p>It's also possible to specify a series of possible values for a field, if you would like to have a list to pick from when filling in a custom field. Here's an example of how you would do this. </p>
 <pre>
 <code>Type: pick-from: static, post
@@ -1009,12 +1011,16 @@
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
 <a name="version-history"><h3>8.1 Version History</h3></a>
 
-<h3 id="version-4.3.0-30-jul-2020">Version 4.3.0 | 30 Jul 2020</h3>
-<h4 id="added-template-trailing-command">1. Added Template Trailing Command</h4>
+<h3 id="version-4.3.0-02-aug-2020">Version 4.3.0 | 02 Aug 2020</h3>
+<h4 id="added-the-ability-to-specify-a-boolean-field">1. Added the Ability to Specify a Boolean Field</h4>
+<p>Supplying a value of <code>&lt;bool&gt;</code> or <code>&lt;boolean&gt;</code> for a field in a Collection's template file will produce a field that can have a value of <code>true</code> or <code>false</code>, and that will be represented on the Edit tab as a checkbox. </p>
+<h4 id="included-the-author-field-in-the-search-function">2. Included the Author Field in the Search function</h4>
+<p>The Author field, if present, will now be included in the fields being searched. </p>
+<h4 id="added-template-trailing-command">3. Added Template Trailing Command</h4>
 <p>Added a new <code>trailing</code> command to the merge template spec. </p>
-<h4 id="fixed-an-end-of-group-bug">2. Fixed an End-of-Group bug</h4>
+<h4 id="fixed-an-end-of-group-bug">4. Fixed an End-of-Group bug</h4>
 <p>A bug in processing the end of a group was preventing the major (or only) end-of-group processing from happening at the end of the input data file. </p>
-<h4 id="eliminated-trimming-of-merge-template-lines">3. Eliminated trimming of Merge Template Lines</h4>
+<h4 id="eliminated-trimming-of-merge-template-lines">5. Eliminated trimming of Merge Template Lines</h4>
 <p>Merge template lines were being trimmed &#8211; that is, leading and trailing spaces and tabs were being removed. That should no longer be occurring. </p>
 <h3 id="version-4.2.0-10-jul-2020">Version 4.2.0 | 10 Jul 2020</h3>
 <h4 id="enhanced-wiki-link-functionality">1. Enhanced Wiki Link Functionality</h4>

@@ -1,0 +1,9 @@
+Title:  Included the Author Field in the Search function
+
+Seq:    4.3.0
+
+Date:   31 Jul 2020
+
+Body: 
+
+The Author field, if present, will now be included in the fields being searched. 

@@ -1,0 +1,9 @@
+Title:  Added the Ability to Specify a Boolean Field
+
+Seq:    4.3.0
+
+Date:   02 Aug 2020
+
+Body: 
+
+Supplying a value of `<bool>` or `<boolean>` for a field in a Collection's template file will produce a field that can have a value of `true` or `false`, and that will be represented on the Edit tab as a checkbox. 
