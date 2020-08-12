@@ -1,0 +1,9 @@
+Title:  Added Ability to Increment Major Portion of Seq Field
+
+Seq:    4.4.0
+
+Date:   06 Aug 2020
+
+Body: 
+
+The Note menu has a new command, with its own keyboard shortcut, allowing a two-part Seq field (i.e., 1.00) to be incremented on the left, rather than on the right. In other words, the major portion of the Seq number is incremented, rather than the minor portion.
