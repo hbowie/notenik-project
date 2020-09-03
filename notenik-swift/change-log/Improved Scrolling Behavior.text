@@ -1,0 +1,9 @@
+Title:  Improved Scrolling Behavior
+
+Seq:    4.5.0
+
+Date:   19 Aug 2020
+
+Body: 
+
+List view now scrolls to a selected note after a Find command. 

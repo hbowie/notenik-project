@@ -1,0 +1,19 @@
+Title:  Avoid Offering an internal Notenik App resource folder as possible parent
+
+Status: 6 - Completed
+
+Seq:    32
+
+Date:   01 Sep 2020
+
+Reported By: John M. 
+
+Release: 4.5.0
+
+Issue: 
+
+After last opening the Help Notes folder, Notenik would then offer the internal resource folder holding the Help Notes as a suggested parent for a new Collection. 
+
+Body: 
+
+Fixed to ignore the Help Notes folder when considering a possible parent folder to offer as the home for a new collection. 

@@ -1,0 +1,9 @@
+Title:  Ignore Internal Resources folder when offering parent folder for new collection
+
+Seq:    4.5.0
+
+Date:   01 Sep 2020
+
+Body: 
+
+Notenik was previously offering the parent folder for the app's Help Notes as the possible parent for a new collection to be created by the user. This has been fixed, closing Issue # 32.

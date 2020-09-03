@@ -1,0 +1,11 @@
+Title:  Saving Divider Position
+
+Seq:    4.5.0
+
+Date:   01 Sep 2020
+
+Body: 
+
+The last position of the divider between the list view and the note view is now being saved between executions. 
+
+This closes Issue # 21. 

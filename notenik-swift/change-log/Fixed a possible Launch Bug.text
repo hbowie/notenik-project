@@ -1,0 +1,9 @@
+Title:  Fixed a possible Launch Bug
+
+Seq:    4.4.0
+
+Date:   17 Aug 2020
+
+Body: 
+
+Made a code change that might have been causing a crash during the application launch. 

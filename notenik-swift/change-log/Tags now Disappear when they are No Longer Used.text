@@ -1,0 +1,11 @@
+Title:  Tags now Disappear when they are No Longer Used
+
+Seq:    4.5.0
+
+Date:   01 Sep 2020
+
+Body: 
+
+When the last Note referencing a Tag is deleted, the tag now disappears from the Tags view. 
+
+This closes issue # 33. 
