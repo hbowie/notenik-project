@@ -1,0 +1,10 @@
+Title:  Added a Navigation Board
+
+Seq:    4.6.0
+
+Date:   11 Sep 2020
+
+Body: 
+
+The Navigation Board can be summoned via the File menu. It will also appear if the user closes the last open Collection (thus providing a resolution for Issue # 19). The Nav Board shows all easily accessible Collections in an outline, and also offers a series of buttons allowing the user to perform other actions with selected Collections. 
+
