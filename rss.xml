@@ -5,6 +5,15 @@
     <description>The Notenik Blog</description>
     <language>en</language>
 	<item>
+	  <title>Additional Updates to Notenik - November 4, 2020</title>
+	  <link>https://notenik.net/blog/additional-updates-to-notenik-november-4-2020.html</link>
+	  <guid>https://notenik.net/blog/additional-updates-to-notenik-november-4-2020.html</guid>
+	  <pubdate>Wed, 04 Nov 2020 12:00:00 -0700</pubdate>
+	  <description>
+	  	I&apos;ve made a bunch of Notenik improvements since my last blog post, and I attempt to summarize them here. 
+	  </description>
+	</item>
+	<item>
 	  <title>Recent Updates to Notenik - March, 2020</title>
 	  <link>https://notenik.net/blog/recent-updates-to-notenik-march-2020.html</link>
 	  <guid>https://notenik.net/blog/recent-updates-to-notenik-march-2020.html</guid>
@@ -83,15 +92,6 @@
 	  <pubdate>Mon, 25 Nov 2019 12:00:00 -0700</pubdate>
 	  <description>
 	  	This post is the second in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use this Mac app to create a Collection of Bookmarks that you can access from any of your web browsers. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik Project # 1: Create a Simple Collection of Notes</title>
-	  <link>https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html</link>
-	  <guid>https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html</guid>
-	  <pubdate>Thu, 14 Nov 2019 12:00:00 -0700</pubdate>
-	  <description>
-	  	This post is the first in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use Notenik just to create a basic Collection of Notes about anything that might interest you. 
 	  </description>
 	</item>
   </channel>
