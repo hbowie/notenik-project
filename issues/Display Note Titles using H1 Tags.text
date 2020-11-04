@@ -1,0 +1,18 @@
+Title:  Display Note Titles using H1 Tags
+
+Status: 6 - Completed
+
+Seq:    35
+
+Date:   01 Nov 2020
+
+Reported By: I. Hasaan
+
+Issue: 
+
+Have you considered displaying note titles in `<h1>` tags? This would help in keeping a cohesive appearance when viewing Markdown documents.
+
+
+Body: 
+
+Implemented as an option in the Collection prefs in 4.6.0.
