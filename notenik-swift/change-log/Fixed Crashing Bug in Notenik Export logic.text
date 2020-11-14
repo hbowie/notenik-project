@@ -1,0 +1,10 @@
+Title:  Fixed Crashing Bug in Notenik Export logic
+
+Seq:    4.7.0
+
+Date:   04 Nov 2020
+
+Body: 
+
+The Notenik export routine was consistently crashing. This has been corrected. 
+

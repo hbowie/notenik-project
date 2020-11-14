@@ -1,0 +1,9 @@
+Title:  Launch at Startup tag enabled
+
+Seq:    4.8.0
+
+Date:   09 Nov 2020
+
+Body: 
+
+Adding a 'Launch at Startup' tag to a Note will now cause the Note's link to be launched when Notenik starts up. 

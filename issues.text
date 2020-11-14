@@ -12,21 +12,20 @@ Body:
 
 #### Status: 0 - Idea 
 
-* #39 [Option to hide the sidebar](issues/option-to-hide-the-sidebar.html)
-* #38 [Expanded Display support for additional fonts](issues/expanded-display-support-for-additional-fonts.html)
-* #37 [Multimarkdown syntax support for citations](issues/multimarkdown-syntax-support-for-citations.html)
 * #34 [Provide Additional Help for Website Generation](issues/provide-additional-help-for-website-generation.html)
 * #27 [Provide a Way to Add a New Custom Field](issues/provide-a-way-to-add-a-new-custom-field.html)
 * #26 [Provide a Way to Rename an Existing Field](issues/provide-a-way-to-rename-an-existing-field.html)
 * #18 [Callback URL](issues/callback-url.html)
 * #17 [iOS Version](issues/ios-version.html)
 * #15 [Allow PanDoc execution to create PDFs](issues/allow-pandoc-execution-to-create-pdfs.html)
-* #9 [Allow User to See Multiple Collections in Tabs instead of Windows](issues/allow-user-to-see-multiple-collections-in-tabs-instead-of-windows.html)
 * #6 [Produce Date Sorted Task List in HTML](issues/produce-date-sorted-task-list-in-html.html)
 * #5 [Make HTML Generation Automatic after Updates](issues/make-html-generation-automatic-after-updates.html)
 
 #### Status: 6 - Completed 
 
+* #39 [Option to hide the sidebar](issues/option-to-hide-the-sidebar.html)
+* #38 [Expanded Display support for additional fonts](issues/expanded-display-support-for-additional-fonts.html)
+* #37 [Multimarkdown syntax support for citations](issues/multimarkdown-syntax-support-for-citations.html)
 * #36 [Multimarkdown syntax support for footnotes](issues/multimarkdown-syntax-support-for-footnotes.html)
 * #35 [Display Note Titles using H1 Tags](issues/display-note-titles-using-h1-tags.html)
 * #33 [Tags persist after the Notes using them have been deleted](issues/tags-persist-after-the-notes-using-them-have-been-deleted.html)
@@ -41,6 +40,7 @@ Body:
 * #19 [Keep App Open After Last Window Closes](issues/keep-app-open-after-last-window-closes.html)
 * #14 [Make Collection Prefs Scrollable](issues/make-collection-prefs-scrollable.html)
 * #13 [Make Edit View Scrollable](issues/make-edit-view-scrollable.html)
+* #9 [Allow User to See Multiple Collections in Tabs instead of Windows](issues/allow-user-to-see-multiple-collections-in-tabs-instead-of-windows.html)
 
 #### Status: 9 - Closed 
 

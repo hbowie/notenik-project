@@ -1,6 +1,6 @@
 Title:  Option to hide the sidebar
 
-Status: 0 - Idea
+Status: 6 - Completed
 
 Seq:    39
 
@@ -11,3 +11,8 @@ Reported By: I. Hasaan
 Issue: 
 
 Is the ability to to hide the sidebar (notes list) a possibility in the future?
+
+
+Body: 
+
+This should be resoved with the 4.8.0 release. 

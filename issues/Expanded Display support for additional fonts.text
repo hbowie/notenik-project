@@ -1,6 +1,6 @@
 Title:  Expanded Display support for additional fonts
 
-Status: 0 - Idea
+Status: 6 - Completed
 
 Seq:    38
 
@@ -11,3 +11,8 @@ Reported By: I. Hasaan
 Issue: 
 
 Is there a chance that we'd be able to choose different fonts for Display mode any time soon?
+
+
+Body: 
+
+This should be satisfied with the 4.8.0 release. 

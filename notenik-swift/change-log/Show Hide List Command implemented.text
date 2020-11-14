@@ -1,0 +1,12 @@
+Title:  Show/Hide List Command implemented
+
+Seq:    4.8.0
+
+Date:   11 Nov 2020
+
+Body: 
+
+This allows the left side of the window, containing the Note list, to be collapsed and restored. 
+
+This should resolve Issue # 39. 
+
