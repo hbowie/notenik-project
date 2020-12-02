@@ -1,0 +1,9 @@
+Title:  Added New Command to Move a Collection
+
+Seq:    4.9.0
+
+Date:   29 Nov 2020
+
+Body: 
+
+The Move command can be found beneath the File menu. This command will copy an existing Collection to a new location, and then delete the original Collection. 

@@ -1,0 +1,9 @@
+Title:  Fixed Bug in Move Collection Logic
+
+Seq:    5.0.0
+
+Date:   01 Dec 2020
+
+Body: 
+
+The 'alias.txt' file was not being copied. This has been corrected. 

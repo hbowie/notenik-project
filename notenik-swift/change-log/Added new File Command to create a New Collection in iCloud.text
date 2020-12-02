@@ -1,0 +1,9 @@
+Title:  Added new File Command to create a New Collection in iCloud
+
+Seq:    4.9.0
+
+Date:   30 Nov 2020
+
+Body: 
+
+The user will not need to pick a parent folder when using this option. The new Collection will be located in Notenik's special iCloud container. 

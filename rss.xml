@@ -5,6 +5,24 @@
     <description>The Notenik Blog</description>
     <language>en</language>
 	<item>
+	  <title>Current Best Practices for Notenik Web Generation</title>
+	  <link>https://notenik.net/blog/current-best-practices-for-notenik-web-generation.html</link>
+	  <guid>https://notenik.net/blog/current-best-practices-for-notenik-web-generation.html</guid>
+	  <pubdate>Mon, 30 Nov 2020 12:00:00 -0700</pubdate>
+	  <description>
+	  	My current recommendations for those just starting to use Notenik to generate a website. 
+	  </description>
+	</item>
+	<item>
+	  <title>Evolving Use of Notenik for Web Generation</title>
+	  <link>https://notenik.net/blog/evolving-use-of-notenik-for-web-generation.html</link>
+	  <guid>https://notenik.net/blog/evolving-use-of-notenik-for-web-generation.html</guid>
+	  <pubdate>Mon, 30 Nov 2020 12:00:00 -0700</pubdate>
+	  <description>
+	  	Some history about how my latest thinking has evolved. 
+	  </description>
+	</item>
+	<item>
 	  <title>Additional Updates to Notenik - November 4, 2020</title>
 	  <link>https://notenik.net/blog/additional-updates-to-notenik-november-4-2020.html</link>
 	  <guid>https://notenik.net/blog/additional-updates-to-notenik-november-4-2020.html</guid>
@@ -50,15 +68,6 @@
 	  </description>
 	</item>
 	<item>
-	  <title>Notenik Project # 3: Create a To Do List</title>
-	  <link>https://notenik.net/blog/notenik-project-3-create-a-to-do-list.html</link>
-	  <guid>https://notenik.net/blog/notenik-project-3-create-a-to-do-list.html</guid>
-	  <pubdate>Fri, 20 Dec 2019 12:00:00 -0700</pubdate>
-	  <description>
-	  	This post is the third in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use this Mac app to create a To Do list. 
-	  </description>
-	</item>
-	<item>
 	  <title>Notenik for the Mac Version 2.4.0 Released</title>
 	  <link>https://notenik.net/blog/notenik-for-the-mac-version-2.4.0-released.html</link>
 	  <guid>https://notenik.net/blog/notenik-for-the-mac-version-2.4.0-released.html</guid>
@@ -83,15 +92,6 @@
 	  <pubdate>Tue, 03 Dec 2019 12:00:00 -0700</pubdate>
 	  <description>
 	  	Added Cut, Copy and Paste support for Notes; added support for British spelling of &apos;Favorites&apos;; relocated Reload Collection command to the Collection menu to make it easier to find; suppressed empty tags from the Favorites to HTML export. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik Project # 2: Create a Collection of Bookmarks</title>
-	  <link>https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html</link>
-	  <guid>https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html</guid>
-	  <pubdate>Mon, 25 Nov 2019 12:00:00 -0700</pubdate>
-	  <description>
-	  	This post is the second in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use this Mac app to create a Collection of Bookmarks that you can access from any of your web browsers. 
 	  </description>
 	</item>
   </channel>

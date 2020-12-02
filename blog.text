@@ -10,6 +10,28 @@ Link:
 
 Body:
 
+### [Current Best Practices for Notenik Web Generation](blog/current-best-practices-for-notenik-web-generation.html)
+
+*Published 30 Nov 2020*
+
+My current recommendations for those just starting to use Notenik to generate a website. 
+
+
+*[Read more...](blog/current-best-practices-for-notenik-web-generation.html)*
+
+----
+
+### [Evolving Use of Notenik for Web Generation](blog/evolving-use-of-notenik-for-web-generation.html)
+
+*Published 30 Nov 2020*
+
+Some history about how my latest thinking has evolved. 
+
+
+*[Read more...](blog/evolving-use-of-notenik-for-web-generation.html)*
+
+----
+
 ### [Additional Updates to Notenik - November 4, 2020](blog/additional-updates-to-notenik-november-4-2020.html)
 
 *Published 04 Nov 2020*
@@ -65,16 +87,6 @@ Version 2.6.0 was focused on strengthening support for opening folders full of e
 
 ----
 
-### [Notenik Project # 3: Create a To Do List](blog/notenik-project-3-create-a-to-do-list.html)
-
-*Published 20 Dec 2019*
-
-This post is the third in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we're going to use this Mac app to create a To Do list.
-
-*[Read more...](blog/notenik-project-3-create-a-to-do-list.html)*
-
-----
-
 ### [Notenik for the Mac Version 2.4.0 Released](blog/notenik-for-the-mac-version-2.4.0-released.html)
 
 *Published 13 Dec 2019*
@@ -104,6 +116,16 @@ Fixed treatment of the Teaser field, to treat it as a long text field; increased
 Added Cut, Copy and Paste support for Notes; added support for British spelling of 'Favorites'; relocated Reload Collection command to the Collection menu to make it easier to find; suppressed empty tags from the Favorites to HTML export.
 
 *[Read more...](blog/notenik-for-the-mac-version-2.2.0-released.html)*
+
+----
+
+### [Notenik Project # 3: Create a To Do List](blog/notenik-project-3-create-a-to-do-list.html)
+
+*Published 20 Dec 2019*
+
+This post is the third in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we're going to use this Mac app to create a To Do list.
+
+*[Read more...](blog/notenik-project-3-create-a-to-do-list.html)*
 
 ----
 

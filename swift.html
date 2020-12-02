@@ -187,7 +187,7 @@
 <li><a href="#getting-data-into-and-out-of-notenik">Getting Data Into and Out Of Notenik</a> <br />
 7.1 <a href="#copy-cut-paste-and-share-your-notes">Copy, Cut, Paste and Share your Notes</a>  <br />
 7.2 <a href="#import-and-export-your-notes">Import and Export Your Notes</a>  <br />
-7.3 <a href="#export-to-notenik-vs-save-as">Export to Notenik vs. Save As</a>  <br />
+7.3 <a href="#export-to-notenik-vs-save-as-vs-move">Export to Notenik vs. Save As vs. Move</a>  <br />
 7.4 <a href="#favorites-to-html">Favorites to HTML</a>  <br />
 7.5 <a href="#use-report-templates">Use Report Templates</a>  <br />
 7.6 <a href="#record-and-play-scripts">Record and Play Scripts</a>  <br />
@@ -231,8 +231,19 @@
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
 <a name="create-a-new-collection"><h3>3.2 Create a New Collection</h3></a>
 
-<p>You can choose to store your Notenik Collections anywhere you would like; storing them within Dropbox or iCloud Drive will allow them to be synced to the cloud and to other devices. If you'd like, you can create a folder named Notenik, and then store multiple Collections as subfolders, but that's not required. </p>
-<p>To create a new Collection, select New from the File menu. This action will open up a standard Mac window for selecting a folder. Use the standard New Folder button in the lower left corner of this window to create an empty folder for your new Collection, then select that newly created folder (all within the same window) and hit the Open button. </p>
+<p>Beneath the File menu you will find three different options for creating a New Notenik Collection. </p>
+<ul>
+<li>
+<p><strong>New in iCloud&#8230;</strong> - When you select this option, you will be prompted only for a name for your new Collection. Assuming this name is not already in use, a folder with that name will be created for you within Notenik's special iCloud container. </p>
+</li>
+<li>
+<p><strong>New Elsewhere&#8230;</strong> - When you select this option, you will first need to navigate to a location on your hard drive where you would like your new Collection to be stored, and then will need to create a new folder within that location. You will be presented with a standard Mac window for selecting a folder. Use the standard New Folder button in the lower left corner of this window to create an empty folder for your new Collection, then select that newly created folder (all within the same window) and hit the Open button. </p>
+</li>
+<li>
+<p><strong>New Web Collection&#8230;</strong> - This option is similar to <code>New Elsewhere</code>, but will create a special Web Collection that can be used to mirror your Notes to HTML pages. </p>
+</li>
+</ul>
+<p>If you are just getting started with Notenik, and not sure which option to choose, then <code>New in iCloud</code> will be your best bet. </p>
 <p>The next thing you will see is a window allowing you to specify certain attributes for your new Collection. </p>
 <p>The Collections Title will be formed from the folder path containing this Collection. Feel free to tweak this if you'd like. </p>
 <p>Each Note file is an ordinary text file, and can be opened using any text editor, in addition to being editable within Notenik. Depending on what application you might wish to be the default text editor for your notes, you may wish to pick some special file extension to be used. If you don't care about this, or this doesn't make any sense to you, then feel free to just ignore this whole paragraph and leave the Preferred File Extension set to txt. </p>
@@ -340,6 +351,9 @@
 <p>Within each Collection folder you will find one file for each Note in the Collection, with the file name based closely on the Note's title. </p>
 <p>In addition to the Note files, the following special files and folders may be found within a Collection folder. </p>
 <ul>
+<li>
+<p>The Notes may be stashed away in a subfolder named &#8216;notes&#8217;. This sort of Collection is known as a Web Collection, because the top level is reserved for generated HTML files, perhaps created using mirroring. In this case, the files and folders described below will be found within the &#8216;notes&#8217; folder. </p>
+</li>
 <li>
 <p>Each Collection folder will contain a special file named &#8216;- INFO.nnk&#8217;. This is a plain text file, in Notenik format, containing some handy metadata about the Collection, such as the last sort sequence set for it. If you sync a Collection to other devices using a service such as iCloud or Dropbox, then this metadata will be synced as well. </p>
 </li>
@@ -466,6 +480,8 @@
 <p>Here is more info on the actions performed by each button. </p>
 <ul>
 <li>Open Selected &#8211; Open all of the Collections that are currently selected in the outline. </li>
+<li>Delete Selected &#8211; Delete the selected Collection. </li>
+<li>Reveal Selected &#8211; Reveal the selected Collection in the Finder. </li>
 <li>Open Other - If the desired Collection is not available within the outline, then click on this button so that you can select your Collection from your local file system. </li>
 <li>Open Parent &#8211; Allows you to perform the <a href="#open-parent-realm">Open Parent Realm</a> action from the Nav Board. </li>
 <li>Quit &#8211; Quit the Notenik application. </li>
@@ -902,15 +918,16 @@
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
-<a name="export-to-notenik-vs-save-as"><h3>7.3 Export to Notenik vs. Save As</h3></a>
+<a name="export-to-notenik-vs-save-as-vs-move"><h3>7.3 Export to Notenik vs. Save As vs. Move</h3></a>
 
-<p>The careful observer may at some point wonder why Notenik includes both a &#8216;Save As&#8217; command as well as the ability to Export a Collection in the Notenik format. Are these just two ways of accomplishing the same objective? Well, not quite. </p>
+<p>The careful observer may at some point wonder why Notenik includes both a &#8216;Save As&#8217; command as well as the ability to Export a Collection in the Notenik format (not to mention a &#8216;Move&#8217; option). Are these just different ways of accomplishing the same thing? Well, not quite. </p>
 <p>It's true that both commands will copy your current Collection of Notes to a new location. However, there are some subtle differences between the two. </p>
 <p>With &#8216;Save As&#8217;: </p>
 <ul>
 <li>The command will finish with the new Collection becoming the one that is currently open. </li>
 <li>The current note files will be copied exactly as-is. </li>
 <li>Attachments will be copied as-is. </li>
+<li>The original starting Collection will still be available. </li>
 </ul>
 <p>With &#8216;Export to Notenik&#8217;: </p>
 <ul>
@@ -920,7 +937,14 @@
 <li>Not all Notes may be copied! If there are any Notes with duplicate Titles, then only one will make the move. Check the Log window carefully to see if this problem stranded any of your Notes in the old Collection. </li>
 <li>Attachments will be ignored. </li>
 </ul>
-<p>In summary, these are two different tools, and you should be careful to use whichever one is the best fit for your particular situation. </p>
+<p>With &#8216;Move&#8217;: </p>
+<ul>
+<li>The command will finish with the new Collection becoming the one that is currently open. </li>
+<li>As with the Export command, each Note will be rewritten in the new location using the standard Notenik format. </li>
+<li>File attachments and other standard Notenik folders will be copied as-is. </li>
+<li>If the starting Collection contains any non-standard files or folders then they will be left in place within the original folder; if the original folder ends up empty (because all of its standard contents have been moved), then it will be deleted. </li>
+</ul>
+<p>In summary, these are different tools, and you should be careful to use whichever one is the best fit for your particular situation. </p>
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
@@ -1063,6 +1087,17 @@
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
 <a name="version-history"><h3>8.1 Version History</h3></a>
 
+<h3 id="version-4.9.0-30-nov-2020">Version 4.9.0 | 30 Nov 2020</h3>
+<h4 id="added-new-file-command-to-create-a-new-collection-in-icloud">1. Added new File Command to create a New Collection in iCloud</h4>
+<p>The user will not need to pick a parent folder when using this option. The new Collection will be located in Notenik's special iCloud container. </p>
+<h4 id="added-new-command-to-stash-notes-in-subfolder">2. Added New Command to Stash Notes in Subfolder</h4>
+<p>This command can be found beneath the Transform menu. This command makes an existing Collection compliant with the new structure for a Web Collection by creating a subfolder named &#8216;notes&#8217; and them moving the existing Notes into that subfolder. </p>
+<h4 id="added-new-command-to-move-a-collection">3. Added New Command to Move a Collection</h4>
+<p>The Move command can be found beneath the File menu. This command will copy an existing Collection to a new location, and then delete the original Collection. </p>
+<h4 id="added-menu-option-to-browse-a-web-index">4. Added Menu Option to Browse a Web Index</h4>
+<p>This can be found beneath the Transform menu. </p>
+<h4 id="added-support-for-web-collections">5. Added Support for Web Collections</h4>
+<p>A Web Collection contains a website at the top level, and contains its notes within a subfolder named ‘notes’. </p>
 <h3 id="version-4.8.0-13-nov-2020">Version 4.8.0 | 13 Nov 2020</h3>
 <h4 id="other-adjustments-for-big-sur">1. Other Adjustments for Big Sur</h4>
 <p>Made a few other tweaks for enhanced compatibility with Big Sur. </p>

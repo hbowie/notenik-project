@@ -1,0 +1,57 @@
+Title:  Evolving Use of Notenik for Web Generation
+
+Seq:    13
+
+Status: 9 - Published
+
+Date:   30 Nov 2020
+
+Teaser: 
+
+Some history about how my latest thinking has evolved. 
+
+Body: 
+
+I've been using [Notenik written in Swift for the Mac][macappstore], or one of its predecessors (Notenik written in Java, or PSTextMerge before that, or TDF Czar before that) to generate my websites (starting with [ReasonToRock.com][r2r]) for almost 20 years. 
+
+For almost all of that time, I've used a homegrown [scripting language][scrspec], and a homegrown [templating language][tmplspec], to generate those sites from some sort of separate data source: tab-delimited files, to start with. 
+
+Over this time, my thoughts about the data source and its relationship to the final website, as well as the script and template files used to convert one to the other, have evolved gradually, coming to some sort of conclusion, I think, with the [4.9.0 release of Notenik][versions]. 
+
+Let me briefly note the steps in this evolution, before explaining my latest thoughts. 
+
+1. I originally used [Textile][] formatting for my content, but switched to [Markdown][] after Reason to Rock. 
+
+2. I moved my primary data source(s) from some sort of tab-delimited file to a collection of text files in the [Notenik format][nnkformat]. Each Note, then, contains a piece of content, as well as metadata about that content. And both can be edited using Notenik, or any text editor available for macOS. 
+
+3. I originally placed my content and my metadata and my scripts and templates in various folders that were separate from the resulting website, or perhaps sat alongside the resulting site. I eventually realized a couple of problems with this arrangement: a) the whole kit and caboodle was not as portable as it might have been, since the source files were not stored together with the generated html files; and b) with recent changes in macOS security, Notenik would end up reading data from one folder that it had been granted access to, but then trying to write to a different folder, to which it did not have access. 
+
+4. All of my html generation was originally triggered manually, when I explicitly told Notenik to run a script that I had recorded/written. I eventually realized, though, that it might be better to update the corresponding html page of content whenever the original Notenik page was updated. 
+
+5. I briefly flirted with the idea of having Notenik mirror each Note to a corresponding html page that would sit in the same folder. After seeing the results, though, I realized that this was a bit messy. 
+
+And so, with the 4.9.0 release of Notenik I've added some new features that seem to resolve the latest set of issues. 
+
+However, nothing that worked before has been broken or disabled. In fact, my various websites still use all of the things listed above that I have decided to move away from, and Notenik still works to regenerate all of those sites whenever I have the need to do so. 
+
+For anyone coming to Notenik for the first time, though, I'd like to explain what I would consider current best practices for using Notenik to generate web pages and sites. 
+
+And that is the topic for the [next post][nextpost]. 
+
+[macappstore]: https://apps.apple.com/us/app/notenik/id1465997984?mt=12
+
+[markdown]: https://daringfireball.net/projects/markdown/
+
+[nextpost]: current-best-practices-for-notenik-web-generation.html
+
+[nnkformat]: https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html
+
+[r2r]: https://www.reasontorock.com
+
+[scrspec]: https://notenik.net/script-spec.html
+
+[textile]: https://textile-lang.com
+
+[tmplspec]: https://notenik.net/template-spec.html
+
+[versions]: https://notenik.net/swift.html#version-history

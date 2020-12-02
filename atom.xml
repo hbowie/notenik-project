@@ -4,12 +4,119 @@
   <subtitle>The latest news about the Notenik Project</subtitle>
   <link href="https://notenik.net/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.net/" type="text/html" rel="alternate"  />
-  <updated>2020-11-13</updated>
+  <updated>2020-11-30</updated>
   <rights>Copyright © 2020, Herb Bowie</rights>
   <author>
     <name>Herb Bowie</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Current Best Practices for Notenik Web Generation</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/current-best-practices-for-notenik-web-generation.html"/>
+	  <id>https://notenik.net/blog/current-best-practices-for-notenik-web-generation.html</id>
+	  <published>2020-11-30T09:00:00Z</published>
+	  <updated>2020-11-30T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>My current recommendations for those just starting to use Notenik to generate a website. </p>
+
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>One of the many things that <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik</a> can be used for is website generation. </p>
+<p>I&apos;ve set this up in many different ways over the years, for a number of different sites that I have authored. </p>
+<p>If you&apos;d like to know more about the evolution of my thinking in this regard, you might want to take a look at this <a href="evolving-use-of-notenik-for-web-generation.html">previous post</a>. </p>
+<p>But if you&apos;d just like to cut to the chase, and learn what I would consider current best practices, then this post is for you. (In any case, though, come back here if you decide to take a detour to read the history lesson.) </p>
+<h2 id="folder-structure">Folder Structure</h2>
+<p>Let me start by explaining the recommended folder structure. </p>
+<p>The top level folder should be given whatever name is meaningful to you. This entire folder can then be put under version control using <a href="https://git-scm.com">git</a>, and uploaded to <a href="https://github.com">GitHub</a>, or any other online repository you happen to be using. The entire contents of this folder can then be uploaded to your web server, or web hosting service, using your preferred FTP software. (I use <a href="https://www.git-tower.com/mac">Tower</a> and <a href="https://panic.com/transmit/">Transmit</a> for these chores, respectively.) </p>
+<p>This top level folder will eventually hold all of your html files, which will have been generated using Notenik. It will initially be empty, except for&hellip; </p>
+<p>A subfolder named <strong>notes</strong> will then contain all of your actual Notes that are normally maintained by Notenik. Each note is stored in a plain text file, and contains a page of content, along with suitable metadata about that content. </p>
+<p>A subfolder named <strong>files</strong> may exist within the <code>notes</code> folder. This folder would contain any note attachments, potentially including image files (jpeg or png files, for example). </p>
+<p>A subfolder named <strong>mirror</strong> should be nested within the <code>notes</code> folder. This folder would then contain whatever files are used to <em>mirror</em> the content from the Notenik format to the final html format found in the top folder. </p>
+<p>The following subfolders would then be placed within the <code>mirror</code> folder. </p>
+<p>The <strong>css</strong> folder would be used to store any cascading stylesheet files. </p>
+<p>An <strong>includes</strong> folder can be used for any chunks of html to be included from one or more template files. </p>
+<p>A <strong>scripts</strong> folder can be used for any Notenik scripting files to be run. </p>
+<p>A <strong>templates</strong> folder would be used for the various templates that would be used to convert your notes to html. </p>
+<p>And that&apos;s it for the standard folder structure. Other subfolders may of course be added as needed, depending on the nature of your site. </p>
+<h2 id="notenik-features">Notenik Features</h2>
+<p>Notenik has a number of features that have been provided to facilitate website generation using the folder structure described above. </p>
+<p>If you&apos;re starting from scratch, then you can use the <strong>New Web Collection</strong> command beneath the <code>Files</code> menu to create a new set of folders organized in this way. </p>
+<p>If you have an existing Collection, then you can use the <strong>Stash Notes in Subfolder</strong> command beneath the <code>Transform</code> menu to reorganize your existing Collection, moving your existing Notes and subfolders into a new subfolder named <code>notes</code>. </p>
+<p>In either case, when you go to open the Web Collection at a later date, simply use the normal <strong>Open</strong> command beneath the <code>File</code> menu, being sure to select the top-level folder &#8211; the one above the <code>notes</code> subfolder. In this way, Notenik will have the permissions it needs to write web pages into that top-level folder. </p>
+<p>If you used the first command discussed above, to start from scratch, then your Collection will already contain a sample <code>mirror</code> folder. Otherwise, use the <strong>Generate Sample Mirror Folder</strong> command beneath the <code>Transform</code> menu to create some sample files and folders for mirroring. Feel free to modify these to suit your needs. </p>
+<p>However you create it, if your Notenik collection has a subfolder named <code>mirror</code>, which in turn contains another folder named <code>templates</code>, which in turn contains a file whose name is something like <strong>note_mirror.html</strong> (containing both the word <code>note</code> and the word <code>mirror</code>), then that template file will be run every time you update one of your notes. And if that template file is set up to write to a location three levels above its location, then you will end up having a webpage created for each Note in your collection, and each webpage will be kept up-to-date as you make changes to your Collection. </p>
+<p>If your <code>templates</code> folder also contains a file whose name is something like <strong>index_mirror.html</strong>, then that file will be run whenever you request indexing from a command beneath the <code>Transform</code> menu. Alternatively, if you select that option as part of the Collection Preferences, the index will be regenerated every time any page in the collection is updated. </p>
+<p>And if you&apos;d like to visit the generated <strong>index.html</strong> page in your Web browser, then you can select <strong>Browse Web Index</strong> beneath the <code>Transform</code> menu. </p>
+<h2 id="file-formats">File Formats</h2>
+<p>For further info: </p>
+<ul>
+<li>
+<p><a href="https://notenik.net/template-spec.html">The Template File Spec</a> - Template files are used to merge the data from your Notes into a standard page template for your website. </p>
+</li>
+<li>
+<p><a href="https://notenik.net/script-spec.html">The Scripting File Spec</a> - Scripts can be used to sort and filter the data from your Notes, as well as pumping the resulting data through your template files. </p>
+</li>
+<li>
+<p><a href="https://notenik.net/swift.html">The Notenik User Guide</a> - For all other details about Notenik. </p>
+</li>
+<li>
+<p><a href="https://notenik.net/blog.html">The Notenik Blog</a> - Including tutorials and background info about Notenik. </p>
+</li>
+</ul>
+
+	  	]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Evolving Use of Notenik for Web Generation</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/evolving-use-of-notenik-for-web-generation.html"/>
+	  <id>https://notenik.net/blog/evolving-use-of-notenik-for-web-generation.html</id>
+	  <published>2020-11-30T09:00:00Z</published>
+	  <updated>2020-11-30T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>Some history about how my latest thinking has evolved. </p>
+
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>I&apos;ve been using <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik written in Swift for the Mac</a>, or one of its predecessors (Notenik written in Java, or PSTextMerge before that, or TDF Czar before that) to generate my websites (starting with <a href="https://www.reasontorock.com">ReasonToRock.com</a>) for almost 20 years. </p>
+<p>For almost all of that time, I&apos;ve used a homegrown <a href="https://notenik.net/script-spec.html">scripting language</a>, and a homegrown <a href="https://notenik.net/template-spec.html">templating language</a>, to generate those sites from some sort of separate data source: tab-delimited files, to start with. </p>
+<p>Over this time, my thoughts about the data source and its relationship to the final website, as well as the script and template files used to convert one to the other, have evolved gradually, coming to some sort of conclusion, I think, with the <a href="https://notenik.net/swift.html#version-history">4.9.0 release of Notenik</a>. </p>
+<p>Let me briefly note the steps in this evolution, before explaining my latest thoughts. </p>
+<ol>
+<li>
+<p>I originally used <a href="https://textile-lang.com">Textile</a> formatting for my content, but switched to <a href="https://daringfireball.net/projects/markdown/">Markdown</a> after Reason to Rock. </p>
+</li>
+<li>
+<p>I moved my primary data source(s) from some sort of tab-delimited file to a collection of text files in the <a href="https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html">Notenik format</a>. Each Note, then, contains a piece of content, as well as metadata about that content. And both can be edited using Notenik, or any text editor available for macOS. </p>
+</li>
+<li>
+<p>I originally placed my content and my metadata and my scripts and templates in various folders that were separate from the resulting website, or perhaps sat alongside the resulting site. I eventually realized a couple of problems with this arrangement: a) the whole kit and caboodle was not as portable as it might have been, since the source files were not stored together with the generated html files; and b) with recent changes in macOS security, Notenik would end up reading data from one folder that it had been granted access to, but then trying to write to a different folder, to which it did not have access. </p>
+</li>
+<li>
+<p>All of my html generation was originally triggered manually, when I explicitly told Notenik to run a script that I had recorded/written. I eventually realized, though, that it might be better to update the corresponding html page of content whenever the original Notenik page was updated. </p>
+</li>
+<li>
+<p>I briefly flirted with the idea of having Notenik mirror each Note to a corresponding html page that would sit in the same folder. After seeing the results, though, I realized that this was a bit messy. </p>
+</li>
+</ol>
+<p>And so, with the 4.9.0 release of Notenik I&apos;ve added some new features that seem to resolve the latest set of issues. </p>
+<p>However, nothing that worked before has been broken or disabled. In fact, my various websites still use all of the things listed above that I have decided to move away from, and Notenik still works to regenerate all of those sites whenever I have the need to do so. </p>
+<p>For anyone coming to Notenik for the first time, though, I&apos;d like to explain what I would consider current best practices for using Notenik to generate web pages and sites. </p>
+<p>And that is the topic for the <a href="current-best-practices-for-notenik-web-generation.html">next post</a>. </p>
+
+	  	]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Additional Updates to Notenik - November 4, 2020</title>
 	  <link rel="related" type="text/html" href="https://notenik.net/blog/additional-updates-to-notenik-november-4-2020.html"/>
@@ -264,64 +371,6 @@
 	  </content>
 	</entry>
 	<entry>
-	  <title>Notenik Project # 3: Create a To Do List</title>
-	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-project-3-create-a-to-do-list.html"/>
-	  <id>https://notenik.net/blog/notenik-project-3-create-a-to-do-list.html</id>
-	  <published>2019-12-20T09:00:00Z</published>
-	  <updated>2019-12-20T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-	  	<p>This post is the third in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use this Mac app to create a To Do list. </p>
-
-	  </summary>
-	  <content type="html">
-	  	<![CDATA[
-	  	<p>This post is the third in a series designed to gradually explain the use of the Mac App <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik</a> for increasingly complicated and sophisticated tasks. </p>
-<p>Before proceeding, you might want to review some of the basics covered in earlier projects, if these aren&apos;t already fresh in your mind: </p>
-<ol>
-<li><a href="https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html">Create a Simple Collection of Notes</a> </li>
-<li><a href="https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html">Create a Collection of Bookmarks</a> </li>
-</ol>
-<h3 id="motivation">Motivation</h3>
-<p>I like to keep a &quot;to do&quot; list to help remind me of various tasks I&apos;d like to perform. However, I don&apos;t want to invest a great deal of time or money in a specialized tool that is overly fiddly. So I use Notenik to track these sorts of things. </p>
-<h3 id="step-1-create-a-new-collection">Step 1: Create a New Collection</h3>
-<p>Name the folder &apos;To Do&apos; or &apos;Tasks&apos; or something similar. Locate the new folder in your Dropbox folder or in iCloud drive if you&apos;d like to sync this Collection to the cloud and/or to other devices. Or put it in your Documents folder: anyplace that makes sense to you is fine. </p>
-<h3 id="step-2-configure-with-additional-fields">Step 2: Configure with Additional Fields</h3>
-<p>Once you&apos;ve selected the folder for the Collection, Notenik will present you with the Preferences for this Collection. In addition to the usual four fields (Title, Tags, Link and Body) you&apos;ll want to select the Status, Date and Recurs fields by checking the boxes next to these Field names. You might also wish to include the Seq field if you&apos;d like to identify a priority for each item. Click OK once you&apos;re done. </p>
-<h3 id="step-3-start-adding-some-tasks">Step 3: Start Adding Some Tasks</h3>
-<p>Enter a unique title for each task: something brief that will serve to identify the action.  </p>
-<p>Use the Link field if there&apos;s a website involved in completing this task; leave it blank otherwise. </p>
-<p>Use the Tags field if you&apos;d like to categorize your actions; this will allow you to see them grouped by category on the Tags tab. </p>
-<p>Enter any details about the task in the Body field. Feel free to use the <a href="https://daringfireball.net/projects/markdown/syntax">Markdown syntax</a> to format these details. </p>
-<h3 id="step-4-enter-target-dates-for-completion">Step 4: Enter Target Dates for Completion</h3>
-<p>You may use the Date field to enter the date on which you wish to complete this task, or on which you wish to be reminded about it. You can enter a complete or partial date (just the year, or the year and month) in pretty much any recognizable format. Hit the Calendar button to be presented with an easily navigable calendar you can use to select your desired date. Hit OK when done. </p>
-<h3 id="step-5-sort-the-list-in-tasks-by-date-sequence">Step 5: Sort the List in Tasks by Date Sequence</h3>
-<p>Select the Tasks by Date option from the Sort menu, or use the handy keyboard shortcut displayed in the menu dropdown. The earliest dates will now sort to the top of the list. Note that you can change the sort sequence to another option whenever you find it useful: it&apos;s not a permanent selection, though your last choice for a Collection will be remembered the next time you open it. </p>
-<h3 id="step-6-enter-recurs-info">Step 6: Enter Recurs Info</h3>
-<p>If a task is something to be done on a regular basis, then you can enter the frequency of occurrence in the Recurs field. You can use most simple natural language constructs in this field: things like &apos;every week&apos; or &apos;every month&apos; should work as expected. </p>
-<h3 id="step-7-keep-the-status-field-up-to-date">Step 7: Keep the Status field Up-To-Date</h3>
-<p>Each item&apos;s status can be set via the available dropdown menu on the Edit tab. The default status values run from &apos;Idea&apos; through &apos;Closed&apos; in what is meant to be an approximate lifecycle sequence. Status values of &apos;Completed&apos; on up will sort to the bottom of the Tasks by Date sequence, and will be marked with an &apos;X&apos; on the List to indicate their completion. If you&apos;d like to modify the values available on the Status dropdown, then see the  <a href="https://notenik.net/swift.html#track-the-status-of-your-notes">User Guide</a> for info on how to do this. </p>
-<p><img src="../images/notenik-to-do.jpg" alt="Screen Shot # 1"> </p>
-<h3 id="step-8-make-it-essential">Step 8: Make It Essential</h3>
-<p>You may wish to use the option under the File menu to Make This Collection Essential. This means that it will open automatically whenever you launch Notenik, and that you can always get back to it via a quick keyboard shortcut. </p>
-<h3 id="step-9-memorize-a-few-handy-shortcuts">Step 9: Memorize a Few Handy Shortcuts</h3>
-<p>Notenik has a few keyboard shortcuts that can prove particularly handy when managing a list of tasks. </p>
-<ul>
-<li>CMD-E &#8211; Open Essential Collection &#8211; This will open your Essential Collection, or take you back to its window (from another Notenik collection window) if it&apos;s already open. </li>
-<li>CMD-I &#8211; Increment &#8211; If the Note has a Date, and the List is sorted by Date, then this command will bump up the Date value by one day. </li>
-<li>CMD-K &#8211; Close Note &#8211; If the selected Note has a Recurs value, then this command will execute the Recurs logic for the Note, bumping up the Date by one cycle. If the selected Note does not have a Recurs value, then the Note&apos;s Status field will be set to Completed. </li>
-<li>CMD-U &#8211; Catch Up Daily Tasks &#8211; If you have one or more tasks with Recurs values of &apos;Daily&apos;, then this command will bring all of their Date values up to the current date. </li>
-</ul>
-<h3 id="wrapping-up">Wrapping Up</h3>
-<p>And that&apos;s it for Project # 3! As always, feel free to send any questions or comments to <a href="mailto:hbowie@notenik.net">hbowie@notenik.net</a>. Looking forward to hearing from you! </p>
-
-	  	]]>
-	  </content>
-	</entry>
-	<entry>
 	  <title>Notenik for the Mac Version 2.4.0 Released</title>
 	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.4.0-released.html"/>
 	  <id>https://notenik.net/blog/notenik-for-the-mac-version-2.4.0-released.html</id>
@@ -410,63 +459,6 @@
 <p>Empty tags are now bypassed when exporting Favorites to HTML. </p>
 </li>
 </ul>
-
-	  	]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik Project # 2: Create a Collection of Bookmarks</title>
-	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html"/>
-	  <id>https://notenik.net/blog/notenik-project-2-create-a-collection-of-bookmarks.html</id>
-	  <published>2019-11-25T09:00:00Z</published>
-	  <updated>2019-11-25T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-	  	<p>This post is the second in a series designed to gradually explain the use of Notenik for increasingly complex and sophisticated tasks. Today we&apos;re going to use this Mac app to create a Collection of Bookmarks that you can access from any of your web browsers. </p>
-
-	  </summary>
-	  <content type="html">
-	  	<![CDATA[
-	  	<p>This post is the second in a series designed to gradually explain the use of the Mac App <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik</a> for increasingly complex and sophisticated tasks. </p>
-<p>Before proceeding, you might want to review some of the basics covered in <a href="https://notenik.net/blog/notenik-project-1-create-a-simple-collection-of-notes.html">Project # 1</a>, if these aren&apos;t already fresh in your mind. </p>
-<p>You will need at least Notenik version 2.1.0 to perform all the functions described in this piece. </p>
-<h3 id="motivation">Motivation</h3>
-<p>All modern web browsers (Safari, Chrome, Firefox, etc.) have their own capabilities for storing frequently used web links (aka URLs) as a bunch of bookmarks, sometimes referred to as favorites. </p>
-<p>However, if you have a tendency to use different browsers for different purposes, or as the mood strikes you, then you might find it convenient to have your favorite web bookmarks stored independently, in a way that can be accessed equally well from any browser. </p>
-<p>This is where Notenik comes in. </p>
-<h3 id="step-1-create-a-new-collection">Step 1: Create a New Collection</h3>
-<p>Name the folder &apos;Favorites&apos; or &apos;Bookmarks&apos; or something similar.  If you have <a href="https://discussions.apple.com/docs/DOC-3083">Apache enabled</a>, then you might wish to place it somewhere in your &apos;Sites&apos; folder. (If you have no idea what this means, then don&apos;t worry about it.) Another option would be to place the new Collection in your Dropbox folder or iCloud Drive, if you&apos;d like it to be synced to the cloud and/or to other devices. Or just put it somewhere in your Documents folder. It&apos;s up to you! </p>
-<h3 id="step-2-configure-with-default-fields">Step 2: Configure with Default Fields</h3>
-<p>Title, Tags, Link and Body should be fine for our purposes today. </p>
-<h3 id="step-3-add-your-favorite-websites">Step 3: Add Your Favorite Websites</h3>
-<p>For each site, enter the Link field and the Title field. For a title, enter whatever is most meaningful to you &#8211; it doesn&apos;t have to exactly match any sort of official title on the site itself. If you wish to add some comments about a site in the body of its note, then that&apos;s ok too. </p>
-<h3 id="step-4-use-tags-to-categorize-the-sites">Step 4: Use Tags to Categorize the Sites</h3>
-<p>Here there&apos;s something specific you need to enter in order to enable a later step. </p>
-<p>Enter your tag in the format &apos;Favorites.xxx&apos; where &apos;xxx&apos; is the category you wish to assign to the note. The first part of the tag must be &apos;favorites&apos;, although the case (upper or lower) is not significant. </p>
-<p>If you have a lot of bookmarks you wish to track in Notenik, then they don&apos;t all need to have the &apos;Favorites&apos; tag. In fact, a maximum of about 60 is recommended. And all of your tags, including the ones tagged as a &apos;favorite&apos;, can have multiple tags. </p>
-<p>With or without the favorites tag, note that you can use the &apos;Tags&apos; tab to view your growing list of bookmarks in outline form, with the tags used to organize the outline. When a note has multiple tags, it will appear multiple times, so that it can show up under each different tag. </p>
-<p><img src="../images/notenik-edit-bookmark.jpg" alt="Screen Shot # 1"> </p>
-<h3 id="step-5-launch-links-from-within-notenik">Step 5: Launch Links from within Notenik</h3>
-<p>Once you have your bookmarks entered into Notenik, you can always open that collection, select the bookmark you are interested in, and then launch the link, either via the Toolbar command, or via the command beneath the Note menu, or by using the CMD-L keyboard shortcut. Launching the Link via any of these methods will result in the page opening in your default web browser (Safari, Chrome, etc.) </p>
-<p>But wait, there&apos;s more! </p>
-<h3 id="step-6-save-your-favorites-to-html">Step 6: Save your Favorites to HTML</h3>
-<p>Beneath the File menu, there is an option to save your Favorites to HTML. Once you select this command, you&apos;ll be prompted to specify a file name and location. Once you&apos;ve completed this, Notenik will generate a web page for you, containing all of the bookmarks you have tagged as Favorites, grouped neatly into the categories you have specified.  </p>
-<p>After saving this web page for you, Notenik will ask that it be opened by your default web browser. Once this happens, if you look at the URL for the page, you&apos;ll see the location you specified expressed as a local file URL, starting with the &apos;file://&apos; protocol.  </p>
-<p><img src="../images/safari-favorites-page.jpg" alt="Screen Shot # 2"> </p>
-<h3 id="step-7-adjust-settings">Step 7: Adjust Settings</h3>
-<p>The defaults are to arrange your favorite links into 4 columns, with each column a maximum of 32 lines long, and taking up a screen width of 250 pixels. I&apos;ve found that these defaults work well for me but, if you&apos;d like to adjust them, you can use the Favorites tab within Notenik&apos;s application Preferences to bump them up or down, to suit your tastes (and screen real estate). </p>
-<p>The other settings you might want to adjust are your Display Fonts. You can get to these by clicking on the appropriately named button on your toolbar, or by selecting Display Appearance beneath the Format menu. You can then change the Display font and the display size. These settings will primarily affect the appearance of your Notes on the Display tab (for all of your collections &#8211; these settings are not collection-specific), but these same values will also be used for the webpage generated when you select Favorites to HTML beneath the File menu. </p>
-<p>After making changes to any of these settings, you will need to repeat Step 6, overwriting the file you created previously, in order to see the effects of your changes. </p>
-<h3 id="step-8-set-as-your-browser-home-page">Step 8: Set As Your Browser Home Page</h3>
-<p>Once you have the generated HTML looking the way you would like,  you will want to select the generated page&apos;s URL from your browser and copy it. </p>
-<p>Now go into the Preferences for each web browser that you use, and paste this local file address into the field identifying your homepage, or your home button. You might also want to specify that new browser windows and/or tabs will open to your homepage. </p>
-<p>That&apos;s it! Now whenever you open your web browser, you&apos;ll see a nice clean page showing all of your favorite websites, without any advertising or tracking or animation or javascript or cookies or download delays. Just click on any of the titles to be taken to the corresponding website. And sites will be named and categorized and located in a way that makes sense to you, making it easy for you to find the site you are looking for and open it. </p>
-<p>When you want to add, remove or change the contents of this page, then all you have to do is re-open your Notenik collection of favorites, make the desired changes there, then repeat step # 6, making sure to overwrite the file you created before, by specifying the same location and file name. From that point on, the new page will appear in all of the browsers you have set to this homepage (understanding that you may sometimes have to ask the browser to reload the page, to replace any cached copies it might be holding on to). </p>
-<h3 id="wrapping-up">Wrapping Up</h3>
-<p>And that&apos;s it for Project # 2! As always, feel free to send any questions or comments to <a href="mailto:hbowie@notenik.net">hbowie@notenik.net</a>. Looking forward to hearing from you!  </p>
 
 	  	]]>
 	  </content>

@@ -1,0 +1,9 @@
+Title:  Added New Command to Stash Notes in Subfolder
+
+Seq:    4.9.0
+
+Date:   29 Nov 2020
+
+Body: 
+
+This command can be found beneath the Transform menu. This command makes an existing Collection compliant with the new structure for a Web Collection by creating a subfolder named 'notes' and them moving the existing Notes into that subfolder. 

@@ -114,6 +114,7 @@ filter	clear
 filter	add	ge	Status	9
 filter	set		params
 sort	clear
+sort	add	descending	Seq
 sort	add	descending	Date
 sort	set		params
 template	webroot			/Users/hbowie/Sites/notenik

@@ -1,0 +1,9 @@
+Title:  Added Support for Web Collections
+
+Seq:    4.9.0
+
+Date:   19 Nov 2020
+
+Body: 
+
+A Web Collection contains a website at the top level, and contains its notes within a subfolder named ‘notes’.
