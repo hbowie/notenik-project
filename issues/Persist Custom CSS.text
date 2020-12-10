@@ -1,0 +1,21 @@
+Title:  Persist Custom CSS
+
+Status: 6 - Completed
+
+Seq:    41
+
+Date:   07 Dec 2020
+
+Reported By: `Isaa
+
+Release: 5.0.0
+
+Issue: 
+
+Whenever I go to make a change to the CSS, the text area reverts to the application defaults, removing my changes. I would like to ask that user changes to the CSS persist upon modification.
+
+
+Body: 
+
+Should be fixed in release 5.0.0.
+

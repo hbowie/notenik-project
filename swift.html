@@ -290,6 +290,18 @@
 <li>&#8216;>&#8217; Takes you to the next note. </li>
 </ul>
 <p>Some of the same navigational commands are available under the Note menu, with handy keyboard shortcuts noted on the right. There you will also find a command to scroll the list so as to bring the currently selected Note into view at the top of the displayed Notes. </p>
+<p>Note that the next/prior logic can work in three somewhat different ways. </p>
+<ol>
+<li>
+<p>If the user has clicked on a link within a Note, causing a web page to load in the Display tab, in place of the Note itself, then pressing on the back/prior button will refresh the Note display. </p>
+</li>
+<li>
+<p>If the user has selected a series of Notes in something other than normal sequential order, then the back button will take the user to the prior Note selected, and the forward button will take the user to the Note selected before going back. </p>
+</li>
+<li>
+<p>If neither of the first two cases is applicable, then the next/prior buttons (or commands) will simply move through the list of Notes sequentially. </p>
+</li>
+</ol>
 <p>The View menu contains a &#8216;Show/Hide List&#8217; command that will allow you to collapse the List/Tags view, so that you can see the right side of the window without any distractions. Use the same command again to show the list after it has been concealed. The left side of the window can also be collapsed by dragging the divider all the way to the left. Again, though, use the View command to restore it after it has been collapsed. </p>
 
 
@@ -362,6 +374,9 @@
 </li>
 <li>
 <p>Each Collection folder will normally also contain a &#8216;template.txt&#8217; or &#8216;template.md&#8217; file identifying the fields used within the Collection. </p>
+</li>
+<li>
+<p>A file named &#8216;alias.txt&#8217; may also be present. This file contains information used to prevent wiki-style links from breaking when Notes are renamed. </p>
 </li>
 <li>
 <p>A &#8216;files&#8217; folder will contain any Attachments for the Collection. </p>
@@ -1087,6 +1102,22 @@
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
 <a name="version-history"><h3>8.1 Version History</h3></a>
 
+<h3 id="version-5.0.0-08-dec-2020">Version 5.0.0 | 08 Dec 2020</h3>
+<h4 id="reworked-logic-for-navigating-forwards-and-backwards">1. Reworked Logic for Navigating forwards and backwards</h4>
+<p>This seems to work more intuitively now. </p>
+<h4 id="modified-to-allow-urls-linking-to-files">2. Modified to allow URLs linking to files</h4>
+<p>URLs starting with &#8216;file:&#8217; should now be recognized as valid URLs. </p>
+<p>However, permissions issues may still prevent such links from being usefully resolved, if they link outside of the sandbox to a file for which the app does not have access privileges. </p>
+<p>This should resolve Issue # 42. </p>
+<h4 id="fixed-bug-in-persisting-custom-css">3. Fixed Bug in Persisting Custom CSS</h4>
+<p>Notenik allows custom CSS to be entered in the Display Fonts Preferences, but these custom entries were being overwritten when Notenik was relaunched. This has now been corrected. This should close Issue # 41. </p>
+<h4 id="fixed-bug-handling-parentheses-within-link-text">4. Fixed bug handling parentheses within Link text</h4>
+<p>Parentheses within link text were not getting handled properly. </p>
+<h4 id="back-prior-now-relaunches-a-note-after-following-a-link">5. Back/Prior now relaunches a Note after following a link</h4>
+<p>After following a web link within a Note, the back button, or prior Note command, will now take the user back to the Note display. </p>
+<p>This should close Issue # 43. </p>
+<h4 id="fixed-bug-in-move-collection-logic">6. Fixed Bug in Move Collection Logic</h4>
+<p>The &#8216;alias.txt&#8217; file was not being copied. This has been corrected. </p>
 <h3 id="version-4.9.0-30-nov-2020">Version 4.9.0 | 30 Nov 2020</h3>
 <h4 id="added-new-file-command-to-create-a-new-collection-in-icloud">1. Added new File Command to create a New Collection in iCloud</h4>
 <p>The user will not need to pick a parent folder when using this option. The new Collection will be located in Notenik's special iCloud container. </p>

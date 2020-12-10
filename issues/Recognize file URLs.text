@@ -1,0 +1,19 @@
+Title:  Recognize file URLs
+
+Status: 6 - Completed
+
+Seq:    42
+
+Date:   07 Dec 2020
+
+Reported By: `Isaa
+
+Release: 5.0.0
+
+Issue: 
+
+Notenik was not recognizing links beginning with 'file:///'. 
+
+Body: 
+
+This should be fixed in 5.0.0.

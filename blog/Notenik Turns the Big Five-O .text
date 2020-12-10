@@ -1,0 +1,51 @@
+Title:  Notenik Turns the Big Five-O!
+
+Seq:    15
+
+Status: 9 - Published
+
+Date:   10 Dec 2020
+
+Teaser: 
+
+Yes, that's right -- Notenik version 5.0.0 has just been released, in all likelihood closing the books on 2020. So this feels like a good time to take a breather and look back on the path we've traveled, along with new routes yet to explore. 
+
+
+Body: 
+
+Yes, that's right -- [Notenik version 5.0.0 has just been released](https://apps.apple.com/us/app/notenik/id1465997984?mt=12), in all likelihood closing the books on 2020. So this feels like a good time to take a breather and look back on the path we've traveled, along with new routes yet to explore. 
+
+I started work on the current version of Notenik -- written in Swift, specifically for macOS -- in January of 2019. 
+
+Version 1.0.0 was released in the Mac App Store in June of that same year. 
+
+After the initial release, I fell into a routine of advancing the version number by 0.1.0 with each update (except for a handful of emergency fixes that exercised that third digit). 
+
+So that means 40 significant releases in the last year and a half, for an average of one new release every two weeks or so -- which feels like a pretty good clip!
+
+That first version started out with the ability to manage one or more collections of notes -- with each note containing one or more fields -- and to present lists of notes as well as an outline view organized by tags. 
+
+In addition to a continual stream of minor refinements, the following significant capabilities have been added along the way:
+
+* Maintaining a collection of web bookmarks, with the ability to generate a Favorites page in HTML; 
+* Adding file attachments to notes; 
+* Merging note information into templates to generate HTML pages, and scripting to sort and filter notes, and pump them through a series of templates. 
+* Various refinements for handling custom field types, such as Date, Recurs and Seq. 
+* Adjustments to handle folders full of text files not originally created by, nor intended for use with, Notenik;
+* Creation of a custom Markdown parser for use by Notenik;
+* Support for wiki-style links between Notes;
+* Support for bookmarks, citations, and tables of contents -- all extensions to the original Markdown syntax.
+
+I've had email correspondence with a number of Notenik users, all making enlightening suggestions about how the app could be improved or expanded in a variety of ways, and I've been able to implement [about 80% of these ideas](https://notenik.net/issues.html), usually within a week or two.
+
+Notenik's rating in the [App Store](https://apps.apple.com/us/app/notenik/id1465997984?mt=12) now stands at 4.9 (out of 5), based on submissions from 17 users. Five users have submitted reviews, all of them with positive comments. 
+
+All of this has been a labor of love -- I charge nothing for Notenik, the code is all [open-source](https://github.com/hbowie/notenik-swift), and I collect no data from users. But during the last couple of years, and 2020 in particular, I've been grateful for a retirement project that allows me to turn away from the television, the news feed, the social media chatter, and the email, and permits me to focus on building something tangible that I and others can use. It's a great joy.
+
+So what's in the queue for 2021? 
+
+It would be great to get some broader exposure for Notenik. In particular, some sort of published third-party review of the app would be really helpful in getting the word out to potential users. 
+
+And then there's more code to write. At some point I'd like to get an iOS version of Notenik out there. And a version that runs on a Web server would also be intriguing. But then, just when I think I'm done for a while, there's yet another feature to add to the existing macOS app. 
+
+There's more fun to be had, for sure. [Stay tuned](https://notenik.net/rss.xml), and climb on board to be part of the journey!

@@ -1,0 +1,13 @@
+Title:  Modified to allow URLs linking to files
+
+Seq:    5.0.0
+
+Date:   07 Dec 2020
+
+Body: 
+
+URLs starting with 'file:' should now be recognized as valid URLs. 
+
+However, permissions issues may still prevent such links from being usefully resolved, if they link outside of the sandbox to a file for which the app does not have access privileges. 
+
+This should resolve Issue # 42. 

@@ -4,12 +4,56 @@
   <subtitle>The latest news about the Notenik Project</subtitle>
   <link href="https://notenik.net/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.net/" type="text/html" rel="alternate"  />
-  <updated>2020-11-30</updated>
+  <updated>2020-12-10</updated>
   <rights>Copyright © 2020, Herb Bowie</rights>
   <author>
     <name>Herb Bowie</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Notenik Turns the Big Five-O!</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-turns-the-big-five-o.html"/>
+	  <id>https://notenik.net/blog/notenik-turns-the-big-five-o.html</id>
+	  <published>2020-12-10T09:00:00Z</published>
+	  <updated>2020-12-10T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>Yes, that&apos;s right &#8211; Notenik version 5.0.0 has just been released, in all likelihood closing the books on 2020. So this feels like a good time to take a breather and look back on the path we&apos;ve traveled, along with new routes yet to explore. </p>
+
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>Yes, that&apos;s right &#8211; <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik version 5.0.0 has just been released</a>, in all likelihood closing the books on 2020. So this feels like a good time to take a breather and look back on the path we&apos;ve traveled, along with new routes yet to explore. </p>
+<p>I started work on the current version of Notenik &#8211; written in Swift, specifically for macOS &#8211; in January of 2019. </p>
+<p>Version 1.0.0 was released in the Mac App Store in June of that same year. </p>
+<p>After the initial release, I fell into a routine of advancing the version number by 0.1.0 with each update (except for a handful of emergency fixes that exercised that third digit). </p>
+<p>So that means 40 significant releases in the last year and a half, for an average of one new release every two weeks or so &#8211; which feels like a pretty good clip! </p>
+<p>That first version started out with the ability to manage one or more collections of notes &#8211; with each note containing one or more fields &#8211; and to present lists of notes as well as an outline view organized by tags. </p>
+<p>In addition to a continual stream of minor refinements, the following significant capabilities have been added along the way: </p>
+<ul>
+<li>Maintaining a collection of web bookmarks, with the ability to generate a Favorites page in HTML; </li>
+<li>Adding file attachments to notes; </li>
+<li>Merging note information into templates to generate HTML pages, and scripting to sort and filter notes, and pump them through a series of templates. </li>
+<li>Various refinements for handling custom field types, such as Date, Recurs and Seq. </li>
+<li>Adjustments to handle folders full of text files not originally created by, nor intended for use with, Notenik; </li>
+<li>Creation of a custom Markdown parser for use by Notenik; </li>
+<li>Support for wiki-style links between Notes; </li>
+<li>Support for bookmarks, citations, and tables of contents &#8211; all extensions to the original Markdown syntax. </li>
+</ul>
+<p>I&apos;ve had email correspondence with a number of Notenik users, all making enlightening suggestions about how the app could be improved or expanded in a variety of ways, and I&apos;ve been able to implement <a href="https://notenik.net/issues.html">about 80% of these ideas</a>, usually within a week or two. </p>
+<p>Notenik&apos;s rating in the <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">App Store</a> now stands at 4.9 (out of 5), based on submissions from 17 users. Five users have submitted reviews, all of them with positive comments. </p>
+<p>All of this has been a labor of love &#8211; I charge nothing for Notenik, the code is all <a href="https://github.com/hbowie/notenik-swift">open-source</a>, and I collect no data from users. But during the last couple of years, and 2020 in particular, I&apos;ve been grateful for a retirement project that allows me to turn away from the television, the news feed, the social media chatter, and the email, and permits me to focus on building something tangible that I and others can use. It&apos;s a great joy. </p>
+<p>So what&apos;s in the queue for 2021? </p>
+<p>It would be great to get some broader exposure for Notenik. In particular, some sort of published third-party review of the app would be really helpful in getting the word out to potential users. </p>
+<p>And then there&apos;s more code to write. At some point I&apos;d like to get an iOS version of Notenik out there. And a version that runs on a Web server would also be intriguing. But then, just when I think I&apos;m done for a while, there&apos;s yet another feature to add to the existing macOS app. </p>
+<p>There&apos;s more fun to be had, for sure. <a href="https://notenik.net/rss.xml">Stay tuned</a>, and climb on board to be part of the journey! </p>
+
+	  	]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Current Best Practices for Notenik Web Generation</title>
 	  <link rel="related" type="text/html" href="https://notenik.net/blog/current-best-practices-for-notenik-web-generation.html"/>
@@ -422,41 +466,6 @@
 </li>
 <li>
 <p>Added a second Markdown parser, Ink, which can be used as an alternative to Down. </p>
-</li>
-</ul>
-
-	  	]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik for the Mac Version 2.2.0 Released</title>
-	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html"/>
-	  <id>https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html</id>
-	  <published>2019-12-03T09:00:00Z</published>
-	  <updated>2019-12-03T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-	  	<p>Added Cut, Copy and Paste support for Notes; added support for British spelling of &apos;Favorites&apos;; relocated Reload Collection command to the Collection menu to make it easier to find; suppressed empty tags from the Favorites to HTML export. </p>
-
-	  </summary>
-	  <content type="html">
-	  	<![CDATA[
-	  	<p>This is another release containing a few incremental improvements. </p>
-<ul>
-<li>
-<p>Added Cut, Copy and Paste support for Notes. Select a Note within a Collection and then use the Cut or Copy commands. You can then Paste the Note into another Collection, or into an Email message, or anywhere that accepts a block of text. </p>
-</li>
-<li>
-<p>Added support for the British spelling of &apos;Favorites&apos;. An Australian user pointed out that they spell it &apos;favourites,&apos; so Notenik has been updated to accept either spelling when exporting Favorites to HTML. </p>
-</li>
-<li>
-<p>The Reload Collection command has been moved from the File menu to the Collection menu, where it will hopefully be easier to find. </p>
-</li>
-<li>
-<p>Empty tags are now bypassed when exporting Favorites to HTML. </p>
 </li>
 </ul>
 

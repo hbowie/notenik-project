@@ -5,6 +5,15 @@
     <description>The Notenik Blog</description>
     <language>en</language>
 	<item>
+	  <title>Notenik Turns the Big Five-O!</title>
+	  <link>https://notenik.net/blog/notenik-turns-the-big-five-o.html</link>
+	  <guid>https://notenik.net/blog/notenik-turns-the-big-five-o.html</guid>
+	  <pubdate>Thu, 10 Dec 2020 12:00:00 -0700</pubdate>
+	  <description>
+	  	Yes, that&apos;s right &#8211; Notenik version 5.0.0 has just been released, in all likelihood closing the books on 2020. So this feels like a good time to take a breather and look back on the path we&apos;ve traveled, along with new routes yet to explore. 
+	  </description>
+	</item>
+	<item>
 	  <title>Current Best Practices for Notenik Web Generation</title>
 	  <link>https://notenik.net/blog/current-best-practices-for-notenik-web-generation.html</link>
 	  <guid>https://notenik.net/blog/current-best-practices-for-notenik-web-generation.html</guid>
@@ -83,15 +92,6 @@
 	  <pubdate>Tue, 10 Dec 2019 12:00:00 -0700</pubdate>
 	  <description>
 	  	Fixed treatment of the Teaser field, to treat it as a long text field; increased tolerance for Notes with alternative formatting; added Ink as an alternate for parsing of Markdown; added an optional Timestamp field, as a first step to enabling use of Notenik to create a Zettelkasten. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik for the Mac Version 2.2.0 Released</title>
-	  <link>https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html</link>
-	  <guid>https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html</guid>
-	  <pubdate>Tue, 03 Dec 2019 12:00:00 -0700</pubdate>
-	  <description>
-	  	Added Cut, Copy and Paste support for Notes; added support for British spelling of &apos;Favorites&apos;; relocated Reload Collection command to the Collection menu to make it easier to find; suppressed empty tags from the Favorites to HTML export. 
 	  </description>
 	</item>
   </channel>

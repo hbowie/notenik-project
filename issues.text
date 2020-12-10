@@ -12,10 +12,16 @@ Body:
 
 #### Status: 0 - Idea 
 
+* #48 [Enable External CSS Stylesheets](issues/enable-external-css-stylesheets.html)
+* #47 [Enable Links Between Collections](issues/enable-links-between-collections.html)
+* #46 [Open Notes in separate Windows/Tabs](issues/open-notes-in-separate-windows-tabs.html)
+* #45 [Display Date Added and Date Modified in local time](issues/display-date-added-and-date-modified-in-local-time.html)
+* #44 [Allow Callback URLs to other apps](issues/allow-callback-urls-to-other-apps.html)
+* #40 [Add a Date Modified field](issues/add-a-date-modified-field.html)
 * #34 [Provide Additional Help for Website Generation](issues/provide-additional-help-for-website-generation.html)
 * #27 [Provide a Way to Add a New Custom Field](issues/provide-a-way-to-add-a-new-custom-field.html)
 * #26 [Provide a Way to Rename an Existing Field](issues/provide-a-way-to-rename-an-existing-field.html)
-* #18 [Callback URL](issues/callback-url.html)
+* #18 [Callback URL for Notenik](issues/callback-url-for-notenik.html)
 * #17 [iOS Version](issues/ios-version.html)
 * #15 [Allow PanDoc execution to create PDFs](issues/allow-pandoc-execution-to-create-pdfs.html)
 * #6 [Produce Date Sorted Task List in HTML](issues/produce-date-sorted-task-list-in-html.html)
@@ -23,6 +29,8 @@ Body:
 
 #### Status: 6 - Completed 
 
+* #42 [Recognize file URLs](issues/recognize-file-urls.html)
+* #41 [Persist Custom CSS](issues/persist-custom-css.html)
 * #39 [Option to hide the sidebar](issues/option-to-hide-the-sidebar.html)
 * #38 [Expanded Display support for additional fonts](issues/expanded-display-support-for-additional-fonts.html)
 * #37 [Multimarkdown syntax support for citations](issues/multimarkdown-syntax-support-for-citations.html)
@@ -44,6 +52,7 @@ Body:
 
 #### Status: 9 - Closed 
 
+* #43 [Allow the Back Button to go back to the Note after loading a link](issues/allow-the-back-button-to-go-back-to-the-note-after-loading-a-link.html)
 * #23 [Collection Prefs Changes Not Saved](issues/collection-prefs-changes-not-saved.html)
 * #22 [Odd Font Sizes Not Saved](issues/odd-font-sizes-not-saved.html)
 * #20 [Ability to customize Display Tab contents](issues/ability-to-customize-display-tab-contents.html)

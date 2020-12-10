@@ -1,0 +1,9 @@
+Title:  Fixed bug handling parentheses within Link text
+
+Seq:    5.0.0
+
+Date:   07 Dec 2020
+
+Body: 
+
+Parentheses within link text were not getting handled properly. 

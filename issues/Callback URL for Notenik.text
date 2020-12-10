@@ -1,4 +1,4 @@
-Title:  Callback URL
+Title:  Callback URL for Notenik
 
 Tags:   callback-url
 
@@ -8,7 +8,7 @@ Seq:    18
 
 Date:   8 Jan 2020
 
-Reported By: Max S. 
+Reported By: Max S.
 
 Issue: 
 
@@ -17,3 +17,10 @@ Is there a callback-url implemented for notenik?
 I am new to scripting and wanted to take a look at integrating Notenik with Hook.
 
 I was looking at [hookproductivity.com/help/integration/creating-integration-scripts](https://hookproductivity.com/help/integration/creating-integration-scripts) and noticed that Hook documentation mentioned callback-urls.
+
+
+Body: 
+
+See [URL Routing on macOS](https://medium.com/@floschliep/url-routing-on-macos-c53a06f0a984) for some clues. 
+
+Also see [Defining a Custom URL Scheme for Your App](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content/defining_a_custom_url_scheme_for_your_app).

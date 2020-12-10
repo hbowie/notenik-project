@@ -1,0 +1,11 @@
+Title:  Back/Prior now relaunches a Note after following a link
+
+Seq:    5.0.0
+
+Date:   07 Dec 2020
+
+Body: 
+
+After following a web link within a Note, the back button, or prior Note command, will now take the user back to the Note display. 
+
+This should close Issue # 43.

@@ -1,0 +1,19 @@
+Title:  Allow the Back Button to go back to the Note after loading a link
+
+Status: 9 - Closed
+
+Seq:    43
+
+Date:   07 Dec 2020
+
+Reported By: `Isaa
+
+Release: 5.0.0
+
+Issue: 
+
+I would like to ask that you allow users to effectively return to the original note that they came from. Although a user may assume that `Command-[` would achieve this, but instead it returns the user to the note that *precedes* the note that they were initially visiting before clicking on the external web link instead of returning them to the initial note itself.
+
+Body: 
+
+The refresh button would always allow a user to reload a Note after clicking on a web link within the Note, but the back button (or the prior Note command) will now also take you back to the Note from which you linked. 
