@@ -1,0 +1,26 @@
+Title:  macOS version 2.6.0
+
+Seq:    mac.2.6.0
+
+Tags:   mac
+
+Link:  
+
+Type:  Release
+
+Date:  Jan 04, 2020
+
+Teaser:
+
+Body:   
+ 
+#### 1. Applied Postel's Law to Note Formats
+
+Notenik is now more liberal in terms of accepting Notes in a wider variety of formats. Plain text notes, Multi-Markdown notes, and Markdown notes will now be accepted, in addition to the defined Notenik format. 
+
+
+#### 2. Applied Postel's Law to Date Formats
+
+Notenik is now more liberal in terms of the sorts of dates it will parse correctly. Specifically, an 8-digit yyyymmdd date, without any punctuation, should now be correctly parsed. 
+
+

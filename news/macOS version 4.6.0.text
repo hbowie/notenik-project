@@ -1,0 +1,36 @@
+Title:  macOS version 4.6.0
+
+Seq:    mac.4.6.0
+
+Tags:   mac
+
+Link:  
+
+Type:  Release
+
+Date:  Nov 03, 2020
+
+Teaser:
+
+Body:   
+ 
+#### 1. Added support for Markdown footnotes
+
+This should address issue # 36. 
+
+
+#### 2. Added Collection Prefs Option to Display Titles as Level 1 Headings
+
+This should close Issue # 35. 
+
+
+#### 3. Added a Share Option for HTML Blockquotes
+
+When sharing a Note via the Share option beneath the Note menu, there is now an option to format the Body of the selected Note as an HTML fragment enclosed in `blockquote` tags. 
+
+
+#### 4. Added a Navigation Board
+
+The Navigation Board can be summoned via the File menu. It will also appear if the user closes the last open Collection (thus providing a resolution for Issue # 19). The Nav Board shows all easily accessible Collections in an outline, and also offers a series of buttons allowing the user to perform other actions with selected Collections. 
+
+

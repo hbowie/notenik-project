@@ -1,6 +1,6 @@
 Title:  Allow User to See Multiple Collections in Tabs instead of Windows
 
-Status: 6 - Completed
+Status: 9 - Closed
 
 Seq:    9
 
@@ -16,3 +16,4 @@ Can the tab bar reflect the open windows?
 Body: 
 
 This can be done by selecting Merge All Windows beneath the Window menu. 
+

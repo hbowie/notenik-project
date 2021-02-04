@@ -5,6 +5,15 @@
     <description>The Notenik Blog</description>
     <language>en</language>
 	<item>
+	  <title>New Info on Fields and Labels</title>
+	  <link>https://notenik.net/blog/new-info-on-fields-and-labels.html</link>
+	  <guid>https://notenik.net/blog/new-info-on-fields-and-labels.html</guid>
+	  <pubdate>Wed, 03 Feb 2021 12:00:00 -0700</pubdate>
+	  <description>
+	  	There&apos;s a new Articles section on the website, and a new article on Notenik Fields and Labels that explains how to take full advantage of some of the latest changes to Notenik. 
+	  </description>
+	</item>
+	<item>
 	  <title>Notenik Turns the Big Five-O!</title>
 	  <link>https://notenik.net/blog/notenik-turns-the-big-five-o.html</link>
 	  <guid>https://notenik.net/blog/notenik-turns-the-big-five-o.html</guid>
@@ -83,15 +92,6 @@
 	  <pubdate>Fri, 13 Dec 2019 12:00:00 -0700</pubdate>
 	  <description>
 	  	Most of the changes for this release were focused on providing the capability for wiki-like inter-note linking. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik for the Mac Version 2.3.0 Released</title>
-	  <link>https://notenik.net/blog/notenik-for-the-mac-version-2.3.0-released.html</link>
-	  <guid>https://notenik.net/blog/notenik-for-the-mac-version-2.3.0-released.html</guid>
-	  <pubdate>Tue, 10 Dec 2019 12:00:00 -0700</pubdate>
-	  <description>
-	  	Fixed treatment of the Teaser field, to treat it as a long text field; increased tolerance for Notes with alternative formatting; added Ink as an alternate for parsing of Markdown; added an optional Timestamp field, as a first step to enabling use of Notenik to create a Zettelkasten. 
 	  </description>
 	</item>
   </channel>

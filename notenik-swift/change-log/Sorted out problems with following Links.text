@@ -1,0 +1,12 @@
+Title:  Sorted out problems with following Links
+
+Seq:    5.1.0
+
+Date:   15 Dec 2020
+
+Body: 
+
+In particular, application URL links should now be working, both from the Link field, and when found in the body field. 
+
+This should close out Issue # 44. 
+

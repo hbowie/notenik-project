@@ -4,12 +4,40 @@
   <subtitle>The latest news about the Notenik Project</subtitle>
   <link href="https://notenik.net/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.net/" type="text/html" rel="alternate"  />
-  <updated>2020-12-10</updated>
-  <rights>Copyright © 2020, Herb Bowie</rights>
+  <updated>2021-02-03</updated>
+  <rights>Copyright © 2021, Herb Bowie</rights>
   <author>
     <name>Herb Bowie</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>New Info on Fields and Labels</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/new-info-on-fields-and-labels.html"/>
+	  <id>https://notenik.net/blog/new-info-on-fields-and-labels.html</id>
+	  <published>2021-02-03T09:00:00Z</published>
+	  <updated>2021-02-03T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>There&apos;s a new Articles section on the website, and a new article on Notenik Fields and Labels that explains how to take full advantage of some of the latest changes to Notenik. </p>
+
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>There&apos;s quite a lot of Notenik news to talk about. </p>
+<p>First of all, there&apos;s a new version, 5.5.0, that&apos;s just been released. As always, you can find the latest release in the <a href="https://apps.apple.com/us/app/notenik/id1465997984">Mac App Store</a>. </p>
+<p>There are one or two new convenience features in this release, but the bulk of the changes are going on behind the scenes. </p>
+<p>In particular, the Notenik internals have been properly sorted to allow for pretty much any of the usual fields to be renamed. </p>
+<p>So, if for one of your Collections, it would make more sense if the <code>Title</code> field were called the <code>Name</code> field, let&apos;s say, you can now make that happen by editing the <code>template</code> file for that Collection, changing <code>Title</code> to <code>Name</code>, and then adding <code>: &amp;lt;title&amp;gt;</code> after the label at the top of the <code>template</code> file, to tell Notenik to treat it as a <code>title</code> field, even though it&apos;s now called <code>Name</code>. </p>
+<p>All of this needs a lot more space for a complete explanation. Rather than making the User Guide even longer by tucking all the details in there, I&apos;ve added an <a href="../articles.html">Articles</a> section to the <a href="https://notenik.net">website</a>, where you can now find a new article completely addressing the issue of <a href="../articles/field-labels-and-types.html">Field Labels and Types</a>. </p>
+<p>If none of this sounds of interest to you, then of course you can just continue on using Notenik the way you&apos;ve been using it, without any concerns. </p>
+<p>As always, if you do see anything about the app that you think needs a change, just <a href="mailto:support@notenik.net">drop me a line</a>. </p>
+
+	  	]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Notenik Turns the Big Five-O!</title>
 	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-turns-the-big-five-o.html"/>
@@ -433,41 +461,6 @@
 	  	<p>Most of the changes for this release were focused on providing the capability for wiki-like inter-note linking. In order for this to work, you first have to check the Collection Preferences box titled &quot;Double Bracket Parsing for Inter-Note Links&quot;. Then, within the body of any of your notes, you can include a link to another Note in the same Collection by enclosing the Title of the target note within double square brackets. Then, when you click on the resulting link on the Display tab, you will be taken to the Note you have linked to. Click on the back arrow in the Toolbar to be taken back to the linking Note. </p>
 <p>A new variable modifier of &apos;W&apos; was also added to the Template processing logic, which will enable the user to convert the inter-note links to appropriate anchor tags when generating HTML. </p>
 <p>One additional, unrelated change was made to reset the user&apos;s preferences on the first launch after a prior crash on launch. </p>
-
-	  	]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik for the Mac Version 2.3.0 Released</title>
-	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-version-2.3.0-released.html"/>
-	  <id>https://notenik.net/blog/notenik-for-the-mac-version-2.3.0-released.html</id>
-	  <published>2019-12-10T09:00:00Z</published>
-	  <updated>2019-12-10T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-	  	<p>Fixed treatment of the Teaser field, to treat it as a long text field; increased tolerance for Notes with alternative formatting; added Ink as an alternate for parsing of Markdown; added an optional Timestamp field, as a first step to enabling use of Notenik to create a Zettelkasten. </p>
-
-	  </summary>
-	  <content type="html">
-	  	<![CDATA[
-	  	<p>A few more fixes and improvements… </p>
-<ul>
-<li>
-<p>Modified treatment of the Teaser field to treat it as a long text field. </p>
-</li>
-<li>
-<p>Added an optional Timestamp field which will create a series of digits representing the year, month, day, hour, minute and second on which the Note was created. This can be used as a fixed ID for each note, in line with the concept of a <em>Zettelkasten</em>. </p>
-</li>
-<li>
-<p>Increased the tolerance for parsing Notes that use a Markdown level 1 header to identify the Note&apos;s title. </p>
-</li>
-<li>
-<p>Added a second Markdown parser, Ink, which can be used as an alternative to Down. </p>
-</li>
-</ul>
 
 	  	]]>
 	  </content>

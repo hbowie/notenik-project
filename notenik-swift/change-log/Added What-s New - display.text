@@ -1,0 +1,9 @@
+Title:  Added What's New? display
+
+Seq:    5.3.0
+
+Date:   11 Jan 2021
+
+Body: 
+
+Immediately beneath the Help menu the user can now find a request to answer the question of What's New? Selecting this item will display a window showing the latest Notenik news, including both version releases and blog posts. This window will be shown to the user automatically once for each new release. 

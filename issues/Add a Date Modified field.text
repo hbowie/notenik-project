@@ -1,6 +1,6 @@
 Title:  Add a Date Modified field
 
-Status: 0 - Idea
+Status: 6 - Completed
 
 Seq:    40
 
@@ -10,8 +10,9 @@ Reported By: `Isaa Hasaan
 
 Issue: 
 
-I would also like to suggest a "Date Modified" field to compliment "Date Added". 
+I would also like to suggest a "Date Modified" field to complement "Date Added". 
+
 
 Body: 
 
- 
+This will be available as part of the 5.1.0 release. 

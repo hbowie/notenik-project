@@ -1,6 +1,6 @@
 Title:  Keep App Open After Last Window Closes
 
-Status: 6 - Completed
+Status: 9 - Closed
 
 Seq:    19
 
@@ -18,3 +18,4 @@ When I close the last open collection the app closes. I guess I'm using Notenik 
 Body: 
 
 Due to be resolved with the next release. 
+

@@ -1,0 +1,9 @@
+Title:  Added regular refresh to today's date
+
+Seq:    5.3.0
+
+Date:   13 Jan 2021
+
+Body: 
+
+For those who leave Notenik running overnight, added a regular refresh of the date considered to be 'today'. 

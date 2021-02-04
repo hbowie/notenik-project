@@ -1,0 +1,39 @@
+Title:  New Info on Fields and Labels
+
+Seq:    16
+
+Status: 9 - Published
+
+Date:   03 Feb 2021
+
+Teaser: 
+
+There's a new Articles section on the website, and a new article on Notenik Fields and Labels that explains how to take full advantage of some of the latest changes to Notenik. 
+
+Body: 
+
+There's quite a lot of Notenik news to talk about. 
+
+First of all, there's a new version, 5.5.0, that's just been released. As always, you can find the latest release in the [Mac App Store][store]. 
+
+There are one or two new convenience features in this release, but the bulk of the changes are going on behind the scenes. 
+
+In particular, the Notenik internals have been properly sorted to allow for pretty much any of the usual fields to be renamed. 
+
+So, if for one of your Collections, it would make more sense if the `Title` field were called the `Name` field, let's say, you can now make that happen by editing the `template` file for that Collection, changing `Title` to `Name`, and then adding `: <title>` after the label at the top of the `template` file, to tell Notenik to treat it as a `title` field, even though it's now called `Name`. 
+
+All of this needs a lot more space for a complete explanation. Rather than making the User Guide even longer by tucking all the details in there, I've added an [Articles][] section to the [website][nnk], where you can now find a new article completely addressing the issue of [Field Labels and Types][fields]. 
+
+If none of this sounds of interest to you, then of course you can just continue on using Notenik the way you've been using it, without any concerns. 
+
+As always, if you do see anything about the app that you think needs a change, just [drop me a line][email].
+
+[articles]: ../articles.html
+
+[email]: mailto:support@notenik.net
+
+[fields]: ../articles/field-labels-and-types.html
+
+[nnk]: https://notenik.net
+
+[store]: https://apps.apple.com/us/app/notenik/id1465997984

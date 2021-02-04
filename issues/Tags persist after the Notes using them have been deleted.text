@@ -1,6 +1,6 @@
 Title:  Tags persist after the Notes using them have been deleted
 
-Status: 6 - Completed
+Status: 9 - Closed
 
 Seq:    33
 
@@ -14,6 +14,8 @@ Issue:
 
 After deleting a Note containing a Tag used nowhere else, the tag still remains on the Tags view. 
 
+
 Body: 
 
 A Tag now disappears after it is no longer being used. 
+

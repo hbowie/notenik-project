@@ -1,0 +1,9 @@
+Title:  Added Support for Extensive Field Renaming
+
+seq:    5.5.0
+
+Date:   28 Jan 2021
+
+Body: 
+
+Through judicious edits to a Collection's template file, Notenik will allow all of its special fields to be renamed. 

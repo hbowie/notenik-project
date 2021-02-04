@@ -1,0 +1,28 @@
+Title:  Notenik for the Mac Version 2.2.0 Released
+
+Seq:    blog.5
+
+Tags:   blog
+
+Link:   https://notenik.net/blog/notenik-for-the-mac-version-2.2.0-released.html
+
+Type:   Post
+
+Date:   Dec 03, 2019
+
+Teaser:
+
+Added Cut, Copy and Paste support for Notes; added support for British spelling of 'Favorites'; relocated Reload Collection command to the Collection menu to make it easier to find; suppressed empty tags from the Favorites to HTML export.
+
+Body:   
+ 
+This is another release containing a few incremental improvements. 
+
+* Added Cut, Copy and Paste support for Notes. Select a Note within a Collection and then use the Cut or Copy commands. You can then Paste the Note into another Collection, or into an Email message, or anywhere that accepts a block of text. 
+
+* Added support for the British spelling of 'Favorites'. An Australian user pointed out that they spell it 'favourites,' so Notenik has been updated to accept either spelling when exporting Favorites to HTML. 
+
+* The Reload Collection command has been moved from the File menu to the Collection menu, where it will hopefully be easier to find. 
+
+* Empty tags are now bypassed when exporting Favorites to HTML.
+

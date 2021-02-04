@@ -1,6 +1,6 @@
 Title:  Allow User to Change the Preferred File Extension
 
-Status: 6 - Completed
+Status: 9 - Closed
 
 Seq:    31
 
@@ -18,3 +18,4 @@ I've checked two Collections Preferences and both were set to txt Preferred File
 Body: 
 
 Changes in the preferred file extension are now captured and saved (although file extensions for existing Notes are not modified). 
+

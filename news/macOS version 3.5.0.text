@@ -1,0 +1,26 @@
+Title:  macOS version 3.5.0
+
+Seq:    mac.3.5.0
+
+Tags:   mac
+
+Link:  
+
+Type:  Release
+
+Date:  Apr 19, 2020
+
+Teaser:
+
+Body:   
+ 
+#### 1. Create New Notes with Drag and Drop
+
+You can now drag a "bookmark" (consisting of a title and a link) into the list view of Notenik in order to add a new Note. Bookmarks can be dragged from the URL field at the top of a browser window, or from a hyperlink within a web page. 
+
+
+#### 2. Broke Additional Reusable Code Out into NotenikLib
+
+This is an internal change only; it should have no impact on users. 
+
+

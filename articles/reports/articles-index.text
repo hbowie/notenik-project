@@ -1,0 +1,25 @@
+<?output "../../articles.text" ?>
+Title:   articles
+
+Title 2: Articles
+
+Seq:     11
+
+Tags:
+
+Link:
+
+Body:
+
+These articles go into some detail on various aspects of Notenik's design. 
+
+<?nextrec?>
+----
+
+### [=$title$=](articles/=$title&f$=.html)
+
+=$teaser$=
+
+*[Read more...](articles/=$title&f$=.html)*
+
+<?loop?>

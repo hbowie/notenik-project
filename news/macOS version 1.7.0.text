@@ -1,0 +1,36 @@
+Title:  macOS version 1.7.0
+
+Seq:    mac.1.7.0
+
+Tags:   mac
+
+Link:  
+
+Type:  Release
+
+Date:  Oct 31, 2019
+
+Teaser:
+
+Body:   
+ 
+#### 1. Markdown Applied to all Long Text fields
+
+Markdown is now used to format all longtext fields as they appear on the Display tab.
+
+
+#### 2. Internal Refactoring
+
+Made some internal changes to handle field types in a way that will better lend itself to future growth. 
+
+
+#### 3. Additional Minor Improvements
+
+Made a few more minor improvements. 
+
+
+#### 4. Added Notenik Rate/Review Reminder
+
+Added code to remind users to rate and review Notenik on the Mac App Store. 
+
+

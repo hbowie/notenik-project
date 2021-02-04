@@ -1,0 +1,9 @@
+Title:  Notenik News
+
+Seq:    8.7
+
+Body: 
+
+Rerun the notenik-news-gen.tcz script. 
+
+Copy the updated version of the notenik-news.html file from the Sites folder to the Xcode folder. 

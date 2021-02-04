@@ -1,0 +1,15 @@
+Title:  Added Contextual Menu to List View
+
+Seq:    5.5.0
+
+Date:   23 Jan 2021
+
+Body: 
+
+The user can now right-click on a row on the List tab and select any of the following actions:
+
++ `Duplicate` 
++ `Launch Link`
++ `Share`
+
+

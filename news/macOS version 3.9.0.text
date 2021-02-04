@@ -1,0 +1,31 @@
+Title:  macOS version 3.9.0
+
+Seq:    mac.3.9.0
+
+Tags:   mac
+
+Link:  
+
+Type:  Release
+
+Date:  May 29, 2020
+
+Teaser:
+
+Body:   
+ 
+#### 1. Added a Counts Window
+
+The new Counts window will show various character, line and word counts for the body field of the currently selected Note. 
+
+
+#### 2. Added Undo to Long Text Fields
+
+Enabled Undo on long text fields. This had previously been overlooked. 
+
+
+#### 3. Added Menu Command and Keyboard Shortcut to Edit the Selected Note
+
+Added a new menu command beneath the Note menu to switch to the Edit tab, in order to edit the selected Note. 
+
+

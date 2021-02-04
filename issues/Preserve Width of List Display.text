@@ -2,13 +2,13 @@ Title:  Preserve Width of List Display
 
 Tags:   list
 
-Status: 6 - Completed
+Status: 9 - Closed
 
 Seq:    21
 
 Date:   8 Jan 2020
 
-Reported By: Jonathan C. and John M. 
+Reported By: Jonathan C. and John M.
 
 Release: 4.5.0
 
@@ -20,3 +20,4 @@ Collection window position and overall width seems to be saved, but not the heig
 Body: 
 
 Fixed in latest release. 
+

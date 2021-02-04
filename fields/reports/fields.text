@@ -1,0 +1,30 @@
+<?output "../../articles/Field Labels and Types.text"?>
+Title:   Field Labels and Types
+
+Tags:    
+
+Status:  5 - Held
+
+Date:    3 Feb 2021
+
+Author:  Herb Bowie
+
+Teaser: 
+
+Dive into all the details concerning Notenik fields, field labels and field types. 
+
+Body:
+
+<?nextrec?>
+<?if =$level$= eq 1 ?>
+<?endif?>
+<?if =$level$= eq 2 ?>
+## =$title$=
+<?endif?>
+<?if =$level$= eq 3 ?>
+### =$title$=
+<?endif?>
+
+=$body&w2$=
+
+<?loop?>

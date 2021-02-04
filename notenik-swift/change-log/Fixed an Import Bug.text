@@ -1,0 +1,9 @@
+Title:  Fixed an Import Bug
+
+Seq:    5.2.0
+
+Date:   04 Jan 2021
+
+Body: 
+
+Fixed a bug affecting data import into Notenik. 

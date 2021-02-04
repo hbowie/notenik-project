@@ -1,0 +1,50 @@
+Title:   articles
+
+Title 2: Articles
+
+Seq:     11
+
+Tags:
+
+Link:
+
+Body:
+
+These articles go into some detail on various aspects of Notenik's design. 
+
+----
+
+### [Existing Text Files](articles/existing-text-files.html)
+
+Since Notenik is rather late to the game of managing text files, and since those already using similar sorts of files are probably among those interested in my app, I wanted to talk a bit about how Notenik can be used with existing folders full of text files.
+
+
+*[Read more...](articles/existing-text-files.html)*
+
+----
+
+### [Field Labels and Types](articles/field-labels-and-types.html)
+
+Dive into all the details concerning Notenik fields, field labels and field types. 
+
+
+*[Read more...](articles/field-labels-and-types.html)*
+
+----
+
+### [The File Format](articles/the-file-format.html)
+
+People have been storing notes in text files long before Notenik came along. So why is the Notenik format different?
+
+
+*[Read more...](articles/the-file-format.html)*
+
+----
+
+### [Markdown Support](articles/markdown-support.html)
+
+Notenik provides extensive support for Markdown. See all the details here. 
+
+
+*[Read more...](articles/markdown-support.html)*
+

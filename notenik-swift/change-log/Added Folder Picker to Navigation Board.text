@@ -1,0 +1,9 @@
+Title:  Added Folder Picker to Navigation Board
+
+Seq:    5.3.0
+
+Date:   12 Jan 2021
+
+Body: 
+
+Added a Combo Box at the top left of the Navigation Board, allowing the user to type the first few letters of a Collection's folder name, and then hit enter/return to select an available folder. 

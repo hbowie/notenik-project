@@ -1,0 +1,9 @@
+Title:  Corrected Sharing of Entire Note in Markdown
+
+Seq:    5.4.0
+
+Date:   16 Jan 2021
+
+Body: 
+
+There were several problems with this option that should all have been corrected now. 

@@ -1,0 +1,30 @@
+<?nextrec?>
+<?definegroup 1 "=$seq$=" ?>
+<?ifendgroup 1 ?>
+<?endif?>
+<?ifnewgroup 1 ?>
+<?output "../../../news/macOS version =$seq$=.text"?>
+Title:  macOS version =$seq$=
+
+Seq:    mac.=$seq$=
+
+Tags:   mac
+
+Link:  
+
+Type:  Release
+
+Date:  =$date&MMM dd, yyyy$=
+
+Teaser:
+
+Body:   
+ 
+<?set count = 0 ?>
+<?endif?>
+<?set count += 1 ?>
+#### =$count$=. =$title$=
+
+=$body$=
+
+<?loop?>

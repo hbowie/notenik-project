@@ -1,0 +1,36 @@
+Title:  macOS version 1.4.0
+
+Seq:    mac.1.4.0
+
+Tags:   mac
+
+Link:  
+
+Type:  Release
+
+Date:  Sep 03, 2019
+
+Teaser:
+
+Body:   
+ 
+#### 1. Work Type now uses a Combo Box
+
+When a Collection (typically, of quotations) has a 'Work Type' field, then Notenik will now present a standard, selectable list of options to choose from using what is known as a "Combo Box" control for editing. 
+
+
+#### 2. Improved Collection Load Speed
+
+Improved the speed of opening a new Collection by optimizing the sorting of Notes as they are loaded into memory. 
+
+
+#### 3. Miscellaneous Improvements
+
+A few minor bug fixes and minor improvements. 
+
+
+#### 4. Added Script File Recording
+
+Notenik can now be used to record script files, as well as play them back. 
+
+

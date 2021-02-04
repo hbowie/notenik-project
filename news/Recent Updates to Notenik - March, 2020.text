@@ -1,0 +1,40 @@
+Title:  Recent Updates to Notenik - March, 2020
+
+Seq:    blog.11
+
+Tags:   blog
+
+Link:   https://notenik.net/blog/recent-updates-to-notenik-march-2020.html
+
+Type:   Post
+
+Date:   Mar 25, 2020
+
+Teaser:
+
+A summary of notable changes to the Mac App since December, 2019. 
+
+
+Body:   
+ 
+There have been a few version releases since I last wrote about recent changes in the [blog][] back in December, so let me hit on some of the more significant recent developments. 
+
+* The most recent release, 3.2.0, added a new internal Markdown parser as a third alternative, in addition to [Down][] and [Ink][]. It's probably not quite perfect, but I tried to stick as close as possible to John Gruber's documentation of the functionality intended for both [Markdown][md] and [SmartyPants][sp], and it seems to be working pretty well for me. The main improvement here is better handling of wiki-style inter-note links. These are now only available when using the internal parser, but no longer require you to specifically request this feature: it's just built in to the new parser. See the Application Preferences to select the new parser. 
+* Added the ability to mirror a Collection of Notes to an alternate format -- most usefully, HTML. This new ability makes it super easy to generate a simple website that anyone can access with a Web browser. Once you set this up, the HTML mirror copies are automatically kept up-to-date for you in the background, as you go about working on the text files within Notenik. See the new Transform menu for commands to help you set this up. 
+* The Edit view is now scrollable, in case the number of fields in a Collection is too large to fit in the available space for the window. 
+* The Collection Preferences window was redesigned to make it more usable. 
+* Notenik is now available in the App Store for users still on High Sierra.
+* Made a few usability improvements, including the addition of the day of week name next to the date on a Note's display view, and the addition of the letter 'T' in the leftmost column in the List view to indicate Notes with dates of today. 
+* A number of bugs have been fixed.
+* Restructured the User Guide to make it easer to use. 
+
+As usual, see the Notenik [Version History][hist] and the relevant sections of the [User Guide][ug] for further details.  And drop me a line at <support@notenik.net> if any problems or questions. 
+
+[blog]: https://notenik.net/blog.html
+[down]: https://github.com/iwasrobbed/Down
+[hist]: https://notenik.net/swift.html#version-history
+[ink]: https://github.com/JohnSundell/Ink
+[md]: https://daringfireball.net/projects/markdown/syntax
+[sp]: https://daringfireball.net/projects/smartypants/
+[ug]:   https://notenik.net/swift.html
+

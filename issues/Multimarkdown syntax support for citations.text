@@ -1,6 +1,6 @@
 Title:  Multimarkdown syntax support for citations
 
-Status: 6 - Completed
+Status: 9 - Closed
 
 Seq:    37
 
@@ -16,3 +16,4 @@ Any hopes for full MultiMarkdown support? I love my footnotes and citations.
 Body: 
 
 Citation support implemented in 4.7.0.
+

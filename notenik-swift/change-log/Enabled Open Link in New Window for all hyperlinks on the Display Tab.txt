@@ -1,0 +1,9 @@
+Title:  Enabled Open Link in New Window for all hyperlinks on the Display Tab
+
+Seq:    5.5.0
+
+Date:   02 Feb 2021
+
+Body: 
+
+By using a Secondary Click (otherwise known as a right-click or a control-click) on a hyperlink showing on the Display tab, the user can see a contextual (aka shortcut) menu with the option to `Open Link in New Window`. Before this change, selecting this option did nothing. It will now attempt to pass the link to your preferred Web browser, requesting that it be opened there. 

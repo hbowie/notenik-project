@@ -1,6 +1,6 @@
 Title:  Make Edit View Scrollable
 
-Status: 6 - Completed
+Status: 9 - Closed
 
 Seq:    13
 
@@ -18,3 +18,4 @@ I opened a folder containing all my notes and wanted to make a new note. This is
 Body: 
 
 The entire Edit view should be scrollable in the 2.8.0 release. 
+

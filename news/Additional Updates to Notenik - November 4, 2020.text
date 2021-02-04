@@ -1,0 +1,57 @@
+Title:  Additional Updates to Notenik - November 4, 2020
+
+Seq:    blog.12
+
+Tags:   blog
+
+Link:   https://notenik.net/blog/additional-updates-to-notenik-november-4-2020.html
+
+Type:   Post
+
+Date:   Nov 04, 2020
+
+Teaser:
+
+I've made a bunch of Notenik improvements since my last blog post, and I attempt to summarize them here. 
+
+
+Body:   
+ 
+Well, we've had a bunch of updates to Notenik since my last blog post, so let me try to hit the high points here. Some of these were attempts to scratch itches that I was feeling, while others were implemented in response to requests/suggestions from other users. In addition to the list below, there were several minor tweaks to improve the user experience. 
+
++ Notenik now has its own iCloud container, which means that Collections stored at this location can be more easily accessed, either through an Open from iCloud option beneath the File menu, or from the new Navigation Board. 
+
++ A Navigation board can be opened from a new option beneath the File menu. It will also appear when you close the last open Collection without quitting. This window allows easy opening of recently opened Collections, as well as Collections stored in Notenik's iCloud container. 
+
++ Added some drag and drop support. Users can now drag a bookmark from the URL field at the top of a browser window and drop it anywhere on the list view of a Collection to add the bookmark as a new Note. You can also drag a Note from one Collection to another. Contacts and Emails can also be imported in very basic ways. 
+
++ Duplicates are now treated differently -- Notenik will simply append a sequence number and allow the duplicate title to be added to the Collection.
+
++ Double-clicking a Note from the List tab will now attempt to launch whatever Link the Note may have. 
+
++ A new command beneath the Note menu will discard any edits currently in work. 
+
++ Another new command beneath the Note menu will increment the major portion of a two-part Seq field instead of the minor portion. As an example, incrementing '1.00' would result in a new value of '2.00', instead of '1.01'. Any subsequent values that would result in duplicates will also be incremented. 
+
++ Added a couple of Collection preferences that allow the Display of a Note to be altered slightly. One option will do away with an explicit Body field label in the Note display; the other option will display a Note's title as a level 1 heading. Both options may be valuable for Collections of Notes that are primarily intended to be viewed as documents. 
+
++ Internal wiki-style links between Notes have been enhanced so that timestamps will be used to prevent links from breaking if link targets are renamed. 
+
++ Notenik's own Markdown parser has been refined. Several bugs have been fixed. An option to automatically generate a Table of Contents has been added, along with support for Multimarkdown-style footnotes. 
+
++ A new Counts window is available, which will show character, line and word counts for the currently selected Note. 
+
++ A new Sort option is available, to sort by Tags. 
+
++ Added new keyboard shortcuts for status updates. 
+
++ Users can now specify a 'pick-from' field type in a template file, and specify the allowable values. 
+
++ Users can also specify a Boolean format for a custom field, with the field being represented by a checkbox on the Edit tab. 
+
++ Added new Note sharing options for formatting a Note as a Quotation, in either Markdown or HTML. 
+
++ Added an import option for XML that will allow users of iWisdom to import their collections of quotations into Notenik (since iWisdom is no longer supported). 
+
++ For those interested in the code, the monolithic Notenik project was refactored to break out several reusable packages: NotenikUtils, for the most general-purpose utilities; NotenikMkdown, for the internal Markdown parser; NotenikTextile, for the beginnings of a rudimentary Textile parser; and NotenikLib, for Notenik code that might be reused on platforms other than the Mac.
+

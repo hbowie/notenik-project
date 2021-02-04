@@ -1,0 +1,596 @@
+Title:   Field Labels and Types
+
+Tags:    
+
+Status:  5 - Held
+
+Date:    3 Feb 2021
+
+Author:  Herb Bowie
+
+Teaser: 
+
+Dive into all the details concerning Notenik fields, field labels and field types. 
+
+Body:
+
+
+One of the guiding principles for the development of Notenik has been Alan Kay's dictum that: "Simple things should be simple, complex things should be possible."
+
+At its simplest, a Note consists of two fields: a Title and a Body. And Notenik will work with these sorts of notes, stored as simple text documents. 
+
+However Notenik allows many sorts of fields to be stored as part of each Note, with each field identified by its label, and being treated according to its type, assigned either implicitly or explicitly. 
+
+Among the other basic fields, Notenik uses a Tags field to allow a user to organize and view a collection of notes by topic, in addition to a straight linear sequence. 
+
+And then the Web has become so pervasive in our lives that it's often handy to associate a URL with a note, and so a Link field is generally provided for that purpose. 
+
+A default Notenik Collection, then, contains only four fields -- Title, Tags, Link and Body -- with each field being of a distinct type. This is still pretty simple. And really, there's quite a lot you can do with Notenik just by recording notes containing only these four fields. 
+
+However, under the hood, a default Collection containing only these four fields is really just a small and simple subset of the options that are available when it comes to field labels and field types. 
+
+This document will explain the full range of options available to the Notenik user when it comes to fields.
+
+The allowed fields for a Collection are defined in each Collection's template. The template for a Collection defines the field labels and associated types allowed for each Note within that Collection.
+
+### Lowest Common Denominator Representations
+
+The first thing to explain, when it comes to field labels and field types, is that Notenik sees these identifiers only through what we might call a lowest common denominator representation. Such a representation is formed by changing all letters to lower case, and removing all spacing and punctuation. 
+
+So whether you type a field label, or see it referred to, as `Time Stamp`, `Timestamp`, `time-stamp` or `timestamp`, it makes no difference to Notenik: all of these boil down to the same internal representation of `timestamp`, and thus all will be treated identically.
+
+### Labels vs. Types
+
+A field *label* is the thing you see identifying a particular field for each Note. 
+
+A field *type* identifies a set of behaviors and representations that will be available for a particular field. 
+
+To keep things simple, Notenik will typically infer a field type based on its label. And, in fact, many field types exactly match the labels typically used to invoke a field of that type. So, for example, a field with a label of `Link` will typically also have a field type of `link`.  
+
+Every field within a Collection must have its own unique label. However, you can often have multiple fields with different labels but of the same type. 
+
+Both labels and types can be specified within a Collection's template file. For example, consider the following line appearing at the top of a Collection's template file: 
+
+```
+Name: <title>
+```
+
+Such a line would be used to specify a field with the label `Name`, and of the type [[Title]]. 
+
+Notenik only supports a limited set of field types, and all fields, no matter how they are labeled, will be assigned one of these predetermined types. The default will be a simple [[String]].
+
+A label matching the desired type is the easiest way to create a field of that type; however, by specifying an explicit type within a Collection's template file (as in the example above), any type can be assigned to any label. 
+
+You can make up your own field labels -- you're not constrained by the default set offered by Notenik. You're only constrained by a couple of rules:
+
+1. A field label may not consist of more than 48 characters; 
+2. A field label may not contain special characters, other than dashes and underscores.
+
+Each field label/type is discussed below, grouped into logical collections.
+
+### Special Fields
+
+Several field types have special Notenik functionality associated with them. This functionality is generally associated with the Note containing that field. For these special fields, Notenik should generally only have one field of that type in a Collection; in some cases, Notenik can tolerate multiple fields of a type, but will attach its special functionality to the first field of that type. 
+
+See the description of each field type for further details.
+
+### Table of Contents for Field Groupings
+
++ [[The Basic Set of Fields]]
++ [[Task-Related Fields]]
++ [[The Sequencing Field]]
++ [[Web-Making Fields]]
++ [[Fields Useful for Reviews, Citations and Quotations]]
++ [[General-Purpose Fields]]
++ [[System-Assigned Dates and Times]]
+
+## Alphabetic Index to Fields
+
+For ease of reference, when looking for a specific field type, here's an alphabetical index to all of them. 
+
++ [[Artist]]
++ [[Author]]
++ [[Body]]
++ [[Boolean]]
++ [[Code]]
++ [[Date]]
++ [[Date Added]]
++ [[Date Modified]]
++ [[Index]]
++ [[Integer]]
++ [[Link]]
++ [[Longtext]]
++ [[Rating]]
++ [[Recurs]]
++ [[Seq]]
++ [[Status]]
++ [[String]]
++ [[Tags]]
++ [[Teaser]]
++ [[Timestamp]]
++ [[Title]]
++ [[Type]]
++ [[Work Link]]
++ [[Work Title]]
++ [[Work Type]]
+
+## The Basic Set of Fields
+
+As already mentioned above, these are the default field labels and types assigned when you create a new Notenik Collection. 
+
+
+### Title
+
+The word `title` can be used as both a label and a type. 
+
+A Collection must have one and only one field of type `title`, and it should be the *first* field within a Collection. 
+
+When editing, the title field will appear as a single line of editable text.
+
+When displayed, the title field will often be displayed in a bold and/or larger font, and often without being accompanied by its label.   
+
+When used as a sort field, title values will be sorted by their lowest-common-denominator representation (ignoring case, spacing  and punctuation). 
+
+The title field for a Note serves as that Note's unique identifier within its Collection, in three different ways:
+
+1. In its original form, as entered by the user, when presented to the user;
+
+2. In its lowest common denominator form (as described above), when used internally by Notenik;
+
+3. In a lightly transformed form, when creating a file name for the Note, to be used on disk.
+
+### Tags
+
+The word `tags` can be used as both a label and a type. 
+
+In addition to `tags` itself, this field type will be inferred for any of the following label values:
+
++ `keywords`
++ `category`
++ `categories`
+
+A Collection should only have a single tags field. 
+
+The tags field consists of zero or more tags, with each tag consisting of one or more levels. 
+
+A period or a slash may be used to separate one level of a tag from the next level, with the period being preferred. A comma or a semi-colon may be used to separate one tag from another, with the comma being preferred.
+
+When editing, the tags field will appear as a line of tokens, making it easier to pick from a list of tags that have already been created within the Collection. 
+
+For display purposes, tags will often appear in italics, above the title field, and without any identifying label. 
+
+Tags can be used to organize a Collection of Notes into an outline, with the various tags and their levels forming the outline, and with Notes appearing under whatever tags they've been assigned.
+
+### Link
+
+The word `link` can be used as both a label and a type. 
+
+In addition to `link` itself, this field type will be inferred for a label of `URL`, or for any label containing the consecutive letters `link`.
+
+A Collection may have multiple fields of type `link`.
+
+A link field is expected to hold a single [URL](https://en.wikipedia.org/wiki/URL). Notenik will attempt to honor as many different URL schemes (`https`, `mailto`, etc.) as might usefully be referenced, and will attempt to handle each according to its type. 
+
+When editing, a link field will appear as a three-line text field. 
+
+For display purposes, links will generally be styled as a link, and will be clickable. 
+
+The first link field encountered within a Note will be considered the Note's primary link field, and will be acted upon by any special buttons/commands designed to open that Note's link. These actions will typically open the link within the user's preferred Web browser (such as Safari or Chrome). 
+
+Remember that a link stored in its own field is a somewhat different animal from a link coded using Markdown syntax within a Note's body.
+
+### Body
+
+The word `body` can be used as both a label and a type. 
+
+A Collection must have one and only one field of type `body`, and it should be the *last* field within a Collection. 
+
+The body field consists of free-form text: in other words, this is the stuff that would colloquially be considered a *note*. 
+
+When parsing a Notenik text file, the body field has the special distinction of allowing the inclusion of lines that might otherwise be interpreted as additional fields (since Notenik knows that no other legitimate field definitions are allowed to follow the body entry). 
+
+When editing, the body field will appear as a multi-line text field, and will take up whatever available space is left after  the edit widgets for other fields have been presented. 
+
+For Display purposes, the body field will be run through a Markdown parser before presentation.
+
+## Task-Related Fields
+
+The following field types are typically used as part of a Notenik Collection serving as a *To-Do* list, in which each Note represents a task to be completed. 
+
+
+### Date
+
+The word `date` can be used as both a label and a type. 
+
+In addition to `date` itself, this field type will be inferred for any label containing the consecutive letters `date`.
+
+A Collection may have one or more fields of type `date`. The first such field will be used as the primary date field for the Note when it comes to any operations (sorting, recurrence, etc.) that assume a single date field. 
+
+A field of type `date` typically contains a year, a month and a day of the month. A specific time of day is not meant to be included. If an approximate date is intended, then the day may be omitted, or the month and the day. 
+
+When editing, a date field can be entered as free-form text. Notenik will attempt to parse any reasonable date expression into a year, month and day for internal manipulation. Other widgets may be available to set the field to Today's date, to allow the user to pick a date from a calendar, and/or to allow them to increment or decrement the individual date components (year, month and day). 
+
+For Display purposes, the day of the week will generally be shown alongside the year, month and day of month. 
+
+When used as a sort field, date values will be sorted by year, month and day, no matter how they were originally entered.
+
+### Status
+
+The word `status` can be used as both a label and a type. 
+
+A Collection should only have a single field of type `status`. 
+
+The status field is meant to indicate a task's degree of completion, using a standard set of values. A single digit is used to place each status value into an approximate life cycle sequence. An accompanying bit of text is used to convey the human-readable meaning associated with that particular digit. 
+
+When editing, the status field is presented as a pick list, with the user allowed to select from the list of standard values for that Collection. 
+
+For Display purposes, the digit and text are usually shown side-by-side. 
+
+When used as a general sort field, status values will be sorted by their digits. 
+
+When used in a Task sort, status values will be converted to an `X`, for any numeric value greater than or equal to 6, or a space, for any value less than 6. The intent is to sort completed tasks to the bottom of a list sorted in this fashion. 
+
+Notenik will default to the following standard list of status values.  
+
+* 0 - Suggested
+* 1 - Proposed
+* 2 - Approved
+* 3 - Planned
+* 4 - Active
+* 5 - Held
+* 6 - Completed
+* 7 - Pending Recurs
+* 8 - Canceled
+* 9 - Closed
+
+The text values may be modified by placing a series of integer + label pairs in the Value area of the relevant template file, with separating punctuation. Such a template line might look something like this:
+
+	Status: 1 - Idea; 4 - In Work; 9 - Published;
+
+### Recurs
+
+The word `recurs` can be used as both a label and a type. 
+
+In addition to `recurs` itself, this field type will be inferred for a label of `Every`.
+
+A Collection should have at most one recurs field. 
+
+The recurs field is designed to work hand-in-hand with the first (or only) date field.
+
+The recurs field is meant to imply that the associated task is meant to recur at some regular interval, and to supply the interval of recurrence, stated in plain English. 
+
+Unlike some other task-tracking systems, Notenik will not duplicate a task in order to increment its date according to the recurrence rule; the existing associated Note will simply have its date field incremented. 
+
+When editing, the recurs field will appear as a single line of editable text.
+
+When displayed, the recurs field will appear as it was entered.   
+
+Various user controls may be available to cause a Note's first or only date field to be incremented once, according to the stated recurs rule. 
+
+All of the following are valid expressions of a recurs rule. Note that use of the leading word `Every` is always optional, and is included only for readability. Case (upper or lower) is not significant. 
+
+* Daily
+* Every Weekday
+* Every 3 months
+* Every Tuesday
+* Every other Monday
+* Every month
+* Quarterly
+* Every Year
+* The 15th of every month
+* 2nd Tuesday of every month
+
+## The Sequencing Field
+
+This "group" consists on just one field type.
+
+
+### Seq
+
+The word `seq` can be used as both a label and a type. 
+
+In addition to `seq` itself, this field type will be inferred for field labels matching any of the following:
+
++ sequence
++ rev
++ revision
++ version
++ Anything beginning with `seq`
+
+A Collection is not expected to have more than one field of type `seq`. 
+
+A seq field is meant to contain some sort of sequence number, revision letter, version number or priority that can be used to put the Notes of a Collection into some meaningful order. 
+
+A Seq field may contain letters, digits and one or more periods (aka decimal points) or hyphens or a dollar sign (‘$’).
+
+You may wish to assign a unique Seq value to each Note in a Collection, but Notenik does not require this (in other words, it does allow duplicate Seq values to be assigned to different Notes).
+
+When editing, the seq field will appear as a single line of editable text.
+
+When displayed, the seq field will be displayed as entered.   
+
+When used as a sort field, seq values will be padded to cause them to sort into a natural order, rather than a strict character-by-character alphanumeric order.  In other words, a value of `2` will sort before a value of `10`, a value of `b` will sort before `aa`, etc. 
+
+Each segment of this field, when separated by a dot or a dash, will be padded separately.
+
+## Web-Making Fields
+
+In addition to all the other field types, the following are particularly useful for generating web pages and sites. 
+
+When using Notenik in this way, it is assumed that each Note will become a page of content: a blog post, or article, or story, or whatever you wish to call it.
+
+### Code
+
+The word `Code` can be used as both a label and a type. 
+
+This field type will be inferred for a label of `Code`.
+
+A Collection may have any number of fields with a type of `code`. 
+
+When editing, a `code` field will appear as a multiple lines of editable text.
+
+When displayed, a `code` field will be enclosed in HTML `pre` and `code` tags, so that line breaks will be honored, and the code will be displayed using a monospaced font..   
+
+Although code can always be embedded in the body of a Note using the usual Markdown formatting conventions, having a separate code field can sometimes be useful as well. 
+
+A code field can be useful for including examples of HTML coding, or any other sort of programming code.
+
+### Index
+
+The word `Index` can be used as both a label and a type.
+
+A Collection should only have one field of type `index`.
+
+This field type allows the user to assign one or more index terms to each Note in a Collection.
+
+There is little visible functionality associated with an `index` field in the main Notenik user interface. 
+
+The purpose of including such a field in a Collection is to allow use of `notenik-index` as an input type in a script. See the [Scripting Spec](https://notenik.net/script-spec.html) for further info. Use of a Collection in this mode results in one input row being generated for each index term, to make it easy to generate a website index. See the [Alphabetical Index for the Big Ideas in Software Development](https://www.softdevbigideas.com/alphabetical-index.html) for an example of such an page. 
+
+Rather than using the Notenik UI, the easiest way to add index entries to a series of Notes is though direct editing of the underlying text files. When working in this mode, a separate `Index` line can be entered for each index term; multiple Index lines should be placed one after the other, without any intervening blank lines. 
+
+When combining multiple terms on a single line, they should be separated by semicolons. 
+
+A reference link for a term may also be included, within parentheses, following the term itself, and before any semicolon separator. 
+
+When editing, the title field will appear as a single line of editable text.
+
+### Teaser
+
+The word `Teaser` can be used as a label, but not as a type. 
+
+A label of `Teaser` will imply a type of [[longtext]].
+
+A Collection can only have one field labeled `Teaser`, although it may have any number of other fields with the type `longtext`. 
+
+The `Teaser` field is meant to contain an excerpt from the Note, or a summary of its contents, or any brief bit of enticing text that can be displayed, usually beneath a Note's title, to encourage potential readers to click on a link in order to read the entire body of the Note. 
+
+When editing, a `longtext` field will appear as multiple lines of editable text. A `longtext` field may be formatted using Markdown.
+
+When displayed, a `longtext` field will be transformed using a Markdown parser.
+
+## Fields Useful for Reviews, Citations and Quotations
+
+The following fields may be useful when using Notenik to record quotes from, or commentary about, or citations of, authors and artists. 
+
+
+### Artist
+
+The word `Artist` can be used as both a label and a type. 
+
+This field type will be inferred for a label of `Artist`.
+
+A Collection should have only one `Artist` or `Author` field. 
+
+When editing, an artist field will appear as a single line of editable text.  
+
+When used as a sort field, a leading "The " will be ignored, and the remaining charcters will be converted to lowercase. So a value of "The Beatles" will sort as "beatles". 
+
+When choosing to sort a Collection by Author, an Artist field will be used instead, when present.
+
+### Author
+
+The word `Author` can be used as both a label and a type. 
+
+In addition to `Author` itself, this field type will be inferred for the following labels:
+
++ By
++ Creator
+
+A Collection should have only one `Artist` or `Author` field. 
+
+When editing, an Author field will appear as a combo box, allowing the user to choose from a list of authors already entered, or to enter a new one.
+
+One or more author names should be entered in this field, with first names first.
+
+### Rating
+
+The word `Rating` can be used as both a label and a type. 
+
+In addition to `rating` itself, this field type will be inferred for a label of `priority`.
+
+A Collection may have any number of `rating` fields.  
+
+A `rating` field is expected to contain a numeric value (integer or double) that indicates a rating or priority or some similar value.
+
+When editing, a rating field will appear as a single line of editable text.
+
+### Work Title
+
+This field type will be inferred for the following field labels:
+
++ work
++ worktitle
+
+This field type is meant to supply the title for a creative work (book, song, essay, etc.) being referenced by the Note. 
+
+For some exporting/sharing options, the Work Title, [[Work Type]] and [[Work Link]] fields may be used to nicely format the resulting citation of the source.
+
+### Work Type
+
+This field type will be inferred for a field label of 'Work Type'.
+
+A field with this type is meant to contain a type of creative work being referenced. 
+
+A field with this type is meant to be used in combination with a field of type [[Work Title]]. 
+
+For some exporting/sharing options, the [[Work Title]], Work Type and [[Work Link]] fields may be used to nicely format the resulting citation of the source. 
+
+When editing, his field type comes along with a standard set of possible values, and appears as a drop-down list of choices.
+
+Additional types are added to this list as the need arises, but this is the complete list as of this writing:
+
++ unknown
++ Album
++ Article
++ Blog Post
++ Book
++ CD
++ Comment
++ Conference
++ Essay
++ Film
++ Interview
++ Lecture
++ Letter
++ Paper
++ Play
++ Poem
++ Preface
++ Presentation
++ Remarks
++ Sermon
++ Song
++ Speech
++ Story
++ Television Show
++ Video
+
+### Work Link
+
+This field type will be inferred for a field label of `Work Link`.
+
+For some exporting/sharing options, the [[Work Title]], [[Work Type]] and Work Link fields may be used to nicely format the resulting citation of the source. 
+
+In all other respects, this field type will behave identically to an ordinary [[Link]] field.
+
+## General-Purpose Fields
+
+The following field types can be used as needed.
+
+
+
+The word `boolean` can be used as a type. The word `bool` will be recognized as a shorthand identification for this type as well. 
+
+A Collection can have any number of fields of type `boolean`. 
+
+A boolean type will produce a field that can have a value of `true` or `false`, and that will be represented as a checkbox when editing.
+
+Values for a Boolean field type will be interpreted in the following ways:
+
++ Anything starting with the letter 'y' (such as 'yes') will be interpreted as `true`;
++ Anything starting with the letter 'n' (such as 'no') will be interpreted as false;
++ Anything starting with the letter 't' (such as 'true') will be interpreted as `true`;
++ Anything starting with the letter 'f' (such as 'false') will be interpreted as `false`;
++ The word 'on' will be interpreted as `true`;
++ The digit '1' will be interpeted as `true`;
++ Any other value will be interpreted as `false`.
+
+### Integer
+
+This value is used to represent an interger. The type identifier may also be abbreviated  as `int`. 
+
+
+### Longtext
+
+A field type of 'longtext' implies a multi-line text field that may be formatted using Markdown. 
+
+The [[Body]] field and the [[Teaser]] field default to a type of 'longtext'.
+
+### String
+
+This is the default field type, if no other type is assigned or implied. 
+
+
+### Pick From
+
+This field type, when accompanied by a series of starting values, can be used to offer the user a drop-down menu allowing a choice from a set of previously used values, or the entry of a new value, which will then be added to the list. (Such a user interface widget is often referred to as a *combo box*.)
+
+Here's an example of how you would do this in a Collection's template: 
+
+```
+Type: <pick-from: static, post>
+```
+
+In other words, enter the usual field label, followed by a colon, and then follow that with the literal 'pick-from: ', followed by the possible values, separated using commas or semicolons.
+
+### Type
+
+The word `Type` can be used as a label, but is not a valid type. 
+
+A field called `Type` can often be a useful element of a Collection.
+
+The label `Type` can often be usefully combined with a type of [[Pick From]] in order to predefine allowable types that make sense within the context of a particular Collection.
+
+## System-Assigned Dates and Times
+
+These fields, unlike the [[Date]] field, are system-assigned, and consist of a time as well as a date. 
+
+
+### Date Added
+
+The phrase `Date Added` can be used as both a label and a type. 
+
+A Collection should never have more than one field of this type. 
+
+This field contains the original date and time that the Note was added to a Collection. 
+
+This field is system-maintained, and is not editable by the user. 
+
+The field is generally displayed below all user-editable fields, and may be separated from these other fields by a divider. 
+
+The values for this field can be exported and imported, and will then serve the purpose of preserving an original value for this field, rather than reflecting the date and time of the import.
+
+### Date Modified
+
+The phrase `Date Modified` can be used as both a label and a type. 
+
+A Collection should never have more than one field of this type. 
+
+This field contains the last date and time at which the Note was modified. 
+
+This field is system-maintained, and is not editable by the user. 
+
+The field is generally displayed below all user-editable fields, and may be separated from these other fields by a divider. 
+
+The values for this field can be exported and imported, and will then serve the purpose of preserving an original value for this field, rather than reflecting the date and time of the import.
+
+### Timestamp
+
+The word `Timestamp` can be used as both a label and a type. 
+
+A Collection should never have more than one field of this type. 
+
+This field is assigned when a Note is first created, and is an alternate means of identification for a Note that will persist even if the title of the Note is later changed. 
+
+Timestamp values will be generated in a "yyyyMMddkkmmss" format, consisting of:
+
+* 4-digit year
+* 2-digit month
+* 2-digit day of month
+* hour of day, using a 24-hour range
+* minute of hour
+* second of minute
+
+All of this is normalized to Greenwich Mean Time, and formatted without spaces or punctuation. 
+
+This field is system-maintained, and is not editable by the user. 
+
+The field is generally displayed below all user-editable fields, and may be separated from these other fields by a divider. 
+
+The values for this field can be exported and imported, and will then serve the purpose of preserving an original value for this field, rather than reflecting the date and time of the import.
+
+A timestamp field is particularly important when you are using links from one Note to another within a Collection. 
+
+If you enable the timestamp field for a Collection, then you can change the title of a linked Note without changing the referencing wiki link text, and Notenik will remember the association between the old title and the new title, making use of the timestamp field to preserve a unique, unchanging identity for each Note. These associations will be saved in a special data store for the Collection. This functionality can be useful to make sure you don't end up with broken links between Notes.
+

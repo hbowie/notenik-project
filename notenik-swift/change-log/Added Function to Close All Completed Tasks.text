@@ -1,0 +1,9 @@
+Title:  Added Function to Close All Completed Tasks
+
+Seq:    5.1.0
+
+Date:   10 Dec 2020
+
+Body: 
+
+This new command beneath the Collection menu will change all Notes with a status of Completed to a status of Closed. 

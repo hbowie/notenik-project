@@ -1,0 +1,41 @@
+Title:  macOS version 1.9.0
+
+Seq:    mac.1.9.0
+
+Tags:   mac
+
+Link:  
+
+Type:  Release
+
+Date:  Nov 11, 2019
+
+Teaser:
+
+Body:   
+ 
+#### 1. Fixed a Note Delete Bug
+
+A note that was being deleted would sometimes be immediately re-added. This has been corrected. 
+
+
+#### 2. Fixed an Attachments Bug
+
+Attachments were being deleted when the parent Note's title was changed. This has now been corrected. 
+
+
+#### 3. Added Option to Reverse the Sort
+
+An option has been added to the Sort menu that will allow the user to reverse the current sequence of the list (from ascending to descending, or vice-versa).
+
+
+#### 4. Scripter Can Now Read Markdown Headers
+
+Added a new input format to read a Markdown file and chunk it up into sections, based on its headers. Each resulting row of data will consist of fhe following fields:
+
+* Title - The text content of the header
+* Level - The level of the header (1 - 6)
+* Body - All of the text following the header, up to the next header. 
+
+Note that the resulting data can be used to generate a Table of Contents for the Markdown file, using an appropriately formatted template.
+

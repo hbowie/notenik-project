@@ -1,8 +1,8 @@
 Title:  Increment Version Number
 
-Seq:    5
+Seq:    4
 
 Body: 
 
 1. Select new version number. 
-2. Update in Xcode on the General tab for the Notenik application. 
+2. Update in Xcode on the General tab for the Notenik application.

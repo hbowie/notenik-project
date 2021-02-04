@@ -1,6 +1,6 @@
 Title:  Expanded Display support for additional fonts
 
-Status: 6 - Completed
+Status: 9 - Closed
 
 Seq:    38
 
@@ -16,3 +16,4 @@ Is there a chance that we'd be able to choose different fonts for Display mode a
 Body: 
 
 This should be satisfied with the 4.8.0 release. 
+

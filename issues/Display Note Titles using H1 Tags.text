@@ -1,6 +1,6 @@
 Title:  Display Note Titles using H1 Tags
 
-Status: 6 - Completed
+Status: 9 - Closed
 
 Seq:    35
 
@@ -16,3 +16,4 @@ Have you considered displaying note titles in `<h1>` tags? This would help in ke
 Body: 
 
 Implemented as an option in the Collection prefs in 4.6.0.
+

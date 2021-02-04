@@ -1,0 +1,23 @@
+<?nextrec?>
+<?output "../../news/=$title$=.text"?>
+Title:  =$title$=
+
+Seq:    blog.=$seq$=
+
+Tags:   blog
+
+Link:   https://notenik.net/blog/=$title&f$=.html
+
+Type:   Post
+
+Date:   =$date&MMM dd, yyyy$=
+
+Teaser:
+
+=$teaser$=
+
+Body:   
+ 
+=$body$=
+
+<?loop?>

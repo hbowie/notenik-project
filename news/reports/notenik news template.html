@@ -1,0 +1,18 @@
+<?output "../../notenik-news.html"?>
+<?nextrec?>
+<hr />
+<?if =$type$= eq "Release"?>
+<h2>=$date&yyyy MMM dd$= &mdash; =$title&h$= released</h2>
+
+=$body&o$=
+
+<?endif?>
+<?if =$type$= eq "Post"?>
+<h2>=$date&yyyy MMM dd$= &mdash; =$title&h$=</h2>
+
+=$teaser&o$=
+
+<p><em><a href="=$link$=">Read more...</a></em></p>
+
+<?endif?>
+<?loop?>

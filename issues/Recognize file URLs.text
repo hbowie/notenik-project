@@ -1,6 +1,6 @@
 Title:  Recognize file URLs
 
-Status: 6 - Completed
+Status: 9 - Closed
 
 Seq:    42
 
@@ -14,6 +14,8 @@ Issue:
 
 Notenik was not recognizing links beginning with 'file:///'. 
 
+
 Body: 
 
 This should be fixed in 5.0.0.
+

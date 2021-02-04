@@ -1,0 +1,61 @@
+Title:  Principles and Values
+
+Status: 4 - In Work
+
+Date:   31 Jan 2021
+
+Author: Herb Bowie
+
+Teaser: 
+
+These are the core principles and values that have guided Notenik development. 
+
+
+Date Added: 2021-01-31 15:28:55 -0800
+
+Date Modified: 2021-02-02 14:21:11 -0800
+
+Body: 
+
+Following are the guiding principles and values (as best I can articulate them) underlying the design and development of the Notenik software. 
+
+1. An appreciation for the written word. 
+
+	I firmly believe that the written word is the greatest tool yet created for capturing information and ideas. This is why Notenik is designed primarily to capture and preserve and transform bits of written text. 
+	
+2. One tool in the toolbox. 
+
+	Notenik is designed to be a useful tool, but its intent is not to be the whole toolbox. Quite to the contrary, the use of other tools -- one or two trusty text editors, in particular -- is actively encouraged. 
+	
+3. Transparency.  
+
+	Notenik software is published under an open-source license, and the software is available on GitHub for anyone to inspect.  Extensive documentation is available. The user can freely select where he or she stores their notes, and the notes are stored in plain text files that can be read and written using a variety of tools. Notes are formatted in such a way that they can be easily read and understood by any user without requiring any particular background or knowledge. Notes are stored on the user's own device. 
+	
+4. No data islands. 
+
+	When you store your information in Notenik, your notes are stored in plain text files that you can always access using any text editor. There is no hidden data, and no data obfuscation. You can also export your data from Notenik at any time into a number of different formats. And Notenik is open-source software, so the latest version is always available for free. 
+	
+5. A preference for the personal. 
+
+	Corporate software has its place, but Notenik has been handcrafted by an individual for use by other individuals, each with our own particular, unabashed interests and biases. 
+	
+	This is why Notenik is designed primarily to capture words authored by its users, and not so much to skim content from other sources. 
+	
+	It's also why I, as Notenik's developer, try to be personally responsive to inquiries and requests from users. 
+	
+	
+6. Built for the Mac. 
+
+	Notenik is designed first and foremost to be used on a modern Mac. 
+	
+7. Share early and share often. 
+
+	Notenik is updated frequently, with small, incremental changes made with each release. 
+
+8. "Simple things should be simple, complex things should be possible."
+
+	I've always liked this dictum from Alan Kay, and have tried my best to follow it. 
+
+9. "Be conservative in what you send, be liberal in what you accept."
+	
+	This one comes from Jon Postel, another pioneering computer scientist.

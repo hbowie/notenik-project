@@ -1,0 +1,9 @@
+Title:  Changed Author Sort
+
+Seq:    5.1.0
+
+Date:   23 Dec 2020
+
+Body: 
+
+Changed Author field to sort by first name first, last name last. Among other effects, this means that the Author pick list now works correctly, as you start to type a name. 

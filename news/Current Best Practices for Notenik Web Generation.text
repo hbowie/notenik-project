@@ -1,0 +1,103 @@
+Title:  Current Best Practices for Notenik Web Generation
+
+Seq:    blog.14
+
+Tags:   blog
+
+Link:   https://notenik.net/blog/current-best-practices-for-notenik-web-generation.html
+
+Type:   Post
+
+Date:   Nov 30, 2020
+
+Teaser:
+
+My current recommendations for those just starting to use Notenik to generate a website. 
+
+
+Body:   
+ 
+One of the many things that [Notenik][macappstore] can be used for is website generation. 
+
+I've set this up in many different ways over the years, for a number of different sites that I have authored. 
+
+If you'd like to know more about the evolution of my thinking in this regard, you might want to take a look at this [previous post][prevpost]. 
+
+But if you'd just like to cut to the chase, and learn what I would consider current best practices, then this post is for you. (In any case, though, come back here if you decide to take a detour to read the history lesson.)
+
+## Folder Structure
+
+Let me start by explaining the recommended folder structure. 
+
+The top level folder should be given whatever name is meaningful to you. This entire folder can then be put under version control using [git][], and uploaded to [GitHub][], or any other online repository you happen to be using. The entire contents of this folder can then be uploaded to your web server, or web hosting service, using your preferred FTP software. (I use [Tower][] and [Transmit][] for these chores, respectively.)
+
+This top level folder will eventually hold all of your html files, which will have been generated using Notenik. It will initially be empty, except for...
+
+A subfolder named **notes** will then contain all of your actual Notes that are normally maintained by Notenik. Each note is stored in a plain text file, and contains a page of content, along with suitable metadata about that content. 
+
+A subfolder named **files** may exist within the `notes` folder. This folder would contain any note attachments, potentially including image files (jpeg or png files, for example). 
+
+A subfolder named **mirror** should be nested within the `notes` folder. This folder would then contain whatever files are used to *mirror* the content from the Notenik format to the final html format found in the top folder. 
+
+The following subfolders would then be placed within the `mirror` folder. 
+
+The **css** folder would be used to store any cascading stylesheet files. 
+
+An **includes** folder can be used for any chunks of html to be included from one or more template files. 
+
+A **scripts** folder can be used for any Notenik scripting files to be run. 
+
+A **templates** folder would be used for the various templates that would be used to convert your notes to html. 
+
+And that's it for the standard folder structure. Other subfolders may of course be added as needed, depending on the nature of your site. 
+
+## Notenik Features
+
+Notenik has a number of features that have been provided to facilitate website generation using the folder structure described above. 
+
+If you're starting from scratch, then you can use the **New Web Collection** command beneath the `Files` menu to create a new set of folders organized in this way. 
+
+If you have an existing Collection, then you can use the **Stash Notes in Subfolder** command beneath the `Transform` menu to reorganize your existing Collection, moving your existing Notes and subfolders into a new subfolder named `notes`. 
+
+In either case, when you go to open the Web Collection at a later date, simply use the normal **Open** command beneath the `File` menu, being sure to select the top-level folder -- the one above the `notes` subfolder. In this way, Notenik will have the permissions it needs to write web pages into that top-level folder. 
+
+If you used the first command discussed above, to start from scratch, then your Collection will already contain a sample `mirror` folder. Otherwise, use the **Generate Sample Mirror Folder** command beneath the `Transform` menu to create some sample files and folders for mirroring. Feel free to modify these to suit your needs. 
+
+However you create it, if your Notenik collection has a subfolder named `mirror`, which in turn contains another folder named `templates`, which in turn contains a file whose name is something like **note_mirror.html** (containing both the word `note` and the word `mirror`), then that template file will be run every time you update one of your notes. And if that template file is set up to write to a location three levels above its location, then you will end up having a webpage created for each Note in your collection, and each webpage will be kept up-to-date as you make changes to your Collection. 
+
+If your `templates` folder also contains a file whose name is something like **index_mirror.html**, then that file will be run whenever you request indexing from a command beneath the `Transform` menu. Alternatively, if you select that option as part of the Collection Preferences, the index will be regenerated every time any page in the collection is updated. 
+
+And if you'd like to visit the generated **index.html** page in your Web browser, then you can select **Browse Web Index** beneath the `Transform` menu. 
+
+## File Formats
+
+For further info:
+
++ [The Template File Spec][tmplspec] - Template files are used to merge the data from your Notes into a standard page template for your website. 
+
++ [The Scripting File Spec][scrspec] - Scripts can be used to sort and filter the data from your Notes, as well as pumping the resulting data through your template files. 
+
++ [The Notenik User Guide][guide] - For all other details about Notenik. 
+
++ [The Notenik Blog][blog] - Including tutorials and background info about Notenik. 
+
+[blog]: https://notenik.net/blog.html
+
+[git]: https://git-scm.com
+
+[github]: https://github.com
+
+[guide]: https://notenik.net/swift.html
+
+[macappstore]: https://apps.apple.com/us/app/notenik/id1465997984?mt=12
+
+[prevpost]: evolving-use-of-notenik-for-web-generation.html
+
+[scrspec]: https://notenik.net/script-spec.html
+
+[tmplspec]: https://notenik.net/template-spec.html
+
+[tower]: https://www.git-tower.com/mac
+
+[transmit]: https://panic.com/transmit/
+

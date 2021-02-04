@@ -66,6 +66,12 @@
 							</li>
 
 							<li class="nav-item">
+								<a class="nav-link" href="articles.html">
+									Articles
+								</a>
+							</li>
+
+							<li class="nav-item">
 								<a class="nav-link" href="blog.html">
 									Blog
 								</a>
@@ -187,12 +193,14 @@
 <li><a href="#getting-data-into-and-out-of-notenik">Getting Data Into and Out Of Notenik</a> <br />
 7.1 <a href="#copy-cut-paste-and-share-your-notes">Copy, Cut, Paste and Share your Notes</a>  <br />
 7.2 <a href="#import-and-export-your-notes">Import and Export Your Notes</a>  <br />
-7.3 <a href="#export-to-notenik-vs-save-as-vs-move">Export to Notenik vs. Save As vs. Move</a>  <br />
-7.4 <a href="#favorites-to-html">Favorites to HTML</a>  <br />
-7.5 <a href="#use-report-templates">Use Report Templates</a>  <br />
-7.6 <a href="#record-and-play-scripts">Record and Play Scripts</a>  <br />
-7.7 <a href="#mirror-your-notes">Mirror Your Notes</a>  <br />
-7.8 <a href="#website-building">Website Building</a>  <br />
+7.3 <a href="#import-from-omnifocus">Import from OmniFocus</a>  <br />
+7.4 <a href="#export-to-notenik-vs-save-as-vs-move">Export to Notenik vs. Save As vs. Move</a>  <br />
+7.5 <a href="#publish-to-medium">Publish to Medium</a>  <br />
+7.6 <a href="#favorites-to-html">Favorites to HTML</a>  <br />
+7.7 <a href="#use-report-templates">Use Report Templates</a>  <br />
+7.8 <a href="#record-and-play-scripts">Record and Play Scripts</a>  <br />
+7.9 <a href="#mirror-your-notes">Mirror Your Notes</a>  <br />
+7.10 <a href="#website-building">Website Building</a>  <br />
 </li>
 <li><a href="#reference">Reference</a> <br />
 8.1 <a href="#version-history">Version History</a>  <br />
@@ -226,6 +234,8 @@
 <p>But here's a few other help items that are available, including some that may not be so obvious. </p>
 <p>This User Guide is available as a web page from the <a href="http://www.notenik.net">Notenik</a> site and from the Notenik Help Menu. </p>
 <p>But the same content is also available as a Collection of Help Notes, by selecting the corresponding Open Command from Notenik's Help menu. You may find it a little easier to read and navigate in this form, plus you can practice using Notenik as you read the Guide! </p>
+<p>A complete spec for the Notenik Markdown parser can also be opened as another read-only Notenik Collection, by selecting <code>Markdown Spec</code> beneath the <code>Help</code> menu. </p>
+<p>You may also want to see the latest news about Notenik, which is available from the <code>What's New?</code> item beneath the Help menu. This window will be show automatically once for each new release. Note that any font changes made to the Note Display tab will also be reflected here. </p>
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
@@ -483,6 +493,7 @@
 <p>The Navigation Board can be summoned via the File menu, or with the indicated keyboard shortcut. </p>
 <p>The Nav Board will also appear automatically if the user closes the last open Collection window. </p>
 <p>The Nav Board shows all easily accessible Collections in an outline, and also offers a series of buttons allowing the user to perform various actions. </p>
+<p>A combo box appears at the top left of the board. Type the first few letters of the name of a Collection's folder in order to bring it up, then hit enter/return to select it. </p>
 <p>The outline appears to the left of the window. Available Collections are available within three different groups. </p>
 <ul>
 <li>Help - The Help Notes appear here. </li>
@@ -588,6 +599,7 @@
 <li>Toggle Status - Switches from least complete to most, and back again. </li>
 <li>Increment Status - Bump to the next stage in the Collection's lifecycle. </li>
 </ul>
+<p>There's also a command beneath the Collection menu to Close all Completed Tasks, which will look for all tasks with a status of Completed and change them to Closed. </p>
 <p>Look under the File menu for an option to Purge Notes that have been Canceled or Completed. You'll be given the option of discarding the purged Notes, or of copying them to another location. </p>
 
 
@@ -640,7 +652,7 @@
 
 <p>You can specify an Author or an Artist field when using a Collection as some sort of catalog of works by others. For example, I have one Collection that I use to keep track of my favorite Quotations, and the Author field indicates the author of each quotation. I have another Collection where I maintain my thoughts about a series of albums, and use the Artist field to indicate the individual or group responsible for each album. </p>
 <p>In either case, you can use Sort Option # 5 (under the Sort menu) to sort a Collection by Author or Artist. </p>
-<p>When sorting by Author, the sort will be by last name first; if a Collection contains an Artist field, but no Author field, then the sort will be by Artist, and the word &#8216;the&#8217; will be ignored when found as the first work in the Artist's name. (In other words, &#8216;The Beatles&#8217; will be sorted under &#8216;B&#8217;, not under &#8216;T&#8217;.) </p>
+<p>When sorting by Author, the sort will be by first name first; if a Collection contains an Artist field, but no Author field, then the sort will be by Artist, and the word &#8216;the&#8217; will be ignored when found as the first work in the Artist's name. (In other words, &#8216;The Beatles&#8217; will be sorted under &#8216;B&#8217;, not under &#8216;T&#8217;.) </p>
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
@@ -679,6 +691,12 @@
 <li>
 <p>Teaser &#8211; An excerpt from the note used as a teaser in a list of notes. The teaser may be formatted using Markdown. </p>
 </li>
+<li>
+<p>Date Added &#8211; This field cannot be directly edited by a user in Notenik, since it will automatically be maintained by Notenik, but it will cause the field to be visible at the bottom of a Note's display, and it does make the value available for export, in case you wish to preserve these values across an export/import operation. </p>
+</li>
+<li>
+<p>Date Modified &#8211; Like the Date Added field, this field will be automatically maintained by Notenik, but makes the data available for display and export. </p>
+</li>
 </ul>
 
 
@@ -706,6 +724,7 @@
 <p>Just put a check mark next to whichever fields you'd like to use for that particular Collection. Then click on the OK button to save your template with the indicated fields. </p>
 <p>The selected fields to be used for a Collection are saved within a file named &#8216;template.txt&#8217; or &#8216;template.md&#8217; within a Collection's folder. </p>
 <p>You may also modify this template file manually, using your favorite text editor. </p>
+<p>Beneath the Collection menu the user will find an item to Text Edit the Collection's Template file. If any changes are made to this file, then the following menu item, to Reload the Collection, should be executed next in order to pull in the modified template file. </p>
 <p>The Note template file is formatted using the normal Notenik format, although the Field Labels specified need not have any accompanying values. </p>
 <p>The file extension used for the template file will be used as the file extension for Notes subsequently created within the Collection. </p>
 <p>By specifying the value <code>&lt;longtext&gt;</code> as the value for a field in a template file, the user can indicate that a field is to be treated as a long text field, rather than a one-line text field. A longtext field will provide the user with multiple lines for data entry on the Edit tab, and will honor Markdown syntax when formatting for display on the Display tab. </p>
@@ -795,8 +814,8 @@
 <li>A Table of Contents may be generated by placing the literal &#8216;[toc]&#8217; on a line by itself. The resulting table will contain all of the headings found in the Markdown following the &#8216;[toc]&#8217; line itself. </li>
 <li>Footnotes may be created using the sort of syntax documented for <a href="https://fletcher.github.io/MultiMarkdown-6/syntax/index.html#footnotes">MultiMarkdown</a> or the <a href="https://www.markdownguide.org/extended-syntax/">Markdown Extended Syntax</a>. </li>
 <li>Citations are supported using the <a href="https://fletcher.github.io/MultiMarkdown-6/syntax/citation.html">MultiMarkdown syntax</a> </li>
+<li>Fenced Code Blocks are supported, as documented in the  <a href="https://python-markdown.github.io/extensions/fenced_code_blocks/">Python Markdown spec</a>. </li>
 </ul>
-<p>Although the two alternative parsers are described in terms of their exceptional speediness, and even though Notenik's own Markdown implementation was focused primarily on the clarity of the Swift code, I have not yet noticed any particular sluggishness of execution when using the Notenik parser. </p>
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
@@ -897,6 +916,10 @@
 <p>Each Note will be represented as one row/line, and each field will be represented in a separate column. Commas are used to separate columns. This format is suitable for import into MS Excel, for example. </p>
 </li>
 <li>
+<p>Import from OmniFocus </p>
+<p>You can use either the plain text or csv exports from OmniFocus. See the next section for further info specific to this topic. </p>
+</li>
+<li>
 <p>Import in XML format </p>
 <p>This option allows former users of iWisdom to import the most important fields in their collections into Notenik. Selecting a folder will cause Notenik to try to import all files with the &#8216;.xml&#8217; extension within that folder and its subfolders. </p>
 </li>
@@ -933,7 +956,42 @@
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
-<a name="export-to-notenik-vs-save-as-vs-move"><h3>7.3 Export to Notenik vs. Save As vs. Move</h3></a>
+<a name="import-from-omnifocus"><h3>7.3 Import from OmniFocus</h3></a>
+
+<p>OmniFocus is a much more powerful and sophisticated app than Notenik. And there are many reasons why you might want to use OmniFocus instead of Notenik, or in addition to Notenik. And I have nothing negative to say about the Omni Group, or their apps, or their pricing, or their business model. </p>
+<p>That being said, if you are not using all of OmniFocus' bells and whistles, and would be happy with a simpler Mac app, then you might be interested moving your data from OmniFocus to Notenik. </p>
+<p>OmniFocus has several ways to export its data. However none of them are entirely straightforward or complete, as it turns out. So you have a couple of options in terms of OmniFocus export options that can be imported by Notenik. </p>
+<ul>
+<li>
+<p>CSV (comma-separated values) - This format includes Task ID, which Notenik uses to populate the Seq field, but it does not seem to include any recurs data. </p>
+</li>
+<li>
+<p>Plain Text - This format includes recurs data, but does not include Task ID. In general, this seems to be the more complete format (unless Task ID is important to you). </p>
+</li>
+</ul>
+<p>There are a few general points to keep in mind when exporting data from OmniFocus and importing into Notenik.  </p>
+<ul>
+<li>
+<p>Notenik will import the tasks as Notes into whatever Collection you currently have open and frontmost. You may wish to create a new Collection specifically for this sort of &#8220;to do&#8221; data before importing. </p>
+</li>
+<li>
+<p>Make sure your collection already has the fields you will wish to use for this sort of &#8220;to do&#8221; list. In general, you would want the Date field and the Recurs field to be available, at a minimum, and would want to consider use of the Status field as well. </p>
+</li>
+<li>
+<p>You should be aware that OmniFocus uses a very different data model from Notenik for recurring tasks. Whenever a task recurs in OmniFocus, a new item is created, and the old item is marked complete. This is great if you wish to preserve a historical record of your completions. However Notenik uses a totally different approach: when you close a recurring item, Notenik simply updates the current item with the new date, so there is no historical record. </p>
+</li>
+<li>
+<p>In order to avoid importing a bunch of duplicate tasks, many of which have already been completed, Notenik will refuse to import any tasks that have already been completed. So if that record of closed tasks is important to you, then you should probably not be using Notenik! </p>
+</li>
+<li>
+<p>Notenik has no specific fields for Context or for parent Projects, but will attempt to add this sort of data to the Tags for each Note, where appropriate. </p>
+</li>
+</ul>
+<p>And I think that's it! Feel free to let me know if you have any problems importing your data from OmniFocus. </p>
+
+
+<p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
+<a name="export-to-notenik-vs-save-as-vs-move"><h3>7.4 Export to Notenik vs. Save As vs. Move</h3></a>
 
 <p>The careful observer may at some point wonder why Notenik includes both a &#8216;Save As&#8217; command as well as the ability to Export a Collection in the Notenik format (not to mention a &#8216;Move&#8217; option). Are these just different ways of accomplishing the same thing? Well, not quite. </p>
 <p>It's true that both commands will copy your current Collection of Notes to a new location. However, there are some subtle differences between the two. </p>
@@ -963,14 +1021,23 @@
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
-<a name="favorites-to-html"><h3>7.4 Favorites to HTML</h3></a>
+<a name="publish-to-medium"><h3>7.5 Publish to Medium</h3></a>
+
+<p>You can publish a Note as a draft to <a href="https://medium.com">Medium</a> by using the Publish to Medium command beneath the Note menu. </p>
+<p>You will be presented with a new window titled &#8220;Medium Integration,&#8221; containing two tabs. </p>
+<p>The first tab requires you to enter an Integration Token that you will need to acquire for your Medium account. Once you see the message &#8220;Authentication Succeeded&#8221; then you can proceed to the second tab. </p>
+<p>The second tab allows you to publish a draft of the current Note to Medium. The body of the Note, presumably formatted using Markdown, will be used as the contents of your story. The parsing of Markdown to HTML will be left to Medium. </p>
+
+
+<p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
+<a name="favorites-to-html"><h3>7.6 Favorites to HTML</h3></a>
 
 <p>If you have a Collection of Notes representing Web Bookmarks, then you may wish to use the &#8216;Favorites&#8217; tag (or &#8216;Favourites&#8217; for those who prefer the British spelling) to identify the bookmarks you reference most often. You may then use a sub-tag within the &#8216;Favorites&#8217; tag to organize your favorite bookmarks into categories. Once you've identified your Favorites, then you may use the Favorites to HTML command under the File menu to create a Web page containing all your favorite bookmarks, organized under headings representing the categories you have chosen. Notenik will display your favorites in four columns, with a maximum of 32 lines per column. Assuming a reasonable number of favorite bookmarks, these will typically display all of your favorites within a single Web page on your Mac. You may then wish to identify the resulting page as the homepage within all of your Web browsers (Safari, Chrome, etc.). </p>
 <p>Note that you can change the Columns per Page, the Rows per Column, and the width of each Column on the Favorites tab of the application Preferences. </p>
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
-<a name="use-report-templates"><h3>7.5 Use Report Templates</h3></a>
+<a name="use-report-templates"><h3>7.7 Use Report Templates</h3></a>
 
 <p>Notenik provides a function for merging data from Notes (or other data sources) into a template file in order to create one or more output text files. </p>
 <p>The text files created may be of any type, but certainly one of the most useful formats is html, allowing users to generate one or more Web pages from their notes. </p>
@@ -987,7 +1054,7 @@
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
-<a name="record-and-play-scripts"><h3>7.6 Record and Play Scripts</h3></a>
+<a name="record-and-play-scripts"><h3>7.8 Record and Play Scripts</h3></a>
 
 <p>Notenik can record and play a script file that will execute a series of data transformations. Data can be input from one or more Notenik Collections and/or from tab-delimited or comma-separated files. The input data can be sorted and filtered using any of the fields contained within the data. The data can then be used as input to a Template file, or output to a new tab-delimited or comma-separated file. </p>
 <p>See the <a href="https://notenik.net/script-spec.html">Merge Script File Spec</a> for a complete description of a Script file. </p>
@@ -1027,7 +1094,7 @@
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
-<a name="mirror-your-notes"><h3>7.7 Mirror Your Notes</h3></a>
+<a name="mirror-your-notes"><h3>7.9 Mirror Your Notes</h3></a>
 
 <p>Notenik has the ability to automatically mirror all the Notes within a Collection to an alternate format (usually HTML), typically stored in the same folder. </p>
 <p>Here's the way this works. </p>
@@ -1086,7 +1153,7 @@
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
-<a name="website-building"><h3>7.8 Website Building</h3></a>
+<a name="website-building"><h3>7.10 Website Building</h3></a>
 
 <p>Note that many of the individual Notenik functions described above can be combined in order to build websites. Create a Collection, add appropriate fields, create template files, record a script, and you can easily generate a set of HTML files that will work together to present a unified website. </p>
 <p>What's more, whenever you add or change or delete any content, you can rerun your script file(s) to regenerate your new website, with everything updated to reflect the latest content. </p>
@@ -1102,6 +1169,61 @@
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
 <a name="version-history"><h3>8.1 Version History</h3></a>
 
+<h3 id="version-5.5.0-02-feb-2021">Version 5.5.0 | 02 Feb 2021</h3>
+<h4 id="enabled-open-link-in-new-window-for-all-hyperlinks-on-the-display-tab">1. Enabled Open Link in New Window for all hyperlinks on the Display Tab</h4>
+<p>By using a Secondary Click (otherwise known as a right-click or a control-click) on a hyperlink showing on the Display tab, the user can see a contextual (aka shortcut) menu with the option to <code>Open Link in New Window</code>. Before this change, selecting this option did nothing. It will now attempt to pass the link to your preferred Web browser, requesting that it be opened there. </p>
+<h4 id="added-support-for-extensive-field-renaming">2. Added Support for Extensive Field Renaming</h4>
+<p>Through judicious edits to a Collection's template file, Notenik will allow all of its special fields to be renamed. </p>
+<h4 id="added-contextual-menu-to-list-view">3. Added Contextual Menu to List View</h4>
+<p>The user can now right-click on a row on the List tab and select any of the following actions: </p>
+<ul>
+<li><code>Duplicate</code> </li>
+<li><code>Launch Link</code> </li>
+<li><code>Share</code> </li>
+</ul>
+<h3 id="version-5.4.0-19-jan-2021">Version 5.4.0 | 19 Jan 2021</h3>
+<h4 id="added-notenik-introduction-for-new-users">1. Added Notenik Introduction for new users</h4>
+<p>Created a brief Introduction to Notenik to show new users, and re-identified the more complete document as the User Guide (which then matches the nomenclature on the website). </p>
+<h4 id="added-support-for-code-fencing">2. Added Support for Code Fencing</h4>
+<p>Added support for code fencing in the Markdown parser. </p>
+<h4 id="added-markdown-spec-access-beneath-the-help-menu">3. Added Markdown Spec access beneath the Help menu</h4>
+<p>A complete spec for the Notenik Markdown parser can now be opened as a read-only Notenik Collection, by selecting <code>Markdown Spec</code> beneath the <code>Help</code> menu. </p>
+<h4 id="reworked-display-fonts-prefs-to-make-updates-more-intuitive">4. Reworked Display Fonts Prefs to Make Updates More Intuitive</h4>
+<p>Changed the logic a bit on the Display Prefs screen to make updating a bit more intuitive. </p>
+<h4 id="adjusted-font-weight-in-whats-new-display">5. Adjusted Font Weight in What's New Display</h4>
+<p>Headings were a bit too heavy. </p>
+<h4 id="corrected-sharing-of-entire-note-in-markdown">6. Corrected Sharing of Entire Note in Markdown</h4>
+<p>There were several problems with this option that should all have been corrected now. </p>
+<h3 id="version-5.3.0-14-jan-2021">Version 5.3.0 | 14 Jan 2021</h3>
+<h4 id="code-refactoring-for-generation-of-a-unique-id-for-each-note">1. Code Refactoring for generation of a unique ID for each Note</h4>
+<p>Made some internal code changes in preparation for greater flexibility around use of a variety of fields as the basis for a unique ID for each Note within a Collection. </p>
+<h4 id="added-convenience-function-to-edit-collections-template-file">2. Added Convenience Function to Edit Collection's Template file</h4>
+<p>Beneath the Collection menu the user will now find an item to Text Edit the Collection's Template file. If any changes are made to this file, then the following menu item, to Reload the Collection, should be executed next in order to pull in the modified template file. </p>
+<h4 id="added-regular-refresh-to-todays-date">3. Added regular refresh to today's date</h4>
+<p>For those who leave Notenik running overnight, added a regular refresh of the date considered to be &#8216;today&#8217;. </p>
+<h4 id="added-folder-picker-to-navigation-board">4. Added Folder Picker to Navigation Board</h4>
+<p>Added a Combo Box at the top left of the Navigation Board, allowing the user to type the first few letters of a Collection's folder name, and then hit enter/return to select an available folder. </p>
+<h4 id="added-whats-new-display">5. Added What's New? display</h4>
+<p>Immediately beneath the Help menu the user can now find a request to answer the question of What's New? Selecting this item will display a window showing the latest Notenik news, including both version releases and blog posts. This window will be shown to the user automatically once for each new release. </p>
+<h3 id="version-5.2.0-04-jan-2021">Version 5.2.0 | 04 Jan 2021</h3>
+<h4 id="fixed-an-import-bug">1. Fixed an Import Bug</h4>
+<p>Fixed a bug affecting data import into Notenik. </p>
+<h4 id="added-options-to-import-data-from-omnifocus">2. Added Options to Import data from OmniFocus</h4>
+<p>You can import either CSV data or Plain Text data, but you will probably want to pick the Plain Text option. See the latest version of the User Guide, the Notenik Help, or the Help Notes for a new section on Importing from OmniFocus. </p>
+<h4 id="added-ability-to-publish-to-medium">3. Added Ability to Publish to Medium</h4>
+<p>See the Publish to Medium command beneath the Note menu. </p>
+<h3 id="version-5.1.0-26-dec-2020">Version 5.1.0 | 26 Dec 2020</h3>
+<h4 id="added-display-prefs-button-to-update-css">1. Added Display Prefs Button to Update CSS</h4>
+<p>Added an explicit button to generate the CSS field in the Display Preferences, since custom CSS was still being overwritten unintentionally. This is a follow-up fix to Issue # 41. </p>
+<h4 id="added-an-optional-date-modified-field">2. Added an Optional Date Modified field</h4>
+<p>This should close Issue # 40. </p>
+<h4 id="changed-author-sort">3. Changed Author Sort</h4>
+<p>Changed Author field to sort by first name first, last name last. Among other effects, this means that the Author pick list now works correctly, as you start to type a name. </p>
+<h4 id="sorted-out-problems-with-following-links">4. Sorted out problems with following Links</h4>
+<p>In particular, application URL links should now be working, both from the Link field, and when found in the body field. </p>
+<p>This should close out Issue # 44. </p>
+<h4 id="added-function-to-close-all-completed-tasks">5. Added Function to Close All Completed Tasks</h4>
+<p>This new command beneath the Collection menu will change all Notes with a status of Completed to a status of Closed. </p>
 <h3 id="version-5.0.0-08-dec-2020">Version 5.0.0 | 08 Dec 2020</h3>
 <h4 id="reworked-logic-for-navigating-forwards-and-backwards">1. Reworked Logic for Navigating forwards and backwards</h4>
 <p>This seems to work more intuitively now. </p>
@@ -1524,9 +1646,6 @@ Body starts here.
 <p>Merge Templates may now be created, stored in a reports folder, and then run from a Collection's Toolbar. </p>
 <h4 id="added-favorites-to-html-function">3. Added Favorites to HTML Function</h4>
 <p>The File Menu now has a new command to export Favorites to HTML. This allows the user to identify favorite bookmarks using the &#8216;Favorites&#8217; tag and then export those favorites to a four-column Web page. </p>
-<h3 id="version-1.0.0-03-jun-2019">Version 1.0.0 | 03 Jun 2019</h3>
-<h4 id="initial-release">1. Initial Release</h4>
-<p>This is the initial release of Notenik written in Swift. </p>
 
 
 <p class="back-to-toc"><a href="#table-of-contents">Back to ToC</a></p>
@@ -1695,7 +1814,7 @@ Body starts here.
 		<div class="row">
       <div class="col-lg-12 footer">
         <hr class="bottom">
-Copyright &copy; 2019 - 2020 by <a href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a href="https://opensource.org/licenses/MIT">MIT license</a>
+Copyright &copy; 2019 - 2021 by <a href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a href="https://opensource.org/licenses/MIT">MIT license</a>
       </div>
     </div>
 

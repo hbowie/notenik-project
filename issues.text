@@ -16,8 +16,6 @@ Body:
 * #47 [Enable Links Between Collections](issues/enable-links-between-collections.html)
 * #46 [Open Notes in separate Windows/Tabs](issues/open-notes-in-separate-windows-tabs.html)
 * #45 [Display Date Added and Date Modified in local time](issues/display-date-added-and-date-modified-in-local-time.html)
-* #44 [Allow Callback URLs to other apps](issues/allow-callback-urls-to-other-apps.html)
-* #40 [Add a Date Modified field](issues/add-a-date-modified-field.html)
 * #34 [Provide Additional Help for Website Generation](issues/provide-additional-help-for-website-generation.html)
 * #27 [Provide a Way to Add a New Custom Field](issues/provide-a-way-to-add-a-new-custom-field.html)
 * #26 [Provide a Way to Rename an Existing Field](issues/provide-a-way-to-rename-an-existing-field.html)
@@ -29,6 +27,12 @@ Body:
 
 #### Status: 6 - Completed 
 
+* #44 [Allow Callback URLs to other apps](issues/allow-callback-urls-to-other-apps.html)
+* #40 [Add a Date Modified field](issues/add-a-date-modified-field.html)
+
+#### Status: 9 - Closed 
+
+* #43 [Allow the Back Button to go back to the Note after loading a link](issues/allow-the-back-button-to-go-back-to-the-note-after-loading-a-link.html)
 * #42 [Recognize file URLs](issues/recognize-file-urls.html)
 * #41 [Persist Custom CSS](issues/persist-custom-css.html)
 * #39 [Option to hide the sidebar](issues/option-to-hide-the-sidebar.html)
@@ -44,22 +48,18 @@ Body:
 * #28 [Improve Performance when Opening Large Collections](issues/improve-performance-when-opening-large-collections.html)
 * #25 [Erroneous Detection of Metadata](issues/erroneous-detection-of-metadata.html)
 * #24 [Immediate Refresh of Displayed Notes after Changing Display Prefs](issues/immediate-refresh-of-displayed-notes-after-changing-display-prefs.html)
-* #21 [Preserve Width of List Display](issues/preserve-width-of-list-display.html)
-* #19 [Keep App Open After Last Window Closes](issues/keep-app-open-after-last-window-closes.html)
-* #14 [Make Collection Prefs Scrollable](issues/make-collection-prefs-scrollable.html)
-* #13 [Make Edit View Scrollable](issues/make-edit-view-scrollable.html)
-* #9 [Allow User to See Multiple Collections in Tabs instead of Windows](issues/allow-user-to-see-multiple-collections-in-tabs-instead-of-windows.html)
-
-#### Status: 9 - Closed 
-
-* #43 [Allow the Back Button to go back to the Note after loading a link](issues/allow-the-back-button-to-go-back-to-the-note-after-loading-a-link.html)
 * #23 [Collection Prefs Changes Not Saved](issues/collection-prefs-changes-not-saved.html)
 * #22 [Odd Font Sizes Not Saved](issues/odd-font-sizes-not-saved.html)
+* #21 [Preserve Width of List Display](issues/preserve-width-of-list-display.html)
 * #20 [Ability to customize Display Tab contents](issues/ability-to-customize-display-tab-contents.html)
+* #19 [Keep App Open After Last Window Closes](issues/keep-app-open-after-last-window-closes.html)
 * #16 [Why Not Standard MMD/YAML Parsing?](issues/why-not-standard-mmd-yaml-parsing.html)
+* #14 [Make Collection Prefs Scrollable](issues/make-collection-prefs-scrollable.html)
+* #13 [Make Edit View Scrollable](issues/make-edit-view-scrollable.html)
 * #12 [Increase Support for Existing Note Collections using Alternate Formats](issues/increase-support-for-existing-note-collections-using-alternate-formats.html)
 * #11 [Allow a Note to Link to another Note](issues/allow-a-note-to-link-to-another-note.html)
 * #10 [Uniquely Identify Each Note with a Timestamp](issues/uniquely-identify-each-note-with-a-timestamp.html)
+* #9 [Allow User to See Multiple Collections in Tabs instead of Windows](issues/allow-user-to-see-multiple-collections-in-tabs-instead-of-windows.html)
 * #8 [Move Reload Collection Command to Collection Menu](issues/move-reload-collection-command-to-collection-menu.html)
 * #7 [Alternate Spelling for Favorites](issues/alternate-spelling-for-favorites.html)
 * #4 [Empty Tags Persist](issues/empty-tags-persist.html)
