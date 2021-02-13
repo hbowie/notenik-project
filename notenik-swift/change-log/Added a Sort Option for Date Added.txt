@@ -1,0 +1,9 @@
+Title:  Added a Sort Option for Date Added
+
+Seq:    5.6.0
+
+Date:   11 Feb 2021
+
+Body: 
+
+Added an option to sort a list in sequence by date added. 

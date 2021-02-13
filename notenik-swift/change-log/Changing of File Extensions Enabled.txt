@@ -1,0 +1,10 @@
+Title:  Changing of File Extensions Enabled
+
+Seq:    5.6.0
+
+Date:   05 Feb 2021
+
+Body: 
+
+When you change the Preferred File Extension for a Collection, by modifying the Collection Preferences, Notenik will now change the file extensions for all the Notes in the Collection to the new value, instead of only changing the extension of the template file. 
+

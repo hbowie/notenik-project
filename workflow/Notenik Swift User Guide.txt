@@ -2,7 +2,7 @@ Title:  Notenik Swift User Guide
 
 Tags:   docs, swift
 
-Seq:    8.2.2
+Seq:    6.3
 
 Link:   file:///Users/hbowie/Sites/notenik/notenik-swift/
 
@@ -11,4 +11,3 @@ Body:
 The documentation for the Notenik application written in Swift is stored in its own Collection, as a sub-folder within the overall Notenik documentation.
 
 After making any appropriate updates, use PSTextMerge to run the 'reports/guide-gen.tcz' file script within the Collection. This will create/update the 'swift.text' file within the top level of the notenik folder.
-

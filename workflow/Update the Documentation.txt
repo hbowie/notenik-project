@@ -2,7 +2,7 @@ Title:  Update the Documentation
 
 Tags:   docs
 
-Seq:    8
+Seq:    6.1
 
 Link:   https://github.com/hbowie/notenik-project
 

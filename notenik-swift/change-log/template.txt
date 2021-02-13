@@ -1,0 +1,12 @@
+Title: <title> 
+
+Tags: <tags> 
+
+Seq: <seq> 
+
+Date: <date> 
+
+Link: <link> 
+
+Body:  
+

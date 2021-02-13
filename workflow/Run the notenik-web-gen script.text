@@ -1,6 +1,6 @@
 Title:  Run the notenik-web-gen script
 
-Seq:    8.2
+Seq:    8.3
 
 Link:   file:///Users/hbowie/Sites/notenik/reports/notenik-web-gen.tcz
 
@@ -8,5 +8,4 @@ Body:
 
 When all updates have been made, use Notenik to run the script located within the top level reports folder. 
 
-The name of the script file to be run is 'notenik-web-gen.tcz'. 
-
+The name of the script file to be run is 'notenik-web-gen.tcz'.

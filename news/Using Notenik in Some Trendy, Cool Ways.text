@@ -1,0 +1,123 @@
+Title:  Using Notenik in Some Trendy, Cool Ways
+
+Seq:    blog.17
+
+Tags:   blog
+
+Link:   https://notenik.net/blog/using-notenik-in-some-trendy-cool-ways.html
+
+Type:   Post
+
+Date:   Feb 12, 2021
+
+Teaser:
+
+A Digital Commonplace Book? A Personal Knowledge Management System? A *Zettelkasten*? How are all these things related to one another, and how can Notenik help?
+
+
+Body:   
+ 
+In the last week or so I've come across a couple of articles touting some trendy ways for individuals to collect information that is personally meaningful to them. 
+
+First, there was this [*New York Times* piece by J. D. Biersdorfer][nytimes] telling you how to "Create a Digital Commonplace Book."
+
+Then there was a [blog post at *The Sweet Setup*][tss] offering a "PKM Primer: An Introduction to Personal Knowledge Management for Creatives."
+
+Both pieces were well done, and I encourage you to read the pair. 
+
+A [commonplace book][cmn], it turns out, is "a book into which notable extracts from other works are copied for personal use," according to the *New Oxford American Dictionary*.  
+
+[Personal Knowledge Management][pkm] is a bit harder to define in a way that is both concise and enlightening. But if you just conjoin the ordinary meanings of the three constituent words, you'll get the general drift. 
+
+And then there's the whole [*Zettelkasten* movement][zet], in case I haven't slung enough exotic terms around yet. 
+
+But while these are theoretically separate topics, I think they are all attempts to address some common problems for anyone interested in constructive thinking. 
+
+Consider:
+
+1. If we read/watch/listen broadly, and with intention, then we turn our attention successively to many sources of information. This seems a particular problem today, with so many digital sources of information clamoring for our attention (but then it turns out that people have been keeping commonplace books for centuries).   
+
+2. Some of the information we encounter is immediately useful -- and some seems perfectly useless. Of what remains, some may be easily retrievable from the original (or an equivalent) source when needed. But once we eliminate this sort of detritus, then there are some few nuggets left that seem worth capturing, both because they appear to have some likely future value, and because they appear to be difficult to rediscover or recreate when needed.  
+
+3. These nuggets judged to be worth keeping may be of three different sorts:
+
+	* Pure facts and information; 
+	* Interesting ideas; 
+	* Quotations -- generally pithy expressions that are worth hanging onto because they express some meaningful idea in a particularly forceful and/or memorable fashion. 
+
+4. If we simply jot down these nuggets, and then toss them onto a growing pile of similar notes, then it is unlikely that we will be able to find what is needed when it is needed.  
+
+5. It follows, then, that if something is worth capturing at all in this manner, it is worth spending a little time on, in order to usefully categorize it, and perhaps connect it to other related bits of info. 
+
+6. Ideally, then, your collection of notes is something you usefully refer to in the future. 
+
+7. And equally ideally, the value derived from your collection comes not only from the various notes, considered individually, but from the growing connections between them, as you build your collection over time. 
+ 
+ Now of course there are many computerized tools available to you today that you can use to keep a digital commonplace book, and/or a personal knowledge management system, and/or a *zettelkasten*. And each of them has their own selling points, and there is certainly no one solution that will work equally well for everyone. 
+ 
+ However...
+ 
+ Ahem...
+ 
+ I am here today to modestly commend to you my own little app, [Notenik][nnk], to be used for these purposes. 
+ 
+ I've been working on Notenik, or one of its predecessor apps, for about fifteen years. 
+ 
+ And I've been using these apps to create my own commonplace book (although I didn't always know it was called that) for most of this time. 
+ 
+ How valuable have I found it to create notes in this way? 
+ 
+ Well, I've created a number of different collections of notes over the years, and some have proven to be of more enduring value than others. 
+ 
+ But today I can point to three different published works that grew directly out of my own penchant for collecting ideas and quotations in this fashion. 
+ 
++ [Reason To Rock][r2r] -- A book about rock music that describes it in terms of an artistic movement. 
++ [Big Ideas in Software Development][sdev] -- A compendium of the biggest and most important ideas useful to software developers. 
++ [The Practical Utopian][put] -- An evolving collection of writings about philosophy and culture. 
+
+Now why do I use Notenik for this purpose, instead of some other tool?
+
+1. I can create as many different collections of notes as I wish. 
+2. Within each collection I can give each note as many different tags, and sub-tags, as I wish. 
+3. Each note can link to other notes. 
+4. I can format the body of each note using Markdown -- which can in turn be converted to HTML when needed. 
+5. Each collection can have a different set of fields associated with each note. 
+6. I can sort and filter my notes using the available fields. 
+7. I can get my information out of Notenik in a whole variety of useful ways. 
+8. My notes are stored in plain text files on my personal computer, so I know that I will retain access to all of them over a period of years and decades, without reliance on proprietary data formats or third-party software and services. 
+9. I can access and edit my notes using any text editor, in addition to Notenik. 
+10. I can backup and sync my notes using any tools and services I choose. 
+11. I don't want or need a tool that has a whole lot of graphic bells and whistles. All of the stuff I'm interested in -- quotations, ideas and information -- is best captured using text. And the form in which it can most usefully be used is also text. So while taking a photo of a book page and stashing it into a digital notebook may feel cool, I am not convinced that such a practice is terribly useful. 
+12. I like having one tool that I can use for many different types of information. I want to focus on the information worth collecting, and the uses to which I can put such information -- without being distracted by needing to focus on the tool(s) themselves. 
+
+Now of course there is one strong reason why you might not want to give Notenik a try -- it's only available on the Mac. So if you are a devout user of Windows, or Linux, and/or Android, or if you are convinced you need to perform your personal knowledge management on your iPad or iPhone, then you will have to consider some other tool. 
+
+On the other hand, though:
+
++ If you don't currently own a Mac, [now is an awfully good time to get one][m1]. 
++ If you're interested in practicing serious PKM, or in doing any serious constructive thinking, it's still really hard to beat a good laptop with a keyboard and a trackpad or mouse. 
+
+That being said, Notenik is free and open-source (so I don't make any money off of it), and I'm really more motivated to urge you to consider the practices we're discussing today, than I am to persuade you to use my own app. 
+
+After all, the more constructive thinking we have going on in our society, the better off we'll all be.  
+
+[cmn]: https://en.wikipedia.org/wiki/Commonplace_book
+
+[nnk]: https://apps.apple.com/us/app/notenik/id1465997984
+
+[m1]: https://www.tomsguide.com/reviews/macbook-air-2020-m1
+
+[nytimes]: https://www.nytimes.com/2021/02/10/technology/personaltech/make-digital-commonplace-book.html
+
+[pkm]: https://en.wikipedia.org/wiki/Personal_knowledge_management
+
+[put]: https://practopian.org/core/index.html
+
+[r2r]: https://www.reasontorock.com
+
+[sdev]: https://www.softdevbigideas.com
+
+[tss]: https://thesweetsetup.com/pkm-intro-for-creatives/
+
+[zet]: https://eugeneyan.com/writing/note-taking-zettelkasten/
+

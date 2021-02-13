@@ -1,0 +1,14 @@
+Title:  Run ChronoSync Container Notenik Syncs to Xcode
+
+Seq:    8.2
+
+Body: 
+
+This container will run a numer of scripts:
+
++ Notenik Intro Sync
++ notenik-swift-intro-refresh
++ Notenik Help Notes refresh
++ Markdown Spec to Xcode
++ Notenik Models to Xcode
+

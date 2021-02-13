@@ -5,6 +5,15 @@
     <description>The Notenik Blog</description>
     <language>en</language>
 	<item>
+	  <title>Using Notenik in Some Trendy, Cool Ways</title>
+	  <link>https://notenik.net/blog/using-notenik-in-some-trendy-cool-ways.html</link>
+	  <guid>https://notenik.net/blog/using-notenik-in-some-trendy-cool-ways.html</guid>
+	  <pubdate>Fri, 12 Feb 2021 12:00:00 -0700</pubdate>
+	  <description>
+	  	A Digital Commonplace Book? A Personal Knowledge Management System? A <em>Zettelkasten</em>? How are all these things related to one another, and how can Notenik help? 
+	  </description>
+	</item>
+	<item>
 	  <title>New Info on Fields and Labels</title>
 	  <link>https://notenik.net/blog/new-info-on-fields-and-labels.html</link>
 	  <guid>https://notenik.net/blog/new-info-on-fields-and-labels.html</guid>
@@ -83,15 +92,6 @@
 	  <pubdate>Wed, 08 Jan 2020 12:00:00 -0700</pubdate>
 	  <description>
 	  	Version 2.6.0 was focused on strengthening support for opening folders full of existing text files and handling them smoothly as Notenik Collections. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik for the Mac Version 2.4.0 Released</title>
-	  <link>https://notenik.net/blog/notenik-for-the-mac-version-2.4.0-released.html</link>
-	  <guid>https://notenik.net/blog/notenik-for-the-mac-version-2.4.0-released.html</guid>
-	  <pubdate>Fri, 13 Dec 2019 12:00:00 -0700</pubdate>
-	  <description>
-	  	Most of the changes for this release were focused on providing the capability for wiki-like inter-note linking. 
 	  </description>
 	</item>
   </channel>
