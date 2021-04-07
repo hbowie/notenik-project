@@ -86,8 +86,9 @@ The following modifier values are valid:
 	- Initial Letter - The first letter of the index term. 
 	- Term - The term being indexed. 
 	- Lower Case Term - The same index term, but converted to lowercase.
-	- Term Link - 
+	- Term Link - A definitive link that has been supplied for this term. 
 	- Page - The Title of the Note containing this index term. 
+	- Page Type - The Type of the Note containing this index term. 
 	- Anchor - 
 
 * notenik-split-tags - Reads a Notenik Collection, adds a "Tag" field, and returns one row for each tag (or one row with a blank tag, for Notes with no tags). 

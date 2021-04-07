@@ -369,6 +369,20 @@ When editing, a `longtext` field will appear as multiple lines of editable text.
 
 When displayed, a `longtext` field will be transformed using a Markdown parser.
 
+### Minutes to Read
+
+The phrase `Minutes to Read` can be used as both a label and a type.
+
+A Collection should only have one field of type `minutes-to-read`.
+
+The value for this field will be calculated automatically by Notenik, based on the number of words found in the [[Body]] field, figuring 200 words per minute, and rounding to the nearest whole number.
+
+### Image Name
+
+The phrase `Image Name` can be used as both a label and a type.
+
+Notenik will allow the user to select an image name from the list of attachments available for the currently selected Note. Only attachments with likely file extensions will be included.
+
 ## Fields Useful for Reviews, Citations and Quotations
 
 The following fields may be useful when using Notenik to record quotes from, or commentary about, or citations of, authors and artists. 

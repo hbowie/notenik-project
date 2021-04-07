@@ -1,0 +1,9 @@
+Title:  Fixed a bug that prevented Note Duplication
+
+Seq:    5.7.0
+
+Date:   21 Feb 2021
+
+Body: 
+
+When initiating a Note Duplication from the menu, the app would enter an endless loop. This has been fixed. 

@@ -1,0 +1,9 @@
+Title:  Refactoring of file input/output routines
+
+Seq:    5.8.0
+
+Date:   08 Mar 2021
+
+Body: 
+
+Extensive refactoring of file input and output routines to isolate actual interactions with the file system. 

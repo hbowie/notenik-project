@@ -1,0 +1,9 @@
+Title:  Added Image Name field label and type
+
+Seq:    5.8.0
+
+Date:   11 Mar 2021
+
+Body: 
+
+The user can now specify the name to be associated with a Note, by selecting from a list of available attachments. 

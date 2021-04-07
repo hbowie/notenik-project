@@ -1,0 +1,9 @@
+Title:  Added Page Type as an additional column for notenik-index scripting input
+
+Seq:    5.8.0
+
+Date:   26 Mar 2021
+
+Body: 
+
+If the Collection has a Type field, then this will appear in the Page Type column generated when using the notenik-index scripting input type. 

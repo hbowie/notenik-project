@@ -1,0 +1,9 @@
+Title:  Fixed a Bug that was resulting in a double descending sort
+
+Seq:    5.8.0
+
+Date:   28 Mar 2021
+
+Body: 
+
+When sorting via the Scripting module, the sort was honoring both the direction specified in the script commands, as well as the direction specified most recently in the Collection preferences. If both were set to descending, then the result would be a double-negative, resulting in an ascending sort. This has been fixed. 

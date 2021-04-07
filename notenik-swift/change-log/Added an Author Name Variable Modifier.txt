@@ -1,0 +1,9 @@
+Title:  Added an Author Name Variable Modifier
+
+Seq:    5.8.0
+
+Date:   19 Mar 2021
+
+Body: 
+
+Use the letter "A", followed by a "1" or a "2", to replace the full name with the last name only, or with the last name first, followed by a comma and the first name. 

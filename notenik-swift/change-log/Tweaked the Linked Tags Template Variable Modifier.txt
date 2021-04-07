@@ -1,0 +1,10 @@
+Title:  Tweaked the Linked Tags Template Variable Modifier
+
+Seq:    5.8.0
+
+Date:   22 Mar 2021
+
+Body: 
+
+One or more CSS classes can now be specified, to be applied to the link generated for each tag. These should be specified following the path, with an intervening semicolon to separate the two. 
+

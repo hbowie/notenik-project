@@ -20,6 +20,13 @@ Any punctuation character, other than ones specificaly called out in this list f
 
 One or more consecutive digits within the modifiers will be interpreted as the length to which the variable should be truncated or padded. If the length modifier is shorter than the variable length, then by default characters will be truncated on the right (and preserved on the left) of the variable to bring it to the specified length. If it is desired to keep characters on the right, then also use the "R" modifier and place it before the length modifier digits. If the length modifier is longer than the initial variable length, then the variable will be padded with zeroes on the left to bring it to the specified length.
 
+#### Author Name Modifier "A"
+
+The letter "A", followed by a "1" or a "2", will cause the value to be treated as a person's name, and to be reformatted as follows:
+
++ "1" - Extract the last name only
++ "2" - Place the last name first, followed by a comma, and then the rest of the name.
+
 #### Base File Name "B"
 
 The letter "B" will cause the file extension, including the period, to be removed from a file name. This can be used, for example, to generate an output file name with the same name as the input data file (using the variable name "datafilename"), but with a different extension.
@@ -57,6 +64,18 @@ Converts a string to a conventional, universal file name, changing spaces to das
 #### Linked Tags "G"
 
 Each tag found in the variable will be made into a link, linking to '=$relative$=yypathyy/xxtagxx.html', where 'xxtagxx' is the tag, and 'yypathyy' is the string of characters following the 'g'.
+
+The contents of the class attribute for the anchor tag generated for each link can be supplied following the path, with an intervening semicolon to separate the two. 
+
+Consider the following example. 
+
+	=$tags&gtags/;btn btn-secondary mx-1 pr-topic$=
+
+Where:
+
++ `tags` is the variable name;
++ `tags/` is the path, starting from the web root;
++ `btn btn-secondary mx-1 pr-topic` are classes to be applied to each link (`<a `) HTML tag.
 
 #### HTML "H"
 

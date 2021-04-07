@@ -1,0 +1,9 @@
+Title:  Added Minutes to Read field label and type
+
+Seq:    5.8.0
+
+Date:   10 Mar 2021
+
+Body: 
+
+The value will be calculated automatically, based on the number of words found in the body field, figuring 200 words per minute, then rounding to the nearest whole number. 

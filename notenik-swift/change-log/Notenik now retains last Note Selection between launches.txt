@@ -1,0 +1,10 @@
+Title:  Notenik now retains last Note Selection between launches
+
+Seq:    5.7.0
+
+Date:   18 Feb 2021
+
+Body: 
+
+When a Collection is closed, Notenik will now make a record of the last Note that was selected by the user. The next time that Collection is opened, Notenik will re-select that same note. 
+

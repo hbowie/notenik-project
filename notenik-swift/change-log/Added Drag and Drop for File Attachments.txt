@@ -1,0 +1,9 @@
+Title:  Added Drag and Drop for File Attachments
+
+Seq:    5.7.0
+
+Date:   14 Feb 2021
+
+Body: 
+
+You can now start the process of adding an attachment to a note by dragging the file to be attached onto the target Note's row in the List tab. The Note should be in Display mode, and not in Edit mode, before starting the drag. 

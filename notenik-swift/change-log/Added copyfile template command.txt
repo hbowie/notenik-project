@@ -1,0 +1,9 @@
+Title:  Added copyfile template command
+
+Seq:    5.8.0
+
+Date:   12 Mar 2021
+
+Body: 
+
+A `copyfile` command can now be used, as part of a merge template, to copy an accompanying file (typically an image file identified by the new Image Name field) to an appropriate output destination, from which it can be accessed by an output web page. 

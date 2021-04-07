@@ -10,6 +10,7 @@ Code:
 <tr><td>'</td><td>Email Apostrophes</td></tr>
 <tr><td>,</td><td>List Punctuation</td></tr>
 <tr><td>1</td><td>Length Modifier</td></tr>
+<tr><td>A</td><td>Author Name Modifier</td></tr>
 <tr><td>B</td><td>Base File Name</td></tr>
 <tr><td>C</td><td>Word Demarcation</td></tr>
 <tr><td>F</td><td>File Name</td></tr>

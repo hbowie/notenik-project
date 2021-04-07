@@ -1,0 +1,9 @@
+Title:  Attempting to Fix a Crash Occurring when using Merge Templates
+
+Seq:    5.8.1
+
+Date:   07 Apr 2021
+
+Body: 
+
+I say "attempting" because the crash does not occur in my development build, but only in the version once released to the Mac App Store. 
