@@ -1,13 +1,17 @@
 Title:  Version History
 
-Seq:    53
+Tags:   changes, history, log, versions
 
-Level: 3
+Timestamp: 20210104191204
 
-Tags:   changes, versions, history, log
+Seq:    54
 
-Body:   
- 
+Level:  3
+
+Date Added: 2021-01-04 11:12:04 -0800
+
+Body: 
+
 ### Version 5.8.1 | 07 Apr 2021
 
 #### 1. Attempting to Fix a Crash Occurring when using Merge Templates
@@ -1125,6 +1129,4 @@ Merge Templates may now be created, stored in a reports folder, and then run fro
 
 #### 3. Added Favorites to HTML Function
 
-The File Menu now has a new command to export Favorites to HTML. This allows the user to identify favorite bookmarks using the 'Favorites' tag and then export those favorites to a four-column Web page. 
-
-
+The File Menu now has a new command to export Favorites to HTML. This allows the user to identify favorite bookmarks using the 'Favorites' tag and then export those favorites to a four-column Web page.

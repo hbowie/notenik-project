@@ -1,0 +1,9 @@
+Title:  Added New Customization Options for the Display Tab
+
+Seq:    5.9.0
+
+Date:   18 Apr 2021
+
+Body: 
+
+The layout and appearance of the Display tab can now be modified by supplying a `display.css` file within a Notes Collection, or by supplying a `display.html` template file. 

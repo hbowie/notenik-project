@@ -1,0 +1,9 @@
+Title:  Merge Templates No Longer Write Unmodified Files
+
+Seq:    5.9.0
+
+Date:   15 Apr 2021
+
+Body: 
+
+Before writing an output file from a Merge Template operation and overwriting an existing file, Notenik will now first read the existing file, and compare it to the file about to be written. If the contents are identical, then Notenik will skip the write operation. This helps to preserve last modified dates, which in turn helps to prevent unnecessary FTP operations when updating a website via FTP. 
