@@ -2,8 +2,9 @@ Title:  Added allfields command to Merge Templates
 
 Seq:    5.9.0
 
-Date:   15 Apr 2021
+Date:   10 May 2021
 
 Body: 
 
 The `<?allfields?>` command can now be used to insert all of the fields from an input record/note into the output, formatted into HTML in the same way that they would be on the Display tab within Notenik. 
+

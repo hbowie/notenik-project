@@ -1,16 +1,29 @@
 Title:  Version History
 
-Tags:   changes, history, log, versions
+Seq:    53
 
-Timestamp: 20210104191204
+Level: 3
 
-Seq:    54
+Tags:   changes, versions, history, log
 
-Level:  3
+Body:   
+ 
+### Version 5.9.0 | 10 May 2021
 
-Date Added: 2021-01-04 11:12:04 -0800
+#### 1. Merge Templates No Longer Write Unmodified Files
 
-Body: 
+Before writing an output file from a Merge Template operation and overwriting an existing file, Notenik will now first read the existing file, and compare it to the file about to be written. If the contents are identical, then Notenik will skip the write operation. This helps to preserve last modified dates, which in turn helps to prevent unnecessary FTP operations when updating a website. 
+
+
+#### 2. Added New Customization Options for the Display Tab
+
+The layout and appearance of the Display tab can now be modified by supplying a `display.css` file within a Notes Collection, or by supplying a `display.html` template file. 
+
+
+#### 3. Added allfields command to Merge Templates
+
+The `<?allfields?>` command can now be used to insert all of the fields from an input record/note into the output, formatted into HTML in the same way that they would be on the Display tab within Notenik. 
+
 
 ### Version 5.8.1 | 07 Apr 2021
 
@@ -1129,4 +1142,6 @@ Merge Templates may now be created, stored in a reports folder, and then run fro
 
 #### 3. Added Favorites to HTML Function
 
-The File Menu now has a new command to export Favorites to HTML. This allows the user to identify favorite bookmarks using the 'Favorites' tag and then export those favorites to a four-column Web page.
+The File Menu now has a new command to export Favorites to HTML. This allows the user to identify favorite bookmarks using the 'Favorites' tag and then export those favorites to a four-column Web page. 
+
+

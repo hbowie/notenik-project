@@ -198,6 +198,11 @@ For any conversion resulting in HTML, a pseudo-tag of &lt;toc&gt; can be used to
 
 		<toc from="h2" thru="h4" />
 
+### allfields Command
+
+This command will cause all of the fields in the current record/row/note to be written out as HTML, formatted as they would appear on the Display tab within Notenik. 
+
+
 ### loop Command
 
 This command indicates the end of the code that will be processed/written out once per data row. Lines after the loop command will be processed/written out once per execution.
