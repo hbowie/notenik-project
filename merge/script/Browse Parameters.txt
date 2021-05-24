@@ -1,0 +1,15 @@
+Title:  Browse Parameters
+
+Seq:    10
+
+Heading: Browse Parameters
+
+Type:   md
+
+Body: 
+
+A Browse command may only have an action of 'open'.
+
+#### Open
+
+The value column should contain the URL to be opened. Note that this may usefully be set to a localhost address to open a local website at the end of a script. 

@@ -1,0 +1,9 @@
+Title:  browse module
+
+Seq:    6
+
+Param:  browse
+
+Body: 
+
+Open the specified URL in your preferred Web browser. 

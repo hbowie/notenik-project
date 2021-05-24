@@ -14,6 +14,15 @@ These articles go into some detail on various aspects of Notenik's design.
 
 ----
 
+### [Collection Shortcuts and the Quick Action Window](articles/collection-shortcuts-and-the-quick-action-window.html)
+
+Check out the new Quick Action window (found beneath the Files menu), after enabling it by assigning shortcuts to some of your Collections in their Collection Preferences. 
+
+
+*[Read more...](articles/collection-shortcuts-and-the-quick-action-window.html)*
+
+----
+
 ### [Existing Text Files](articles/existing-text-files.html)
 
 Since Notenik is rather late to the game of managing text files, and since those already using similar sorts of files are probably among those interested in my app, I wanted to talk a bit about how Notenik can be used with existing folders full of text files.

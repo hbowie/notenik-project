@@ -20,3 +20,5 @@ Body:
 
 * output - Write the filtered, sorted data to an output file in tab-delimited format. 
 
+* browse - Open the specified URL in your preferred Web browser. 
+

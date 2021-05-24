@@ -175,6 +175,9 @@
 <li>
 <p>output - Write the filtered, sorted data to an output file in tab-delimited format. </p>
 </li>
+<li>
+<p>browse - Open the specified URL in your preferred Web browser. </p>
+</li>
 </ul>
 <h3 id="input-parameters">Input Parameters</h3>
 <p>The action for an input command may be either &#8216;set&#8217; or &#8216;open&#8217;. The set command(s) should precede the open command to which they will apply. </p>
@@ -300,6 +303,10 @@
 <h4 id="open">Open</h4>
 <p>The current data source, filtered and sorted per any previous relevant commands, will be written to the output file specified in the value column. </p>
 <p>A file extension of &#8216;.csv&#8217; will result in a comma-separated values file being written; any other file extension will result in a tab-delimited file being written. </p>
+<h3 id="browse-parameters">Browse Parameters</h3>
+<p>A Browse command may only have an action of &#8216;open&#8217;. </p>
+<h4 id="open">Open</h4>
+<p>The value column should contain the URL to be opened. Note that this may usefully be set to a localhost address to open a local website at the end of a script. </p>
 
 			</div>
 

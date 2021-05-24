@@ -4,12 +4,45 @@
   <subtitle>The latest news about the Notenik Project</subtitle>
   <link href="https://notenik.net/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.net/" type="text/html" rel="alternate"  />
-  <updated>2021-05-10</updated>
+  <updated>2021-05-22</updated>
   <rights>Copyright © 2021, Herb Bowie</rights>
   <author>
     <name>Herb Bowie</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Summary of Latest Features Added - 6.0.0 Edition</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/blog/summary-of-latest-features-added-6.0.0-edition.html"/>
+	  <id>https://notenik.net/blog/summary-of-latest-features-added-6.0.0-edition.html</id>
+	  <published>2021-05-14T09:00:00Z</published>
+	  <updated>2021-05-14T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+	  	<p>Version 6.0.0 has just been released to the Mac App Store, so perhaps it&apos;s time once again to summarize the new features that have been added to Notenik over the last few months. </p>
+
+	  </summary>
+	  <content type="html">
+	  	<![CDATA[
+	  	<p>Version 6.0.0 has just been released to the Mac App Store, so perhaps it&apos;s time once again to summarize the new features that have been added to Notenik over the last few months. </p>
+<p>First of all, additional options for customizing the Display tab have been added. You can still enter custom CSS via the Display Prefs (and these will now be retained reliably), but you can also supply an external display.css file for a Collection, and even a display.html file that uses a Notenik Merge template to allow full customization of the placement and appearance of fields on the Display tab. </p>
+<p>Authors who publish on Medium can now post a draft directly to that platform from within Notenik. </p>
+<p>Code fencing is now supported by the Notenik Markdown parser. </p>
+<p>The List tab now has a contextual menu that allows a few convenient options for a selected Note. </p>
+<p>Field naming and typing have been made more independent. In other words, you can now, for example, change the name of the Title field for a Collection, and still have it retain all the properties of the Title field. </p>
+<p>When viewing a Note in the Display tab, you should now be able to use the Contextual Menu for any Link and select &apos;Open Link in New Window&hellip;&apos; in order to open that link in your preferred Web browser (instead of opening within the Notenik window). </p>
+<p>If you decide to change the file extension for a Collection, by entering a new one in the Collection Prefs window, all Notes in that collection will be renamed to use the new extension. </p>
+<p>For those who just wish to quickly create a new Collection within the iCloud Notenik folder, there&apos;s now a streamlined way of doing that. </p>
+<p>File attachments can now be added via drag-and-drop on a Note displayed on the List tab. </p>
+<p>When you open a Collection, Notenik will now reposition you on the last Note selected the last time the Collection was opened. </p>
+<p>For use in website generation, a special &apos;Minutes to Read&apos; field type has been added, as well as an &apos;Image Name&apos; field. Both of these fields will be populated automatically. </p>
+<p>Each Collection can now be assigned its own shortcut string, and such Collections can now be easily opened through the new Quick Action window. You can also use this new window to quickly create a new Note, or add body text to an existing one. </p>
+
+	  	]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Using Notenik in Some Trendy, Cool Ways</title>
 	  <link rel="related" type="text/html" href="https://notenik.net/blog/using-notenik-in-some-trendy-cool-ways.html"/>
@@ -490,48 +523,6 @@
 <p>That being said, a Notenik file is not a completely general-purpose object: it&apos;s not intended to compete with JSON, for example. For one thing, each note must have a Title field and a Body field, in addition to other fields. Also, each field generally consists of a single value, without any convention for handling arbitrary lists, or any nesting of objects. </p>
 <p>So there you have it: a Notenik Note sits somewhere between a Markdown doc with metadata and a full-fledged  object with any number of complex fields. Which makes it simple enough to be read and written by ordinary humans using any text editor, and yet flexible enough to help such users keep track of any number of useful, everyday objects. </p>
 <p>Which was exactly my intent when concocting this format. </p>
-
-	  	]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik for the Mac Versions 2.5.0 and 2.6.0 Released</title>
-		<link rel="alternate" type="text/html" href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12"/>
-	  <link rel="related" type="text/html" href="https://notenik.net/blog/notenik-for-the-mac-versions-2.5.0-and-2.6.0-released.html"/>
-	  <id>https://notenik.net/blog/notenik-for-the-mac-versions-2.5.0-and-2.6.0-released.html</id>
-	  <published>2020-01-08T09:00:00Z</published>
-	  <updated>2020-01-08T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-	  	<p>Version 2.6.0 was focused on strengthening support for opening folders full of existing text files and handling them smoothly as Notenik Collections. </p>
-
-	  </summary>
-	  <content type="html">
-	  	<![CDATA[
-	  	<p>Version 2.6.0 was focused on strengthening support for opening folders full of existing text files and handling them smoothly as Notenik Collections. </p>
-<p>This is especially important since Notenik introduces some important variations from any existing text file formats &#8211; notably the use of an explicit Body label preceding the main part of the note &#8211; and so users with existing collections of text-based notes are not likely to have formatted them to Notenik&apos;s standards, and are probably not interested in reformatting all of their Notes in order to allow Notenik to handle them sensibly. </p>
-<p>Notenik now makes its best effort to recognize and appropriately handle the following variations on the normal Notenik format. </p>
-<ol>
-<li>
-<p>Markdown - The first line of the file contains a Markdown level 1 heading, which is to be used as the Note&apos;s title. The remainder of the file makes up the body. No metadata, and no field labels. </p>
-</li>
-<li>
-<p>MultiMarkdown Metadata - The file may start with metadata, including a title, but there is no explicit label identifying the start of the body; instead, the first blank line indicates the end of the metadata and the start of the body. </p>
-</li>
-<li>
-<p>Plain Text - The title is taken from the file name, and the entire contents of the file makes up the body. No metadata, and no field labels.  </p>
-</li>
-</ol>
-<p>Notenik will generally be able to determine which of these variations is being used based on the contents of the first few lines of the text file. </p>
-<p>Notenik will also attempt to respect these variations when modifying an existing Note, keeping each Note in its original format. </p>
-<p>A date parsing enhancement was also added, so that dates formatted as yyyymmdd, without any punctuation, will be correctly parsed. </p>
-<p>The spelling checker was enabled for the Body text in 2.5.0. </p>
-<p>This earlier release also added the ability to reload a Note from disk, which can be useful after using the Text Edit command to invoke an external text editor. </p>
-<p>JSON export and sharing options were also added. </p>
-<p>And, last but not least, a few additional bugs were corrected. </p>
 
 	  	]]>
 	  </content>

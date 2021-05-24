@@ -1,0 +1,9 @@
+Title:  Added Collection Shortcuts
+
+Seq:    6.0.0
+
+Date:   13 May 2021
+
+Body: 
+
+You can now specify a shortcut for a Collection in its Collection Prefs window. 

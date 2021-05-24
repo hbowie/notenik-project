@@ -45,7 +45,9 @@ The module column may contain any of the following values.
 
 * template - Specify the location of a [template file](https://www.notenik.net/merge-template.html) to be processed using the data source. 
 
-* output - Write the filtered, sorted data to an output file in tab-delimited format.
+* output - Write the filtered, sorted data to an output file in tab-delimited format. 
+
+* browse - Open the specified URL in your preferred Web browser.
 
 ### Input Parameters
 
@@ -183,4 +185,12 @@ An Output command may only have an action of 'open'.
 The current data source, filtered and sorted per any previous relevant commands, will be written to the output file specified in the value column. 
 
 A file extension of '.csv' will result in a comma-separated values file being written; any other file extension will result in a tab-delimited file being written.
+
+### Browse Parameters
+
+A Browse command may only have an action of 'open'.
+
+#### Open
+
+The value column should contain the URL to be opened. Note that this may usefully be set to a localhost address to open a local website at the end of a script.
 

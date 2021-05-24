@@ -1,0 +1,21 @@
+Title:  macOS version 6.0.1
+
+Seq:    mac.6.0.1
+
+Tags:   mac
+
+Link:  
+
+Type:  Release
+
+Date:  May 18, 2021
+
+Teaser:
+
+Body:   
+ 
+#### 1. Script Execution Now Runs Asynchronously
+
+Script execution in the Scripter window now runs asynchronously, with an indeterminate progress bar animated to show that something is happening. No more spinning beach ball!
+
+

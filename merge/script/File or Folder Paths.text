@@ -1,9 +1,10 @@
 Title:  File or Folder Paths
 
-Seq:    10
+Seq:    11
 
 Type:   File or Folder Paths
 
 Body: 
 
 Whenever an action is looking for a path to a file or folder in the value field, the path may start with the literal '#PATH#' to indicate that what follows is a relative path starting from the location of the script file. The '#PATH#' literal may be followed by one or more '../' strings to specify an ascension through the folder structure to reach the desired file. 
+

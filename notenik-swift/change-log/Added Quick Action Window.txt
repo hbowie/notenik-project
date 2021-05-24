@@ -1,0 +1,9 @@
+Title:  Added Quick Action Window
+
+Seq:    6.0.0
+
+Date:   13 May 2021
+
+Body: 
+
+Use the Quick Action command beneath the File menu to open the Quick Action window. From here you can enter a Collection shortcut in order to open the desired Collection. You can also use this new window to select a Note within a Collection, and/or to add a new Note.

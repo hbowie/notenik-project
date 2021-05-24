@@ -1,0 +1,45 @@
+Title:  Summary of Latest Features Added - 6.0.0 Edition
+
+Seq:    blog.18
+
+Tags:   blog
+
+Link:   https://notenik.net/blog/summary-of-latest-features-added-6.0.0-edition.html
+
+Type:   Post
+
+Date:   May 14, 2021
+
+Teaser:
+
+Version 6.0.0 has just been released to the Mac App Store, so perhaps it's time once again to summarize the new features that have been added to Notenik over the last few months. 
+
+
+Body:   
+ 
+Version 6.0.0 has just been released to the Mac App Store, so perhaps it's time once again to summarize the new features that have been added to Notenik over the last few months. 
+
+First of all, additional options for customizing the Display tab have been added. You can still enter custom CSS via the Display Prefs (and these will now be retained reliably), but you can also supply an external display.css file for a Collection, and even a display.html file that uses a Notenik Merge template to allow full customization of the placement and appearance of fields on the Display tab. 
+
+Authors who publish on Medium can now post a draft directly to that platform from within Notenik. 
+
+Code fencing is now supported by the Notenik Markdown parser. 
+
+The List tab now has a contextual menu that allows a few convenient options for a selected Note. 
+
+Field naming and typing have been made more independent. In other words, you can now, for example, change the name of the Title field for a Collection, and still have it retain all the properties of the Title field. 
+
+When viewing a Note in the Display tab, you should now be able to use the Contextual Menu for any Link and select 'Open Link in New Window...' in order to open that link in your preferred Web browser (instead of opening within the Notenik window). 
+
+If you decide to change the file extension for a Collection, by entering a new one in the Collection Prefs window, all Notes in that collection will be renamed to use the new extension. 
+
+For those who just wish to quickly create a new Collection within the iCloud Notenik folder, there's now a streamlined way of doing that. 
+
+File attachments can now be added via drag-and-drop on a Note displayed on the List tab. 
+
+When you open a Collection, Notenik will now reposition you on the last Note selected the last time the Collection was opened. 
+
+For use in website generation, a special 'Minutes to Read' field type has been added, as well as an 'Image Name' field. Both of these fields will be populated automatically. 
+
+Each Collection can now be assigned its own shortcut string, and such Collections can now be easily opened through the new Quick Action window. You can also use this new window to quickly create a new Note, or add body text to an existing one.
+
