@@ -1,0 +1,9 @@
+Title:  Added Custom URL Scheme for Notenik
+
+Seq:    6.2.0
+
+Date:   26 May 2021
+
+Body: 
+
+Added a Custom URL scheme for Notenik, with open and add commands. 

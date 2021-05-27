@@ -1,0 +1,21 @@
+Title:  macOS version 6.2.0
+
+Seq:    mac.6.2.0
+
+Tags:   mac
+
+Link:  
+
+Type:  Release
+
+Date:  May 26, 2021
+
+Teaser:
+
+Body:   
+ 
+#### 1. Added Custom URL Scheme for Notenik
+
+Added a Custom URL scheme for Notenik, with open and add commands. 
+
+

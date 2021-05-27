@@ -41,3 +41,7 @@ sort	set		params
 template	webroot			/Users/hbowie/Sites/notenik
 template	open			/Users/hbowie/Sites/notenik/news/reports/notenik news template.html
 template	generate
+
+<!-- Now Let's See What We've Got -->
+
+browse	open	url		http://localhost/~hbowie/notenik/notenik-news.html
