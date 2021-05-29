@@ -5,6 +5,15 @@
     <description>The Notenik Blog</description>
     <language>en</language>
 	<item>
+	  <title>Notenik 6.2.0 - I Love It When a Plan Comes Together</title>
+	  <link>https://notenik.net/blog/notenik-6.2.0-i-love-it-when-a-plan-comes-together.html</link>
+	  <guid>https://notenik.net/blog/notenik-6.2.0-i-love-it-when-a-plan-comes-together.html</guid>
+	  <pubdate>Thu, 27 May 2021 12:00:00 -0700</pubdate>
+	  <description>
+	  	My preferred style of development is to release new versions frequently, and to make relatively small incremental changes with each release. &quot;Slow but Steady&quot; might be my mantra. This latest release finally implements a custom URL scheme for Notenik. (I first received an email asking for something like this in January of 2020!) 
+	  </description>
+	</item>
+	<item>
 	  <title>Summary of Latest Features Added - 6.0.0 Edition</title>
 	  <link>https://notenik.net/blog/summary-of-latest-features-added-6.0.0-edition.html</link>
 	  <guid>https://notenik.net/blog/summary-of-latest-features-added-6.0.0-edition.html</guid>
@@ -83,15 +92,6 @@
 	  <pubdate>Wed, 29 Jan 2020 12:00:00 -0700</pubdate>
 	  <description>
 	  	Since Notenik is rather late to the game of managing text files, and since those already using similar sorts of files are probably among those interested in my app, I wanted to talk a bit about how the latest version of Notenik can be used with existing folders full of text files. 
-	  </description>
-	</item>
-	<item>
-	  <title>The Thinking Behind the Notenik File Format</title>
-	  <link>https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html</link>
-	  <guid>https://notenik.net/blog/the-thinking-behind-the-notenik-file-format.html</guid>
-	  <pubdate>Fri, 10 Jan 2020 12:00:00 -0700</pubdate>
-	  <description>
-	  	People have been storing notes in text files long before Notenik came along. So why is the Notenik format different? 
 	  </description>
 	</item>
   </channel>
