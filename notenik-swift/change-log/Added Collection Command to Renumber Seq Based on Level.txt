@@ -1,0 +1,9 @@
+Title:  Added Collection Command to Renumber Seq Based on Level
+
+Seq:    6.3.0
+
+Date:   06 Jun 2021
+
+Body: 
+
+Now that we have a Level field, we can combine Level with Seq to create an outline structure, and then, with this change, can automatically renumber the Seq fields in a Collection to reflect that outline structure. 
