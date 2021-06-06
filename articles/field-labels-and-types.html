@@ -189,7 +189,7 @@
 <ul>
 <li><a href="#the-basic-set-of-fields">The Basic Set of Fields</a> </li>
 <li><a href="#task-related-fields">Task-Related Fields</a> </li>
-<li><a href="#the-sequencing-field">The Sequencing Field</a> </li>
+<li><a href="#sequencing-and-outlining">Sequencing and Outlining</a> </li>
 <li><a href="#web-making-fields">Web-Making Fields</a> </li>
 <li><a href="#fields-useful-for-reviews-citations-and-quotations">Fields Useful for Reviews, Citations and Quotations</a> </li>
 <li><a href="#general-purpose-fields">General-Purpose Fields</a> </li>
@@ -211,6 +211,7 @@
 <li><a href="#date-modified">Date Modified</a> </li>
 <li><a href="#index">Index</a> </li>
 <li><a href="#integer">Integer</a> </li>
+<li><a href="#level">Level</a> </li>
 <li><a href="#link">Link</a> </li>
 <li><a href="#longtext">Longtext</a> </li>
 <li><a href="#rating">Rating</a> </li>
@@ -364,9 +365,9 @@
 </ul>
 
 
-<a name="the-sequencing-field"><h3>The Sequencing Field</h3></a>
+<a name="sequencing-and-outlining"><h3>Sequencing and Outlining</h3></a>
 
-<p>This &#8220;group&#8221; consists on just one field type. </p>
+<p>The following field types can be used to help organize a Collection of Notes into a sequential list and/or an outline. </p>
 
 
 <a name="seq"><h4>Seq</h4></a>
@@ -388,6 +389,29 @@
 <p>When displayed, the seq field will be displayed as entered.   </p>
 <p>When used as a sort field, seq values will be padded to cause them to sort into a natural order, rather than a strict character-by-character alphanumeric order.  In other words, a value of <code>2</code> will sort before a value of <code>10</code>, a value of <code>b</code> will sort before <code>aa</code>, etc. </p>
 <p>Each segment of this field, when separated by a dot or a dash, will be padded separately. </p>
+
+
+<a name="level"><h4>Level</h4></a>
+
+<p>The word <code>level</code> can be used as both a label and a type. </p>
+<p>In addition to <code>level</code> itself, this field type will be inferred for field labels equal to any of the following: </p>
+<ul>
+<li>depth </li>
+</ul>
+<p>A Collection is not expected to have more than one field of type <code>level</code>. </p>
+<p>The level field is meant to indicate each particular Note's depth within an implied tree structure made up of all the Notes in the Collection. </p>
+<p>A level value is represented by a single digit, and is typically restricted to the range 1 - 6. </p>
+<p>A level field is typically used in combination with a <a href="#seq">Seq</a> field. </p>
+<p>When viewing a Collection containing a level field, and when viewing the List of Notes sorted by &#8216;Seq + Title&#8217;, the title of each Note will be indented to indicate the level of each particular Note within the implied outline. </p>
+<p>One way to use a level field, when generating HTML, is to generate a heading tag using the Note level as the numeric portion of the tag. </p>
+<p>A brief text label may also be associated with each possible numeric value. </p>
+<p>When editing, the level field is presented as a pick list, with the user allowed to select from the list of standard values for that Collection. </p>
+<p>For Display purposes, the digit and text are usually shown side-by-side. </p>
+<p>When used as a general sort field, level values will be sorted by their digits. </p>
+<p>The text values may be modified by placing a series of integer + label pairs in the Value area of the relevant template file, with separating punctuation. Such a template line might look something like this: </p>
+<pre>
+<code>Level: &lt;level: 1 - Book Title; 2 - Section; 3 - Chapter; >
+</code></pre>
 
 
 <a name="web-making-fields"><h3>Web-Making Fields</h3></a>
@@ -540,6 +564,7 @@
 <p>The following field types can be used as needed. </p>
 
 
+<a name="boolean"><h4>Boolean</h4></a>
 
 <p>The word <code>boolean</code> can be used as a type. The word <code>bool</code> will be recognized as a shorthand identification for this type as well. </p>
 <p>A Collection can have any number of fields of type <code>boolean</code>. </p>

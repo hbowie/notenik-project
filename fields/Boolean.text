@@ -2,6 +2,8 @@ Title:  Boolean
 
 Seq:    71
 
+Level:  3 - Field Label
+
 Body: 
 
 The word `boolean` can be used as a type. The word `bool` will be recognized as a shorthand identification for this type as well. 

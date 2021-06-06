@@ -4,7 +4,7 @@ Tags:   toc
 
 Seq:    12
 
-Level:  2
+Level:  2 - Section
 
 Body: 
 
@@ -20,6 +20,7 @@ For ease of reference, when looking for a specific field type, here's an alphabe
 + [[Date Modified]]
 + [[Index]]
 + [[Integer]]
++ [[Level]]
 + [[Link]]
 + [[Longtext]]
 + [[Rating]]

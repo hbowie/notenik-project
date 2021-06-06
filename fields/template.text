@@ -4,7 +4,7 @@ Tags: <tags>
 
 Seq: <seq> 
 
-Level: <int> 
+Level: <level: 1 - Spec Title; 2 - Section; 3 - Field Label 
 
 Body:  
 

@@ -33,13 +33,11 @@ This document will explain the full range of options available to the Notenik us
 
 The allowed fields for a Collection are defined in each Collection's template. The template for a Collection defines the field labels and associated types allowed for each Note within that Collection.
 
-### Lowest Common Denominator Representations
 
 The first thing to explain, when it comes to field labels and field types, is that Notenik sees these identifiers only through what we might call a lowest common denominator representation. Such a representation is formed by changing all letters to lower case, and removing all spacing and punctuation. 
 
 So whether you type a field label, or see it referred to, as `Time Stamp`, `Timestamp`, `time-stamp` or `timestamp`, it makes no difference to Notenik: all of these boil down to the same internal representation of `timestamp`, and thus all will be treated identically.
 
-### Labels vs. Types
 
 A field *label* is the thing you see identifying a particular field for each Note. 
 
@@ -68,23 +66,20 @@ You can make up your own field labels -- you're not constrained by the default s
 
 Each field label/type is discussed below, grouped into logical collections.
 
-### Special Fields
 
 Several field types have special Notenik functionality associated with them. This functionality is generally associated with the Note containing that field. For these special fields, Notenik should generally only have one field of that type in a Collection; in some cases, Notenik can tolerate multiple fields of a type, but will attach its special functionality to the first field of that type. 
 
 See the description of each field type for further details.
 
-### Table of Contents for Field Groupings
 
 + [[The Basic Set of Fields]]
 + [[Task-Related Fields]]
-+ [[The Sequencing Field]]
++ [[Sequencing and Outlining]]
 + [[Web-Making Fields]]
 + [[Fields Useful for Reviews, Citations and Quotations]]
 + [[General-Purpose Fields]]
 + [[System-Assigned Dates and Times]]
 
-## Alphabetic Index to Fields
 
 For ease of reference, when looking for a specific field type, here's an alphabetical index to all of them. 
 
@@ -98,6 +93,7 @@ For ease of reference, when looking for a specific field type, here's an alphabe
 + [[Date Modified]]
 + [[Index]]
 + [[Integer]]
++ [[Level]]
 + [[Link]]
 + [[Longtext]]
 + [[Rating]]
@@ -114,12 +110,10 @@ For ease of reference, when looking for a specific field type, here's an alphabe
 + [[Work Title]]
 + [[Work Type]]
 
-## The Basic Set of Fields
 
 As already mentioned above, these are the default field labels and types assigned when you create a new Notenik Collection. 
 
 
-### Title
 
 The word `title` can be used as both a label and a type. 
 
@@ -139,7 +133,6 @@ The title field for a Note serves as that Note's unique identifier within its Co
 
 3. In a lightly transformed form, when creating a file name for the Note, to be used on disk.
 
-### Tags
 
 The word `tags` can be used as both a label and a type. 
 
@@ -161,7 +154,6 @@ For display purposes, tags will often appear in italics, above the title field, 
 
 Tags can be used to organize a Collection of Notes into an outline, with the various tags and their levels forming the outline, and with Notes appearing under whatever tags they've been assigned.
 
-### Link
 
 The word `link` can be used as both a label and a type. 
 
@@ -179,7 +171,6 @@ The first link field encountered within a Note will be considered the Note's pri
 
 Remember that a link stored in its own field is a somewhat different animal from a link coded using Markdown syntax within a Note's body.
 
-### Body
 
 The word `body` can be used as both a label and a type. 
 
@@ -193,12 +184,10 @@ When editing, the body field will appear as a multi-line text field, and will ta
 
 For Display purposes, the body field will be run through a Markdown parser before presentation.
 
-## Task-Related Fields
 
 The following field types are typically used as part of a Notenik Collection serving as a *To-Do* list, in which each Note represents a task to be completed. 
 
 
-### Date
 
 The word `date` can be used as both a label and a type. 
 
@@ -214,7 +203,6 @@ For Display purposes, the day of the week will generally be shown alongside the 
 
 When used as a sort field, date values will be sorted by year, month and day, no matter how they were originally entered.
 
-### Status
 
 The word `status` can be used as both a label and a type. 
 
@@ -247,7 +235,6 @@ The text values may be modified by placing a series of integer + label pairs in 
 
 	Status: 1 - Idea; 4 - In Work; 9 - Published;
 
-### Recurs
 
 The word `recurs` can be used as both a label and a type. 
 
@@ -280,12 +267,10 @@ All of the following are valid expressions of a recurs rule. Note that use of th
 * The 15th of every month
 * 2nd Tuesday of every month
 
-## The Sequencing Field
 
-This "group" consists on just one field type.
+The following field types can be used to help organize a Collection of Notes into a sequential list and/or an outline. 
 
 
-### Seq
 
 The word `seq` can be used as both a label and a type. 
 
@@ -313,13 +298,42 @@ When used as a sort field, seq values will be padded to cause them to sort into 
 
 Each segment of this field, when separated by a dot or a dash, will be padded separately.
 
-## Web-Making Fields
+
+The word `level` can be used as both a label and a type. 
+
+In addition to `level` itself, this field type will be inferred for field labels equal to any of the following:
+
++ depth
+
+A Collection is not expected to have more than one field of type `level`. 
+
+The level field is meant to indicate each particular Note's depth within an implied tree structure made up of all the Notes in the Collection. 
+
+A level value is represented by a single digit, and is typically restricted to the range 1 - 6. 
+
+A level field is typically used in combination with a [[Seq]] field. 
+
+When viewing a Collection containing a level field, and when viewing the List of Notes sorted by 'Seq + Title', the title of each Note will be indented to indicate the level of each particular Note within the implied outline. 
+
+One way to use a level field, when generating HTML, is to generate a heading tag using the Note level as the numeric portion of the tag. 
+
+A brief text label may also be associated with each possible numeric value. 
+
+When editing, the level field is presented as a pick list, with the user allowed to select from the list of standard values for that Collection. 
+
+For Display purposes, the digit and text are usually shown side-by-side. 
+
+When used as a general sort field, level values will be sorted by their digits. 
+
+The text values may be modified by placing a series of integer + label pairs in the Value area of the relevant template file, with separating punctuation. Such a template line might look something like this:
+
+	Level: <level: 1 - Book Title; 2 - Section; 3 - Chapter; >
+
 
 In addition to all the other field types, the following are particularly useful for generating web pages and sites. 
 
 When using Notenik in this way, it is assumed that each Note will become a page of content: a blog post, or article, or story, or whatever you wish to call it.
 
-### Code
 
 The word `Code` can be used as both a label and a type. 
 
@@ -335,7 +349,6 @@ Although code can always be embedded in the body of a Note using the usual Markd
 
 A code field can be useful for including examples of HTML coding, or any other sort of programming code.
 
-### Index
 
 The word `Index` can be used as both a label and a type.
 
@@ -355,7 +368,6 @@ A reference link for a term may also be included, within parentheses, following 
 
 When editing, the title field will appear as a single line of editable text.
 
-### Teaser
 
 The word `Teaser` can be used as a label, but not as a type. 
 
@@ -369,7 +381,6 @@ When editing, a `longtext` field will appear as multiple lines of editable text.
 
 When displayed, a `longtext` field will be transformed using a Markdown parser.
 
-### Minutes to Read
 
 The phrase `Minutes to Read` can be used as both a label and a type.
 
@@ -377,18 +388,15 @@ A Collection should only have one field of type `minutes-to-read`.
 
 The value for this field will be calculated automatically by Notenik, based on the number of words found in the [[Body]] field, figuring 200 words per minute, and rounding to the nearest whole number.
 
-### Image Name
 
 The phrase `Image Name` can be used as both a label and a type.
 
 Notenik will allow the user to select an image name from the list of attachments available for the currently selected Note. Only attachments with likely file extensions will be included.
 
-## Fields Useful for Reviews, Citations and Quotations
 
 The following fields may be useful when using Notenik to record quotes from, or commentary about, or citations of, authors and artists. 
 
 
-### Artist
 
 The word `Artist` can be used as both a label and a type. 
 
@@ -402,7 +410,6 @@ When used as a sort field, a leading "The " will be ignored, and the remaining c
 
 When choosing to sort a Collection by Author, an Artist field will be used instead, when present.
 
-### Author
 
 The word `Author` can be used as both a label and a type. 
 
@@ -417,7 +424,6 @@ When editing, an Author field will appear as a combo box, allowing the user to c
 
 One or more author names should be entered in this field, with first names first.
 
-### Rating
 
 The word `Rating` can be used as both a label and a type. 
 
@@ -429,7 +435,6 @@ A `rating` field is expected to contain a numeric value (integer or double) that
 
 When editing, a rating field will appear as a single line of editable text.
 
-### Work Title
 
 This field type will be inferred for the following field labels:
 
@@ -440,7 +445,6 @@ This field type is meant to supply the title for a creative work (book, song, es
 
 For some exporting/sharing options, the Work Title, [[Work Type]] and [[Work Link]] fields may be used to nicely format the resulting citation of the source.
 
-### Work Type
 
 This field type will be inferred for a field label of 'Work Type'.
 
@@ -480,7 +484,6 @@ Additional types are added to this list as the need arises, but this is the comp
 + Television Show
 + Video
 
-### Work Link
 
 This field type will be inferred for a field label of `Work Link`.
 
@@ -488,7 +491,6 @@ For some exporting/sharing options, the [[Work Title]], [[Work Type]] and Work L
 
 In all other respects, this field type will behave identically to an ordinary [[Link]] field.
 
-## General-Purpose Fields
 
 The following field types can be used as needed.
 
@@ -510,23 +512,19 @@ Values for a Boolean field type will be interpreted in the following ways:
 + The digit '1' will be interpeted as `true`;
 + Any other value will be interpreted as `false`.
 
-### Integer
 
 This value is used to represent an interger. The type identifier may also be abbreviated  as `int`. 
 
 
-### Longtext
 
 A field type of 'longtext' implies a multi-line text field that may be formatted using Markdown. 
 
 The [[Body]] field and the [[Teaser]] field default to a type of 'longtext'.
 
-### String
 
 This is the default field type, if no other type is assigned or implied. 
 
 
-### Pick From
 
 This field type, when accompanied by a series of starting values, can be used to offer the user a drop-down menu allowing a choice from a set of previously used values, or the entry of a new value, which will then be added to the list. (Such a user interface widget is often referred to as a *combo box*.)
 
@@ -538,7 +536,6 @@ Type: <pick-from: static, post>
 
 In other words, enter the usual field label, followed by a colon, and then follow that with the literal 'pick-from: ', followed by the possible values, separated using commas or semicolons.
 
-### Type
 
 The word `Type` can be used as a label, but is not a valid type. 
 
@@ -546,12 +543,10 @@ A field called `Type` can often be a useful element of a Collection.
 
 The label `Type` can often be usefully combined with a type of [[Pick From]] in order to predefine allowable types that make sense within the context of a particular Collection.
 
-## System-Assigned Dates and Times
 
 These fields, unlike the [[Date]] field, are system-assigned, and consist of a time as well as a date. 
 
 
-### Date Added
 
 The phrase `Date Added` can be used as both a label and a type. 
 
@@ -565,7 +560,6 @@ The field is generally displayed below all user-editable fields, and may be sepa
 
 The values for this field can be exported and imported, and will then serve the purpose of preserving an original value for this field, rather than reflecting the date and time of the import.
 
-### Date Modified
 
 The phrase `Date Modified` can be used as both a label and a type. 
 
@@ -579,7 +573,6 @@ The field is generally displayed below all user-editable fields, and may be sepa
 
 The values for this field can be exported and imported, and will then serve the purpose of preserving an original value for this field, rather than reflecting the date and time of the import.
 
-### Timestamp
 
 The word `Timestamp` can be used as both a label and a type. 
 

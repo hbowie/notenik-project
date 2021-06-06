@@ -1,0 +1,9 @@
+Title:  Added Level as New Field Label and Type
+
+Seq:    6.3.0
+
+Date:   05 Jun 2021
+
+Body: 
+
+`Level` has been added as a new field label and type. 

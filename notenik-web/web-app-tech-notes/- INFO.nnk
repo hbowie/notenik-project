@@ -1,6 +1,6 @@
 Title: Notenik Web Tech Notes
 
-Link: file:///Users/hbowie/Sites/notenik/notenik-web/web-app-tech-notes
+Link: /Users/hbowie/Sites/notenik/notenik-web/web-app-tech-notes
 
 Sort Parm: 1
 
@@ -8,5 +8,11 @@ Sort Descending: false
 
 Other Fields Allowed: false
 
-Double Bracket Parsing: false
+Last Index Selected: 0
+
+Mirror Auto Index: false
+
+Display Body Label: true
+
+Display H1 Titles: false
 

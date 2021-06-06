@@ -1,0 +1,11 @@
+Title:  Updates to Work List Field Type
+
+Seq:    6.3.0
+
+Date:   02 Jun 2021
+
+Body: 
+
+I added 'Podcast' as another choice, when specifying the type of work being referenced or quoted. 
+
+I also modified the logic so that you can use either a leading lower-case letter, or leading upper-case, when entering a work type value. Whichever one is used, and chosen, the value stored will be with leading upper-case. 
